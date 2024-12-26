@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="message"
+            type="String" />
+
+        <variable
+            name="icon"
+            type="android.graphics.drawable.Drawable" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title"
+            style="@style/text_view_new"
+            android:layout_width="0dp"
+            android:fontFamily="@font/ws_bold"
+            android:text="@{title}"
+            android:gravity="start|top"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_message"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="Anosmia" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_message"
+            style="@style/text_view_new"
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:fontFamily="@font/ws_regular"
+            android:textSize="@dimen/_12sp"
+            android:gravity="start|top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_title"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="This refers to a total loss of the ability to smell." />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

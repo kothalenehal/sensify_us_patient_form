@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="userName"
+            type="String" />
+
+        <variable
+            name="scentAware16"
+            type="String" />
+
+        <variable
+            name="scentAware8"
+            type="String" />
+
+        <variable
+            name="scentAwareLast8Test"
+            type="String" />
+
+        <variable
+            name="scentAwareLast16Test"
+            type="String" />
+
+        <variable
+            name="traceAwareLastTest"
+            type="String" />
+
+        <variable
+            name="audioAwareLastTest"
+            type="String" />
+
+        <variable
+            name="glanceAwareLastTest"
+            type="String" />
+
+        <variable
+            name="wordsAwareLastTest"
+            type="String" />
+
+        <variable
+            name="grammarAwareLastTest"
+            type="String" />
+
+        <variable
+            name="canTestScentAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestTraceAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestAudioAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestGlanceAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestWordsAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestGramarAware"
+            type="Boolean" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/_8dp"
+                android:paddingStart="@dimen/_8dp">
+
+                <include
+                    android:id="@+id/ll_scentaware_8"
+                    layout="@layout/layout_reports_list"
+                    app:canTest="@{true}"
+                    app:icon="@{@drawable/scent_aware}"
+                    app:message="@{@string/msg_scent_aware_evaluate}"
+                    app:recentActivity="@{scentAwareLast8Test}"
+                    app:title="@{scentAware8}" />
+
+                <include
+                    android:id="@+id/ll_scentaware_16"
+                    layout="@layout/layout_reports_list"
+                    app:canTest="@{true}"
+                    app:icon="@{@drawable/scent_aware}"
+                    app:message="@{@string/msg_scent_aware_evaluate}"
+                    app:recentActivity="@{scentAwareLast16Test}"
+                    app:title="@{scentAware16}" />
+
+
+                <include
+                    android:id="@+id/ll_trace_aware"
+                    layout="@layout/layout_reports_list"
+                    app:canTest="@{true}"
+                    app:icon="@{@drawable/trace_aware}"
+                    app:message="@{@string/msg_trace_aware}"
+                    app:recentActivity="@{traceAwareLastTest}"
+                    app:title="@{@string/trace_aware_test}" />
+
+                <include
+                    android:id="@+id/ll_audio_aware"
+                    layout="@layout/layout_reports_list"
+                    app:canTest="@{true}"
+                    app:icon="@{@drawable/audio_aware}"
+                    app:message="@{@string/msg_audio_aware}"
+                    app:recentActivity="@{audioAwareLastTest}"
+                    app:title="@{@string/audio_aware_test}" />
+
+                <include
+                    android:id="@+id/ll_glance_aware"
+                    layout="@layout/layout_reports_list"
+                    app:canTest="@{true}"
+                    app:icon="@{@drawable/ic_face}"
+                    app:message="@{@string/msg_glace_aware}"
+                    app:recentActivity="@{glanceAwareLastTest}"
+                    app:title="@{@string/glance_aware_test}" />
+
+                <include
+                    android:id="@+id/ll_words_aware"
+                    layout="@layout/layout_reports_list"
+                    android:visibility="gone"
+                    app:canTest="@{true}"
+                    app:icon="@{@drawable/ic_words}"
+                    app:message="@{@string/words_aware}"
+                    app:recentActivity="@{wordsAwareLastTest}"
+                    app:title="@{@string/words_aware_test}" />
+
+                <include
+                    android:id="@+id/ll_grammar_aware"
+                    layout="@layout/layout_reports_list"
+                    android:visibility="gone"
+                    app:canTest="@{true}"
+                    app:icon="@{@drawable/ic_grammar}"
+                    app:message="@{@string/grammar_aware}"
+                    app:recentActivity="@{grammarAwareLastTest}"
+                    app:title="@{@string/grammar_aware_test}" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

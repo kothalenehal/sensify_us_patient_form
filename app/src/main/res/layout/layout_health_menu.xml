@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="score"
+            type="Float" />
+
+        <variable
+            name="scoreValue"
+            type="String" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4dp">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_score"
+            style="@style/text_view_style"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@{score > 7 ? @drawable/squre_back : @drawable/yellow_back}"
+            android:fontFamily="@font/ws_bold"
+            android:gravity="center"
+            android:text="@{scoreValue}"
+            android:textColor="@{score > 7 ? @color/green : @color/black}"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="7.8" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title"
+            style="@style/text_view_style"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_8dp"
+            android:fontFamily="@font/ws_regular"
+            android:text="@{title}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_score"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="Renal health" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6dp"
+            android:src="@drawable/baseline_arrow_outward_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_title"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@drawable/img_arrow"
+            android:shadowColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

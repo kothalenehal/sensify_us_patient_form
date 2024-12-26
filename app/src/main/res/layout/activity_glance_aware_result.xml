@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="total"
+            type="String" />
+
+        <variable
+            name="correctCount"
+            type="String" />
+
+        <variable
+            name="incorrectCount"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.glanceaware.GlanceAwareResultActivity">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80dp"
+                android:background="@color/green"
+                android:padding="@dimen/_9dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/_10dp"
+                    android:src="@drawable/ic_close_cross"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ws_medium"
+                    android:gravity="center"
+                    android:text="@string/done"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/iv_back"
+                    app:layout_constraintRight_toLeftOf="@id/iv_temp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/_10dp"
+                    android:src="@drawable/ic_close_cross"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/btn_retry_glanceaware"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_style"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_19dp"
+                android:fontFamily="@font/ws_medium"
+                android:gravity="center"
+                android:text="@string/test_complete_nhere_s_your_score"
+                android:textSize="@dimen/_14sp" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30dp"
+                android:padding="@dimen/_19sp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv1"
+                    style="@style/text_view_style"
+                    android:fontFamily="@font/ws_regular"
+                    android:text="@string/total_number_of_faces_to_nidentify"
+                    android:textSize="@dimen/_12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv2"
+                    style="@style/text_view_style"
+                    android:text="@{total}"
+                    android:textSize="@dimen/_20sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv1" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv3"
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_28sdp"
+                    android:text="@string/persons_whose_name_and_nprofession_were_nidentified_correctly"
+                    android:textSize="@dimen/_12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv4"
+                    style="@style/text_view_style"
+                    android:fontFamily="@font/ws_bold"
+                    android:text="@{correctCount}"
+                    android:textSize="@dimen/_20sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv3" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv5"
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:text="@string/persons_whose_name_and_nprofession_were_nidentified_incorrectly"
+                    android:textSize="@dimen/_12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv6"
+                    style="@style/text_view_style"
+                    android:fontFamily="@font/ws_bold"
+                    android:text="@{incorrectCount}"
+                    android:textSize="@dimen/_20sp"
+                    app:layout_constraintBottom_toBottomOf="@id/tv5"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/tv5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_retry_glanceaware"
+                style="@style/button_style"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="@dimen/_28dp"
+                android:text="@string/return_to_tests" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_back_to_homescreen"
+            style="@style/text_view_style"
+            android:fontFamily="@font/ws_semi_bold"
+            android:text="@string/back_to_homescreen"
+            android:visibility="gone"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

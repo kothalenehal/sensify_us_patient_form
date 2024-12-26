@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="wordsSelected"
+            type="Integer" />
+
+        <variable
+            name="currentPage"
+            type="Integer" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:context=".ui.audioaware.fragments.AudioAwareListingFragment">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/_20dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ws_medium"
+                    android:gravity="center"
+                    android:text="@string/select_the_words_that_were_nread_to_you"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:fontFamily="@font/ws_light"
+                    android:gravity="center"
+                    android:text="@{@string/page_of_2(currentPage)}"
+                    android:textSize="@dimen/_14sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_words"
+                    android:layout_width="@dimen/_250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:descendantFocusability="blocksDescendants"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/row_word" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:fontFamily="@font/ws_light"
+                    android:gravity="center"
+                    android:text="@{@string/_15_words_selected(wordsSelected)}"
+                    android:textSize="@dimen/_14sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            style="@style/button_style"
+            android:layout_marginBottom="@dimen/_28dp"
+            android:text="@{currentPage == 2 ? @string/submit :@string/next }"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

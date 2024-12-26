@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">"SensifyAware"</string>
+    <string name="loading">"تحميل…"</string>
+    <string name="api_failure">"فشل واجهة برمجة التطبيقات"</string>
+    <string name="internet_not_available">"يرجى التحقق من اتصالك بالإنترنت والمحاولة مرة أخرى"</string>
+    <string name="resource_not_found">"الموارد غير موجود"</string>
+    <string name="server_conflict">"تعارضات الخادم"</string>
+    <string name="unknown_error_occurred">"حدث خطأ غير معروف"</string>
+    <string name="hi_user_name">"له."</string>
+    <string name="tap_on_any_of_the_cards_to_begin_your_sensify_experience">"اضغط على أي من البطاقات لبدء تجربة Sensify الخاصة بك."</string>
+    <string name="scentaware_evaluate">"اختبار معرفة الرائحة"</string>
+    <string name="msg_scent_aware_evaluate">"تقييم حاسة الشم لديك."</string>
+    <string name="scent_aware_re_training">"التدريب على ScentAware"</string>
+    <string name="scent_aware_re_training8">"مجموعة رائحة ScentAware لإعادة التدريب المكونة من 8 روائح"</string>
+    <string name="scent_aware_re_training16">"مجموعة ScentAware لإعادة التدريب المكونة من 16 رائحة"</string>
+    <string name="msg_scent_aware_training">"أعد اختبار حاسة الشم المفقودة لديك."</string>
+    <string name="msg_scent_aware_re_training">"أعد تدريب حاسة الشم لديك"</string>
+    <string name="trace_aware_test">"اختبار تتبع الإدراك"</string>
+    <string name="trace_aware">"TraceAware"</string>
+    <string name="msg_trace_aware">"قم بتقييم مهاراتك الحركية الدقيقة والذاكرة البصرية."</string>
+    <string name="audio_aware_test">"اختبار الوعي الصوتي"</string>
+    <string name="audio_aware">"معرف الصوت"</string>
+    <string name="msg_audio_aware">"قم بالوصول إلى ذاكرة الاستدعاء اللفظي في AudioAware."</string>
+    <string name="track_progress">"تقرير"</string>
+    <string name="msg_track_progress">"تتبع نتائج الاختبارات التي أجريتها."</string>
+    <string name="select_your_kit">"حدد المجموعة الخاصة بك"</string>
+    <string name="_8_scent_test_kit">"طقم اختبار 8 رائحة"</string>
+    <string name="_16_scent_test_kit">"طقم اختبار 16 رائحة"</string>
+    <string name="_8_scent_test">"8- اختبار الرائحة"</string>
+    <string name="_16_scent_test">"16- اختبار الرائحة"</string>
+    <string name="begin">"يبدأ"</string>
+    <string name="title_tutorial_scent_aware">"كيفية إجراء
+اختبار تحديد الرائحة؟"</string>
+    <string name="odor_identification_test">"اختبار تحديد الرائحة"</string>
+    <string name="scan_the_qr_code_on_the_smell_test_tube">"1. قم بمسح رمز الاستجابة السريعة الموجود على أنبوب اختبار الرائحة."</string>
+    <string name="after_scanning_open_the_tube_and_smell_the_sample">"2. بعد المسح، افتح الأنبوب وقم بشم العينة."</string>
+    <string name="put_the_tube_in_lid_container">"3. ضع الأنبوب في حاوية الغطاء."</string>
+    <string name="rational_msg_camera_permission">"مطلوب إذن الكاميرا لمسح رمز الاستجابة السريعة"</string>
+    <string name="rational_msg_storage_permission">"مطلوب إذن التخزين لمسح رمز الاستجابة السريعة"</string>
+    <string name="odor_identification_test_of_">"اختبار تحديد الرائحة
+%s/%s"</string>
+    <string name="odor_differentiation_test_of_">"اختبار تمايز الرائحة
+%s/%s"</string>
+    <string name="odor_intensity_test_of_">"اختبار شدة الرائحة
+%s/%s"</string>
+    <string name="can_you_guess_what_the_sample_is">"هل يمكنك تخمين ما هي العينة؟"</string>
+    <string name="submit">"يُقدِّم"</string>
+    <string name="send_code">"إرسال رمز التحقق"</string>
+    <string name="next">"التالي"</string>
+    <string name="please_select_different_tube">"الرجاء اختيار أنبوب مختلف!"</string>
+    <string name="_continue">"يكمل"</string>
+    <string name="msg_checkpoint">"لقد وصلت إلى نقطة تفتيش. سنقوم الآن بإعادة اختبار حواسك الشمية. استمر في الإجراء، وأعد الأنابيب مرة أخرى إلى صينية الرغوة بعد شمها."</string>
+    <string name="msg_2_checkpoint">"ملاحظة: ستتضمن الاختبارات التالية مؤقتًا مدته 30 ثانية."</string>
+    <string name="checkpoint_reached">"وصلت نقطة التفتيش"</string>
+    <string name="done">"منتهي"</string>
+    <string name="evaluation">"تقييم"</string>
+    <string name="between_13_and_16">"بين 13 و16"</string>
+    <string name="between_29_and_36">"بين 29 و36"</string>
+    <string name="normal">"طبيعي"</string>
+    <string name="between_9_and_12">"بين 9 و 12"</string>
+    <string name="between_22_and_28">"بين 22 و 28"</string>
+    <string name="mild_anosmia">"فقدان الشم الخفيف"</string>
+    <string name="between_5_and_8">"بين 5 و 8"</string>
+    <string name="between_14_and_21">"بين 14 و21"</string>
+    <string name="moderate_anosmia">"فقر الدم المعتدل"</string>
+    <string name="between_0_and_4">"بين 0 و 4"</string>
+    <string name="between_0_and_13">"بين 0 و13"</string>
+    <string name="severe_anosmia">"فقدان الشم الشديد"</string>
+    <string name="consult_your_doctor_for_a_more_comprehensive_examination_of_your_loss_of_olfactory_senses">"استشر طبيبك لإجراء فحص أكثر شمولاً لفقدان حاسة الشم لديك."</string>
+    <string name="try_traceaware">"حاول TraceAware"</string>
+    <string name="try_smell_re_training">"حاول إعادة اختبار الرائحة"</string>
+    <string name="you_answered_out_of_nquestions_correctly">"تم الانتهاء من الاختبار بنجاح!
+لقد حصلت على %s من أصل 4 نجوم."</string>
+    <string name="msg_3_checkpoint">"اختبار تحديد الرائحة
+مكتمل!"</string>
+    <string name="msg_4_checkpoint_diff">"سنقوم الآن باختبار قدرتك على التمييز بين روائح معينة. اتبع الإرشادات المعروضة على شاشتك لإكمال الاختبار."</string>
+    <string name="msg_5_checkpoint_intensity">"سنقوم الآن باختبار قدرتك على التمييز بين روائح معينة. اتبع الإرشادات المعروضة على شاشتك لإكمال الاختبار."</string>
+    <string name="odor_diff_intro_text_1">"اختر الأنابيب من مجموعة ScentAware الخاصة بك والتي تحمل الرموز التالية"</string>
+    <string name="odor_diff_intro_text_2">"شم أعواد الاستنشاق، واحدة تلو الأخرى، وحدد المختلف بينها."</string>
+    <string name="odor_intensity_intro_text_2">"شم أعواد الاستنشاق، واحدة تلو الأخرى، وتعرف على الرائحة الأقوى بينها."</string>
+    <string name="odor_intensity_intro_text_1">"اختر الأنابيب من مجموعة ScentAware الخاصة بك والتي تحمل الرموز التالية"</string>
+    <string name="odor_diff_msg">"حدد الخيار الذي تعتقد أنه &lt;b&gt;مختلف&lt;/b&gt;."</string>
+    <string name="odor_intensity_msg">"حدد الخيار الذي تعتقد أنه &lt;b&gt;الرائحة الأقوى&lt;/b&gt;."</string>
+    <string name="could_not_ndifferentiate">"لا يمكن
+يميز"</string>
+    <string name="title_tutorial_odor_diff_test">"كيفية أداء الرائحة
+اختبار التفاضل؟"</string>
+    <string name="title_tutorial_odor_intensity_test">"كيفية أداء الرائحة
+اختبار الشدة؟"</string>
+    <string name="title_tutorial_re_test">"كيفية تنفيذ
+إعادة الاختبار؟"</string>
+    <string name="trace_aware_questions">"TraceAware
+%s/%s"</string>
+    <string name="traces_remaining">"الآثار المتبقية:"</string>
+    <string name="msg_trace_aware_checkpoint_1">"لقد قمت بتتبع كافة الرموز بنجاح!"</string>
+    <string name="msg_trace_aware_checkpoint_2">"لقد حاولت الإجابة على المجموعة الأولى من الأسئلة بنجاح."</string>
+    <string name="msg_trace_aware_checkpoint_3">"لقد قمت بمسح الجزء الثاني من الاختبار بنجاح. سنختبر الآن قدرتك على التذكر من ذاكرتك."</string>
+    <string name="msg_trace_aware_recall">"حاول أن تتذكر وتتتبع الرقم المرتبط بالرقم المعروض في المربع."</string>
+    <string name="msg_trace_aware_result">"لقد أكملت بنجاح اختبار تقييم TraceAware وTraceAware-Recall."</string>
+    <string name="try_smell_evaluation">"حاول تقييم الرائحة"</string>
+    <string name="return_to_tests">"العودة إلى الاختبارات"</string>
+    <string name="back_to_homescreen">"العودة إلى الشاشة الرئيسية"</string>
+    <string name="average_response_time_">"متوسط زمن الاستجابة:
+%s ثانية"</string>
+    <string name="strWelcome">"مرحباً"</string>
+    <string name="strLoginID">"اسمك"</string>
+    <string name="strFirsName">"الاسم الأول"</string>
+    <string name="strLastName">"اسم العائلة"</string>
+    <string name="strEmail">"بريد إلكتروني"</string>
+    <string name="strPhone">"رقم التليفون"</string>
+    <string name="strLogin">"تسجيل الدخول"</string>
+    <string name="strSignUp">"اشتراك"</string>
+    <string name="strEnterEmail">"أدخل معرف البريد الإلكتروني الخاص بك
+وكلمة المرور للتسجيل"</string>
+    <string name="strHiThere">"أهلاً!"</string>
+    <string name="strHowOld">"كم عمرك؟"</string>
+    <string name="strLowMemory">"هل تعاني من خسارة
+ذاكرة؟"</string>
+    <string name="strSetUp4Que">"هل يوصف لك حاليا أي دواء؟ حدد الخيارات التي قد تنطبق."</string>
+    <string name="strStuffyNose">"هل تعاني من انسداد الأنف؟"</string>
+    <string name="strSelectGender">"اختر جنسك :"</string>
+    <string name="strNext">"التالي"</string>
+    <string name="strPassword">"كلمة المرور"</string>
+    <string name="strWarnPassword">"الرجاء إدخال كلمة المرور"</string>
+    <string name="strWarnOldPassword">"الرجاء إدخال كلمة المرور القديمة"</string>
+    <string name="strWarnNewPassword">"الرجاء إدخال كلمة المرور الجديدة"</string>
+    <string name="strValidPassword">"الرجاء إدخال كلمة مرور صالحة"</string>
+    <string name="strValidNewPassword">"الرجاء إدخال كلمة مرور جديدة صالحة"</string>
+    <string name="strWarnRePassword">"الرجاء إدخال كلمة المرور مرة أخرى"</string>
+    <string name="strMatchPassword">"كلمة المرور وكلمة المرور المعاد إدخالها غير متطابقين"</string>
+    <string name="strValidEmail">"الرجاء إدخال البريد الإلكتروني الصحيح"</string>
+    <string name="strWarnEmail">"الرجاء إدخال معرف البريد الإلكتروني"</string>
+    <string name="strWarnFirstName">"الرجاء إدخال الاسم الأول"</string>
+    <string name="strWarnLastname">"الرجاء إدخال الاسم الأخير"</string>
+    <string name="strWarnPhoneNumber">"الرجاء إدخال رقم الهاتف"</string>
+    <string name="strReenterPassword">"إعادة إدخال كلمة المرور"</string>
+    <string name="strAge">"عمر"</string>
+    <string name="strWarnAge">"الرجاء إدخال العمر"</string>
+    <string name="strWarnUserName">"الرجاء إدخال اسم المستخدم"</string>
+    <string name="strWarnOtherMedication">"الرجاء إدخال الأدوية"</string>
+    <string name="strWarnGender">"يرجى تحديد الجنس"</string>
+    <string name="strWarnSelectMedications">"الرجاء اختيار الدواء"</string>
+    <string name="strMale">"ذكر"</string>
+    <string name="strFemale">"أنثى"</string>
+    <string name="strOther">"آخر"</string>
+    <string name="strNo">"لا"</string>
+    <string name="strYes">"نعم"</string>
+    <string name="strOption1">"لا أحد"</string>
+    <string name="strOption2">"مضادات حيوية"</string>
+    <string name="strOption3">"دواء ضغط الدم"</string>
+    <string name="strOption4">"مضادات الاكتئاب"</string>
+    <string name="strOption5">"منشطات"</string>
+    <string name="strOption6">"أخرى (يرجى التحديد)"</string>
+    <string name="strWalkThrough1">"تقييم حواسك الشمية
+مع ScentAware"</string>
+    <string name="strWalkThrough2">"تقييم مهاراتك الحركية الدقيقة و
+الذاكرة البصرية مع TraceAware"</string>
+    <string name="strWalkThrough3">"تقييم ذاكرة الاستدعاء اللفظي لديك
+مع AudioAware"</string>
+    <string name="strWalkThroughTitle1">"انتبه لأنفك!"</string>
+    <string name="strWalkThroughTitle2">"تقييم قدراتك"</string>
+    <string name="strWalkThroughTitle3">"جرب ذاكرتك"</string>
+    <string name="already_user">"&lt;u&gt;هل أنت مستخدم بالفعل؟ انتقل إلى تسجيل الدخول.&lt;/u&gt;"</string>
+    <string name="strForgotPassword">"&lt;u&gt;هل نسيت كلمة المرور؟&lt;/u&gt;"</string>
+    <string name="e_g_vasodilators">"على سبيل المثال موسعات الأوعية الدموية"</string>
+    <string name="title_verify_email">"التحقق من البريد الإلكتروني"</string>
+    <string name="msg_verification_screen">"تم إرسال رمز التحقق إلى بريدك الإلكتروني. الرجاء إدخاله للتحقق من صحة حسابك"</string>
+    <string name="enter_code_here">"أدخل رمز هنا"</string>
+    <string name="verify">"يؤكد"</string>
+    <string name="msg_enter_verification_code">"الرجاء إدخال رمز التحقق"</string>
+    <string name="title_retraining">"كيفية إعادة تدريب الخاص بك
+حاسة الشم؟"</string>
+    <string name="open_the_tube_and_smell_nthe_sample">"افتح الأنبوب وشم العينة"</string>
+    <string name="the_sample_you_are_smelling_is">"العينة التي تشتمها هي،"</string>
+    <string name="tap_next_when_you_re_ready">"اضغط على التالي عندما تكون مستعدًا"</string>
+    <string name="you_ve_successfully_completed_nsmell_retraining">"لقد أكملت بنجاح
+إعادة اختبار الرائحة."</string>
+    <string name="try_intelliplot">"جرب IntelliPlot"</string>
+    <string name="smell_retraining">"إعادة التدريب على الرائحة"</string>
+    <string name="smell_retraining_">"إعادة اختبار الرائحة
+%s/%s"</string>
+    <string name="no">"لا"</string>
+    <string name="are_you_sure_you_wish_to_ncancel_the_test">"هل أنت متأكد أنك ترغب في ذلك
+إلغاء الاختبار؟"</string>
+    <string name="yes">"نعم"</string>
+    <string name="how_to_use_audio_aware">"كيف تستعمل
+علم الصوت؟"</string>
+    <string name="title_level_of_difficulty">"اختر خاصتك
+مستوى الصعوبة"</string>
+    <string name="easy">"سهل"</string>
+    <string name="immediate_recall_no_delay">"الاستدعاء الفوري (بدون تأخير)"</string>
+    <string name="intermediate">"متوسط"</string>
+    <string name="recall_after_a_2_minute_delay">"أذكر بعد تأخير لمدة دقيقتين"</string>
+    <string name="hard">"صعب"</string>
+    <string name="recall_after_a_10_minute_delay">"أذكر بعد تأخير 10 دقيقة"</string>
+    <string name="audio_aware_level">"المستوى : %s"</string>
+    <string name="click_on_begin_to_start_nthe_test">"انقر على \"ابدأ\" للبدء
+الاختبار."</string>
+    <string name="after_the_countdown_n20_words_will_be_read_out_to_you">"بعد العد التنازلي،
+سيتم قراءة 20 كلمة لك."</string>
+    <string name="stop_test">"وقف الاختبار"</string>
+    <string name="reading_words_ntry_to_remember_as_many_nas_you_can">"قراءة الكلمات.
+حاول أن تتذكر أكبر عدد ممكن
+كما يمكنك."</string>
+    <string name="reading_complete_nclick_on_next_to_proceed">"القراءة كاملة.
+انقر على التالي للمتابعة"</string>
+    <string name="please_wait_for_minutes_nbefore_you_proceed">"الرجاء الانتظار لمدة %s دقيقة
+قبل المتابعة."</string>
+    <string name="select_the_words_that_were_nread_to_you">"الرجاء تحديد 5 كلمات تم تشغيلها لك من القائمة."</string>
+    <string name="_15_words_selected">"تم تحديد %s/5 كلمات"</string>
+    <string name="page_of_2">"الصفحة %s/2"</string>
+    <string name="retry_audioaware">"أعد محاولة الوعي الصوتي"</string>
+    <string name="excellent">"ممتاز"</string>
+    <string name="good">"جيد"</string>
+    <string name="average">"متوسط"</string>
+    <string name="poor">"فقير"</string>
+    <string name="between_3_and_0">"بين 0 و 3"</string>
+    <string name="between_4_and_5">"بين 4 و 5"</string>
+    <string name="between_6_and_7">"بين 6 و 7"</string>
+    <string name="between_8_and_10">"بين 8 و10"</string>
+    <string name="score_out_of_10">"النتيجة (من 10)"</string>
+    <string name="test_complete_nhere_s_your_score">"اكتمل الاختبار.
+ها هي درجاتك"</string>
+    <string name="are_you_experiencing_a_stuffy_nose">"هل تعاني من انسداد الأنف؟"</string>
+    <string name="are_you_currently_on_any_medication">"هل أنت حاليا على أي دواء؟"</string>
+    <string name="please_select_one_of_the_option">"الرجاء تحديد أحد الخيارات"</string>
+    <string name="tracing_accuracy_">"دقة التتبع:
+٪س٪٪"</string>
+    <string name="recall_accuracy_">"دقة الاستدعاء:
+٪س٪٪"</string>
+    <string name="recent_tests">"الاختبارات الأخيرة:"</string>
+    <string name="scentaware_8_scent_kit">"مجموعة الروائح ScentAware 8"</string>
+    <string name="scentaware_16_scent_kit">"مجموعة رائحة سينت أوير 16"</string>
+    <string name="your_scores_are_improving">"علاماتك آخذة في التحسن!"</string>
+    <string name="low_scores_consult_your_doctor">"درجات منخفضة؟ استشر طبيبك."</string>
+    <string name="take_a_test">"يؤدى اختبار"</string>
+    <string name="avg_response_time">"متوسط وقت الاستجابة :"</string>
+    <string name="avg_tracing_accuracy">"متوسط دقة التتبع:"</string>
+    <string name="avg_recall_accuracy">"متوسط دقة الاستدعاء:"</string>
+    <string name="take_tests_routinely_to_improve_your_response_time">"قم بإجراء الاختبارات بشكل روتيني لتحسين وقت الاستجابة لديك."</string>
+    <string name="you_haven_t_attempted_any_tests_yet">"لم تحاول إجراء أي اختبارات حتى الآن."</string>
+    <string name="no_data_found">"لاتوجد بيانات"</string>
+    <string name="score">"نتيجة"</string>
+    <string name="avg_tracing_accuracy2">"متوسط دقة التتبع"</string>
+    <string name="avg_recall_accuracy2">"متوسط أذكر الدقة"</string>
+    <string name="avg_response_time2">"متوسط وقت الاستجابة"</string>
+    <string name="date">"تاريخ"</string>
+    <string name="settings">"إعدادات"</string>
+    <string name="change_password">"تغيير كلمة المرور"</string>
+    <string name="update_profile">"تحديث الملف"</string>
+    <string name="logout">"تسجيل خروج"</string>
+    <string name="old_password">"كلمة المرور القديمة"</string>
+    <string name="new_password">"كلمة المرور الجديدة"</string>
+    <string name="_10_traces">"10 صور للتتبع والتذكير."</string>
+    <string name="_8_traces">"8 صور للتتبع والتذكير."</string>
+    <string name="_6_traces">"6 صور للتتبع والتذكير."</string>
+    <string name="password_helper_text">"قم بتضمين حرف كبير واحد على الأقل، وحرف خاص واحد، ورقم واحد، ويجب أن يتكون الطول من 8 أحرف"</string>
+    <string name="user_name">"اسم المستخدم"</string>
+    <string name="draw_the_figure_associated_with_the_number_displayed_below_as_accurately_as_you_can">"ارسم الشكل المرتبط بالرقم الموضح أدناه بأكبر قدر ممكن من الدقة.
+
+حاول أن تتذكر الرقم المرتبط بالأرقام."</string>
+    <string name="glance_aware_test">"اختبار GlanceAware"</string>
+    <string name="glance_aware">"لمحة سريعة"</string>
+    <string name="msg_glace_aware">"GlanceAware هو اختبار الذاكرة الترابطية لاسم الوجه."</string>
+    <string name="name">"اسم:"</string>
+    <string name="profession">"مهنة :"</string>
+    <string name="showing_image_12">"جاري عرض الصورة %s/12"</string>
+    <string name="msg_glance_aware_delay">"اكتملت معاينة الصورة.
+الرجاء الانتظار لمدة %s دقيقة قبل المتابعة."</string>
+    <string name="msg_glance_aware_begin">"اكتملت معاينة الصورة.
+اضغط على الزر أدناه ل
+ابدأ الاختبار."</string>
+    <string name="what_is_the_name_of_the_person_in_nthe_picture">"ما هو اسم الشخص في
+الصورة؟"</string>
+    <string name="what_is_the_profession_of_the_person_in_nthe_picture">"ما هي مهنة الشخص
+في الصورة؟"</string>
+    <string name="please_select_answer">"الرجاء تحديد الإجابة."</string>
+    <string name="total_number_of_faces_to_nidentify">"إجمالي عدد الوجوه
+تعريف :"</string>
+    <string name="persons_whose_name_and_nprofession_were_nidentified_correctly">"الأشخاص الذين أسمائهم و
+كانت المهنة
+تم تحديده &lt;b&gt;بشكل صحيح :&lt;/b&gt;"</string>
+    <string name="persons_whose_name_and_nprofession_were_nidentified_incorrectly">"الأشخاص الذين أسمائهم و
+كانت المهنة
+تم تحديده &lt;b&gt;بشكل غير صحيح:&lt;/b&gt;"</string>
+    <string name="retry_glanceaware">"أعد محاولة GlanceAware"</string>
+    <string name="glanceaware_tutorial_1">"في هذا الاختبار، سيُطلب منك ذلك
+تذكر أسماء الناس
+ومهنهم."</string>
+    <string name="glanceaware_tutorial_2">"سوف تظهر لك الصور
+من الناس بأسمائهم
+والمهنة."</string>
+    <string name="glanceaware_tutorial_3">"بعد المعاينة، حاول أن تتذكر
+الأسماء والمهن
+بأفضل ما تستطيع."</string>
+    <string name="glanceaware_tutorial_4">"بعد المعاينة، حاول أن تتذكر
+الأسماء والمهن
+بأفضل ما تستطيع."</string>
+    <string name="glanceaware_tutorial_5">"بالنسبة لصعوبة المستوى الصعب، سيتم إجراء الاختبار
+تبدأ بعد تأخير لمدة 5 دقائق."</string>
+    <string name="glanceaware_tutorial_6">"أدائك سيكون
+وسجل، في نهاية الاختبار."</string>
+    <string name="skip">"يتخطى"</string>
+    <string name="msg_forgot_password_screen1">"سيتم إرسال رمز التحقق إلى بريدك الإلكتروني المسجل."</string>
+    <string name="msg_forgot_password_screen2">"الرجاء إدخال الرمز هنا ويمكنك الآن إعادة تعيين كلمة المرور الخاصة بك. أدخل كلمة المرور الجديدة هنا وانقر فوق إرسال."</string>
+    <string name="strWarnCode">"الرجاء إدخال رمز التحقق"</string>
+    <string name="delete_account">"حذف الحساب"</string>
+    <string name="medication">"دواء"</string>
+    <string name="enter_medication_here">"أدخل الدواء هنا"</string>
+    <string name="not_tested_yet">"لم يتم اختباره بعد"</string>
+    <string name="last_tested_on_">"تم آخر اختبار في: %s"</string>
+    <string name="ready_to_test">"جاهز للاختبار"</string>
+    <string name="words_aware_test">"اختبار معرفة الكلمات"</string>
+    <string name="words_aware">"WordsAware"</string>
+    <string name="using_letters_shown_below_as_the_first_two_characters_speak_as_many_words_as_you_can_in_60_seconds">"باستخدام الحروف الموضحة أدناه كأول حرفين، تحدث بأكبر عدد ممكن من الكلمات في 60 ثانية."</string>
+    <string name="d_p">"ف ل"</string>
+    <string name="the_test_will_begin_shortly_speak_the_words_clearly_after_the_countdown">"سيبدأ الاختبار قريبا. نطق الكلمات بوضوح بعد العد التنازلي."</string>
+    <string name="keep_the_order_of_the_first_two_letters_the_same_use_words_that_are_defined_by_the_oxford_english_dictionary">"حافظ على ترتيب أول حرفين كما هو. استخدم الكلمات التي تم تعريفها بواسطة قاموس أكسفورد الإنجليزي."</string>
+    <string name="stand_by">"تعليق"</string>
+    <string name="commencing">"البدء..."</string>
+    <string name="listening">"الاستماع"</string>
+    <string name="speak_as_many_words_as_you_can_before_the_timer_runs_out">"تحدث بأكبر عدد ممكن من الكلمات قبل نفاد الوقت."</string>
+    <string name="test_over">"انتهى الاختبار"</string>
+    <string name="reference_letters">"رسائل مرجعية :"</string>
+    <string name="unique_words_identified">"الكلمات الفريدة التي تم تحديدها:"</string>
+    <string name="words_that_were_repeated">"الكلمات التي تكررت:"</string>
+    <string name="longest_word_detected">"تم اكتشاف أطول كلمة:"</string>
+    <string name="shortest_word_detected">"تم اكتشاف أقصر كلمة:"</string>
+    <string name="dash">"- -"</string>
+    <string name="get_results">"الحصول على النتائج"</string>
+    <string name="please_wait_while_we_process_your_final_score">"من فضلك انتظر بينما نقوم بمعالجة نتيجتك النهائية."</string>
+    <string name="retry_wordsaware">"أعد محاولة WordAware"</string>
+    <string name="grammar_aware_test">"اختبار القواعد النحوية"</string>
+    <string name="grammar_aware">"القواعد النحوية"</string>
+    <string name="using_words_shown_below_construct_3_sentences_that_are_grammatically_correct">"باستخدام الكلمات الموضحة أدناه، قم بتكوين 3 جمل صحيحة نحويًا."</string>
+    <string name="use_the_words_as_they_are_presented_without_modifying_them_grammatically">"استخدام الكلمات كما وردت، دون تعديلها نحويا."</string>
+    <string name="words2">"ملح
+شكل"</string>
+    <string name="words3">"سيارة
+كسول
+تقول"</string>
+    <string name="you_ll_have_90_seconds_to_construct_each_sentence">"سيكون لديك 90 ثانية لبناء كل جملة."</string>
+    <string name="speak_your_sentences_and_submit_3_such_sentences_to_complete_the_test">"انطق جملك وأرسل 3 جمل لإكمال الاختبار."</string>
+    <string name="active">"نشيط"</string>
+    <string name="phrases_submitted">"العبارات المقدمة :"</string>
+    <string name="test_completed_successfully">"تم الانتهاء من الاختبار بنجاح!"</string>
+    <string name="grammatical_accuracy">"نحوية
+دقة :"</string>
+    <string name="average_response_time">"متوسط الاستجابة
+وقت :"</string>
+    <string name="longest_sentence">"أطول جملة:"</string>
+    <string name="shortest_sentence">"أقصر جملة:"</string>
+    <string name="words">"كلمات"</string>
+    <string name="secs">"ثواني"</string>
+    <string name="trainings">"التدريبات"</string>
+    <string name="tests">"الاختبارات"</string>
+    <string name="reports">"التقارير"</string>
+    <string name="it_s_quiet_in_here">"الوضع هادئ هنا..."</string>
+    <string name="we_couldn_t_get">"لم نتمكن من الحصول على رد منك قبل نفاد الوقت. تم إلغاء الجلسة الحالية. يمكنك المحاولة مرة أخرى من قائمة الاختبارات."</string>
+    <string name="done_1">"منتهي"</string>
+    <string name="alert_2">"لم نتمكن من الحصول على رد منك قبل نفاد الوقت. هل ترغب في المتابعة؟"</string>
+    <string name="cancel_test">"إلغاء الاختبار"</string>
+    <string name="sentences_submitted">"الجمل المقدمة :"</string>
+    <string name="sentences_remaining">"الجمل المتبقية:"</string>
+    <string name="you_ve_submitted_your_response_successfully">"لقد أرسلت إجابتك بنجاح."</string>
+    <string name="record_audio_is_required">"سنستخدم فقط إذن تسجيل الصوت من أجل استخدام ميزة تحويل الكلام إلى نص"</string>
+    <string name="training_features_are_unavailable_during_an_active_clinical_trial">"ميزات التدريب غير متوفرة أثناء تجربة سريرية نشطة!"</string>
+    <string name="choose_tube_type">"اختر نوع الأنبوب"</string>
+    <string name="please_select_an_tube">"الرجاء اختيار أنبوب"</string>
+    <string name="dismiss">"رفض"</string>
+    <string name="rate_the_app">"قيم التطبيق"</string>
+    <string name="share_app">"شارك التطبيق"</string>
+    <string name="description">"SensifyAware هو تطبيق صحي متنقل لتتبع حواسك وإدراكك. انظر داخل عقلك باستخدام SensifyAware. أحب تثبيته: الهاتف/الجهاز اللوحي:
+https://play.google.com/store/apps/details?id="</string>
+    <string name="are_you_sure_you_want_to_logout">"هل أنت متأكد أنك تريد تسجيل الخروج؟"</string>
+    <string name="are_you_sure_you_want_to_delete_your_account">"هل انت متأكد انك تريد حذف حسابك؟"</string>
+    <string name="do_you_want_to_take_the_test_again">"هل تريد أن تأخذ الاختبار مرة أخرى؟"</string>
+    <string name="note_a_re_test_makes_the_test_longer_but_increases_the_statistical_power_of_the_score">"ملحوظة: إعادة الاختبار تجعل الاختبار أطول، ولكنها تزيد من القوة الإحصائية للنتيجة."</string>
+    <string name="go_to_result">"اذهب إلى النتيجة"</string>
+    <string name="changelog_file">"en/words_for_audio_aware.txt"</string>
+    <string name="adjective">"ar/Adjectives.txt"</string>
+    <string name="nouns">"ar/Nouns.txt"</string>
+    <string name="verbs">"ar/Verbs.txt"</string>
+    <string name="glance_aware_json">"ar/GlanceAware.json"</string>
+
+    <!--  -->
+    <string name="ren_aware_test">"اختبار ريناوير"</string>
+    <string name="ren_aware">"ريناواير"</string>
+    <string name="ren_aware_wellness_check">"ريناواير
+فحص العافية"</string>
+    <string name="place_the_camera_above_the_grid_so_that_it_captures_the_colored_squares">"ضع الكاميرا فوق الشبكة بحيث تلتقط المربعات الملونة."</string>
+    <string name="overall_wellness">"العافية الشاملة"</string>
+    <string name="your_score_is_within_the_optimal_range">"درجاتك ضمن النطاق الأمثل."</string>
+    <string name="renal_health">"صحة الكلى"</string>
+    <string name="liver_health">"صحة الكبد"</string>
+    <string name="hydration">"الترطيب"</string>
+    <string name="energy_balance">"توازن الطاقة"</string>
+    <string name="immunity">"حصانة"</string>
+    <string name="bone_health">"صحة العظم"</string>
+    <string name="test_completed">"اكتمل الاختبار
+بنجاح!"</string>
+    <string name="calendar">"تقويم"</string>
+    <string name="scentaware">"ScentAware"</string>
+    <string name="scentaware_8">"ScentAware-8"</string>
+    <string name="scentaware_16">"رائحة-16"</string>
+    <string name="smell_training">"التدريب على الرائحة"</string>
+    <string name="fine_motor_skills">"المهارات الحركية الدقيقة"</string>
+    <string name="verbal_memory">"الذاكرة اللفظية"</string>
+    <string name="cancel">"يلغي"</string>
+    <string name="a_stuffy_nose_is_a_condition">"انسداد الأنف هو حالة تصبح فيها الممرات الأنفية محتقنة أو مسدودة، مما يجعل التنفس عبر الأنف صعبًا."</string>
+    <string name="yes_i_have_a_stuffy_nose">"نعم، لدي انسداد في الأنف"</string>
+    <string name="no_i_am_okay">"لا، أنا بخير"</string>
+
+    <!-- to be Change -->
+    <string name="be_proactive">"كن استباقيًا،
+ليس رد الفعل."</string>
+    <string name="the_scentaware_kit">"مجموعة ScentAware"</string>
+    <string name="the_scentaware_kit_contains">"تحتوي مجموعة ScentAware على أجهزة استنشاق تحتوي على منشطات شمية تعتمد على الزيوت العطرية الطبيعية مثل الورد والخزامى والبرتقال والقرفة. يمكن أن يختلف معرفتك بهذه الروائح قليلاً بناءً على تنوع النبات وأصله. تظل المجموعة فعالة لمدة ستة أشهر بعد الاستخدام الأول. يتم تمييز كل أنبوب ScentAware برمز QR لإدارة الاختبار. تحتوي الأنابيب أيضًا على شكل ملون لوضع العلامات الدقيقة وليس مطلوبًا لإجراء الاختبار باستخدام هاتفك."</string>
+    <string name="smell_test">"اختبار الرائحة"</string>
+    <string name="the_smell_test_assesses">"يقوم اختبار الرائحة بتقييم قدرتك على تحديد الروائح بشكل صحيح. يتضمن ذلك استنشاق رائحة ما، واسترجاعها من الذاكرة، ثم اختيار الرائحة الأكثر احتمالاً من بين أربعة خيارات من خلال عملية إزالة ذهنية."</string>
+    <string name="regular_smell_evaluations">"يمكن أن توفر تقييمات الرائحة المنتظمة نظرة ثاقبة للظروف الصحية الأساسية."</string>
+    <string name="the_smell_training_module">"تكشف وحدة التدريب على الرائحة عن هويات الرائحة، مما يسمح لك بالتعرف عليها. قد يكون الجمع بين التدريب على الشم وتقييم الرائحة وسيلة فعالة لمراقبة واستعادة حاسة الشم المفقودة لديك. تشير الأبحاث إلى أن التدريب على الشم يمكن أن يساعد في استعادة حاسة الشم لدى 30% من الأشخاص، ويختلف النجاح بناءً على السبب الكامن وراء فقدان الشم."</string>
+    <string name="odor_identification_test_complete">"اكتمل اختبار تحديد الرائحة!"</string>
+    <string name="great_job_you_ve_finished_">"عمل عظيم! لقد انتهيت من اختبار تحديد الرائحة. لتعزيز دقة نتائجك، نوصي بإعادة الاختبار. وبدلاً من ذلك، يمكنك اختيار إكمال الاختبار الآن وعرض نتائجك على الفور."</string>
+    <string name="re_test">"إعادة الاختبار"</string>
+    <string name="view_result">"عرض النتائج"</string>
+    <string name="you_ve_successfully_signed_up_with_sensifyaware">"لقد قمت بالتسجيل بنجاح مع SensifyAware!"</string>
+    <string name="effective_care_starts">"الرعاية الفعالة تبدأ بالتدخل المبكر."</string>
+    <string name="get_started">"البدء!"</string>
+    <string name="custom_recurrence">"التكرار المخصص"</string>
+    <string name="repeats_every">"يتكرر كل"</string>
+    <string name="_1">"1"</string>
+    <string name="repeats_on">"يتكرر على"</string>
+    <string name="s">"س"</string>
+    <string name="m">"م"</string>
+    <string name="t">"ت"</string>
+    <string name="w">"دبليو"</string>
+    <string name="f">"F"</string>
+    <string name="ends">"ينتهي"</string>
+    <string name="never">"أبداً"</string>
+    <string name="on">"على"</string>
+    <string name="after">"بعد"</string>
+    <string name="occurence">"حادثة"</string>
+    <string name="start_test">"ابدأ الاختبار"</string>
+    <string name="add_reminder">"إضافة تذكير"</string>
+    <string name="save">"يحفظ"</string>
+    <string name="edit_reminder">"تحرير التذكير"</string>
+    <string name="repeat">"يكرر"</string>
+    <string name="select_test">"حدد الاختبار"</string>
+    <string name="renal_health_is_vital">"تعد صحة الكلى أمرًا حيويًا للرفاهية العامة، حيث تضمن الكلى السليمة الترشيح المناسب وإزالة النفايات وصيانة وظائف الجسم الأساسية."</string>
+    <string name="scan_the_qr_code_n_on_the_renaware_test_strip">"مسح رمز الاستجابة السريعة
+على شريط اختبار RenAware."</string>
+    <string name="how_intense_is_the_smell">"ما مدى شدة الرائحة؟"</string>
+    <string name="please_rate_the_intensity">"يرجى تقييم شدة الرائحة التي تكتشفها على مقياس من 0 إلى 5. يرجى التقييم 0 إذا لم تتمكن من اكتشاف الرائحة."</string>
+    <string name="is_the_odor_you_are_smelling_pleasant_to_you">"هل الرائحة التي تشتمها لطيفة بالنسبة لك؟"</string>
+    <string name="yes_i_like_this_smell">"نعم، أحب هذه الرائحة."</string>
+    <string name="i_can_tolerate_this">"أستطيع تحمل هذا"</string>
+    <string name="no_this_smell_is_repulsive">"لا، هذه الرائحة مثيرة للاشمئزاز!"</string>
+    <string name="end_training">"إنهاء التدريب"</string>
+    <string name="for_more_details">"لمزيد من التفاصيل حول النتيجة، يرجى التمرير لأسفل."</string>
+    <string name="scents">"الروائح"</string>
+    <string name="your_responses">"ردودكم"</string>
+    <string name="consider_setting_up_reminders">"فكر في إعداد تذكيرات لإجراء اختبارات الرائحة والتدريب بشكل دوري وتتبع أي تغييرات في حاسة الشم لديك."</string>
+    <string name="close">"يغلق"</string>
+    <string name="set_reminder">"تعيين تذكير"</string>
+    <string name="verify_email">"التحقق من البريد الإلكتروني"</string>
+    <string name="verification_code">"رمز التحقق"</string>
+    <string name="today">"اليوم"</string>
+    <string name="smell_tests">"اختبارات الرائحة"</string>
+    <string name="learn_more">"يتعلم أكثر"</string>
+    <string name="are_you_experiencing">"هل تعاني من تراجع أو تشوه في حاسة الشم لديك؟ يمكن أن تساعدك اختبارات الرائحة الدورية على متابعة تقدمك."</string>
+    <string name="watch_video">"شاهد الفيديو"</string>
+    <string name="depending_on_the_root">"اعتمادًا على السبب الجذري، قد يساعد التدريب على الشم في استعادة حاسة الشم المفقودة. ومع ذلك فإن فعاليتها تختلف بين الأفراد."</string>
+    <string name="cognitive_tests">"الاختبارات المعرفية"</string>
+    <string name="fun_non_addictive_memory_games">"يمكن لألعاب الذاكرة الممتعة التي لا تسبب الإدمان أن تساعد في استبعاد ما إذا كان فقدان حاسة الشم مرتبطًا بالإدراك"</string>
+    <string name="patient_test">Sensify | NetraKumbh 2025</string>
+    <string name="does_not_repeat">"لا يتكرر"</string>
+    <string name="every_day">"كل يوم"</string>
+    <string name="every_week">"كل اسبوع"</string>
+    <string name="every_month">"كل شهر"</string>
+    <string name="every_year">"كل عام"</string>
+    <string name="custom">"مخصص"</string>
+    <string name="the_presence_of_ketones">"إن وجود الكيتونات في الدم والبول، والتي تتشكل عادةً كمصدر طاقة بديل من الدهون عندما يكون الجلوكوز غير كافٍ، يمكن أن يشير إلى مرض السكري ويستدعي إجراء مزيد من الاختبارات، في حين أن البيلة الكيتونية هي حالة طبية حيث يتم العثور على أجسام الكيتون في البول، على الرغم من أنها تصيب الأفراد الأصحاء. يمكن اكتشاف كميات ضئيلة فقط."</string>
+    <string name="questions">"%s/%s"</string>
+    <string name="avg_user_accuracy">"متوسط دقة المستخدم : %s%%"</string>
+    <string name="starts_on">"يبدأ بتاريخ:"</string>
+    <string name="remind_me">"ذكرني في:"</string>
+    <string name="ends_on">"ينتهي على :"</string>
+    <string name="scentaware_8_smell_training">"ScentAware-8 التدريب على الرائحة"</string>
+    <string name="scentaware_16_smell_training">"ScentAware-16 تدريب على الرائحة"</string>
+    <string name="scentaware_8_scent_test">"اختبار الرائحة ScentAware-8"</string>
+    <string name="scentaware_16_scent_test">"ScentAware-16 اختبار الرائحة"</string>
+    <string name="day">"يوم"</string>
+    <string name="week">"أسبوع"</string>
+    <string name="month">"شهر"</string>
+    <string name="event_will_occur_every_">"سيحدث الحدث كل %s."</string>
+    <string name="no_smell_detected">"لم يتم اكتشاف أي رائحة"</string>
+    <string name="very_weak">"ضعيف جدا"</string>
+    <string name="weak">"ضعيف"</string>
+    <string name="strong">"قوي"</string>
+    <string name="very_strong">"قوي جدا"</string>
+    <string name="viewall">"عرض الكل"</string>
+    <string name="finish_training">"إنهاء التدريب"</string>
+    <string name="restart">"إعادة تشغيل"</string>
+    <string name="consider_setting_up_">"فكر في إعداد تذكيرات لإجراء اختبارات الرائحة والتدريب بشكل دوري لتتبع أي تغييرات في حاسة الشم لديك."</string>
+    <string name="smell_training_completed_successfully">"تم إكمال التدريب على الرائحة بنجاح!"</string>
+    <string name="no_event_found">"لم يتم العثور على أي حدث!"</string>
+    <string name="repeat_at">"كرر %s."</string>
+    <string name="all_day">"طوال اليوم"</string>
+    <string name="associative_memory">"الذاكرة الترابطية"</string>
+    <string name="the_brain_translates_sensory">"يقوم الدماغ بترجمة المعلومات الحسية التي يتم تلقيها من خلال اللمس والذوق والشم والرؤية والسمع أثناء تنسيق وظائف الجسم الأساسية، بوعي ودون وعي.
+هناك ستة مجالات معرفية:
+• الذاكرة والتعلم
+• لغة
+• الوظائف التنفيذية
+• الاهتمام المعقد،
+• الإدراك الاجتماعي
+• الوظائف الإدراكية والحركية."</string>
+    <string name="interpreting_health_">"تفسير الصحة
+من خلال الحواس."</string>
+    <string name="the_ability_to_clearly_think">"تعد القدرة على التفكير والتعلم والتذكر بوضوح عنصرًا مهمًا في أداء الأنشطة اليومية. الصحة المعرفية هي مجرد جانب واحد من صحة الدماغ بشكل عام."</string>
+    <string name="traceaware_is_a_game_where_you">"TraceAware هي لعبة حيث يمكنك رسم رموز خاصة باستخدام إصبعك. يجب تتبع الرموز المقترنة بالأرقام بسرعة ودقة. في البداية، تقوم بنسخ الرموز التي تراها، ولكن سرعان ما يتحول الأمر إلى اختبار للذاكرة حيث تتذكر ما قمت بنسخه. إنها طريقة ممتعة لتمرين التنسيق بين عقلك ويدك."</string>
+    <string name="test_your_memory_and_motor_skills">"اختبر ذاكرتك ومهاراتك الحركية."</string>
+    <string name="word_listening_and_recognition">"الاستماع للكلمات والاعتراف بها."</string>
+    <string name="audioaware_is_a_word_listening_game">"AudioAware هي لعبة استماع للكلمات. يقول الجهاز الكلمات بوتيرة متساوية من خلال مكبر الصوت الخاص به. مهمتك هي التعرف على تلك الكلمات من القائمة المعروضة لك. الأمر كله يتعلق بتذكر ما تسمعه."</string>
+    <string name="connect_faces_and_names_for_a_memory_challenge">"ربط الوجوه والأسماء لتحدي الذاكرة."</string>
+    <string name="glanceaware_is_an_associative_memory">"GlanceAware هي مهمة الذاكرة الترابطية. تظهر لك وجوه بأسماء ومهنة مرتبطة بالوجه. بمجرد أن تظهر لك مجموعة من الوجوه والأسماء التي يُطلب منك تذكرها. تتضمن المهمة كيفية معالجة الأشياء غير ذات الصلة."</string>
+    <string name="understanding_nsmell_loss">"فهم
+فقدان الرائحة"</string>
+    <string name="smell_loss_medically_known_as">"فقدان الشم، المعروف طبيًا باسم فقدان الشم، هو الفقدان الكامل لحاسة الشم. يمكن أن يحدث بسبب عوامل مختلفة، بما في ذلك:"</string>
+    <string name="viral_infections">"اصابات فيروسية"</string>
+    <string name="such_as_the">"مثل نزلات البرد أو الأنفلونزا، والتي يمكن أن تؤثر بشكل مؤقت على حاسة الشم لديك."</string>
+    <string name="nasal_and_sinus_issues">"مشاكل الأنف والجيوب الأنفية"</string>
+    <string name="conditions_like_allergies">"يمكن لحالات مثل الحساسية أو التهاب الجيوب الأنفية أو الزوائد اللحمية الأنفية أن تعيق الممرات الأنفية، مما يؤثر على قدرتك على الشم."</string>
+    <string name="head_injuries">"إصابات الرأس"</string>
+    <string name="trauma_to_the_head">"يمكن لصدمة الرأس أن تلحق الضرر بالأعصاب الشمية المسؤولة عن الشم."</string>
+    <string name="damage_to_nervous_system">"الأضرار التي لحقت الجهاز العصبي"</string>
+    <string name="degeneration_or_inflammation">"يمكن أن يسبب التنكس أو الالتهاب في الجهاز العصبي أيضًا تغيرات في القدرة على الشم."</string>
+    <string name="certain_medications">"بعض الأدوية يمكن أن تغير حاسة الشم."</string>
+    <string name="age">"عمر"</string>
+    <string name="as_we_age_our">"مع تقدمنا في العمر، قد تنخفض حاسة الشم لدينا بشكل طبيعي."</string>
+    <string name="smoking">"التدخين"</string>
+    <string name="smoking_or_vaping">"يمكن أن يتسبب التدخين أو السجائر الإلكترونية في انسداد الأنف ويؤثر سلبًا على قدرتك على الشم."</string>
+    <string name="loss_of_smell_can">"يمكن أن يكون فقدان حاسة الشم جزئيًا (نقص الشم) أو كاملًا (فقد الشم)، وقد يكون مؤقتًا أو دائمًا، اعتمادًا على السبب."</string>
+    <string name="anosmia">"فقد حاسة الشم"</string>
+    <string name="hyposmia">"نقص السكر في الدم"</string>
+    <string name="parosmia">"باروسميا"</string>
+    <string name="phantosmia">"الوهمية"</string>
+    <string name="this_refers_to">"يشير هذا إلى فقدان كامل للقدرة على الشم."</string>
+    <string name="partial_loss">"يشير هذا إلى فقدان جزئي للقدرة على الشم."</string>
+    <string name="distorted_sense_of_smell">"هذه حاسة الشم مشوهة. الأشياء التي كانت رائحتها لطيفة أصبحت الآن كريهة."</string>
+    <string name="condition_that_causes">"هذه حالة تجعلك تكتشف روائح ليست موجودة بالفعل في بيئتك."</string>
+    <string name="set_a_reminder">"تعيين تذكير؟"</string>
+    <string name="if_you_have_temporary">"إذا كنت تعاني من فقدان مؤقت للشم، فقم بممارسة التدريب المنتظم على الشم. تختلف فعاليتها من شخص لآخر، لذا فإن تحديد السبب الجذري أمر بالغ الأهمية."</string>
+    <string name="are_you_currently_taking_any_medication">"هل الجارية حاليا أي دواء؟"</string>
+    <string name="certain_medication_are_known_to_cause_a_loss_or_distortion_in_the_sense_of_smell">"من المعروف أن بعض الأدوية تسبب فقدان أو تشويه في حاسة الشم."</string>
+    <string name="begin_test">"بدء الاختبار"</string>
+    <string name="smell_training_">"التدريب على الرائحة
+%s/%s"</string>
+    <string name="smell_normal">"حاسة الشم لديك
+أمر طبيعي."</string>
+    <string name="smell_hyposmia">"احساسك خفيف
+نقص الشم / باروسميا."</string>
+    <string name="smell_mild">"احساسك خفيف
+نقص الشم / باروسميا."</string>
+    <string name="smell_moderate">"إحساسك بالاعتدال
+نقص الشم / باروسميا."</string>
+    <string name="smell_anosmia">"إحساسك بفقدان الشم."</string>
+    <string name="every">"كل %s %s"</string>
+    <string name="set_a_time">"حدد وقتًا"</string>
+    <string name="set_a_date">"تحديد موعد"</string>
+    <string name="study_id">"معرف الدراسة:"</string>
+    <string name="patient_id">"رقم المريض:"</string>
+    <string name="please_enter_patient_id">"الرجاء إدخال معرف المريض"</string>
+    <string name="id_not_found">"لم يتم العثور على المعرف"</string>
+    <string name="select_site">"حدد الموقع"</string>
+    <string name="delete_reminder">"هل تريد حذف هذا التذكير؟"</string>
+    <string name="strCorrectAge">"الرجاء إدخال العمر الصحيح"</string>
+    <string name="strOldnNewPassword">"كلمة المرور القديمة وكلمة المرور الجديدة يجب ألا تكونا متماثلتين"</string>
+    <string name="forgot_password">هل نسيت كلمة السر؟</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+</resources>

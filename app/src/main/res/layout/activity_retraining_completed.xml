@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="time"
+            type="Float" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screen_confirmation"
+        tools:context=".ui.scentawaretraining.RetrainingCompletedActivity">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_round_corner_background"
+            android:orientation="vertical"
+            android:padding="@dimen/pageMargin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ws_regular"
+                android:text="@string/smell_training_completed_successfully"
+                android:textSize="@dimen/_19sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:fontFamily="@font/ws_regular"
+                android:text="@string/consider_setting_up_" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_32dp"
+                android:weightSum="2">
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_Restart"
+                    style="@style/button_style_light"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:layout_weight="1"
+                    android:text="@string/restart"
+                    android:textColor="@color/them_color"
+                    android:textSize="@dimen/_11sp"
+                    app:icon="@drawable/refresh_img"
+                    app:iconTint="@color/them_color"
+                    app:strokeColor="@color/them_color" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_finish_training"
+                    style="@style/button_style_dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/them_color"
+                    android:text="@string/finish_training"
+                    android:textSize="@dimen/_11sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

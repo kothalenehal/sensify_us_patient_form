@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.sensifyawareapp.ui.auth.AuthenticationViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.auth.fragments.ProfileSetup1Fragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/pageMargin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvTitle"
+                        style="@style/text_view_new"
+                        android:layout_marginTop="@dimen/_32dp"
+                        android:fontFamily="@font/ws_bold"
+                        android:text="Hello!"
+                        android:textSize="@dimen/_19sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvSubTitle"
+                        style="@style/text_view_new"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:fontFamily="@font/ws_regular"
+                        android:text="Just a couple more questions and we will be all set."
+                        android:textSize="@dimen/_12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvHowOld"
+                        style="@style/text_view_new"
+                        android:text="@string/strHowOld"
+                        android:textSize="@dimen/_12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/etAge"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/etAge" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etAge"
+                        style="@style/editTextNew"
+                        android:layout_width="@dimen/_80dp"
+                        android:layout_marginStart="@dimen/_32dp"
+                        android:layout_marginTop="@dimen/normalMargin"
+                        android:layout_marginEnd="@dimen/_32dp"
+                        app:layout_constraintStart_toEndOf="@+id/tvHowOld"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSubTitle"
+                        app:placeholderText="Type in your age">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            style="@style/textInputEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:paddingVertical="@dimen/largeMargin"
+                            android:text="@={viewmodel.strAge}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvSelectGender"
+                        style="@style/text_view_new"
+                        android:layout_marginTop="@dimen/_32dp"
+                        android:text="@string/strSelectGender"
+                        android:textSize="@dimen/_12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/etAge" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/tvSelectGender">
+
+                        <RadioButton
+                            android:id="@+id/btnMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8dp"
+                            android:buttonTint="@color/color_light"
+                            android:checked="true"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="@string/strMale"
+                            android:textColor="@drawable/radio_text_selected" />
+
+                        <RadioButton
+                            android:id="@+id/btnFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_16dp"
+                            android:buttonTint="@color/color_light"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="@string/strFemale"
+                            android:textColor="@drawable/radio_text_selected" />
+
+                        <RadioButton
+                            android:id="@+id/btnOthers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_16dp"
+                            android:buttonTint="@color/color_light"
+                            android:paddingLeft="@dimen/_10dp"
+                            android:text="@string/strOther"
+                            android:textColor="@drawable/radio_text_selected" />
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!--<LinearLayout
+                    android:id="@+id/llBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_32dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/tvSelectGender">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMale"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="0dp"
+                        android:fontFamily="@font/ws_medium"
+                        android:padding="@dimen/normalMargin"
+                        android:text="@string/strMale"
+                        android:textAllCaps="false"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_14sp"
+                        app:backgroundTint="@color/blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSelectGender" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnFemale"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:elevation="0dp"
+                        android:fontFamily="@font/ws_medium"
+                        android:padding="@dimen/normalMargin"
+                        android:paddingTop="@dimen/btnPaddingVertical"
+                        android:paddingBottom="@dimen/btnPaddingVertical"
+                        android:text="@string/strFemale"
+                        android:textAllCaps="false"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btnMale" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnOthers"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/largeMargin"
+                        android:backgroundTint="@android:color/transparent"
+                        android:elevation="0dp"
+                        android:fontFamily="@font/ws_medium"
+                        android:padding="@dimen/normalMargin"
+                        android:paddingTop="@dimen/btnPaddingVertical"
+                        android:paddingBottom="@dimen/btnPaddingVertical"
+                        android:text="@string/strOther"
+                        android:textAllCaps="false"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_14sp"
+                        app:elevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btnFemale" />
+
+                </LinearLayout>-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_12dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btnCancel"
+                style="@style/text_view_new"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/ws_bold"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/box_stroke_color"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNext"
+                style="@style/button_style_dark"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:onClick="@{viewmodel.onProfileStep1}"
+                android:text="@string/strNext" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

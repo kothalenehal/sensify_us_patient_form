@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        style="@style/MaterialAlertDialog_rounded"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_menu"
+            style="@style/card_style"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_header"
+                    style="@style/text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:gravity="center"
+                    android:text="@string/it_s_quiet_in_here"
+                    android:textSize="@dimen/_20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tx_word"
+                    style="@style/text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginBottom="@dimen/_32dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:gravity="center"
+                    android:text="@string/we_couldn_t_get"
+                    android:textSize="@dimen/_12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_header"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_submit"
+                    style="@style/button_style"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:text="@string/done_1"
+                    app:cornerRadius="@dimen/_6dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tx_word" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tx_cancel"
+                    style="@style/text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginBottom="@dimen/_32dp"
+                    android:fontFamily="@font/ws_bold"
+                    android:gravity="center"
+                    android:textColor="@color/blue"
+                    android:visibility="gone"
+                    android:text="@string/cancel_test"
+                    android:textSize="@dimen/_12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_proceed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tx_word"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_proceed"
+                    style="@style/button_style"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:text="@string/done_1"
+                    app:cornerRadius="@dimen/_6dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tx_cancel"
+                    app:layout_constraintTop_toBottomOf="@id/tx_word" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

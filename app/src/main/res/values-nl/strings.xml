@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"SensifyAware"</string>
+    <string name="loading">"Bezig met laden…"</string>
+    <string name="api_failure">"API-fout"</string>
+    <string name="internet_not_available">"Controleer uw internetverbinding en probeer het opnieuw"</string>
+    <string name="resource_not_found">"Bron niet gevonden"</string>
+    <string name="server_conflict">"Serverconflicten"</string>
+    <string name="unknown_error_occurred">"Er is een onbekende fout opgetreden"</string>
+    <string name="hi_user_name">"Zijn."</string>
+    <string name="tap_on_any_of_the_cards_to_begin_your_sensify_experience">"Tik op een van de kaarten om je Sensify-ervaring te beginnen."</string>
+    <string name="scentaware_evaluate">"ScentAware-test"</string>
+    <string name="msg_scent_aware_evaluate">"Beoordeel je reukzintuig."</string>
+    <string name="scent_aware_re_training">"ScentAware-training"</string>
+    <string name="scent_aware_re_training8">"ScentAware re-training 8 geurkit"</string>
+    <string name="scent_aware_re_training16">"ScentAware omscholingsset met 16 geuren"</string>
+    <string name="msg_scent_aware_training">"Test je verloren reukvermogen opnieuw."</string>
+    <string name="msg_scent_aware_re_training">"Train je reukvermogen opnieuw"</string>
+    <string name="trace_aware_test">"TraceAware-test"</string>
+    <string name="trace_aware">"TraceAware"</string>
+    <string name="msg_trace_aware">"Beoordeel uw fijne motoriek en visueel geheugen."</string>
+    <string name="audio_aware_test">"AudioAware-test"</string>
+    <string name="audio_aware">"AudioAware"</string>
+    <string name="msg_audio_aware">"Krijg toegang tot uw verbale herinneringsgeheugen in AudioAware."</string>
+    <string name="track_progress">"Rapport"</string>
+    <string name="msg_track_progress">"Volg de resultaten van de tests die u hebt uitgevoerd."</string>
+    <string name="select_your_kit">"Selecteer je uitrusting"</string>
+    <string name="_8_scent_test_kit">"Testkit met 8 geuren"</string>
+    <string name="_16_scent_test_kit">"Testkit met 16 geuren"</string>
+    <string name="begin">"Beginnen"</string>
+    <string name="title_tutorial_scent_aware">"Hoe een
+geur identificatie test?"</string>
+    <string name="odor_identification_test">"Geuridentificatietest"</string>
+    <string name="scan_the_qr_code_on_the_smell_test_tube">"1. Scan de QR-code op het geurreageerbuisje."</string>
+    <string name="after_scanning_open_the_tube_and_smell_the_sample">"2. Open na het scannen de buis en ruik aan het monster."</string>
+    <string name="put_the_tube_in_lid_container">"3. Plaats de buis in de dekselcontainer."</string>
+    <string name="rational_msg_camera_permission">"Cameratoestemming is vereist om de QR-code te scannen"</string>
+    <string name="rational_msg_storage_permission">"Er is opslagtoestemming vereist om de QR-code te scannen"</string>
+    <string name="odor_identification_test_of_">"Geuridentificatietest
+%s/%s"</string>
+    <string name="odor_differentiation_test_of_">"Geur differentiatie test
+%s/%s"</string>
+    <string name="odor_intensity_test_of_">"Geurintensiteitstest
+%s/%s"</string>
+    <string name="can_you_guess_what_the_sample_is">"Kun jij raden wat het monster is?"</string>
+    <string name="submit">"Indienen"</string>
+    <string name="send_code">Code verzenden</string>
+    <string name="next">"Volgende"</string>
+    <string name="please_select_different_tube">"Selecteer een andere buis!"</string>
+    <string name="_continue">"Doorgaan"</string>
+    <string name="msg_checkpoint">"Je hebt een controlepunt bereikt. We gaan nu je reukzintuigen opnieuw testen. Ga door met de procedure en plaats de buisjes terug in het schuimbakje nadat je eraan hebt geroken."</string>
+    <string name="msg_2_checkpoint">"Opmerking: De volgende tests bevatten een timer van 30 seconden."</string>
+    <string name="checkpoint_reached">"Controlepunt bereikt"</string>
+    <string name="done">"Klaar!"</string>
+    <string name="evaluation">"evaluatie"</string>
+    <string name="between_13_and_16">"Tussen 13 en 16"</string>
+    <string name="between_29_and_36">"Tussen 29 en 36"</string>
+    <string name="normal">"Normaal"</string>
+    <string name="between_9_and_12">"Tussen 9 en 12 uur"</string>
+    <string name="between_22_and_28">"Tussen 22 en 28"</string>
+    <string name="mild_anosmia">"Milde anosmie"</string>
+    <string name="between_5_and_8">"Tussen 5 en 8"</string>
+    <string name="between_14_and_21">"Tussen 14 en 21"</string>
+    <string name="moderate_anosmia">"Matige anosmie"</string>
+    <string name="between_0_and_4">"Tussen 0 en 4"</string>
+    <string name="between_0_and_13">"Tussen 0 en 13"</string>
+    <string name="severe_anosmia">"Ernstige anosmie"</string>
+    <string name="consult_your_doctor_for_a_more_comprehensive_examination_of_your_loss_of_olfactory_senses">"Raadpleeg uw arts voor een uitgebreider onderzoek naar uw verlies van reukzintuigen."</string>
+    <string name="try_traceaware">"Probeer TraceAware"</string>
+    <string name="try_smell_re_training">"Probeer de geur opnieuw te testen"</string>
+    <string name="you_answered_out_of_nquestions_correctly">"Test succesvol afgerond!
+Je hebt %s van de 4 sterren gescoord."</string>
+    <string name="msg_3_checkpoint">"Geuridentificatietest
+compleet!"</string>
+    <string name="msg_4_checkpoint_diff">"We zullen nu uw vermogen testen om onderscheid te maken tussen bepaalde geuren. Volg de instructies op uw scherm om de test te voltooien."</string>
+    <string name="msg_5_checkpoint_intensity">"We zullen nu uw vermogen testen om onderscheid te maken tussen bepaalde geuren. Volg de instructies op uw scherm om de test te voltooien."</string>
+    <string name="odor_diff_intro_text_1">"Kies de tubes uit je ScentAware-set met de volgende symbolen"</string>
+    <string name="odor_diff_intro_text_2">"Ruik aan de inhalatorstaafjes, een voor een, en identificeer de ene die er anders uitziet."</string>
+    <string name="odor_intensity_intro_text_2">"Ruik de inhalatorstaafjes een voor een en identificeer de sterkste geur ervan."</string>
+    <string name="odor_intensity_intro_text_1">"Kies de tubes uit je ScentAware-set met de volgende symbolen"</string>
+    <string name="odor_diff_msg">"Selecteer de optie waarvan u denkt dat deze <b>anders</b> is."</string>
+    <string name="odor_intensity_msg">"Selecteer de optie die volgens jou de <b>sterkste geur</b> is."</string>
+    <string name="could_not_ndifferentiate">"Kon niet
+differentiëren"</string>
+    <string name="title_tutorial_odor_diff_test">"Hoe een geur uit te voeren
+differentiatie test?"</string>
+    <string name="title_tutorial_odor_intensity_test">"Hoe een geur uit te voeren
+intensiteitstest?"</string>
+    <string name="title_tutorial_re_test">"Hoe te presteren
+een hertest?"</string>
+    <string name="trace_aware_questions">"TraceAware
+%s/%s"</string>
+    <string name="traces_remaining">"Resterende sporen:"</string>
+    <string name="msg_trace_aware_checkpoint_1">"Je hebt alle symbolen met succes getraceerd!"</string>
+    <string name="msg_trace_aware_checkpoint_2">"U hebt de eerste reeks vragen met succes geprobeerd."</string>
+    <string name="msg_trace_aware_checkpoint_3">"U heeft het tweede segment van de test met succes doorlopen. We testen nu je vermogen om dingen uit je geheugen op te halen."</string>
+    <string name="msg_trace_aware_recall">"Probeer het cijfer dat hoort bij het nummer dat in het vak wordt weergegeven, terug te roepen en te traceren."</string>
+    <string name="msg_trace_aware_result">"U heeft de TraceAware en TraceAware-Recall Evaluation test met succes afgerond."</string>
+    <string name="try_smell_evaluation">"Probeer geurevaluatie"</string>
+    <string name="return_to_tests">"Keer terug naar Testen"</string>
+    <string name="back_to_homescreen">"Terug naar startscherm"</string>
+    <string name="average_response_time_">"Gemiddelde reactietijd:
+%s sec"</string>
+    <string name="strWelcome">"Welkom"</string>
+    <string name="strLoginID">"Inlog ID"</string>
+    <string name="strFirsName">"Voornaam"</string>
+    <string name="strLastName">"Achternaam"</string>
+    <string name="strEmail">"E-mailen"</string>
+    <string name="strPhone">"Telefoonnummer"</string>
+    <string name="strLogin">"Log in"</string>
+    <string name="strSignUp">"Aanmelden"</string>
+    <string name="strEnterEmail">"Voer uw e-mail-ID in
+en wachtwoord om te registreren"</string>
+    <string name="strHiThere">"Hoi!"</string>
+    <string name="strHowOld">"Hoe oud ben je?"</string>
+    <string name="strLowMemory">"Heeft u last van verlies van
+geheugen?"</string>
+    <string name="strSetUp4Que">"Krijgt u op dit moment medicijnen voorgeschreven? Selecteer de opties die van toepassing kunnen zijn."</string>
+    <string name="strStuffyNose">"Heeft u last van een verstopte neus?"</string>
+    <string name="strSelectGender">"Kies je geslacht :"</string>
+    <string name="strNext">"Volgende"</string>
+    <string name="strPassword">"Wachtwoord"</string>
+    <string name="strWarnPassword">"Voer wachtwoord in alstublieft"</string>
+    <string name="strWarnOldPassword">"Voer het oude wachtwoord in"</string>
+    <string name="strWarnNewPassword">"Voer een nieuw wachtwoord in"</string>
+    <string name="strValidPassword">"Voer een geldig wachtwoord in"</string>
+    <string name="strValidNewPassword">"Voer een geldig nieuw wachtwoord in"</string>
+    <string name="strWarnRePassword">"Voer het wachtwoord opnieuw in"</string>
+    <string name="strMatchPassword">"Wachtwoord en opnieuw ingevoerd wachtwoord komen niet overeen"</string>
+    <string name="strValidEmail">"Voer een geldig e-mailadres in"</string>
+    <string name="strWarnEmail">"Voer e-mail-ID in"</string>
+    <string name="strWarnFirstName">"Voer de voornaam in"</string>
+    <string name="strWarnLastname">"Voer achternaam in"</string>
+    <string name="strWarnPhoneNumber">"Vul a.u.b. het telefoonnummer in"</string>
+    <string name="strReenterPassword">"Geef het wachtwoord opnieuw in"</string>
+    <string name="strAge">"Leeftijd"</string>
+    <string name="strWarnAge">"Gelieve leeftijd in te vullen"</string>
+    <string name="strWarnUserName">"Voer gebruikersnaam in"</string>
+    <string name="strWarnOtherMedication">"Vul medicijnen in"</string>
+    <string name="strWarnGender">"Selecteer geslacht"</string>
+    <string name="strWarnSelectMedications">"Selecteer medicatie"</string>
+    <string name="strMale">"Mannelijk"</string>
+    <string name="strFemale">"Vrouwelijk"</string>
+    <string name="strOther">"Ander"</string>
+    <string name="strNo">"Nee"</string>
+    <string name="strYes">"Ja"</string>
+    <string name="strOption1">"Geen"</string>
+    <string name="strOption2">"antibiotica"</string>
+    <string name="strOption3">"Bloeddruk medicatie"</string>
+    <string name="strOption4">"Antidepressiva"</string>
+    <string name="strOption5">"Steroïden"</string>
+    <string name="strOption6">"Overige (gelieve te specificeren)"</string>
+    <string name="strWalkThrough1">"Beoordeel uw reukzintuigen
+met ScentAware"</string>
+    <string name="strWalkThrough2">"Beoordeel je fijne motoriek en
+visueel geheugen met TraceAware"</string>
+    <string name="strWalkThrough3">"Beoordeel uw verbale herinneringsgeheugen
+met AudioAware"</string>
+    <string name="strWalkThroughTitle1">"Let op je neus!"</string>
+    <string name="strWalkThroughTitle2">"Evalueer uw capaciteiten"</string>
+    <string name="strWalkThroughTitle3">"Test je geheugen"</string>
+    <string name="already_user"><u>Al gebruiker? Ga naar inloggen.</u></string>
+
+    <string name="strForgotPassword">"<u>Wachtwoord vergeten?</u>"</string>
+    <string name="e_g_vasodilators">"bijv. vaatverwijders"</string>
+    <string name="title_verify_email">"Verifieer Email"</string>
+    <string name="msg_verification_screen">"Er is een verificatiecode naar uw e-mailadres verzonden. Voer deze in om uw account te valideren"</string>
+    <string name="enter_code_here">"Voer hier de code in"</string>
+    <string name="verify">"Verifiëren"</string>
+    <string name="msg_enter_verification_code">"Voer de verificatiecode in"</string>
+    <string name="title_retraining">"Hoe u uw
+reukzin?"</string>
+    <string name="open_the_tube_and_smell_nthe_sample">"Open de tube en ruik het voorbeeld"</string>
+    <string name="the_sample_you_are_smelling_is">"Het monster dat je ruikt is,"</string>
+    <string name="tap_next_when_you_re_ready">"Tik op Volgende als je klaar bent"</string>
+    <string name="you_ve_successfully_completed_nsmell_retraining">"Je hebt succesvol afgerond
+geur opnieuw testen."</string>
+    <string name="try_intelliplot">"Probeer IntelliPlot"</string>
+    <string name="smell_retraining">"Geur Re-training"</string>
+    <string name="smell_retraining_">"Geur opnieuw testen
+%s/%s"</string>
+    <string name="no">"Nee"</string>
+    <string name="are_you_sure_you_wish_to_ncancel_the_test">"Weet je zeker dat je dat wilt
+de toets annuleren?"</string>
+    <string name="yes">"Ja"</string>
+    <string name="how_to_use_audio_aware">"Hoe te gebruiken
+Audiobewust?"</string>
+    <string name="title_level_of_difficulty">"Kies jouw
+moeilijkheidsgraad"</string>
+    <string name="easy">"Eenvoudig"</string>
+    <string name="immediate_recall_no_delay">"Onmiddellijke terugroepactie (geen vertraging)"</string>
+    <string name="intermediate">"Tussenliggend"</string>
+    <string name="recall_after_a_2_minute_delay">"Terugroepen na een vertraging van 2 minuten"</string>
+    <string name="hard">"Moeilijk"</string>
+    <string name="recall_after_a_10_minute_delay">"Terugroepen na een vertraging van 10 minuten"</string>
+    <string name="audio_aware_level">"Niveau: %s"</string>
+    <string name="click_on_begin_to_start_nthe_test">"Klik op 'Beginnen' om te beginnen
+de test."</string>
+    <string name="after_the_countdown_n20_words_will_be_read_out_to_you">"Na het aftellen,
+Er worden 20 woorden voorgelezen."</string>
+    <string name="stop_test">"Stoppen met testen"</string>
+    <string name="reading_words_ntry_to_remember_as_many_nas_you_can">"Woorden lezen.
+Probeer er zoveel te onthouden
+als je kan."</string>
+    <string name="reading_complete_nclick_on_next_to_proceed">"Lezing voltooid.
+Klik op Volgende om verder te gaan"</string>
+    <string name="please_wait_for_minutes_nbefore_you_proceed">"Wacht %s minuten
+voordat u verder gaat."</string>
+    <string name="select_the_words_that_were_nread_to_you">"Selecteer 5 woorden die voor u zijn gespeeld uit de lijst."</string>
+    <string name="_15_words_selected">"%s/5 woorden geselecteerd"</string>
+    <string name="page_of_2">"Pagina %s/2"</string>
+    <string name="retry_audioaware">"Probeer AudioAware opnieuw"</string>
+    <string name="excellent">"Uitstekend"</string>
+    <string name="good">"Goed"</string>
+    <string name="average">"Gemiddeld"</string>
+    <string name="poor">"Arm"</string>
+    <string name="between_3_and_0">"Tussen 0 en 3"</string>
+    <string name="between_4_and_5">"Tussen 4 en 5"</string>
+    <string name="between_6_and_7">"Tussen 6 en 7"</string>
+    <string name="between_8_and_10">"Tussen 8 en 10"</string>
+    <string name="score_out_of_10">"Score (van de 10)"</string>
+    <string name="test_complete_nhere_s_your_score">"Test voltooid.
+Hier is je score"</string>
+    <string name="are_you_experiencing_a_stuffy_nose">"Heeft u last van een verstopte neus?"</string>
+    <string name="are_you_currently_on_any_medication">"Gebruikt u momenteel medicijnen?"</string>
+    <string name="please_select_one_of_the_option">"Selecteer een van de opties"</string>
+    <string name="tracing_accuracy_">"Nauwkeurigheid traceren:
+%S%%"</string>
+    <string name="recall_accuracy_">"Herinneringsnauwkeurigheid:
+%S%%"</string>
+    <string name="recent_tests">"Recente tests:"</string>
+    <string name="scentaware_8_scent_kit">"ScentAware 8 geurkit"</string>
+    <string name="scentaware_16_scent_kit">"ScentAware 16 geurkit"</string>
+    <string name="your_scores_are_improving">"Je scores verbeteren!"</string>
+    <string name="low_scores_consult_your_doctor">"Lage scores? Raadpleeg uw arts."</string>
+    <string name="take_a_test">"Doe een test"</string>
+    <string name="avg_response_time">"Gem. reactietijd :"</string>
+    <string name="avg_tracing_accuracy">"Gem. volgnauwkeurigheid:"</string>
+    <string name="avg_recall_accuracy">"Gem. terugroep nauwkeurigheid:"</string>
+    <string name="take_tests_routinely_to_improve_your_response_time">"Voer routinematig tests uit om uw responstijd te verbeteren."</string>
+    <string name="you_haven_t_attempted_any_tests_yet">"Je hebt nog geen tests geprobeerd."</string>
+    <string name="no_data_found">"Geen data gevonden"</string>
+    <string name="score">"Scoren"</string>
+    <string name="avg_tracing_accuracy2">"Gem. traceringsnauwkeurigheid"</string>
+    <string name="avg_recall_accuracy2">"Gem. Roep nauwkeurigheid op"</string>
+    <string name="avg_response_time2">"Gem. Reactietijd"</string>
+    <string name="date">"Datum"</string>
+    <string name="settings">"Instellingen"</string>
+    <string name="change_password">"Verander wachtwoord"</string>
+    <string name="update_profile">"Profiel bijwerken"</string>
+    <string name="logout">"Uitloggen"</string>
+    <string name="old_password">"Oud Wachtwoord"</string>
+    <string name="new_password">"nieuw paswoord"</string>
+    <string name="_10_traces">"10 afbeeldingen om op te sporen en op te roepen."</string>
+    <string name="_8_traces">"8 afbeeldingen om op te sporen en op te roepen."</string>
+    <string name="_6_traces">"6 afbeeldingen om op te sporen en op te roepen."</string>
+    <string name="password_helper_text">"Gebruik ten minste één hoofdletter, één speciaal teken, één cijfer en de lengte moet 8 tekens zijn"</string>
+    <string name="user_name">"Gebruikersnaam"</string>
+    <string name="draw_the_figure_associated_with_the_number_displayed_below_as_accurately_as_you_can">"Teken de figuur die hoort bij het hieronder weergegeven getal, zo nauwkeurig mogelijk.
+
+Probeer het cijfer te onthouden dat bij de cijfers hoort."</string>
+    <string name="glance_aware_test">"GlanceAware-test"</string>
+    <string name="glance_aware">"GlanceBewust"</string>
+    <string name="msg_glace_aware">"GlanceAware is een gezichts-naam associatief geheugenonderzoek."</string>
+    <string name="name">"Naam:"</string>
+    <string name="profession">"Beroep :"</string>
+    <string name="showing_image_12">"Afbeelding %s/12 wordt weergegeven"</string>
+    <string name="msg_glance_aware_delay">"Afbeeldingsvoorbeeld voltooid.
+Wacht %s minuten voordat u verder gaat."</string>
+    <string name="msg_glance_aware_begin">"Afbeeldingsvoorbeeld voltooid.
+Tik op de knop hieronder om
+beginnen met de proef."</string>
+    <string name="what_is_the_name_of_the_person_in_nthe_picture">"Wat is de naam van de persoon in
+De foto?"</string>
+    <string name="what_is_the_profession_of_the_person_in_nthe_picture">"Wat is het beroep van de persoon
+op de foto?"</string>
+    <string name="please_select_answer">"Selecteer antwoord."</string>
+    <string name="total_number_of_faces_to_nidentify">"Totaal aantal gezichten naar
+identificeren:"</string>
+    <string name="persons_whose_name_and_nprofession_were_nidentified_correctly">"Personen wiens naam en
+beroep waren
+<b>correct geïdentificeerd:</b>"</string>
+    <string name="persons_whose_name_and_nprofession_were_nidentified_incorrectly">"Personen wiens naam en
+beroep waren
+geïdentificeerd <b>onjuist :</b>"</string>
+    <string name="retry_glanceaware">"Probeer GlanceAware opnieuw"</string>
+    <string name="glanceaware_tutorial_1">"In deze test wordt u gevraagd om
+onthoud de namen van mensen
+en hun beroepen."</string>
+    <string name="glanceaware_tutorial_2">"Je krijgt foto's te zien
+van mensen met hun naam
+en beroep."</string>
+    <string name="glanceaware_tutorial_3">"Probeer na het voorbeeld terug te roepen
+de namen en beroepen
+zo goed als je kunt."</string>
+    <string name="glanceaware_tutorial_4">"Probeer na het voorbeeld terug te roepen
+de namen en beroepen
+zo goed als je kunt."</string>
+    <string name="glanceaware_tutorial_5">"Voor de moeilijkheidsgraad Hard zal de test dat wel doen
+beginnen na een vertraging van 5 minuten."</string>
+    <string name="glanceaware_tutorial_6">"Je prestaties zullen zijn
+gescoord, aan het einde van de test."</string>
+    <string name="skip">"Overslaan"</string>
+    <string name="msg_forgot_password_screen1">"Er wordt een verificatiecode naar uw geregistreerde e-mailadres gestuurd."</string>
+    <string name="msg_forgot_password_screen2">"Voer hier de code in en u kunt nu uw wachtwoord resetten. Vul hier je nieuwe wachtwoord in en klik op verzenden."</string>
+    <string name="strWarnCode">"Voer de verificatiecode in"</string>
+    <string name="delete_account">"Account verwijderen"</string>
+    <string name="medication">"Medicatie"</string>
+    <string name="enter_medication_here">"Vul hier medicatie in"</string>
+    <string name="not_tested_yet">"Nog niet getest"</string>
+    <string name="last_tested_on_">"Laatst getest op: %s"</string>
+    <string name="ready_to_test">"Klaar om te testen"</string>
+    <string name="words_aware_test">"WordsAware-test"</string>
+    <string name="words_aware">"WordsBewust"</string>
+    <string name="using_letters_shown_below_as_the_first_two_characters_speak_as_many_words_as_you_can_in_60_seconds">"Gebruik de onderstaande letters als de eerste twee tekens en spreek zoveel mogelijk woorden in 60 seconden."</string>
+    <string name="d_p">"F L"</string>
+    <string name="the_test_will_begin_shortly_speak_the_words_clearly_after_the_countdown">"De test zal binnenkort beginnen. Spreek de woorden na het aftellen duidelijk uit."</string>
+    <string name="keep_the_order_of_the_first_two_letters_the_same_use_words_that_are_defined_by_the_oxford_english_dictionary">"Houd de volgorde van de eerste twee letters hetzelfde. Gebruik woorden die zijn gedefinieerd door het woordenboek Oxford English."</string>
+    <string name="stand_by">"Stand-by"</string>
+    <string name="commencing">"Beginnend..."</string>
+    <string name="listening">"Luisteren"</string>
+    <string name="speak_as_many_words_as_you_can_before_the_timer_runs_out">"Spreek zoveel woorden als je kunt voordat de timer afloopt."</string>
+    <string name="test_over">"Test voorbij"</string>
+    <string name="reference_letters">"Referentiebrieven:"</string>
+    <string name="unique_words_identified">"Unieke woorden geïdentificeerd:"</string>
+    <string name="words_that_were_repeated">"Woorden die herhaald werden:"</string>
+    <string name="longest_word_detected">"Langst gevonden woord:"</string>
+    <string name="shortest_word_detected">"Kortste gedetecteerde woord:"</string>
+    <string name="dash">"- -"</string>
+    <string name="get_results">"Krijg resultaten"</string>
+    <string name="please_wait_while_we_process_your_final_score">"Een ogenblik geduld, terwijl we uw eindscore verwerken."</string>
+    <string name="retry_wordsaware">"Probeer WordsAware opnieuw"</string>
+    <string name="grammar_aware_test">"GrammaticaAware-test"</string>
+    <string name="grammar_aware">"Grammaticabewust"</string>
+    <string name="using_words_shown_below_construct_3_sentences_that_are_grammatically_correct">"Maak met behulp van onderstaande woorden 3 zinnen die grammaticaal correct zijn."</string>
+    <string name="use_the_words_as_they_are_presented_without_modifying_them_grammatically">"Gebruik de woorden zoals ze worden gepresenteerd, zonder ze grammaticaal aan te passen."</string>
+    <string name="words2">"Zout
+Figuur"</string>
+    <string name="words3">"Auto
+lui
+vertellen"</string>
+    <string name="you_ll_have_90_seconds_to_construct_each_sentence">"Je hebt 90 seconden om elke zin te construeren."</string>
+    <string name="speak_your_sentences_and_submit_3_such_sentences_to_complete_the_test">"Spreek je zinnen uit en dien 3 van zulke zinnen in om de test te voltooien."</string>
+    <string name="active">"Actief"</string>
+    <string name="phrases_submitted">"Ingezonden zinnen:"</string>
+    <string name="test_completed_successfully">"Test succesvol afgerond!"</string>
+    <string name="grammatical_accuracy">"grammaticaal
+nauwkeurigheid :"</string>
+    <string name="average_response_time">"Gemiddelde respons
+tijd :"</string>
+    <string name="longest_sentence">"Langste zin:"</string>
+    <string name="shortest_sentence">"Kortste zin:"</string>
+    <string name="words">"woorden"</string>
+    <string name="secs">"seconden"</string>
+    <string name="trainings">"trainingen"</string>
+    <string name="tests">"Testen"</string>
+    <string name="reports">"rapporten"</string>
+    <string name="it_s_quiet_in_here">"Het is stil hier..."</string>
+    <string name="we_couldn_t_get">"We konden geen reactie van je krijgen voordat de timer afliep. Huidige sessie is geannuleerd. U kunt het opnieuw proberen vanuit het menu Tests."</string>
+    <string name="done_1">"Klaar"</string>
+    <string name="alert_2">"We konden geen reactie van je krijgen voordat de timer afliep. Wil je verder gaan?"</string>
+    <string name="cancel_test">"Test annuleren"</string>
+    <string name="sentences_submitted">"Zinnen ingediend:"</string>
+    <string name="sentences_remaining">"Resterende zinnen:"</string>
+    <string name="you_ve_submitted_your_response_successfully">"Je hebt je reactie met succes ingediend."</string>
+    <string name="record_audio_is_required">"We gebruiken de Toestemming voor het opnemen van audio alleen om de functie Spraak naar tekst te gebruiken"</string>
+    <string name="training_features_are_unavailable_during_an_active_clinical_trial">"Trainingsfuncties zijn niet beschikbaar tijdens een actieve klinische proef!"</string>
+    <string name="choose_tube_type">"Kies buistype"</string>
+    <string name="please_select_an_tube">"Selecteer een buis"</string>
+    <string name="dismiss">"Afwijzen"</string>
+    <string name="rate_the_app">"Beoordeel de app"</string>
+    <string name="share_app">"Deel app"</string>
+    <string name="description">"SensifyAware is een mobiele wellness-app om je zintuigen en cognitie te volgen. Kijk in je brein met SensifyAware. Ik vind het leuk om te installeren: Telefoon/Tablet:
+https://play.google.com/store/apps/details?id="</string>
+
+    <string name="are_you_sure_you_want_to_logout">Weet je zeker dat je wilt stoppen?</string>
+    <string name="are_you_sure_you_want_to_delete_your_account">Weet je zeker dat je je account wilt verwijderen?</string>
+    <string name="do_you_want_to_take_the_test_again">Wil je de test nog een keer doen?</string>
+    <string name="note_a_re_test_makes_the_test_longer_but_increases_the_statistical_power_of_the_score">Opmerking: een hertest maakt de test langer, maar vergroot de statistische kracht van de score.</string>
+    <string name="go_to_result">"Ga naar resultaat</string>
+
+    <string name="changelog_file">nl/words_for_audio_aware.txt</string>
+    <string name="adjective">nl/Adjectives.txt</string>
+    <string name="nouns">nl/Nouns.txt</string>
+    <string name="verbs">nl/Verbs.txt</string>
+    <string name="glance_aware_json">nl/GlanceAware.json</string>
+
+    <string name="ren_aware_test">RenAware Test</string>
+    <string name="ren_aware">RenAware</string>
+    <string name="ren_aware_wellness_check">RenAware \nWellness check</string>
+    <string name="place_the_camera_above_the_grid_so_that_it_captures_the_colored_squares">Place the camera above the grid so that it captures the colored squares.</string>
+    <string name="overall_wellness">Overall wellness</string>
+    <string name="your_score_is_within_the_optimal_range">Your score is within the optimal range.</string>
+    <string name="renal_health">Renal health</string>
+    <string name="liver_health">Liver health</string>
+    <string name="hydration">Hydration</string>
+    <string name="energy_balance">Energy balance</string>
+    <string name="immunity">Immunity</string>
+    <string name="bone_health">Bone health</string>
+    <string name="_8_scent_test">8-geurtest</string>
+    <string name="_16_scent_test">16-geurtest</string>
+    <string name="fine_motor_skills">Fijne motoriek</string>
+    <string name="verbal_memory">Verbaal geheugen</string>
+
+
+
+    <!--to be Change-->
+    <string name="test_completed">"Test voltooid
+met succes!"</string>
+    <string name="calendar">"Kalender"</string>
+    <string name="scentaware">"Geurbewust"</string>
+    <string name="scentaware_8">"GeurBewust-8"</string>
+    <string name="scentaware_16">"ScentAware-16"</string>
+    <string name="smell_training">"Geurtraining"</string>
+    <string name="cancel">"Annuleren"</string>
+    <string name="a_stuffy_nose_is_a_condition">"Een verstopte neus is een aandoening waarbij de neusgangen verstopt of verstopt raken, waardoor het moeilijk wordt om door de neus te ademen."</string>
+    <string name="yes_i_have_a_stuffy_nose">"Ja, ik heb een verstopte neus"</string>
+    <string name="no_i_am_okay">"Nee, het gaat goed met mij"</string>
+    <string name="be_proactive">"Wees proactief,
+niet reactief."</string>
+    <string name="the_scentaware_kit">"De ScentAware-kit"</string>
+    <string name="the_scentaware_kit_contains">"De ScentAware-kit bevat inhalatoren met op natuurlijke essentiële oliën gebaseerde reukstimulanten zoals roos, lavendel, sinaasappel en kaneel. Uw bekendheid met deze geuren kan enigszins variëren, afhankelijk van de variëteit en herkomst van de plant. De kit blijft zes maanden na het eerste gebruik effectief. Elke ScentAware-buis is gelabeld met een QR-code voor testafname. De buisjes hebben ook een gekleurde vorm voor nauwkeurige etikettering en zijn niet vereist om de test met uw telefoon uit te voeren."</string>
+    <string name="smell_test">"Geurtest"</string>
+    <string name="the_smell_test_assesses">"De Geurtest beoordeelt uw vermogen om geuren correct te identificeren. Dit houdt in dat je een geur inademt, deze uit het geheugen haalt en vervolgens de meest waarschijnlijke geur selecteert uit vier opties via een mentaal eliminatieproces."</string>
+    <string name="regular_smell_evaluations">"Regelmatige geurevaluaties kunnen inzicht geven in de onderliggende gezondheidsproblemen."</string>
+    <string name="the_smell_training_module">"De module Smell Training onthult geuridentiteiten, zodat u er vertrouwd mee kunt raken. Het combineren van geurtraining en geurevaluatie kan een effectieve manier zijn om uw verloren reukvermogen te controleren en te herstellen. Onderzoek wijst uit dat reuktraining kan helpen bij het herstellen van de reukzin bij 30% van de mensen, waarbij het succes varieert afhankelijk van de onderliggende oorzaak van reukverlies."</string>
+    <string name="odor_identification_test_complete">"Geuridentificatietest voltooid!"</string>
+    <string name="great_job_you_ve_finished_">"Goed werk! U heeft de geuridentificatietest voltooid. Om de nauwkeurigheid van uw resultaten te vergroten, raden wij u aan een nieuwe test te overwegen. U kunt er ook voor kiezen om de test nu af te ronden en uw resultaten direct te bekijken."</string>
+    <string name="re_test">"Opnieuw testen"</string>
+    <string name="view_result">"Bekijk resultaat"</string>
+    <string name="you_ve_successfully_signed_up_with_sensifyaware">"Je hebt je succesvol aangemeld bij SensifyAware!"</string>
+    <string name="effective_care_starts">"Effectieve zorg begint met vroegtijdig ingrijpen."</string>
+    <string name="get_started">"Begin!"</string>
+    <string name="custom_recurrence">"Aangepaste herhaling"</string>
+    <string name="repeats_every">"Herhaalt elke"</string>
+    <string name="_1">"1"</string>
+    <string name="repeats_on">"Herhalingen aan"</string>
+    <string name="s">"S"</string>
+    <string name="m">"M"</string>
+    <string name="t">"T"</string>
+    <string name="w">"W"</string>
+    <string name="f">"F"</string>
+    <string name="ends">"Loopt af"</string>
+    <string name="never">"Nooit"</string>
+    <string name="on">"Op"</string>
+    <string name="after">"Na"</string>
+    <string name="occurence">"voorkomen"</string>
+    <string name="start_test">"Test starten"</string>
+    <string name="add_reminder">"Herinnering toevoegen"</string>
+    <string name="save">"Redden"</string>
+    <string name="edit_reminder">"Herinnering bewerken"</string>
+    <string name="repeat">"Herhalen"</string>
+    <string name="select_test">"Selecteer testen"</string>
+    <string name="renal_health_is_vital">"De gezondheid van de nieren is van vitaal belang voor het algehele welzijn, omdat gezonde nieren zorgen voor een goede filtratie, afvalverwijdering en essentieel onderhoud van de lichaamsfunctie."</string>
+    <string name="scan_the_qr_code_n_on_the_renaware_test_strip">"Scan de QR-code
+op de RenAware-teststrip."</string>
+    <string name="how_intense_is_the_smell">"Hoe intens is de geur?"</string>
+    <string name="please_rate_the_intensity">"Beoordeel de intensiteit van de geur die u waarneemt op een schaal van 0 tot 5. Geef een cijfer 0 als u geen geur kunt detecteren."</string>
+    <string name="is_the_odor_you_are_smelling_pleasant_to_you">"Vindt u de geur die u ruikt aangenaam?"</string>
+    <string name="yes_i_like_this_smell">"Ja, ik hou van deze geur."</string>
+    <string name="i_can_tolerate_this">"Ik kan dit tolereren"</string>
+    <string name="no_this_smell_is_repulsive">"Nee, deze geur is weerzinwekkend!"</string>
+    <string name="end_training">"Einde training"</string>
+    <string name="for_more_details">"Scroll naar beneden voor meer informatie over uw resultaat."</string>
+    <string name="scents">"Geuren"</string>
+    <string name="your_responses">"Jouw reacties"</string>
+    <string name="consider_setting_up_reminders">"Overweeg herinneringen in te stellen om periodiek geurtests en training uit te voeren en eventuele veranderingen in uw reukzin bij te houden."</string>
+    <string name="close">"Dichtbij"</string>
+    <string name="set_reminder">"Ingestelde herinnering"</string>
+    <string name="verify_email">"Verifieer Email"</string>
+    <string name="verification_code">"Verificatie code"</string>
+    <string name="today">"Vandaag"</string>
+    <string name="smell_tests">"Geurtesten"</string>
+    <string name="learn_more">"Kom meer te weten"</string>
+    <string name="are_you_experiencing">"Ervaart u een achteruitgang of vervorming van uw reukvermogen? Periodieke geurtesten kunnen u helpen uw voortgang bij te houden."</string>
+    <string name="watch_video">"Bekijk video"</string>
+    <string name="depending_on_the_root">"Afhankelijk van de oorzaak kan reuktraining helpen het verloren reukvermogen te herstellen. Toch varieert de effectiviteit ervan van persoon tot persoon."</string>
+    <string name="cognitive_tests">"Cognitieve tests"</string>
+    <string name="patient_test">Sensify | NetraKumbh 2025</string>
+    <string name="fun_non_addictive_memory_games">"Leuke, niet-verslavende geheugenspelletjes kunnen helpen uitsluiten of reukverlies verband houdt met cognitie"</string>
+    <string name="does_not_repeat">"Dosis niet herhalen"</string>
+    <string name="every_day">"Elke dag"</string>
+    <string name="every_week">"Elke week"</string>
+    <string name="every_month">"Elke maand"</string>
+    <string name="every_year">"Elk jaar"</string>
+    <string name="custom">"Aangepast"</string>
+    <string name="the_presence_of_ketones">"De aanwezigheid van ketonen in bloed en urine, doorgaans gevormd als alternatieve energiebron uit vet wanneer de glucose onvoldoende is, kan wijzen op diabetes en verdere tests rechtvaardigen, terwijl ketonurie een medische aandoening is waarbij ketonlichamen in de urine worden aangetroffen, hoewel bij gezonde personen dit wel het geval is. slechts minimale hoeveelheden zijn detecteerbaar."</string>
+    <string name="questions">"%s/%s"</string>
+    <string name="avg_user_accuracy">"Gem. gebruikersnauwkeurigheid: %s%%"</string>
+    <string name="starts_on">"Begint op:"</string>
+    <string name="remind_me">"Herinner mij eraan:"</string>
+    <string name="ends_on">"eindigt op:"</string>
+    <string name="scentaware_8_smell_training">"ScentAware-8 Geurtraining"</string>
+    <string name="scentaware_16_smell_training">"ScentAware-16 Geurtraining"</string>
+    <string name="scentaware_8_scent_test">"ScentAware-8 Geurtest"</string>
+    <string name="scentaware_16_scent_test">"ScentAware-16 Geurtest"</string>
+    <string name="day">"Dag"</string>
+    <string name="week">"Week"</string>
+    <string name="month">"Maand"</string>
+    <string name="event_will_occur_every_">"Gebeurtenis vindt elke %s plaats."</string>
+    <string name="no_smell_detected">"Geen geur gedetecteerd"</string>
+    <string name="very_weak">"Erg zwak"</string>
+    <string name="weak">"Zwak"</string>
+    <string name="strong">"Sterk"</string>
+    <string name="very_strong">"Heel sterk"</string>
+    <string name="viewall">"Bekijk alles"</string>
+    <string name="finish_training">"Beëindig de training"</string>
+    <string name="restart">"Herstarten"</string>
+    <string name="consider_setting_up_">"Overweeg herinneringen in te stellen om regelmatig reuktests uit te voeren en training te volgen om eventuele veranderingen in uw reukzin bij te houden."</string>
+    <string name="smell_training_completed_successfully">"Geurtraining succesvol afgerond!"</string>
+    <string name="no_event_found">"Geen evenement gevonden!"</string>
+    <string name="repeat_at">"Herhaal %s."</string>
+    <string name="all_day">"De hele dag"</string>
+    <string name="associative_memory">"Associatief geheugen"</string>
+    <string name="the_brain_translates_sensory">"De hersenen vertalen sensorische informatie die wordt ontvangen via aanraking, smaak, geur, zicht en gehoor, terwijl ze de kernfuncties van het lichaam coördineren, bewust en onbewust.
+Er zijn zes cognitieve domeinen:
+• Geheugen en leren
+• Taal
+• Uitvoerende functies
+• Complexe aandacht,
+• Sociale cognitie
+• Perceptuele en motorische functies."</string>
+    <string name="interpreting_health_">"Gezondheid interpreteren
+Via zintuigen."</string>
+    <string name="the_ability_to_clearly_think">"Het vermogen om helder te denken, te leren en te onthouden is een belangrijk onderdeel van het uitvoeren van dagelijkse activiteiten. Cognitieve gezondheid is slechts één aspect van de algehele gezondheid van de hersenen."</string>
+    <string name="traceaware_is_a_game_where_you">"TraceAware is een spel waarbij je met je vinger speciale symbolen tekent. De symbolen, gecombineerd met cijfers, moeten snel en nauwkeurig worden getraceerd. In eerste instantie kopieer je de symbolen die je ziet, maar al snel verandert het in een geheugentest waarbij je onthoudt wat je hebt gekopieerd. Het is een leuke manier om je hersen- en handcoördinatie te oefenen."</string>
+    <string name="test_your_memory_and_motor_skills">"Test je geheugen en motoriek."</string>
+    <string name="word_listening_and_recognition">"Luisteren naar en herkennen van woorden."</string>
+    <string name="audioaware_is_a_word_listening_game">"AudioAware is een woordluisterspel. Het apparaat zegt woorden in een gelijkmatig tempo via de luidspreker. Het is jouw taak om die woorden te herkennen uit een lijst die aan jou wordt getoond. Het gaat erom dat je je herinnert wat je hoort."</string>
+    <string name="connect_faces_and_names_for_a_memory_challenge">"Verbind gezichten en namen voor een geheugenuitdaging."</string>
+    <string name="glanceaware_is_an_associative_memory">"GlanceAware is een associatieve geheugentaak. U krijgt gezichten te zien met namen en beroep die aan het gezicht zijn gekoppeld. Zodra u een reeks gezichten en de namen te zien krijgt, wordt u gevraagd zich te herinneren. De taak gaat over hoe je niet-gerelateerde dingen kunt verwerken."</string>
+    <string name="understanding_nsmell_loss">"Begrip
+Geurverlies"</string>
+    <string name="smell_loss_medically_known_as">"Geurverlies, medisch bekend als anosmie, is het volledige verlies van het reukvermogen. Het kan optreden als gevolg van verschillende factoren, waaronder:"</string>
+    <string name="viral_infections">"Virale infecties"</string>
+    <string name="such_as_the">"Zoals verkoudheid of griep, die tijdelijk uw reukvermogen kunnen beïnvloeden."</string>
+    <string name="nasal_and_sinus_issues">"Neus- en sinusproblemen"</string>
+    <string name="conditions_like_allergies">"Aandoeningen zoals allergieën, sinusitis of neuspoliepen kunnen uw neusholtes belemmeren, waardoor uw reukvermogen wordt aangetast."</string>
+    <string name="head_injuries">"Hoofdwonden"</string>
+    <string name="trauma_to_the_head">"Een trauma aan het hoofd kan de reukzenuwen beschadigen die verantwoordelijk zijn voor het ruiken."</string>
+    <string name="damage_to_nervous_system">"Schade aan het zenuwstelsel"</string>
+    <string name="degeneration_or_inflammation">"Degeneratie of ontsteking in het zenuwstelsel kan ook veranderingen in het reukvermogen veroorzaken."</string>
+    <string name="certain_medications">"Bepaalde medicijnen kunnen het reukvermogen veranderen."</string>
+    <string name="age">"Leeftijd"</string>
+    <string name="as_we_age_our">"Naarmate we ouder worden, kan ons reukvermogen op natuurlijke wijze afnemen."</string>
+    <string name="smoking">"Roken"</string>
+    <string name="smoking_or_vaping">"Roken of vapen kan een verstopte neus veroorzaken en een negatieve invloed hebben op uw reukvermogen."</string>
+    <string name="loss_of_smell_can">"Reukverlies kan gedeeltelijk (hyposmie) of volledig (anosmie) zijn, en kan tijdelijk of permanent zijn, afhankelijk van de oorzaak."</string>
+    <string name="anosmia">"Anosmie"</string>
+    <string name="hyposmia">"Hyposmie"</string>
+    <string name="parosmia">"Parosmie"</string>
+    <string name="phantosmia">"Fantosmie"</string>
+    <string name="this_refers_to">"Dit verwijst naar een totaal verlies van het reukvermogen."</string>
+    <string name="partial_loss">"Dit verwijst naar een gedeeltelijk verlies van het reukvermogen."</string>
+    <string name="distorted_sense_of_smell">"Dit is een vervormd reukvermogen. Dingen die vroeger aangenaam rook, ruiken nu vies."</string>
+    <string name="condition_that_causes">"Dit is een aandoening die ervoor zorgt dat u geuren waarneemt die zich niet daadwerkelijk in uw omgeving bevinden."</string>
+    <string name="set_a_reminder">"Een herinnering instellen?"</string>
+    <string name="if_you_have_temporary">"Als u tijdelijk geurverlies heeft, doe dan regelmatig aan geurtraining. De effectiviteit ervan verschilt per persoon, dus het identificeren van de oorzaak is van cruciaal belang."</string>
+    <string name="are_you_currently_taking_any_medication">"Gebruikt u momenteel medicijnen?"</string>
+    <string name="certain_medication_are_known_to_cause_a_loss_or_distortion_in_the_sense_of_smell">"Het is bekend dat bepaalde medicijnen een verlies of vervorming van de reukzin veroorzaken."</string>
+    <string name="begin_test">"Begin test"</string>
+    <string name="smell_training_">"Geurtraining
+%s/%s"</string>
+    <string name="smell_normal">"Je reukvermogen
+is normaal."</string>
+    <string name="smell_hyposmia">"Je gevoel voor mildheid
+hyposmie/parosmie."</string>
+    <string name="smell_mild">"Je gevoel voor mildheid
+hyposmie/parosmie."</string>
+    <string name="smell_moderate">"Je gevoel voor gematigdheid
+hyposmie/parosmie."</string>
+    <string name="smell_anosmia">"Je gevoel van anosmie."</string>
+    <string name="every">Elke %s %s</string>
+    <string name="set_a_time">Stel een tijd in</string>
+    <string name="set_a_date">​Prik een datum</string>
+    <string name="study_id">Studie-ID:</string>
+    <string name="patient_id">Patiënt-ID:</string>
+    <string name="please_enter_patient_id">Voer de patiënt-ID in</string>
+    <string name="id_not_found">ID niet gevonden</string>
+    <string name="select_site">Selecteer Locatie</string>
+    <string name="delete_reminder">Wilt u deze herinnering verwijderen?</string>
+    <string name="strCorrectAge">Voer de juiste leeftijd in</string>
+    <string name="strOldnNewPassword">Oud wachtwoord en Nieuw wachtwoord mogen niet hetzelfde zijn</string>
+    <string name="forgot_password">Wachtwoord vergeten?</string>
+    <string name="privacy_policy">Privacybeleid</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="timerProgress"
+            type="Integer" />
+
+        <variable
+            name="name"
+            type="String" />
+
+        <variable
+            name="profession"
+            type="String" />
+
+        <variable
+            name="photo"
+            type="android.graphics.drawable.Drawable" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.glanceaware.fragments.MemorizeFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:layout_marginBottom="@dimen/_4dp"
+            app:layout_constraintBottom_toTopOf="@id/btn_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progress_timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="7"
+                    android:progress="@{timerProgress}"
+                    app:indicatorColor="@color/green"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:trackColor="@color/white"
+                    app:trackThickness="@dimen/_4sdp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_250dp"
+                    android:layout_marginTop="@dimen/_9dp"
+                    android:src="@{photo}"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/progress_timer"
+                    tools:src="@drawable/face_1a" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:text="@string/name"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:text="@{name}"
+                    android:textSize="@dimen/_19sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/profession"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:text="@{profession}"
+                    android:textSize="@dimen/_19sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            style="@style/button_style"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:text="@string/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

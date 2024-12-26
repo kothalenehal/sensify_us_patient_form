@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="questionId"
+            type="Integer" />
+
+        <variable
+            name="checkpointProgress"
+            type="Integer" />
+
+        <variable
+            name="totalQuestions"
+            type="Integer" />
+
+        <variable
+            name="questionsCount"
+            type="Integer" />
+
+        <variable
+            name="checkedOption"
+            type="Integer" />
+
+        <variable
+            name="showIntro"
+            type="Boolean" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.scentaware.OdorDifferentiationActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:title="@{@string/odor_differentiation_test_of_(questionId.toString(), questionsCount.toString())}" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_19dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:gravity="center"
+                    android:text="@{showIntro ? @string/odor_diff_intro_text_1 : @string/odor_diff_msg}"
+                    android:textSize="@dimen/_14sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_80dp"
+                    android:gravity="center"
+                    android:visibility="@{showIntro ? View.VISIBLE : View.GONE}"
+                    tools:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@{questionId == 1 ? @drawable/shape_square : @drawable/shape_triangle}"
+                        app:tint="@{questionId == 1 ? @color/yellow : @color/orange}" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@{questionId == 1 ? @drawable/shape_heart : @drawable/shape_triangle}"
+                        app:tint="@{questionId == 1 ? @color/green : @color/yellow}" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@{questionId == 1 ?@drawable/shape_square : @drawable/shape_circle}"
+                        app:tint="@{questionId == 1 ? @color/blue : @color/green}" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:gravity="center"
+                    android:text="@string/odor_diff_intro_text_2"
+                    android:textSize="@dimen/_14sp"
+                    android:visibility="@{showIntro ? View.VISIBLE : View.GONE}"
+                    tools:visibility="gone" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:visibility="@{showIntro ? View.GONE : View.VISIBLE}">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_option_1"
+                        style="@style/card_style"
+                        android:layout_width="0dp"
+                        android:outlineAmbientShadowColor="@{checkedOption == 1 ? @color/green : @color/card_shadow_color}"
+                        android:outlineSpotShadowColor="@{checkedOption == 1 ? @color/green : @color/card_shadow_color}"
+                        app:contentPadding="@dimen/_35dp"
+                        app:layout_constraintBottom_toTopOf="@id/card_option_3"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/card_option_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:strokeColor="@color/green"
+                        app:strokeWidth="@{checkedOption == 1 ? Math.round(@dimen/_3sdp) : 0}">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@{questionId == 1 ? @drawable/shape_square : @drawable/shape_triangle}"
+                            app:tint="@{questionId == 1 ? @color/yellow : @color/orange}"
+                            tools:src="@drawable/shape_square" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_option_2"
+                        style="@style/card_style"
+                        android:layout_width="0dp"
+                        android:outlineAmbientShadowColor="@{checkedOption == 2 ? @color/green : @color/card_shadow_color}"
+                        android:outlineSpotShadowColor="@{checkedOption == 2 ? @color/green : @color/card_shadow_color}"
+                        app:contentPadding="@dimen/_35dp"
+                        app:layout_constraintBottom_toTopOf="@id/card_option_4"
+                        app:layout_constraintLeft_toRightOf="@id/card_option_1"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:strokeColor="@color/green"
+                        app:strokeWidth="@{checkedOption == 2 ? Math.round(@dimen/_3sdp) : 0}">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@{questionId == 1 ? @drawable/shape_heart : @drawable/shape_triangle}"
+                            app:tint="@{questionId == 1 ? @color/green : @color/yellow}"
+                            tools:src="@drawable/shape_square" />
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_option_3"
+                        style="@style/card_style"
+                        android:layout_width="0dp"
+                        android:outlineAmbientShadowColor="@{checkedOption == 3 ? @color/green : @color/card_shadow_color}"
+                        android:outlineSpotShadowColor="@{checkedOption == 3 ? @color/green : @color/card_shadow_color}"
+                        app:contentPadding="@dimen/_35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/card_option_4"
+                        app:layout_constraintTop_toBottomOf="@id/card_option_1"
+                        app:strokeColor="@color/green"
+                        app:strokeWidth="@{checkedOption == 3 ? Math.round(@dimen/_3sdp) : 0}">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@{questionId == 1 ?@drawable/shape_square : @drawable/shape_circle}"
+                            app:tint="@{questionId == 1 ? @color/blue : @color/green}"
+                            tools:src="@drawable/shape_square" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_option_4"
+                        style="@style/card_style"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:outlineAmbientShadowColor="@{checkedOption == 4 ? @color/green : @color/card_shadow_color}"
+                        android:outlineSpotShadowColor="@{checkedOption == 4 ? @color/green : @color/card_shadow_color}"
+                        app:contentPadding="@dimen/_19dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/card_option_3"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/card_option_2"
+                        app:strokeColor="@color/green"
+                        app:strokeWidth="@{checkedOption == 4 ? Math.round(@dimen/_3sdp) : 0}">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/text_view_style"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/could_not_ndifferentiate"
+                            android:textSize="@dimen/_14sp" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_54dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_marginEnd="@dimen/_54dp"
+                    android:gravity="center"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@{checkpointProgress > totalQuestions ? @drawable/down_polygon_green : @drawable/down_polygon}" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@{checkpointProgress > totalQuestions*2 ? @drawable/down_polygon_green : @drawable/down_polygon}"
+                        android:visibility="@{totalQuestions == 8 ? View.GONE : View.VISIBLE}" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@{checkpointProgress > totalQuestions*3 ? @drawable/down_polygon_green : @drawable/down_polygon}"
+                        android:visibility="@{totalQuestions == 8 ? View.GONE : View.VISIBLE}" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_54dp"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:layout_marginEnd="@dimen/_54dp"
+                    android:max="@{totalQuestions == 8 ? totalQuestions*2 : totalQuestions*4}"
+                    android:progress="@{checkpointProgress}"
+                    app:indicatorColor="@color/green"
+                    app:trackColor="@color/progress_grey"
+                    app:trackCornerRadius="@dimen/_4dp"
+                    app:trackThickness="@dimen/_4dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_submit"
+                    style="@style/button_style"
+                    android:layout_marginTop="@dimen/_32dp"
+                    android:enabled="@{showIntro || checkedOption != 0}"
+                    android:text="@{showIntro ? @string/next : @string/submit}" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

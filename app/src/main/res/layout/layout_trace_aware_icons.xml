@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="showBottomBorder"
+            type="Boolean" />
+
+        <variable
+            name="hideRightBorder"
+            type="Boolean" />
+
+        <variable
+            name="index"
+            type="Integer" />
+
+        <variable
+            name="iconImage"
+            type="android.graphics.drawable.Drawable" />
+
+        <variable
+            name="visibleIcons"
+            type="Boolean" />
+
+        <variable
+            name="showGreenBorder"
+            type="Boolean" />
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/divider_grey"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@{showBottomBorder ? @dimen/_1sdp : 0}"
+            android:layout_weight="1"
+            android:background="@{showGreenBorder ? @drawable/green_border_traces_bg : @drawable/white_traces_bg }"
+            android:orientation="vertical"
+            android:padding="@dimen/_2dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_style"
+                android:fontFamily="@font/ws_medium"
+                android:text="@{index.toString()}"
+                android:textSize="@dimen/_12sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_28dp"
+                android:layout_gravity="center"
+                android:id="@+id/img_view"
+                android:layout_marginBottom="@{showBottomBorder ? @dimen/_4sdp : 0}"
+                android:src="@{iconImage}"
+                android:visibility="@{visibleIcons ? View.VISIBLE : View.INVISIBLE}" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="@dimen/_1dp"
+            android:layout_height="match_parent"
+            android:visibility="@{hideRightBorder ? View.GONE : View.VISIBLE}" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

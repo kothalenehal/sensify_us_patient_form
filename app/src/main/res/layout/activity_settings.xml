@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="version"
+            type="String" />
+
+        <variable
+            name="siteName"
+            type="String" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.settings.SettingsActivity">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tx_back"
+                    style="@style/text_view_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:drawablePadding="@dimen/_14dp"
+                    android:fontFamily="@font/ws_bold"
+                    android:padding="@dimen/_16dp"
+                    android:text="@string/settings"
+                    android:textColor="@color/text_color"
+                    app:drawableStartCompat="@drawable/baseline_arrow_back" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/click_site"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:paddingHorizontal="@dimen/_20dp"
+                    android:paddingVertical="@dimen/_16dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_select_site"
+                        style="@style/text_view_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_14dp"
+                        android:fontFamily="@font/ws_regular"
+                        android:text="@string/select_site"
+                        android:textSize="@dimen/_12sp"
+                        app:drawableStartCompat="@drawable/baseline_location_on_24"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_site"
+                        style="@style/text_view_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ws_regular"
+                        android:text="@{siteName}"
+                        android:textSize="@dimen/_12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_change_password"
+                    style="@style/text_view_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/_14dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:paddingHorizontal="@dimen/_20dp"
+                    android:paddingVertical="@dimen/_16dp"
+                    android:text="@string/change_password"
+                    android:textSize="@dimen/_12sp"
+                    app:drawableStartCompat="@drawable/baseline_lock_open_24" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_update_age"
+                    style="@style/text_view_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/_14dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:paddingHorizontal="@dimen/_20dp"
+                    android:paddingVertical="@dimen/_16dp"
+                    android:text="@string/update_profile"
+                    android:textSize="@dimen/_12sp"
+                    app:drawableStartCompat="@drawable/baseline_person_outline_24" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_rate"
+                    style="@style/text_view_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/_14dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:paddingHorizontal="@dimen/_20dp"
+                    android:paddingVertical="@dimen/_16dp"
+                    android:text="@string/rate_the_app"
+                    android:textSize="@dimen/_12sp"
+                    app:drawableStartCompat="@drawable/round_star_outline_24" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_share"
+                    style="@style/text_view_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/_14dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:paddingHorizontal="@dimen/_20dp"
+                    android:paddingVertical="@dimen/_16dp"
+                    android:text="@string/share_app"
+                    android:textSize="@dimen/_12sp"
+                    app:drawableStartCompat="@drawable/outline_share_24" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_privacy_policy"
+                    style="@style/text_view_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/_14dp"
+                    android:drawableTint="@color/them_color"
+                    android:fontFamily="@font/ws_regular"
+                    android:paddingHorizontal="@dimen/_20dp"
+                    android:paddingVertical="@dimen/_16dp"
+                    android:text="@string/privacy_policy"
+                    android:textSize="@dimen/_12sp"
+                    app:drawableStartCompat="@drawable/baseline_policy_24" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_delete_account"
+                    style="@style/text_view_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/_14dp"
+                    android:drawableTint="@color/them_color"
+                    android:fontFamily="@font/ws_regular"
+                    android:paddingHorizontal="@dimen/_20dp"
+                    android:paddingVertical="@dimen/_16dp"
+                    android:text="@string/delete_account"
+                    android:textSize="@dimen/_12sp"
+                    app:drawableStartCompat="@drawable/outline_delete_24" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_logout"
+                    style="@style/text_view_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/_14dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:paddingHorizontal="@dimen/_20dp"
+                    android:paddingVertical="@dimen/_16dp"
+                    android:text="@string/logout"
+                    android:textSize="@dimen/_12sp"
+                    app:drawableStartCompat="@drawable/outline_logout_24" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/versionNumber"
+                style="@style/text_view_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_25dp"
+                android:background="?attr/selectableItemBackground"
+                android:text="@{version}"
+                android:textAlignment="center"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

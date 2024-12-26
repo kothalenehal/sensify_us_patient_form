@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/calendarFragment"
+		android:icon="@drawable/calendar_icon_states"
+		android:title="@string/calendar" />
+	<item
+		android:id="@+id/trainingFragment"
+		android:visible="false"
+		android:icon="@drawable/training_icon_states"
+		android:title="@string/trainings" />
+
+	<item
+		android:id="@+id/testsFragment"
+		android:icon="@drawable/tests_icon_states"
+		android:title="@string/tests" />
+
+	<item
+		android:id="@+id/reportsFragment"
+		android:icon="@drawable/reports_icon_states"
+		android:title="@string/reports" />
+
+	<!--<item
+		android:id="@+id/calendarFragment"
+		android:icon="@drawable/calendar_main"
+		android:title="@string/calendar" />
+	<item
+		android:id="@+id/trainingFragment"
+		android:visible="false"
+		android:icon="@drawable/training_icon_states"
+		android:title="@string/trainings" />
+
+	<item
+		android:id="@+id/testsFragment"
+		android:icon="@drawable/tests_main"
+		android:title="@string/tests" />
+
+	<item
+		android:id="@+id/reportsFragment"
+		android:icon="@drawable/reports_main"
+		android:title="@string/reports" />
+-->
+
+</menu>

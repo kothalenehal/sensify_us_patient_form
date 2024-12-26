@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="remainingTrace"
+            type="Integer" />
+
+        <variable
+            name="selectedTraces"
+            type="Integer" />
+
+        <variable
+            name="message"
+            type="String" />
+
+        <variable
+            name="checkpointProgress"
+            type="Integer" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".ui.scentaware.CheckPointActivity">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                app:title="@{@string/checkpoint_reached}" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:src="@drawable/checkpoint_flag" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_style"
+                android:gravity="center"
+                android:padding="@dimen/_20dp"
+                android:text="@{message}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_style"
+                android:fontFamily="@font/ws_medium"
+                android:gravity="center"
+                android:padding="@dimen/_10dp"
+                android:text="@string/traces_remaining"
+                android:textSize="@dimen/_14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_style"
+                android:gravity="center"
+                android:text="@{remainingTrace.toString()}"
+                android:textSize="@dimen/_50ssp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_54dp"
+                android:layout_marginTop="@dimen/_22dp"
+                android:layout_marginEnd="@dimen/_54dp"
+                android:gravity="center"
+                android:weightSum="4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@{remainingTrace == (selectedTraces*3) ? @drawable/polygon_checkpoint : checkpointProgress >= selectedTraces ? @drawable/down_polygon_green : @drawable/down_polygon}" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@{remainingTrace == (selectedTraces*2) ? @drawable/polygon_checkpoint : checkpointProgress >= (selectedTraces*2) ? @drawable/down_polygon_green : @drawable/down_polygon}" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@{remainingTrace == selectedTraces ? @drawable/polygon_checkpoint : checkpointProgress >= (selectedTraces*3) ? @drawable/down_polygon_green : @drawable/down_polygon}" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_54dp"
+                android:layout_marginTop="@dimen/_6dp"
+                android:layout_marginEnd="@dimen/_54dp"
+                android:max="@{selectedTraces*4}"
+                android:progress="@{checkpointProgress}"
+                app:indicatorColor="@color/green"
+                app:trackColor="@color/progress_grey"
+                app:trackCornerRadius="@dimen/_4dp"
+                app:trackThickness="@dimen/_4dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_submit"
+                style="@style/button_style"
+                android:layout_marginTop="@dimen/_32dp"
+                android:background="@drawable/orange_button_shadow"
+                android:paddingBottom="@dimen/_20dp"
+                android:text="@string/_continue"
+                app:backgroundTint="@color/orange" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

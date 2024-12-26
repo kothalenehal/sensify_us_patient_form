@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="time"
+            type="String" />
+
+        <variable
+            name="repeat"
+            type="String" />
+
+        <variable
+            name="isDetails"
+            type="Boolean" />
+
+        <variable
+            name="isWeek"
+            type="Boolean" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:text="@string/custom_recurrence"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_back"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/_10dp"
+                    android:src="@drawable/baseline_arrow_back"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normalMargin">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_edit"
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:fontFamily="@font/ws_light"
+                    android:text="@string/repeats_every"
+                    android:textSize="@dimen/_19sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_number"
+                    style="@style/text_view_style"
+                    android:layout_width="50dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/text_border"
+                    android:fontFamily="@font/ws_medium"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="@string/_1"
+                    android:textColor="@color/blue"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_layout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/text_layout" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    app:endIconDrawable="@drawable/baseline_keyboard_arrow_down_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_number"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_edit">
+
+                    <!-- Inside text input layout add
+                          an auto complete text view
+                            and make its input type to none-->
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/background_training"
+                        android:fontFamily="@font/ws_semi_bold"
+                        android:inputType="none"
+                        android:paddingStart="@dimen/_32dp"
+                        android:paddingBottom="@dimen/_12dp"
+                        android:text="@string/day"
+                        android:textColor="@color/blue" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tx_label"
+                    style="@style/text_view_new"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:text="@{@string/event_will_occur_every_(title)}"
+                    android:textSize="@dimen/_11sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_layout"
+                    tools:test="Event will occur every 2 days." />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:orientation="horizontal"
+                    android:visibility="@{isWeek ? View.VISIBLE : View.GONE}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tx_label">
+
+                    <androidx.appcompat.widget.AppCompatToggleButton
+                        android:id="@+id/tv_sunday"
+                        style="@style/toggleButton"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2dp"
+                        android:background="@drawable/toggle_bg"
+                        android:textOff="@string/s"
+                        android:textOn="@string/s" />
+
+                    <androidx.appcompat.widget.AppCompatToggleButton
+                        android:id="@+id/tv_monday"
+                        style="@style/toggleButton"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2dp"
+                        android:background="@drawable/toggle_bg"
+                        android:textOff="@string/m"
+                        android:textOn="@string/m" />
+
+                    <androidx.appcompat.widget.AppCompatToggleButton
+                        android:id="@+id/tv_tuesday"
+                        style="@style/toggleButton"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2dp"
+                        android:background="@drawable/toggle_bg"
+                        android:textOff="@string/t"
+                        android:textOn="@string/t" />
+
+                    <androidx.appcompat.widget.AppCompatToggleButton
+                        android:id="@+id/tv_wednesday"
+                        style="@style/toggleButton"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2dp"
+                        android:background="@drawable/toggle_bg"
+                        android:textOff="@string/w"
+                        android:textOn="@string/w" />
+
+                    <androidx.appcompat.widget.AppCompatToggleButton
+                        android:id="@+id/tv_thursday"
+                        style="@style/toggleButton"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2dp"
+                        android:background="@drawable/toggle_bg"
+                        android:textOff="@string/t"
+                        android:textOn="@string/t" />
+
+                    <androidx.appcompat.widget.AppCompatToggleButton
+                        android:id="@+id/tv_friday"
+                        style="@style/toggleButton"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2dp"
+                        android:background="@drawable/toggle_bg"
+                        android:textOff="@string/f"
+                        android:textOn="@string/f" />
+
+                    <androidx.appcompat.widget.AppCompatToggleButton
+                        android:id="@+id/tv_saturday"
+                        style="@style/toggleButton"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2dp"
+                        android:background="@drawable/toggle_bg"
+                        android:textOff="@string/s"
+                        android:textOn="@string/s" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <!-- <com.google.android.material.textview.MaterialTextView
+                     android:id="@+id/tv_ends"
+                     style="@style/text_view_style"
+                     android:layout_marginStart="@dimen/_8dp"
+                     android:layout_marginTop="@dimen/_16dp"
+                     android:fontFamily="@font/ws_medium"
+                     android:text="@string/ends"
+                     android:textSize="@dimen/_14sp"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toBottomOf="@id/constraint_layout" />
+
+                 <RadioButton
+                     android:id="@+id/btn_never"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/_8dp"
+                     android:layout_marginTop="@dimen/_16dp"
+                     android:buttonTint="@color/blue"
+                     android:checked="true"
+                     android:paddingStart="@dimen/_10dp"
+                     android:text="@string/never"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toBottomOf="@id/tv_ends" />
+
+                 <RadioButton
+                     android:id="@+id/btnOn"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/_8dp"
+                     android:layout_marginTop="@dimen/_22dp"
+                     android:buttonTint="@color/blue"
+                     android:paddingStart="@dimen/_10dp"
+                     android:text="@string/on"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toBottomOf="@id/btn_never" />
+
+                 <com.google.android.material.textview.MaterialTextView
+                     style="@style/text_view_style"
+                     android:layout_width="170dp"
+                     android:layout_height="60dp"
+
+                     android:layout_marginStart="@dimen/_16dp"
+                     android:background="@drawable/text_border"
+                     android:fontFamily="@font/ws_medium"
+                     android:gravity="center"
+                     android:textColor="@color/blue"
+                     app:layout_constraintBottom_toBottomOf="@id/btnOn"
+                     app:layout_constraintStart_toEndOf="@id/btnOn"
+                     app:layout_constraintTop_toTopOf="@id/btnOn"
+                     tools:text="Sep 15, 2023" />
+
+                 <RadioButton
+                     android:id="@+id/btnAfter"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/_8dp"
+                     android:layout_marginTop="@dimen/_22dp"
+                     android:buttonTint="@color/blue"
+                     android:paddingStart="@dimen/_10dp"
+                     android:text="@string/after"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toBottomOf="@id/btnOn" />
+
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:id="@+id/tv_number2"
+                     style="@style/text_view_style"
+                     android:layout_width="50dp"
+                     android:layout_height="60dp"
+                     android:layout_marginStart="@dimen/_16dp"
+                     android:background="@drawable/text_border"
+                     android:fontFamily="@font/ws_medium"
+                     android:gravity="center"
+                     android:inputType="number"
+                     android:textColor="@color/blue"
+                     app:layout_constraintBottom_toBottomOf="@+id/btnAfter"
+                     app:layout_constraintStart_toEndOf="@id/btnAfter"
+                     app:layout_constraintTop_toTopOf="@+id/btnAfter"
+                     tools:text="1" />
+
+
+                 <com.google.android.material.textview.MaterialTextView
+                     android:id="@+id/tv"
+                     style="@style/text_view_style"
+                     android:layout_marginStart="@dimen/_8dp"
+                     android:fontFamily="@font/ws_light"
+                     android:gravity="center"
+                     android:text="@string/occurence"
+                     android:textSize="@dimen/_12sp"
+                     app:layout_constraintBottom_toBottomOf="@+id/btnAfter"
+                     app:layout_constraintStart_toEndOf="@id/tv_number2"
+                     app:layout_constraintTop_toTopOf="@+id/btnAfter" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_done"
+            style="@style/button_style_dark"
+            android:layout_margin="@dimen/pageMargin"
+            android:text="@string/done"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

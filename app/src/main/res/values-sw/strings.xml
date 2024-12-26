@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"SensifyAware"</string>
+    <string name="loading">"Inapakia..."</string>
+    <string name="api_failure">"Api kushindwa"</string>
+    <string name="internet_not_available">"Tafadhali angalia muunganisho wako wa intaneti na ujaribu tena"</string>
+    <string name="resource_not_found">"Nyenzo haipatikani"</string>
+    <string name="server_conflict">"Migogoro ya seva"</string>
+    <string name="unknown_error_occurred">"Hitilafu isiyojulikana imetokea"</string>
+    <string name="hi_user_name">"Hujambo, %s."</string>
+    <string name="tap_on_any_of_the_cards_to_begin_your_sensify_experience">"Gusa kadi yoyote ili uanze matumizi yako ya Sensify."</string>
+    <string name="scentaware_evaluate">"Mtihani wa ScentAware"</string>
+    <string name="msg_scent_aware_evaluate">"Tathmini hisia yako ya kunusa."</string>
+    <string name="scent_aware_re_training">"Mafunzo ya ScentAware"</string>
+    <string name="scent_aware_re_training8">"ScentAware inafundisha upya vifaa 8 vya harufu"</string>
+    <string name="scent_aware_re_training16">"ScentAware inafundisha upya vifaa 16 vya harufu"</string>
+    <string name="msg_scent_aware_training">"Jaribu tena hisia yako ya harufu iliyopotea."</string>
+    <string name="msg_scent_aware_re_training">"Zoeza tena hisia zako za harufu"</string>
+    <string name="trace_aware_test">"Mtihani wa TraceAware"</string>
+    <string name="trace_aware">"TraceAware"</string>
+    <string name="msg_trace_aware">"Tathmini ustadi wako mzuri wa gari na kumbukumbu ya kuona."</string>
+    <string name="audio_aware_test">"Mtihani wa AudioAware"</string>
+    <string name="audio_aware">"AudioAware"</string>
+    <string name="msg_audio_aware">"Fikia kumbukumbu yako ya kukumbusha kwa maneno katika AudioAware."</string>
+    <string name="track_progress">"Ripoti"</string>
+    <string name="msg_track_progress">"Fuatilia matokeo ya majaribio ambayo umefanya."</string>
+    <string name="select_your_kit">"Chagua kit yako"</string>
+    <string name="_8_scent_test_kit">"Seti ya majaribio ya harufu 8"</string>
+    <string name="_16_scent_test_kit">"Seti ya majaribio ya harufu 16"</string>
+    <string name="begin">"Anza"</string>
+    <string name="title_tutorial_scent_aware">"Jinsi ya kutekeleza a
+mtihani wa kutambua harufu?"</string>
+    <string name="odor_identification_test">"Mtihani wa kitambulisho cha harufu"</string>
+    <string name="scan_the_qr_code_on_the_smell_test_tube">"1. Changanua msimbo wa QR kwenye bomba la kupima harufu."</string>
+    <string name="after_scanning_open_the_tube_and_smell_the_sample">"2. Baada ya kuchanganua, fungua bomba na unuse sampuli."</string>
+    <string name="put_the_tube_in_lid_container">"3. Weka bomba kwenye chombo cha kifuniko."</string>
+    <string name="rational_msg_camera_permission">"Ruhusa ya kamera inahitajika ili kuchanganua msimbo wa QR"</string>
+    <string name="rational_msg_storage_permission">"Ruhusa ya kuhifadhi inahitajika ili kuchanganua msimbo wa QR"</string>
+    <string name="odor_identification_test_of_">"Mtihani wa kitambulisho cha harufu
+%s/%s"</string>
+    <string name="odor_differentiation_test_of_">"Mtihani wa kutofautisha harufu
+%s/%s"</string>
+    <string name="odor_intensity_test_of_">"Mtihani wa nguvu ya harufu
+%s/%s"</string>
+    <string name="can_you_guess_what_the_sample_is">"Je, unaweza kukisia sampuli ni nini?"</string>
+    <string name="submit">"Wasilisha"</string>
+    <string name="send_code">Tuma Msimbo</string>
+    <string name="next">"Inayofuata"</string>
+    <string name="please_select_different_tube">"Tafadhali chagua bomba tofauti!"</string>
+    <string name="_continue">"Endelea"</string>
+    <string name="msg_checkpoint">"Umefika kituo cha ukaguzi. Sasa tutajaribu tena hisi zako za kunusa. Endelea utaratibu, ukiweka mirija kwenye tray ya povu baada ya kunusa."</string>
+    <string name="msg_2_checkpoint">"Kumbuka : Majaribio yafuatayo yatajumuisha kipima muda cha sekunde 30."</string>
+    <string name="checkpoint_reached">"Kituo cha ukaguzi kimefikiwa"</string>
+    <string name="done">"Imekamilika!"</string>
+    <string name="evaluation">"Tathmini"</string>
+    <string name="between_13_and_16">"Kati ya 13 na 16"</string>
+    <string name="between_29_and_36">"Kati ya 29 na 36"</string>
+    <string name="normal">"Kawaida"</string>
+    <string name="between_9_and_12">"Kati ya 9 na 12"</string>
+    <string name="between_22_and_28">"Kati ya 22 na 28"</string>
+    <string name="mild_anosmia">"Anosmia kidogo"</string>
+    <string name="between_5_and_8">"Kati ya 5 na 8"</string>
+    <string name="between_14_and_21">"Kati ya 14 na 21"</string>
+    <string name="moderate_anosmia">"Anosmia ya wastani"</string>
+    <string name="between_0_and_4">"Kati ya 0 na 4"</string>
+    <string name="between_0_and_13">"Kati ya 0 na 13"</string>
+    <string name="severe_anosmia">"Anosmia kali"</string>
+    <string name="consult_your_doctor_for_a_more_comprehensive_examination_of_your_loss_of_olfactory_senses">"Wasiliana na daktari wako kwa uchunguzi wa kina zaidi wa kupoteza kwako hisi za kunusa."</string>
+    <string name="try_traceaware">"Jaribu TraceAware"</string>
+    <string name="try_smell_re_training">"Jaribu kupima tena harufu"</string>
+    <string name="you_answered_out_of_nquestions_correctly">"Jaribio limekamilika!
+Umepata %s kati ya nyota 4."</string>
+    <string name="msg_3_checkpoint">"Mtihani wa kitambulisho cha harufu
+kamili!"</string>
+    <string name="msg_4_checkpoint_diff">"Sasa tutajaribu uwezo wako wa kutofautisha kati ya harufu fulani. Fuata maagizo yanayoonyeshwa kwenye skrini yako ili ukamilishe jaribio."</string>
+    <string name="msg_5_checkpoint_intensity">"Sasa tutajaribu uwezo wako wa kutofautisha kati ya harufu fulani. Fuata maagizo yanayoonyeshwa kwenye skrini yako ili ukamilishe jaribio."</string>
+    <string name="odor_diff_intro_text_1">"Chagua mirija kutoka kwa seti yako ya ScentAware iliyo na alama zifuatazo"</string>
+    <string name="odor_diff_intro_text_2">"Harufu ya vijiti vya kuvuta pumzi, moja kwa wakati, na kutambua tofauti kati yao."</string>
+    <string name="odor_intensity_intro_text_2">"Harufu ya vijiti vya kuvuta pumzi, moja kwa wakati, na kutambua harufu kali zaidi kati yao."</string>
+    <string name="odor_intensity_intro_text_1">"Chagua mirija kutoka kwa seti yako ya ScentAware iliyo na alama zifuatazo"</string>
+    <string name="odor_diff_msg">"Chagua chaguo ambalo unadhani ni &lt;b&gt;tofauti&lt;/b&gt;."</string>
+    <string name="odor_intensity_msg">"Chagua chaguo ambalo unafikiri ndilo &lt;b&gt;harufu kali zaidi&lt;/b&gt;."</string>
+    <string name="could_not_ndifferentiate">"Kutoweza
+kutofautisha"</string>
+    <string name="title_tutorial_odor_diff_test">"Jinsi ya kufanya harufu
+mtihani wa kutofautisha?"</string>
+    <string name="title_tutorial_odor_intensity_test">"Jinsi ya kufanya harufu
+mtihani wa nguvu?"</string>
+    <string name="title_tutorial_re_test">"Jinsi ya kufanya
+mtihani upya?"</string>
+    <string name="trace_aware_questions">"TraceAware
+%s/%s"</string>
+    <string name="traces_remaining">"Ufuatiliaji uliosalia:"</string>
+    <string name="msg_trace_aware_checkpoint_1">"Umefuatilia alama zote kwa mafanikio!"</string>
+    <string name="msg_trace_aware_checkpoint_2">"Umejaribu seti ya kwanza ya maswali kwa mafanikio."</string>
+    <string name="msg_trace_aware_checkpoint_3">"Umefaulu kufuta sehemu ya pili ya jaribio. Sasa tutajaribu uwezo wako wa kukumbuka kutoka kwenye kumbukumbu yako."</string>
+    <string name="msg_trace_aware_recall">"Jaribu kukumbuka na kufuatilia takwimu inayohusishwa na nambari iliyoonyeshwa kwenye kisanduku."</string>
+    <string name="msg_trace_aware_result">"Umekamilisha jaribio la Tathmini ya TraceAware na TraceAware-Recall."</string>
+    <string name="try_smell_evaluation">"Jaribu Tathmini ya Harufu"</string>
+    <string name="return_to_tests">"Rudi kwa Majaribio"</string>
+    <string name="back_to_homescreen">"Rudi kwenye skrini ya nyumbani"</string>
+    <string name="average_response_time_">"Muda wa wastani wa majibu:
+%s sek"</string>
+    <string name="strWelcome">"Karibu"</string>
+    <string name="strLoginID">"Kitambulisho cha kuingia"</string>
+    <string name="strFirsName">"Jina la kwanza"</string>
+    <string name="strLastName">"Jina la familia"</string>
+    <string name="strEmail">"Barua pepe"</string>
+    <string name="strPhone">"Nambari ya simu"</string>
+    <string name="strLogin">"Ingia"</string>
+    <string name="strSignUp">"Jisajili"</string>
+    <string name="strEnterEmail">"Weka kitambulisho chako cha barua pepe
+na nenosiri la kujiandikisha"</string>
+    <string name="strHiThere">"Habari!"</string>
+    <string name="strHowOld">"Una miaka mingapi?"</string>
+    <string name="strLowMemory">"Je, unapata hasara ya
+kumbukumbu?"</string>
+    <string name="strSetUp4Que">"Je, umeandikiwa dawa yoyote kwa sasa? Chagua chaguo ambazo zinaweza kutumika."</string>
+    <string name="strStuffyNose">"Je, unakabiliwa na pua iliyoziba?"</string>
+    <string name="strSelectGender">"Chagua jinsia yako:"</string>
+    <string name="strNext">"Inayofuata"</string>
+    <string name="strPassword">"Nenosiri"</string>
+    <string name="strWarnPassword">"Tafadhali weka nenosiri"</string>
+    <string name="strWarnOldPassword">"Tafadhali weka nenosiri la zamani"</string>
+    <string name="strWarnNewPassword">"Tafadhali weka nenosiri jipya"</string>
+    <string name="strValidPassword">"Tafadhali weka nenosiri halali"</string>
+    <string name="strValidNewPassword">"Tafadhali weka nenosiri mpya halali"</string>
+    <string name="strWarnRePassword">"Tafadhali ingiza nenosiri tena"</string>
+    <string name="strMatchPassword">"Nenosiri na nenosiri lililowekwa upya hazilingani"</string>
+    <string name="strValidEmail">"Tafadhali weka kitambulisho halali cha barua pepe"</string>
+    <string name="strWarnEmail">"Tafadhali weka kitambulisho cha barua pepe"</string>
+    <string name="strWarnFirstName">"Tafadhali weka jina la kwanza"</string>
+    <string name="strWarnLastname">"Tafadhali weka jina la mwisho"</string>
+    <string name="strWarnPhoneNumber">"Tafadhali weka nambari ya simu"</string>
+    <string name="strReenterPassword">"Ingiza tena nenosiri"</string>
+    <string name="strAge">"Umri"</string>
+    <string name="strWarnAge">"Tafadhali weka umri"</string>
+    <string name="strWarnUserName">"Tafadhali weka jina la mtumiaji"</string>
+    <string name="strWarnOtherMedication">"Tafadhali weka dawa"</string>
+    <string name="strWarnGender">"Tafadhali chagua jinsia"</string>
+    <string name="strWarnSelectMedications">"Tafadhali chagua dawa"</string>
+    <string name="strMale">"Mwanaume"</string>
+    <string name="strFemale">"Mwanamke"</string>
+    <string name="strOther">"Nyingine"</string>
+    <string name="strNo">"Hapana"</string>
+    <string name="strYes">"Ndiyo"</string>
+    <string name="strOption1">"Hakuna"</string>
+    <string name="strOption2">"Antibiotics"</string>
+    <string name="strOption3">"Dawa ya shinikizo la damu"</string>
+    <string name="strOption4">"Vizuia mfadhaiko"</string>
+    <string name="strOption5">"Steroids"</string>
+    <string name="strOption6">"Nyingine (tafadhali taja)"</string>
+    <string name="strWalkThrough1">"Tathmini hisi zako za kunusa
+pamoja na ScentAware"</string>
+    <string name="strWalkThrough2">"Tathmini ujuzi wako mzuri wa gari na
+kumbukumbu ya kuona na TraceAware"</string>
+    <string name="strWalkThrough3">"Tathmini kumbukumbu yako ya maneno
+na AudioAware"</string>
+    <string name="strWalkThroughTitle1">"Tazama pua yako!"</string>
+    <string name="strWalkThroughTitle2">"Tathmini uwezo wako"</string>
+    <string name="strWalkThroughTitle3">"Jaribu kumbukumbu yako"</string>
+    <string name="already_user"><u>Je, tayari ni mtumiaji? Nenda kwa kuingia.</u></string>
+    <string name="strForgotPassword">"&lt;u&gt;Umesahau nenosiri?&lt;/u&gt;"</string>
+    <string name="e_g_vasodilators">"k.m. vasodilators"</string>
+    <string name="title_verify_email">"Thibitisha Barua pepe"</string>
+    <string name="msg_verification_screen">"Nambari ya kuthibitisha imetumwa kwa barua pepe yako. Tafadhali ingiza ili kuthibitisha akaunti yako"</string>
+    <string name="enter_code_here">"Ingiza msimbo hapa"</string>
+    <string name="verify">"Thibitisha"</string>
+    <string name="msg_enter_verification_code">"Tafadhali weka msimbo wa uthibitishaji"</string>
+    <string name="title_retraining">"Jinsi ya kurejesha yako
+hisia ya harufu?"</string>
+    <string name="open_the_tube_and_smell_nthe_sample">"Fungua bomba na harufu sampuli"</string>
+    <string name="the_sample_you_are_smelling_is">"Sampuli unayonusa ni,"</string>
+    <string name="tap_next_when_you_re_ready">"Gusa Inayofuata ukiwa tayari"</string>
+    <string name="you_ve_successfully_completed_nsmell_retraining">"Umekamilisha kwa ufanisi
+kupima tena harufu."</string>
+    <string name="try_intelliplot">"Jaribu IntelliPlot"</string>
+    <string name="smell_retraining">"Harufu Re-mafunzo"</string>
+    <string name="smell_retraining_">"Kupima tena harufu
+%s/%s"</string>
+    <string name="no">"Hapana"</string>
+    <string name="are_you_sure_you_wish_to_ncancel_the_test">"Je, una uhakika unataka
+kughairi mtihani?"</string>
+    <string name="yes">"Ndiyo"</string>
+    <string name="how_to_use_audio_aware">"Jinsi ya kutumia
+AudioAware?"</string>
+    <string name="title_level_of_difficulty">"Chagua yako
+kiwango cha ugumu"</string>
+    <string name="easy">"Rahisi"</string>
+    <string name="immediate_recall_no_delay">"Kumbuka mara moja (hakuna kuchelewa)"</string>
+    <string name="intermediate">"Kati"</string>
+    <string name="recall_after_a_2_minute_delay">"Kumbuka baada ya kuchelewa kwa dakika 2"</string>
+    <string name="hard">"Ngumu"</string>
+    <string name="recall_after_a_10_minute_delay">"Kumbuka baada ya kuchelewa kwa dakika 10"</string>
+    <string name="audio_aware_level">"Kiwango : %s"</string>
+    <string name="click_on_begin_to_start_nthe_test">"Bonyeza 'Anza' ili kuanza
+mtihani."</string>
+    <string name="after_the_countdown_n20_words_will_be_read_out_to_you">"Baada ya kuhesabu,
+Maneno 20 yatasomwa kwako."</string>
+    <string name="stop_test">"Acha mtihani"</string>
+    <string name="reading_words_ntry_to_remember_as_many_nas_you_can">"Kusoma maneno.
+Jaribu kukumbuka wengi
+uwezavyo."</string>
+    <string name="reading_complete_nclick_on_next_to_proceed">"Kusoma kumekamilika.
+Bofya Inayofuata ili kuendelea"</string>
+    <string name="please_wait_for_minutes_nbefore_you_proceed">"Tafadhali subiri kwa dakika %s
+kabla ya kuendelea."</string>
+    <string name="select_the_words_that_were_nread_to_you">"Tafadhali Chagua maneno 5 ambayo ulichezewa kutoka kwenye orodha."</string>
+    <string name="_15_words_selected">"Maneno %s/15 yamechaguliwa"</string>
+    <string name="page_of_2">"Ukurasa %s/2"</string>
+    <string name="retry_audioaware">"Jaribu tena AudioAware"</string>
+    <string name="excellent">"Bora kabisa"</string>
+    <string name="good">"Nzuri"</string>
+    <string name="average">"Wastani"</string>
+    <string name="poor">"Maskini"</string>
+    <string name="between_3_and_0">"Kati ya 0 na 3"</string>
+    <string name="between_4_and_5">"Kati ya 4 na 5"</string>
+    <string name="between_6_and_7">"Kati ya 6 na 7"</string>
+    <string name="between_8_and_10">"Kati ya 8 na 10"</string>
+    <string name="score_out_of_10">"Alama (kati ya 10)"</string>
+    <string name="test_complete_nhere_s_your_score">"Mtihani umekamilika.
+Hapa kuna alama yako"</string>
+    <string name="are_you_experiencing_a_stuffy_nose">"Je, unakabiliwa na pua iliyoziba?"</string>
+    <string name="are_you_currently_on_any_medication">"Je, unatumia dawa yoyote kwa sasa?"</string>
+    <string name="please_select_one_of_the_option">"Tafadhali chagua mojawapo ya chaguo"</string>
+    <string name="tracing_accuracy_">"Ufuatiliaji wa usahihi:
+%s%%"</string>
+    <string name="recall_accuracy_">"Kumbuka usahihi:
+%s%%"</string>
+    <string name="recent_tests">"Majaribio ya hivi majuzi:"</string>
+    <string name="scentaware_8_scent_kit">"Seti 8 ya harufu ya ScentAware"</string>
+    <string name="scentaware_16_scent_kit">"Seti 16 ya harufu ya ScentAware"</string>
+    <string name="your_scores_are_improving">"Alama zako zinaboreka!"</string>
+    <string name="low_scores_consult_your_doctor">"Alama za chini? Wasiliana na daktari wako."</string>
+    <string name="take_a_test">"Chukua mtihani"</string>
+    <string name="avg_response_time">"Wastani. wakati wa majibu:"</string>
+    <string name="avg_tracing_accuracy">"Wastani. kufuatilia usahihi:"</string>
+    <string name="avg_recall_accuracy">"Wastani. kumbuka usahihi:"</string>
+    <string name="take_tests_routinely_to_improve_your_response_time">"Fanya majaribio mara kwa mara ili kuboresha muda wako wa kujibu."</string>
+    <string name="you_haven_t_attempted_any_tests_yet">"Bado hujajaribu majaribio yoyote."</string>
+    <string name="no_data_found">"Hakuna Data Imepatikana"</string>
+    <string name="score">"Alama"</string>
+    <string name="avg_tracing_accuracy2">"Wastani .Kufuatilia Usahihi"</string>
+    <string name="avg_recall_accuracy2">"Wastani. Kumbuka Usahihi"</string>
+    <string name="avg_response_time2">"Wastani. Muda wa Majibu"</string>
+    <string name="date">"Tarehe"</string>
+    <string name="settings">"Mipangilio"</string>
+    <string name="change_password">"Badilisha neno la siri"</string>
+    <string name="update_profile">"Sasisha Wasifu"</string>
+    <string name="logout">"Ondoka"</string>
+    <string name="old_password">"namba ya siri ya zamani"</string>
+    <string name="new_password">"Nenosiri Mpya"</string>
+    <string name="_10_traces">"Picha 10 za kufuatilia na kukumbuka."</string>
+    <string name="_8_traces">"Picha 8 za kufuatilia na kukumbuka."</string>
+    <string name="_6_traces">"Picha 6 za kufuatilia na kukumbuka."</string>
+    <string name="password_helper_text">"Jumuisha angalau herufi kubwa moja, herufi moja maalum, tarakimu moja na urefu lazima uwe na char 8."</string>
+    <string name="user_name">"Jina la mtumiaji"</string>
+    <string name="draw_the_figure_associated_with_the_number_displayed_below_as_accurately_as_you_can">"Chora takwimu inayohusishwa na nambari iliyoonyeshwa hapa chini, kwa usahihi uwezavyo.
+
+Jaribu kukumbuka takwimu zinazohusiana na nambari."</string>
+    <string name="glance_aware_test">"Mtihani wa GlanceAware"</string>
+    <string name="glance_aware">"GlanceAware"</string>
+    <string name="msg_glace_aware">"GlanceAware ni mtihani wa kumbukumbu shirikishi wa jina la usoni."</string>
+    <string name="name">"Jina:"</string>
+    <string name="profession">"Taaluma:"</string>
+    <string name="showing_image_12">"Inaonyesha picha %s/12"</string>
+    <string name="msg_glance_aware_delay">"Onyesho la kukagua picha limekamilika.
+Tafadhali subiri kwa dakika %s kabla ya kuendelea."</string>
+    <string name="msg_glance_aware_begin">"Onyesho la kukagua picha limekamilika.
+Gonga kwenye kitufe hapa chini ili
+kuanza mtihani."</string>
+    <string name="what_is_the_name_of_the_person_in_nthe_picture">"Jina la mtu ni nani
+picha?"</string>
+    <string name="what_is_the_profession_of_the_person_in_nthe_picture">"Je, taaluma ya mtu ni nini
+kwenye picha?"</string>
+    <string name="please_select_answer">"Tafadhali chagua jibu."</string>
+    <string name="total_number_of_faces_to_nidentify">"Jumla ya idadi ya nyuso kwa
+kutambua:"</string>
+    <string name="persons_whose_name_and_nprofession_were_nidentified_correctly">"Watu ambao majina yao na
+taaluma walikuwa
+imetambuliwa &lt;b&gt;kwa usahihi :&lt;/b&gt;"</string>
+    <string name="persons_whose_name_and_nprofession_were_nidentified_incorrectly">"Watu ambao majina yao na
+taaluma walikuwa
+imetambuliwa &lt;b&gt; isivyo sahihi :&lt;/b&gt;"</string>
+    <string name="retry_glanceaware">"Jaribu tena GlanceAware"</string>
+    <string name="glanceaware_tutorial_1">"Katika jaribio hili, utaulizwa
+kumbuka majina ya watu
+na taaluma zao."</string>
+    <string name="glanceaware_tutorial_2">"Utaonyeshwa picha
+ya watu wenye majina yao
+na taaluma."</string>
+    <string name="glanceaware_tutorial_3">"Baada ya onyesho la kukagua, jaribu kukumbuka
+majina na taaluma
+kadiri uwezavyo."</string>
+    <string name="glanceaware_tutorial_4">"Baada ya onyesho la kukagua, jaribu kukumbuka
+majina na taaluma
+kadiri uwezavyo."</string>
+    <string name="glanceaware_tutorial_5">"Kwa ugumu wa kiwango kigumu, mtihani utafanya
+kuanza baada ya kuchelewa kwa dakika 5."</string>
+    <string name="glanceaware_tutorial_6">"Utendaji wako utakuwa
+alifunga, mwishoni mwa mtihani."</string>
+    <string name="skip">"Ruka"</string>
+    <string name="msg_forgot_password_screen1">"Nambari ya kuthibitisha itatuma kwa barua pepe yako iliyosajiliwa."</string>
+    <string name="msg_forgot_password_screen2">"Tafadhali weka msimbo hapa na sasa unaweza kuweka upya nenosiri lako. Ingiza nenosiri lako jipya hapa na ubofye wasilisha."</string>
+    <string name="strWarnCode">"Tafadhali weka msimbo wa uthibitishaji"</string>
+    <string name="delete_account">"Futa Akaunti"</string>
+    <string name="medication">"Dawa"</string>
+    <string name="enter_medication_here">"Weka dawa hapa"</string>
+    <string name="not_tested_yet">"Bado haijajaribiwa"</string>
+    <string name="last_tested_on_">"Ilijaribiwa mwisho mnamo: %s"</string>
+    <string name="ready_to_test">"Tayari kupima"</string>
+    <string name="words_aware_test">"Mtihani wa ManenoAware"</string>
+    <string name="words_aware">"ManenoAware"</string>
+    <string name="using_letters_shown_below_as_the_first_two_characters_speak_as_many_words_as_you_can_in_60_seconds">"Kwa kutumia herufi zilizoonyeshwa hapa chini kama herufi mbili za kwanza, zungumza maneno mengi uwezavyo, katika sekunde 60."</string>
+    <string name="d_p">"F L"</string>
+    <string name="the_test_will_begin_shortly_speak_the_words_clearly_after_the_countdown">"Mtihani utaanza hivi karibuni. Ongea maneno kwa uwazi baada ya kuhesabu."</string>
+    <string name="keep_the_order_of_the_first_two_letters_the_same_use_words_that_are_defined_by_the_oxford_english_dictionary">"Weka mpangilio wa herufi mbili za kwanza sawa. Tumia maneno ambayo yamefafanuliwa na kamusi ya Kiingereza ya Oxford."</string>
+    <string name="stand_by">"Simama karibu"</string>
+    <string name="commencing">"Inaanza..."</string>
+    <string name="listening">"Kusikiliza"</string>
+    <string name="speak_as_many_words_as_you_can_before_the_timer_runs_out">"Ongea maneno mengi uwezavyo kabla kipima saa kuisha."</string>
+    <string name="test_over">"Mtihani tena"</string>
+    <string name="reference_letters">"Barua za marejeleo:"</string>
+    <string name="unique_words_identified">"Maneno ya kipekee yanatambuliwa:"</string>
+    <string name="words_that_were_repeated">"Maneno ambayo yalirudiwa:"</string>
+    <string name="longest_word_detected">"Neno refu zaidi limegunduliwa:"</string>
+    <string name="shortest_word_detected">"Neno fupi zaidi limetambuliwa:"</string>
+    <string name="dash">"--"</string>
+    <string name="get_results">"Pata Matokeo"</string>
+    <string name="please_wait_while_we_process_your_final_score">"Tafadhali subiri, tunapochakata alama yako ya mwisho."</string>
+    <string name="retry_wordsaware">"Jaribu tena WordsAware"</string>
+    <string name="grammar_aware_test">"Mtihani wa GrammarAware"</string>
+    <string name="grammar_aware">"GrammarAware"</string>
+    <string name="using_words_shown_below_construct_3_sentences_that_are_grammatically_correct">"Kwa kutumia maneno yaliyoonyeshwa hapa chini, jenga sentensi 3 ambazo ni sahihi kisarufi."</string>
+    <string name="use_the_words_as_they_are_presented_without_modifying_them_grammatically">"Tumia maneno jinsi yanavyowasilishwa, bila kuyarekebisha kisarufi."</string>
+    <string name="words2">"Chumvi
+Kielelezo"</string>
+    <string name="words3">"Gari
+mvivu
+kuwaambia"</string>
+    <string name="you_ll_have_90_seconds_to_construct_each_sentence">"Utakuwa na sekunde 90 za kuunda kila sentensi."</string>
+    <string name="speak_your_sentences_and_submit_3_such_sentences_to_complete_the_test">"Zungumza sentensi zako na uwasilishe sentensi 3 kama hizo ili kukamilisha mtihani."</string>
+    <string name="active">"Inayotumika"</string>
+    <string name="phrases_submitted">"Maneno yaliyowasilishwa:"</string>
+    <string name="test_completed_successfully">"Jaribio limekamilika!"</string>
+    <string name="grammatical_accuracy">"Kisarufi
+usahihi:"</string>
+    <string name="average_response_time">"Jibu la wastani
+wakati:"</string>
+    <string name="longest_sentence">"Sentensi ndefu zaidi:"</string>
+    <string name="shortest_sentence">"Sentensi fupi zaidi:"</string>
+    <string name="words">"maneno"</string>
+    <string name="secs">"sekunde"</string>
+    <string name="trainings">"Mafunzo"</string>
+    <string name="tests">"Vipimo"</string>
+    <string name="reports">"Ripoti"</string>
+    <string name="it_s_quiet_in_here">"Hapa ni kimya..."</string>
+    <string name="we_couldn_t_get">"Hatukuweza kupata jibu kutoka kwako kabla ya kipima muda kwisha. Kipindi cha sasa kimeghairiwa. Unaweza kujaribu tena kutoka kwa menyu ya Majaribio."</string>
+    <string name="done_1">"Imekamilika"</string>
+    <string name="alert_2">"Hatukuweza kupata jibu kutoka kwako kabla ya kipima muda kwisha. Je, ungependa kuendelea?"</string>
+    <string name="cancel_test">"Ghairi jaribio"</string>
+    <string name="sentences_submitted">"Sentensi zilizowasilishwa:"</string>
+    <string name="sentences_remaining">"Sentensi zilizosalia:"</string>
+    <string name="you_ve_submitted_your_response_successfully">"Umetuma jibu lako."</string>
+    <string name="record_audio_is_required">"Tutatumia Ruhusa ya Kurekodi Sauti pekee ili kutumia Kipengele cha Usemi hadi Maandishi"</string>
+    <string name="training_features_are_unavailable_during_an_active_clinical_trial">"Vipengele vya mafunzo havipatikani wakati wa jaribio la kimatibabu linaloendelea!"</string>
+    <string name="choose_tube_type">"Chagua aina ya bomba"</string>
+    <string name="please_select_an_tube">"Tafadhali Chagua Tube"</string>
+    <string name="dismiss">"Ondoa"</string>
+    <string name="rate_the_app">"Kadiria Programu"</string>
+    <string name="share_app">"Shiriki Programu"</string>
+    <string name="description">"SensifyAware ni programu ya ustawi wa Simu ya Mkononi kufuatilia hisi na utambuzi wako. Angalia ndani ya ubongo wako ukitumia SensifyAware. Ninapenda kusakinisha: Simu/ Kompyuta Kibao:
+https://play.google.com/store/apps/details?id="</string>
+
+
+
+    <string name="are_you_sure_you_want_to_logout">Je, una uhakika unataka kuondoka?</string>
+    <string name="are_you_sure_you_want_to_delete_your_account">Je, una uhakika unataka kufuta akaunti yako?</string>
+    <string name="do_you_want_to_take_the_test_again">Je, ungependa kufanya mtihani tena?</string>
+    <string name="note_a_re_test_makes_the_test_longer_but_increases_the_statistical_power_of_the_score">Kumbuka: Jaribio upya hufanya jaribio kuwa refu, lakini huongeza nguvu ya takwimu ya alama.</string>
+    <string name="go_to_result">Nenda kwa Matokeo</string>
+
+    <string name="changelog_file">sw/words_for_audio_aware.txt</string>
+    <string name="adjective">en/Adjectives.txt</string>
+    <string name="nouns">en/Nouns.txt</string>
+    <string name="verbs">en/Verbs.txt</string>
+    <string name="glance_aware_json">sw/GlanceAware.json</string>
+
+    <string name="ren_aware_test">Mtihani wa RenAware</string>
+    <string name="ren_aware">RenAware</string>
+    <string name="ren_aware_wellness_check">Angalia Ustawi wa\nRenAware</string>
+    <string name="place_the_camera_above_the_grid_so_that_it_captures_the_colored_squares">Weka kamera juu ya gridi ya taifa ili inasa miraba yenye rangi.</string>
+    <string name="overall_wellness">Ustawi wa jumla</string>
+    <string name="your_score_is_within_the_optimal_range">Alama yako iko ndani ya masafa bora.</string>
+    <string name="renal_health">Renal health</string>
+    <string name="liver_health">Liver health</string>
+    <string name="hydration">Hydration</string>
+    <string name="energy_balance">Energy balance</string>
+    <string name="immunity">Immunity</string>
+    <string name="bone_health">Bone health</string>
+    <string name="_8_scent_test">Mtihani wa harufu 8</string>
+    <string name="_16_scent_test">Mtihani wa harufu 16</string>
+    <string name="fine_motor_skills">Ujuzi mzuri wa gari</string>
+    <string name="verbal_memory">Kumbukumbu ya maneno</string>
+
+
+    <!--to be Change-->
+    <string name="test_completed">"Mtihani umekamilika
+kwa mafanikio!"</string>
+    <string name="calendar">"Kalenda"</string>
+    <string name="scentaware">"ScentAware"</string>
+    <string name="scentaware_8">"ScentAware-8"</string>
+    <string name="scentaware_16">"ScentAware-16"</string>
+    <string name="smell_training">"Mafunzo ya harufu"</string>
+    <string name="cancel">"Ghairi"</string>
+    <string name="a_stuffy_nose_is_a_condition">"Pua iliyoziba ni hali ambapo vijia vya pua vinasongamana au kuziba, hivyo kufanya iwe vigumu kupumua kupitia pua."</string>
+    <string name="yes_i_have_a_stuffy_nose">"Ndiyo, nina pua iliyoziba"</string>
+    <string name="no_i_am_okay">"Hapana, niko sawa"</string>
+    <string name="be_proactive">"Kuwa makini,
+si tendaji."</string>
+    <string name="the_scentaware_kit">"Seti ya ScentAware"</string>
+    <string name="the_scentaware_kit_contains">"Seti ya ScentAware ina vipulizi vyenye vichocheo asilia vya kunusa vilivyo na mafuta muhimu kama rose, lavender, chungwa na mdalasini. Uzoefu wako kwa harufu hizi unaweza kutofautiana kidogo kulingana na aina na asili ya mmea. Seti hiyo inabaki kuwa na ufanisi kwa miezi sita baada ya matumizi ya kwanza. Kila bomba la ScentAware lina lebo ya msimbo wa QR wa usimamizi wa jaribio. Mirija hiyo pia ina umbo la rangi kwa ajili ya kuweka lebo sahihi na haihitajiki kufanya jaribio kwa kutumia simu yako."</string>
+    <string name="smell_test">"Mtihani wa Harufu"</string>
+    <string name="the_smell_test_assesses">"Jaribio la Kunusa hutathmini uwezo wako wa kutambua harufu kwa usahihi. Hii inahusisha kuvuta harufu, kuikumbuka kutoka kwa kumbukumbu, na kisha kuchagua harufu inayowezekana zaidi kutoka kwa chaguzi nne kupitia mchakato wa akili wa kuondoa."</string>
+    <string name="regular_smell_evaluations">"Tathmini ya harufu ya mara kwa mara inaweza kutoa maarifa juu ya hali za kiafya."</string>
+    <string name="the_smell_training_module">"Moduli ya Mafunzo ya Harufu inaonyesha utambulisho wa harufu, hukuruhusu kujifahamisha nao. Kuchanganya Mafunzo ya Harufu na Tathmini ya Harufu, inaweza kuwa njia bora ya kufuatilia na kurejesha hisia zako za harufu zilizopotea. Utafiti unaonyesha kuwa mafunzo ya kunusa yanaweza kusaidia kurejesha hisia ya harufu katika 30% ya watu, na mafanikio yanatofautiana kulingana na sababu ya msingi ya kupoteza harufu."</string>
+    <string name="odor_identification_test_complete">"Mtihani wa Kitambulisho cha Harufu Umekamilika!"</string>
+    <string name="great_job_you_ve_finished_">"Kazi nzuri! Umemaliza jaribio la Kitambulisho cha Harufu. Ili kuimarisha usahihi wa matokeo yako, tunapendekeza uzingatie jaribio la upya. Vinginevyo, unaweza kuchagua kukamilisha jaribio sasa na kutazama matokeo yako mara moja."</string>
+    <string name="re_test">"Jaribu tena"</string>
+    <string name="view_result">"Tazama matokeo"</string>
+    <string name="you_ve_successfully_signed_up_with_sensifyaware">"Umefaulu kujisajili na SensifyAware!"</string>
+    <string name="effective_care_starts">"Utunzaji wa ufanisi huanza na uingiliaji wa mapema."</string>
+    <string name="get_started">"Anza!"</string>
+    <string name="custom_recurrence">"Kujirudia maalum"</string>
+    <string name="repeats_every">"Hurudiwa kila"</string>
+    <string name="_1">"1"</string>
+    <string name="repeats_on">"Hurudia tena"</string>
+    <string name="s">"S"</string>
+    <string name="m">"M"</string>
+    <string name="t">"T"</string>
+    <string name="w">"W"</string>
+    <string name="f">"F"</string>
+    <string name="ends">"Inaisha"</string>
+    <string name="never">"Kamwe"</string>
+    <string name="on">"Washa"</string>
+    <string name="after">"Baada ya"</string>
+    <string name="occurence">"tukio"</string>
+    <string name="start_test">"Anza Mtihani"</string>
+    <string name="add_reminder">"Ongeza ukumbusho"</string>
+    <string name="save">"Hifadhi"</string>
+    <string name="edit_reminder">"Badilisha kikumbusho"</string>
+    <string name="repeat">"Rudia"</string>
+    <string name="select_test">"Chagua mtihani"</string>
+    <string name="renal_health_is_vital">"Afya ya figo ni muhimu kwa ustawi wa jumla, kwani figo zenye afya huhakikisha kuchujwa vizuri, kuondolewa kwa taka na matengenezo muhimu ya utendaji wa mwili."</string>
+    <string name="scan_the_qr_code_n_on_the_renaware_test_strip">"Changanua msimbo wa QR
+kwenye ukanda wa majaribio wa RenAware."</string>
+    <string name="how_intense_is_the_smell">"Je, harufu ni kali kiasi gani?"</string>
+    <string name="please_rate_the_intensity">"Tafadhali kadiria ukubwa wa harufu unayotambua kwa kipimo cha 0 hadi 5. Tafadhali kadiria 0 ikiwa huwezi kutambua harufu."</string>
+    <string name="is_the_odor_you_are_smelling_pleasant_to_you">"Je, harufu unayoisikia inapendeza kwako?"</string>
+    <string name="yes_i_like_this_smell">"Ndiyo, napenda harufu hii."</string>
+    <string name="i_can_tolerate_this">"Naweza kuvumilia hili"</string>
+    <string name="no_this_smell_is_repulsive">"Hapana, harufu hii inachukiza!"</string>
+    <string name="end_training">"Maliza Mafunzo"</string>
+    <string name="for_more_details">"Kwa maelezo zaidi ya matokeo yako, tafadhali telezesha chini."</string>
+    <string name="scents">"Manukato"</string>
+    <string name="your_responses">"Majibu yako"</string>
+    <string name="consider_setting_up_reminders">"Zingatia kuweka vikumbusho vya kufanya majaribio ya harufu na mafunzo mara kwa mara na kufuatilia mabadiliko yoyote katika unusaji wako."</string>
+    <string name="close">"Funga"</string>
+    <string name="set_reminder">"Weka Kikumbusho"</string>
+    <string name="verify_email">"Thibitisha Barua pepe"</string>
+    <string name="verification_code">"Nambari ya Uthibitishaji"</string>
+    <string name="today">"Leo"</string>
+    <string name="smell_tests">"Vipimo vya Harufu"</string>
+    <string name="learn_more">"Jifunze zaidi"</string>
+    <string name="are_you_experiencing">"Je! unakabiliwa na kupungua au kuvuruga kwa maana yako ya harufu? Vipimo vya mara kwa mara vya harufu vinaweza kukusaidia kufuatilia maendeleo yako."</string>
+    <string name="watch_video">"Tazama video"</string>
+    <string name="depending_on_the_root">"Kulingana na sababu ya mizizi, mafunzo ya harufu yanaweza kusaidia kurejesha hisia iliyopotea ya harufu. Hata hivyo ufanisi wake hutofautiana kati ya watu binafsi."</string>
+    <string name="cognitive_tests">"Vipimo vya utambuzi"</string>
+    <string name="patient_test">Sensify | NetraKumbh 2025</string>
+    <string name="fun_non_addictive_memory_games">"Michezo ya kumbukumbu ya kufurahisha isiyo na uraibu inaweza kusaidia kuondoa ikiwa upotezaji wa harufu unahusiana na utambuzi"</string>
+    <string name="does_not_repeat">"Usirudie kipimo"</string>
+    <string name="every_day">"Kila siku"</string>
+    <string name="every_week">"Kila wiki"</string>
+    <string name="every_month">"Kila mwezi"</string>
+    <string name="every_year">"Kila mwaka"</string>
+    <string name="custom">"Desturi"</string>
+    <string name="the_presence_of_ketones">"Uwepo wa ketoni katika damu na mkojo, ambayo kawaida hutengenezwa kama chanzo mbadala cha nishati kutoka kwa mafuta wakati glukosi haitoshi, inaweza kuonyesha ugonjwa wa kisukari na vibali vya kupima zaidi, wakati ketonuria ni hali ya matibabu ambapo miili ya ketone hupatikana kwenye mkojo, ingawa kwa watu wenye afya, ni kiasi kidogo tu kinachoweza kutambulika."</string>
+    <string name="questions">"%s/%s"</string>
+    <string name="avg_user_accuracy">"Wastani. usahihi wa mtumiaji : %s%%"</string>
+    <string name="starts_on">"Inaanza:"</string>
+    <string name="remind_me">"Nikumbushe kwa:"</string>
+    <string name="ends_on">"inaisha kwa:"</string>
+    <string name="scentaware_8_smell_training">"Mafunzo ya Harufu ya ScentAware-8"</string>
+    <string name="scentaware_16_smell_training">"Mafunzo ya Harufu ya ScentAware-16"</string>
+    <string name="scentaware_8_scent_test">"Mtihani wa harufu ya ScentAware-8"</string>
+    <string name="scentaware_16_scent_test">"Mtihani wa harufu ya ScentAware-16"</string>
+    <string name="day">"Siku"</string>
+    <string name="week">"Wiki"</string>
+    <string name="month">"Mwezi"</string>
+    <string name="event_will_occur_every_">"Tukio litatokea kila %s."</string>
+    <string name="no_smell_detected">"Hakuna harufu iliyogunduliwa"</string>
+    <string name="very_weak">"dhaifu sana"</string>
+    <string name="weak">"Dhaifu"</string>
+    <string name="strong">"Nguvu"</string>
+    <string name="very_strong">"Nguvu Sana"</string>
+    <string name="viewall">"Tazama zote"</string>
+    <string name="finish_training">"Maliza Mafunzo"</string>
+    <string name="restart">"Anzisha tena"</string>
+    <string name="consider_setting_up_">"Fikiria kuweka vikumbusho vya kufanya majaribio ya harufu na mafunzo mara kwa mara ili kufuatilia mabadiliko yoyote katika unusaji wako."</string>
+    <string name="smell_training_completed_successfully">"Mafunzo ya Kunusa yamekamilika kwa mafanikio!"</string>
+    <string name="no_event_found">"Hakuna Tukio Lililopatikana!"</string>
+    <string name="repeat_at">"Rudia %s."</string>
+    <string name="all_day">"Siku nzima"</string>
+    <string name="associative_memory">"Kumbukumbu ya ushirika"</string>
+    <string name="the_brain_translates_sensory">"Ubongo hutafsiri taarifa za hisia zinazopokelewa kwa njia ya mguso, ladha, harufu, maono na kusikia huku ukiratibu kazi za msingi za mwili, kwa uangalifu na bila kufahamu.
+Kuna vikoa sita vya utambuzi:
+• Kumbukumbu na kujifunza
+• Lugha
+• Shughuli za utendaji
+• Uangalifu mgumu,
+• Utambuzi wa kijamii
+• Utendaji wa utambuzi na motor."</string>
+    <string name="interpreting_health_">"Kutafsiri Afya
+Kupitia Hisia."</string>
+    <string name="the_ability_to_clearly_think">"Uwezo wa kufikiria wazi, kujifunza, na kukumbuka - ni sehemu muhimu ya kufanya shughuli za kila siku. Afya ya utambuzi ni kipengele kimoja tu cha afya ya ubongo kwa ujumla."</string>
+    <string name="traceaware_is_a_game_where_you">"TraceAware ni mchezo ambapo unachora alama maalum kwa kutumia kidole chako. Alama, zilizounganishwa na nambari, zinapaswa kufuatiliwa haraka na kwa usahihi. Mwanzoni, unakili alama unazoziona, lakini hivi karibuni inageuka kuwa jaribio la kumbukumbu ambapo unakumbuka ulichonakili. Ni njia ya kufurahisha ya kutumia ubongo wako na uratibu wa mikono."</string>
+    <string name="test_your_memory_and_motor_skills">"Jaribu kumbukumbu yako na ujuzi wa magari."</string>
+    <string name="word_listening_and_recognition">"Usikilizaji wa maneno na utambuzi."</string>
+    <string name="audioaware_is_a_word_listening_game">"AudioAware ni mchezo wa kusikiliza maneno. Kifaa husema maneno kwa kasi sawa kupitia msemaji wake. Kazi yako ni kutambua maneno hayo kutoka kwenye orodha iliyoonyeshwa kwako. Yote ni juu ya kukumbuka kile unachosikia."</string>
+    <string name="connect_faces_and_names_for_a_memory_challenge">"Unganisha nyuso na majina kwa changamoto ya kumbukumbu."</string>
+    <string name="glanceaware_is_an_associative_memory">"GlanceAware ni kazi ya Kumbukumbu ya Ushirika. Unaonyeshwa nyuso zenye majina na taaluma inayohusishwa na uso. Mara tu unapoonyeshwa seti ya nyuso na majina ambayo unaulizwa kukumbuka. Kazi inahusisha jinsi unavyoweza kushughulikia mambo ambayo hayahusiani."</string>
+    <string name="understanding_nsmell_loss">"Kuelewa
+Kupoteza Harufu"</string>
+    <string name="smell_loss_medically_known_as">"Kupoteza harufu, inayojulikana kitabibu kama anosmia, ni upotezaji kamili wa hisia ya harufu. Inaweza kutokea kwa sababu mbalimbali, ikiwa ni pamoja na:"</string>
+    <string name="viral_infections">"Maambukizi ya Virusi"</string>
+    <string name="such_as_the">"Kama vile homa ya kawaida au mafua, ambayo inaweza kuathiri hisia zako za kunusa kwa muda."</string>
+    <string name="nasal_and_sinus_issues">"Masuala ya Pua na Sinus"</string>
+    <string name="conditions_like_allergies">"Masharti kama vile mzio, sinusitis, au polyps ya pua inaweza kuzuia njia zako za pua, na kuathiri uwezo wako wa kunusa."</string>
+    <string name="head_injuries">"Majeraha ya Kichwa"</string>
+    <string name="trauma_to_the_head">"Kiwewe cha kichwa kinaweza kuharibu mishipa ya kunusa inayohusika na kunusa."</string>
+    <string name="damage_to_nervous_system">"Uharibifu wa mfumo wa neva"</string>
+    <string name="degeneration_or_inflammation">"Uharibifu au kuvimba katika mfumo wa neva pia kunaweza kusababisha mabadiliko katika uwezo wa harufu."</string>
+    <string name="certain_medications">"Dawa fulani zinaweza kubadilisha hisia ya harufu."</string>
+    <string name="age">"Umri"</string>
+    <string name="as_we_age_our">"Tunapozeeka, hisia zetu za kunusa zinaweza kupungua kwa kawaida."</string>
+    <string name="smoking">"Kuvuta sigara"</string>
+    <string name="smoking_or_vaping">"Uvutaji sigara au mvuke unaweza kusababisha pua kujaa na kuathiri vibaya uwezo wako wa kunusa."</string>
+    <string name="loss_of_smell_can">"Kupoteza harufu kunaweza kuwa sehemu (hyposmia) au kamili (anosmia), na inaweza kuwa ya muda au ya kudumu, kulingana na sababu."</string>
+    <string name="anosmia">"Anosmia"</string>
+    <string name="hyposmia">"Hyposmia"</string>
+    <string name="parosmia">"Parosmia"</string>
+    <string name="phantosmia">"Phantosmia"</string>
+    <string name="this_refers_to">"Hii inahusu upotezaji wa jumla wa uwezo wa kunusa."</string>
+    <string name="partial_loss">"Hii inahusu hasara ya sehemu ya uwezo wa kunusa."</string>
+    <string name="distorted_sense_of_smell">"Hii ni hisia potofu ya harufu. Vitu vilivyokuwa vinanukia vizuri sasa vinanuka."</string>
+    <string name="condition_that_causes">"Hii ni hali ambayo inakufanya ugundue harufu ambazo hazipo katika mazingira yako."</string>
+    <string name="set_a_reminder">"Ungependa kuweka kikumbusho?"</string>
+    <string name="if_you_have_temporary">"Ikiwa una kupoteza harufu kwa muda, fanya mazoezi ya mara kwa mara ya Harufu. Ufanisi wake hutofautiana kulingana na mtu binafsi, kwa hivyo kutambua sababu ya mizizi ni muhimu."</string>
+    <string name="are_you_currently_taking_any_medication">"Je, unatumia dawa yoyote kwa sasa?"</string>
+    <string name="certain_medication_are_known_to_cause_a_loss_or_distortion_in_the_sense_of_smell">"Dawa fulani inajulikana kusababisha hasara au kuvuruga kwa maana ya harufu."</string>
+    <string name="begin_test">"Anza mtihani"</string>
+    <string name="smell_training_">"Mafunzo ya harufu
+%s/%s"</string>
+    <string name="smell_normal">"Hisia yako ya harufu
+ni kawaida."</string>
+    <string name="smell_hyposmia">"Hisia yako ya upole
+hyposmia/parosmia."</string>
+    <string name="smell_mild">"Hisia yako ya upole
+hyposmia/parosmia."</string>
+    <string name="smell_moderate">"Hisia yako ya wastani
+hyposmia/parosmia."</string>
+    <string name="smell_anosmia">"Hisia yako ya anosmia."</string>
+    <string name="every">Kila %s %s</string>
+    <string name="set_a_time">Weka wakati</string>
+    <string name="set_a_date">Weka tarehe</string>
+    <string name="study_id">Kitambulisho cha Utafiti:</string>
+    <string name="patient_id">Kitambulisho cha Mgonjwa:</string>
+    <string name="please_enter_patient_id">Tafadhali Weka Kitambulisho cha Mgonjwa</string>
+    <string name="id_not_found">Kitambulisho hakijapatikana</string>
+    <string name="select_site">Chagua Tovuti</string>
+    <string name="delete_reminder">Je, ungependa kufuta kikumbusho hiki?</string>
+    <string name="strCorrectAge">Tafadhali weka Umri Sahihi</string>
+    <string name="strOldnNewPassword">Nenosiri la zamani na nywila mpya lazima visifanane</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="privacy_policy">Sera ya Faragha</string>
+</resources>

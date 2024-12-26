@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="correctAnswers"
+            type="Integer" />
+
+        <variable
+            name="totalQuestions"
+            type="Integer" />
+
+        <variable
+            name="accuracy"
+            type="Integer" />
+
+        <variable
+            name="scent"
+            type="String" />
+
+        <variable
+            name="ans8Tube"
+            type="String" />
+
+        <variable
+            name="ans16Tube"
+            type="String" />
+
+        <variable
+            name="isSkipRetest"
+            type="Boolean" />
+
+        <variable
+            name="isAnswerCorrect"
+            type="Boolean" />
+
+        <variable
+            name="isAnswerCorrect2"
+            type="Boolean" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_training"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_8dp"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_name"
+                    style="@style/text_view_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{scent}"
+                    android:textColor="@color/white"
+                    tools:text="Orange" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:text="@{@string/avg_user_accuracy(accuracy.toString())}"
+                    android:textColor="@color/box_stroke_color"
+                    android:textSize="@dimen/_10sp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_8Ans"
+                    style="@style/text_view_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@{isAnswerCorrect ? @drawable/check_icon : @drawable/wrong_icon}"
+                    android:drawablePadding="@dimen/_14dp"
+                    android:text="@{ans8Tube}"
+                    android:textColor="@{isAnswerCorrect ? @color/scent_color : @color/fab_color}"
+                    tools:text="Orange" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_16Ans"
+                    style="@style/text_view_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@{isAnswerCorrect2 ? @drawable/check_icon : @drawable/wrong_icon}"
+                    android:drawablePadding="@dimen/_14dp"
+                    android:text="@{ans16Tube}"
+                    android:textColor="@{isAnswerCorrect2 ? @color/scent_color : @color/fab_color}"
+                    android:visibility="@{isSkipRetest ? View.INVISIBLE : View.VISIBLE}"
+                    tools:text="Orange" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginBottom="@dimen/_4dp"
+            android:background="@color/them_color" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="userName"
+            type="String" />
+
+        <variable
+            name="scent16"
+            type="Boolean" />
+
+        <variable
+            name="scent8"
+            type="Boolean" />
+
+        <variable
+            name="training16"
+            type="Boolean" />
+
+        <variable
+            name="training8"
+            type="Boolean" />
+
+        <variable
+            name="audioAware"
+            type="Boolean" />
+
+        <variable
+            name="traceAware"
+            type="Boolean" />
+
+        <variable
+            name="glanceAware"
+            type="Boolean" />
+
+        <variable
+            name="isClinicalTestVersion"
+            type="Boolean" />
+
+        <variable
+            name="scentAwareLast16Test"
+            type="String" />
+
+        <variable
+            name="scentAwareLast8Test"
+            type="String" />
+
+        <variable
+            name="traceAwareLastTest"
+            type="String" />
+
+        <variable
+            name="audioAwareLastTest"
+            type="String" />
+
+        <variable
+            name="glanceAwareLastTest"
+            type="String" />
+
+        <variable
+            name="wordsAwareLastTest"
+            type="String" />
+
+        <variable
+            name="grammarAwareLastTest"
+            type="String" />
+
+        <variable
+            name="renAwareLastTest"
+            type="String" />
+
+        <variable
+            name="canTestScentAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestTraceAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestAudioAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestGlanceAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestWordsAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestGramarAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestRenAware"
+            type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_16dp">
+
+                <!--<com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:paddingHorizontal="@dimen/_20dp"
+                    android:text="@{@string/hi_user_name(userName)}" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:paddingHorizontal="@dimen/_20dp"
+                    android:text="@string/tap_on_any_of_the_cards_to_begin_your_sensify_experience"
+                    android:textSize="@dimen/_11sp" />-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ws_semi_bold"
+                        android:text="@string/smell_tests"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/_14sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tv_learn"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ws_regular"
+                        android:text="@string/learn_more"
+                        android:textColor="@color/color_light"
+                        android:textSize="@dimen/_12sp" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:fontFamily="@font/ws_light"
+                    android:text="@string/are_you_experiencing"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/_12sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:text="@string/watch_video"
+                    android:id="@+id/tx_watch_video"
+                    android:textColor="@color/color_light"
+                    android:textSize="@dimen/_12sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <include
+                            android:id="@+id/ll_scentAware_16"
+                            layout="@layout/layout_main_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:layout_marginEnd="@dimen/_12dp"
+                            app:canBold="@{scent8}"
+                            app:canTest="@{canTestScentAware}"
+                            app:icon="@{@drawable/scent_16}"
+                            app:message="@{@string/msg_scent_aware_evaluate}"
+                            app:recentActivity="@{scentAwareLast16Test}"
+                            app:subTitle="@{@string/_16_scent_test}"
+                            app:title="@{@string/scentaware}" />
+
+                        <include
+                            android:id="@+id/ll_scentAware_8"
+                            layout="@layout/layout_main_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_12dp"
+                            app:canBold="@{scent16}"
+                            app:canTest="@{canTestScentAware}"
+                            app:icon="@{@drawable/scent_8}"
+                            app:message="@{@string/msg_scent_aware_evaluate}"
+                            app:recentActivity="@{scentAwareLast8Test}"
+                            app:subTitle="@{@string/_8_scent_test}"
+                            app:title="@{@string/scentaware}" />
+
+                        <!-- <include
+                             android:id="@+id/ll_scentaware_evaluate"
+                             layout="@layout/layout_main_menu"
+                             app:canTest="@{canTestScentAware}"
+                             app:icon="@{@drawable/scent_aware}"
+                             app:message="@{@string/msg_scent_aware_evaluate}"
+                             app:recentActivity="@{scentAwareLastTest}"
+                             app:title="@{@string/scentaware_evaluate}" />
+
+                         <include
+                             android:id="@+id/ll_trace_aware"
+                             layout="@layout/layout_main_menu"
+                             app:canTest="@{canTestTraceAware}"
+                             app:icon="@{@drawable/trace_aware}"
+                             app:message="@{@string/msg_trace_aware}"
+                             app:recentActivity="@{traceAwareLastTest}"
+                             app:title="@{@string/trace_aware_test}" />
+
+                         <include
+                             android:id="@+id/ll_audio_aware"
+                             layout="@layout/layout_main_menu"
+                             app:canTest="@{canTestAudioAware}"
+                             app:icon="@{@drawable/audio_aware}"
+                             app:message="@{@string/msg_audio_aware}"
+                             app:recentActivity="@{audioAwareLastTest}"
+                             app:title="@{@string/audio_aware_test}" />
+
+                         <include
+                             android:id="@+id/ll_glance_aware"
+                             layout="@layout/layout_main_menu"
+                             app:canTest="@{canTestGlanceAware}"
+                             app:icon="@{@drawable/ic_face}"
+                             app:message="@{@string/msg_glace_aware}"
+                             app:recentActivity="@{glanceAwareLastTest}"
+                             app:title="@{@string/glance_aware_test}" />
+
+                         <include
+                             android:id="@+id/ll_words_aware"
+                             layout="@layout/layout_main_menu"
+                             android:visibility="gone"
+                             app:canTest="@{canTestWordsAware}"
+                             app:icon="@{@drawable/ic_words}"
+                             app:message="@{@string/words_aware}"
+                             app:recentActivity="@{wordsAwareLastTest}"
+                             app:title="@{@string/words_aware_test}" />
+
+                         <include
+                             android:id="@+id/ll_grammar_aware"
+                             layout="@layout/layout_main_menu"
+                             android:visibility="gone"
+                             app:canTest="@{canTestGramarAware}"
+                             app:icon="@{@drawable/ic_grammar}"
+                             app:message="@{@string/grammar_aware}"
+                             app:recentActivity="@{grammarAwareLastTest}"
+                             app:title="@{@string/grammar_aware_test}" />
+
+                         <include
+                             android:id="@+id/ll_ren_aware"
+                             layout="@layout/layout_main_menu"
+                             android:visibility="gone"
+                             app:canTest="@{canTestRenAware}"
+                             app:icon="@{@drawable/ic_grammar}"
+                             app:message="@{@string/ren_aware}"
+                             app:recentActivity="@{renAwareLastTest}"
+                             app:title="@{@string/ren_aware_test}" />-->
+
+                        <!-- <include
+                             android:id="@+id/ll_track_progress"
+                             layout="@layout/layout_main_menu"
+                             app:canTest="@{true}"
+                             app:icon="@{@drawable/track_progress}"
+                             app:message="@{@string/msg_track_progress}"
+                             app:recentActivity="@{``}"
+                             app:title="@{@string/track_progress}" />-->
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ws_semi_bold"
+                        android:text="@string/smell_training"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/_14sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_learn2"
+                        android:fontFamily="@font/ws_regular"
+                        android:text="@string/learn_more"
+                        android:textColor="@color/color_light"
+                        android:textSize="@dimen/_12sp" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:fontFamily="@font/ws_light"
+                    android:text="@string/depending_on_the_root"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/_12sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <include
+                            android:id="@+id/ll_training_16"
+                            layout="@layout/layout_main_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:layout_marginEnd="@dimen/_12dp"
+                            app:canBold="@{training16}"
+                            app:canTest="@{canTestScentAware}"
+                            app:icon="@{@drawable/smell_16}"
+                            app:message="@{@string/msg_scent_aware_evaluate}"
+                            app:recentActivity="@{scentAwareLast16Test}"
+                            app:subTitle="@{@string/smell_training}"
+                            app:title="@{@string/scentaware_16}" />
+
+                        <include
+                            android:id="@+id/ll_training_8"
+                            layout="@layout/layout_main_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_12dp"
+                            app:canBold="@{training8}"
+                            app:canTest="@{canTestScentAware}"
+                            app:icon="@{@drawable/smell_8}"
+                            app:message="@{@string/msg_scent_aware_evaluate}"
+                            app:recentActivity="@{scentAwareLast8Test}"
+                            app:subTitle="@{@string/smell_training}"
+                            app:title="@{@string/scentaware_8}" />
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ws_semi_bold"
+                        android:text="@string/cognitive_tests"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/_14sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ws_regular"
+                        android:id="@+id/tv_learn3"
+                        android:text="@string/learn_more"
+                        android:textColor="@color/color_light"
+                        android:textSize="@dimen/_12sp" />
+
+                </LinearLayout>
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_8dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:fontFamily="@font/ws_light"
+                    android:text="@string/fun_non_addictive_memory_games"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/_12sp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14dp"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <include
+                            android:id="@+id/ll_traceAware"
+                            layout="@layout/layout_main_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_12dp"
+                            android:layout_marginEnd="@dimen/_12dp"
+                            app:canBold="@{traceAware}"
+                            app:canTest="@{canTestScentAware}"
+                            app:icon="@{@drawable/trace_aware_img}"
+                            app:message="@{@string/msg_scent_aware_evaluate}"
+                            app:recentActivity="@{traceAwareLastTest}"
+                            app:subTitle="@{@string/fine_motor_skills}"
+                            app:title="@{@string/trace_aware}" />
+
+                        <include
+                            android:id="@+id/ll_audioAware"
+                            layout="@layout/layout_main_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_12dp"
+                            app:canBold="@{audioAware}"
+                            app:canTest="@{canTestScentAware}"
+                            app:icon="@{@drawable/audio_aware_img}"
+                            app:message="@{@string/msg_scent_aware_evaluate}"
+                            app:recentActivity="@{audioAwareLastTest}"
+                            app:subTitle="@{@string/verbal_memory}"
+                            app:title="@{@string/audio_aware}" />
+
+                        <include
+                            android:id="@+id/ll_glanceAware"
+                            layout="@layout/layout_main_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_12dp"
+                            app:canBold="@{glanceAware}"
+                            app:canTest="@{canTestGlanceAware}"
+                            app:icon="@{@drawable/glanceaware_icon}"
+                            app:message="@{@string/msg_scent_aware_evaluate}"
+                            app:recentActivity="@{glanceAwareLastTest}"
+                            app:subTitle="@{@string/associative_memory}"
+                            app:title="@{@string/glance_aware}" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ws_semi_bold"
+                        android:text="@string/patient_test"
+                        android:textColor="@color/color_text"
+                        android:textSize="@dimen/_14sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_new_patient_form"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+ New Patient Form"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_14sp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:paddingLeft="@dimen/_16dp"
+                        android:paddingRight="@dimen/_16dp"
+                        android:background="@drawable/button_rounded" />
+
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

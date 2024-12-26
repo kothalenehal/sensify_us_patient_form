@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pageMargin"
+            tools:context=".view.ProfileSetup2Fragment">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_12dp"
+                android:src="@drawable/ic_close_cross"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@id/btnYes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvHowOld"
+                    style="@style/text_view_new"
+                    android:gravity="start"
+                    android:fontFamily="@font/ws_bold"
+                    android:text="@string/strStuffyNose"
+                    android:textColor="@color/them_color"
+                    android:textSize="@dimen/_19sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:gravity="start"
+                    android:textSize="@dimen/_12sp"
+                    android:fontFamily="@font/ws_regular"
+                    android:text="@string/a_stuffy_nose_is_a_condition"
+                    android:textColor="@color/them_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnYes"
+                style="@style/button_style_light"
+                android:layout_margin="@dimen/_16dp"
+                android:text="@string/yes_i_have_a_stuffy_nose"
+                android:textColor="@color/them_color"
+                app:layout_constraintBottom_toTopOf="@+id/btnNo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeColor="@color/them_color" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNo"
+                style="@style/button_style_light"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/extraLargeMargin"
+                android:text="@string/no_i_am_okay"
+                android:textColor="@color/them_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeColor="@color/them_color" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

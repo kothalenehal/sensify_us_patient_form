@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.sensifyawareapp.ui.auth.AuthenticationViewModel" />
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/pageMargin"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        tools:context=".view.SignUpFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+
+            <TextView
+                android:id="@+id/tv_msg"
+                style="@style/textLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normalMargin"
+                android:gravity="center"
+                android:text="@string/strEnterEmail"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/ll"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@id/btn_signup"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTitle"
+                    android:fontFamily="@font/ws_bold"
+                    style="@style/text_view_new"
+                    android:layout_marginTop="@dimen/normalMargin"
+                    android:layout_marginBottom="@dimen/_32dp"
+                    android:text="@string/strSignUp"
+                    android:textSize="@dimen/_19sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/text_view_new"
+                            android:fontFamily="@font/ws_semi_bold"
+                            android:text="@string/strFirsName" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etFirstName"
+                            style="@style/editTextNew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                style="@style/textInputEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName|textCapWords"
+                                android:maxLength="255"
+                                android:paddingVertical="@dimen/largeMargin"
+                                android:text="@={viewmodel.strFirstName}" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/text_view_new"
+                            android:text="@string/strLastName"
+                            android:fontFamily="@font/ws_semi_bold" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etLastName"
+                            style="@style/editTextNew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                style="@style/textInputEditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName|textCapWords"
+                                android:maxLength="255"
+                                android:paddingVertical="@dimen/largeMargin"
+                                android:text="@={viewmodel.strLastName}" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:layout_marginTop="@dimen/normalMargin"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:text="@string/strEmail" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etEmail"
+                    style="@style/editTextNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:placeholderText="eg. johndoe@mail.com"
+                    app:placeholderTextColor="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/textInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:paddingVertical="@dimen/largeMargin"
+                        android:text="@={viewmodel.strEmail}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPhone"
+                    style="@style/editTextNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normalMargin"
+                    android:hint="@string/strPhone"
+                    android:visibility="gone"
+                    app:placeholderText="+919876543210">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/textInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:paddingVertical="@dimen/largeMargin"
+                        android:text="+918181818181" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:layout_marginTop="@dimen/normalMargin"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:text="@string/strPassword" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPassword"
+                    style="@style/editTextNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/text_color"
+                    app:helperText="@string/password_helper_text"
+                    app:helperTextEnabled="true"
+                    app:placeholderText="Include Uppercase, special char and digit">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/textInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:paddingVertical="@dimen/largeMargin"
+                        android:text="@={viewmodel.strPassword}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:layout_marginTop="@dimen/normalMargin"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:text="@string/strReenterPassword" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etReenterPassword"
+                    style="@style/editTextNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/text_color">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/textInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:paddingVertical="@dimen/largeMargin"
+                        android:text="@={viewmodel.strReEnterPassword}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_signup"
+                style="@style/button_style_dark"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_32dp"
+                android:onClick="@{viewmodel.onSignUp}"
+                android:text="@string/strSignUp"
+                android:layout_marginTop="@dimen/_16dp"
+                app:layout_constraintTop_toBottomOf="@+id/ll"
+                app:layout_constraintBottom_toTopOf="@+id/already_user"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/already_user"
+                style="@style/text_view_new"
+                android:fontFamily="@font/ws_semi_bold"
+                android:layout_marginBottom="@dimen/_22dp"
+                android:textColor="@color/color_light"
+                android:text="@string/already_user"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

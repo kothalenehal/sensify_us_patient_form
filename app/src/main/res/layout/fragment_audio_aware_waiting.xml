@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="minute"
+            type="Integer" />
+
+        <variable
+            name="maxProgress"
+            type="Integer" />
+
+        <variable
+            name="timerProgress"
+            type="Integer" />
+
+        <variable
+            name="time"
+            type="String" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_stop_test"
+        tools:context=".ui.audioaware.fragments.AudioAwareWaitingFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/iv_speaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/guideline3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/guideline3">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/card_style"
+                    android:layout_width="@dimen/_100dp"
+                    android:layout_height="@dimen/_100dp"
+                    android:outlineAmbientShadowColor="@color/yellow"
+                    android:outlineSpotShadowColor="@color/yellow"
+                    android:shadowColor="@color/divider_grey"
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    app:strokeColor="@color/yellow"
+                    app:strokeWidth="@dimen/_3dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_timer" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_done"
+                android:layout_width="@dimen/_30dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginHorizontal="@dimen/_19dp"
+                    android:elevation="@dimen/_8dp"
+                    android:src="@drawable/ic_info" />
+            </FrameLayout>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="@{maxProgress}"
+                android:progress="@{timerProgress}"
+                app:indicatorColor="@color/yellow"
+                app:indicatorSize="@dimen/_150dp"
+                app:layout_constraintBottom_toBottomOf="@id/guideline3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/guideline3"
+                app:trackThickness="@dimen/_8dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ws_medium"
+                android:gravity="center"
+                android:text="@{@string/please_wait_for_minutes_nbefore_you_proceed(minute)}"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintBottom_toTopOf="@id/progressbar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_style"
+                android:layout_marginTop="@dimen/_25dp"
+                android:fontFamily="@font/ws_bold"
+                android:gravity="center"
+                android:id="@+id/timer"
+                android:text="@{time}"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/progressbar" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_stop_test"
+            style="@style/button_style"
+            android:layout_marginBottom="@dimen/_28dp"
+            android:text="@string/stop_test"
+            android:layout_marginTop="@dimen/_8dp"
+            app:backgroundTint="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

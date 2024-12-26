@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="remainingSentences"
+            type="String" />
+
+        <variable
+            name="selectedTraces"
+            type="Integer" />
+
+        <variable
+            name="message"
+            type="String" />
+
+        <variable
+            name="checkpointProgress"
+            type="Integer" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/constraint"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        tools:context=".ui.grammaraware.GrammarAwareCheckPointActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80dp"
+            android:background="@color/green"
+            android:padding="@dimen/_9dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_10dp"
+                android:src="@drawable/ic_close_cross"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ws_medium"
+                android:gravity="center"
+                android:text="@string/done"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/iv_back"
+                app:layout_constraintRight_toLeftOf="@id/iv_temp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_10dp"
+                android:src="@drawable/ic_close_cross"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/btn_submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/_20dp"
+                tools:context=".ui.scentaware.CheckPointActivity">
+
+                <!--<include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar"
+                    app:title="@{@string/checkpoint_reached}" />-->
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:src="@drawable/checkpoint_flag" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:gravity="center"
+                    android:padding="@dimen/_20dp"
+                    android:text="@{message}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:fontFamily="@font/ws_light"
+                    android:gravity="center"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/you_ve_submitted_your_response_successfully"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:fontFamily="@font/ws_medium"
+                    android:gravity="center"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/sentences_remaining"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:gravity="center"
+                    android:id="@+id/tx_count_remain"
+                    android:text="@{remainingSentences}"
+                    android:textSize="@dimen/_20sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_submit"
+            style="@style/button_style"
+            android:layout_marginBottom="@dimen/_28dp"
+            android:paddingBottom="@dimen/_35dp"
+            android:text="@string/_continue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:backgroundTint="@color/orange" />
+        <FrameLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/framelayout"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

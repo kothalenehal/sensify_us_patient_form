@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="subTitle"
+            type="String" />
+
+        <variable
+            name="recentActivity"
+            type="String" />
+
+        <variable
+            name="message"
+            type="String" />
+
+        <variable
+            name="canTest"
+            type="Boolean" />
+
+        <variable
+            name="canBold"
+            type="Boolean" />
+
+        <variable
+            name="icon"
+            type="android.graphics.drawable.Drawable" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_menu"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginEnd="@dimen/_4dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_16dp"
+            app:cardElevation="@dimen/_4dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="@{canTest ? 1.0f : 0.5f}"
+                android:background="@color/white">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@{icon}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tool:src="@drawable/smell_8" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_title"
+                    style="@style/text_view_style"
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/_16dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:text="@{title}"
+                    android:textSize="@dimen/_11sp"
+                    android:visibility="@{canBold ? View.INVISIBLE : View.VISIBLE}"
+                    app:layout_constraintEnd_toStartOf="@id/iv_arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image"
+                    tool:text="ScentAware" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_title2"
+                    style="@style/text_view_style"
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/_16dp"
+                    android:fontFamily="@font/ws_bold"
+                    android:maxLines="1"
+                    android:text="@{title}"
+                    android:textSize="@dimen/_11sp"
+                    android:visibility="@{canBold ? View.VISIBLE : View.INVISIBLE}"
+                    app:layout_constraintEnd_toStartOf="@id/iv_arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image"
+                    tool:text="ScentAware" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/sub_title"
+                    style="@style/text_view_style"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:maxLines="1"
+                    android:text="@{subTitle}"
+                    android:textSize="@dimen/_11sp"
+                    android:visibility="@{canBold ? View.INVISIBLE : View.VISIBLE}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/iv_arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title"
+                    tool:text="16-Scent Test" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/sub_title2"
+                    style="@style/text_view_style"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:fontFamily="@font/ws_light"
+                    android:maxLines="1"
+                    android:text="@{subTitle}"
+                    android:textSize="@dimen/_11sp"
+                    android:visibility="@{canBold ? View.VISIBLE : View.INVISIBLE}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/iv_arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title"
+                    tool:text="16-Scent Test" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:src="@drawable/outline_arrow_circle_right_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/image" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_grammar_aware"
+    app:startDestination="@id/grammarAwareIntroFragment">
+
+    <fragment
+        android:id="@+id/grammarAwareIntroFragment"
+        android:name="com.sensifyawareapp.ui.grammaraware.sample.GrammarAwareIntroFragment"
+        android:label="GrammarAwareIntroFragment"
+        tools:layout="@layout/fragment_grammar_aware_intro">
+        <action
+            android:id="@+id/action_grammarAwareIntroFragment_to_grammarAwareBeginFragment"
+            app:destination="@id/grammarAwareBeginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_grammarAwareIntroFragment_to_grammarAwareSpeakFragment"
+            app:destination="@id/grammarAwareSpeakFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/grammarAwareBeginFragment"
+        android:name="com.sensifyawareapp.ui.grammaraware.sample.GrammarAwareBeginFragment"
+        android:label="GrammarAwareBeginFragment"
+        tools:layout="@layout/fragment_grammar_aware_begin">
+        <action
+            android:id="@+id/action_grammarAwareBeginFragment_to_grammarAwareSpeakFragment"
+            app:destination="@id/grammarAwareSpeakFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/grammarAwareSpeakFragment"
+        android:name="com.sensifyawareapp.ui.grammaraware.sample.GrammarAwareSpeakFragment"
+        android:label="GrammarAwareSpeakFragment"
+        tools:layout="@layout/fragment_grammar_aware_speak">
+        <action
+            android:id="@+id/action_grammarAwareSpeakFragment_to_grammarAwareBeginFragment"
+            app:destination="@id/grammarAwareBeginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_grammarAwareSpeakFragment_self"
+            app:destination="@id/grammarAwareSpeakFragment" />
+       <!-- <action
+            android:id="@+id/action_grammarAwareSpeakFragment_to_grammarAwareCheckPointFragment"
+            app:destination="@id/grammarAwareCheckPointFragment" />-->
+    </fragment>
+    <!--<fragment
+        android:id="@+id/grammarAwareCheckPointFragment"
+        android:name="com.sensifyawareapp.ui.grammaraware.fragment.GrammarAwareCheckPointFragment"
+        android:label="GrammarAwareCheckPointFragment" >
+        <action
+            android:id="@+id/action_grammarAwareCheckPointFragment_to_grammarAwareSpeakFragment"
+            app:destination="@id/grammarAwareSpeakFragment" />
+    </fragment>-->
+
+</navigation>

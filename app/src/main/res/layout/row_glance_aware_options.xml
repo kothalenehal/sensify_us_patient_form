@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="value"
+            type="String" />
+
+        <variable
+            name="isSelected"
+            type="Boolean" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_4dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@{isSelected ? @drawable/bg_glance_aware_option_selected : @drawable/bg_glance_aware_option}"
+                android:fontFamily="@font/ws_medium"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_10dp"
+                android:text="@{value}"
+                android:textColor="@{isSelected ? @color/white : @color/text_color}"
+                android:textSize="@dimen/_14sp"
+                tool:background="@drawable/bg_glance_aware_option" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

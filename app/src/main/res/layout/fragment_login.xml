@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.sensifyawareapp.ui.auth.AuthenticationViewModel" />
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        tools:context="com.sensifyawareapp.ui.auth.fragments.LoginFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            tools:context="com.sensifyawareapp.ui.auth.fragments.LoginFragment">
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@color/them_color"
+                android:src="@drawable/back_img" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/up_round_background"
+                android:id="@+id/constrain_layout"
+                android:layout_height="@dimen/_64dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_image">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_32dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constrain_layout">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strEmail" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etLoginId"
+                    style="@style/editTextNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:placeholderText="eg. johndoe@mail.com"
+                    app:placeholderTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/textInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:paddingVertical="@dimen/largeMargin"
+                        android:text="@={viewmodel.strEmail}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/largeMargin"
+                    android:text="@string/strPassword" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPassword"
+                    style="@style/editTextNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/color_icon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/textInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:paddingVertical="@dimen/largeMargin"
+                        android:text="@={viewmodel.strPassword}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                style="@style/button_style_dark"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/extraLargeMargin"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:onClick="@{viewmodel.onSignIn}"
+                android:text="@string/strLogin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignUp"
+                style="@style/button_style_light"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/strSignUp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_forgot_password"
+                style="@style/text_view_new"
+                android:fontFamily="@font/ws_bold"
+                android:padding="@dimen/_10dp"
+                android:text="@string/strForgotPassword"
+                android:layout_marginTop="@dimen/_20dp"
+                android:textColor="@color/color_light"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnSignUp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/_16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            tools:context="com.sensifyawareapp.ui.auth.fragments.LoginFragment">
+
+            <TextView
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normalMargin"
+                android:fontFamily="@font/ws_medium"
+                android:text="@string/strWelcome"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etLoginId"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/strLoginID"
+                    app:placeholderText="eg. johndoe@mail.com">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/textInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:paddingVertical="@dimen/largeMargin"
+                        android:text="@={viewmodel.strEmail}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPassword"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/largeMargin"
+                    android:hint="@string/strPassword"
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/textInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:paddingVertical="@dimen/largeMargin"
+                        android:text="@={viewmodel.strPassword}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_forgot_password"
+                    style="@style/text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/ws_medium"
+                    android:lineSpacingExtra="@dimen/_19sp"
+                    android:padding="@dimen/_10dp"
+                    android:text="@string/strForgotPassword"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_10sp" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignUp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/largeMargin"
+                android:backgroundTint="@android:color/transparent"
+                android:fontFamily="@font/ws_semi_bold"
+                android:paddingTop="@dimen/btnPaddingVertical"
+                android:paddingBottom="@dimen/btnPaddingVertical"
+                android:text="@string/strSignUp"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                style="@style/button_style"
+                android:layout_marginTop="@dimen/extraLargeMargin"
+                android:onClick="@{viewmodel.onSignIn}"
+                android:text="@string/strLogin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </ScrollView>
+</layout>

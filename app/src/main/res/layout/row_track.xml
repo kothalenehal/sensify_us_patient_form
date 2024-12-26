@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="date"
+            type="String" />
+
+        <variable
+            name="score"
+            type="String" />
+
+        <variable
+            name="avgResponseTime"
+            type="String" />
+
+        <variable
+            name="avgTracingAccuracy"
+            type="String" />
+
+        <variable
+            name="avgRecallAccuracy"
+            type="String" />
+
+        <variable
+            name="isTraceAware"
+            type="Boolean" />
+        <variable
+            name="isWordsAware"
+            type="Boolean" />
+
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv1"
+                style="@style/text_view_style"
+                android:layout_width="0dp"
+                android:text="@string/date"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv2"
+                style="@style/text_view_style"
+                android:text="@{date}"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv3"
+                style="@style/text_view_style"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/_3dp"
+                android:text="@{!isTraceAware ? @string/score : @string/avg_tracing_accuracy2 }"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv4"
+                app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv4"
+                style="@style/text_view_style"
+                android:layout_marginTop="@dimen/_3dp"
+                android:fontFamily="@font/ws_medium"
+                android:text="@{!isTraceAware ? score : avgTracingAccuracy }"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv5"
+                style="@style/text_view_style"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/_3dp"
+                android:text="@string/avg_recall_accuracy2"
+                android:textSize="@dimen/_12sp"
+                android:visibility="@{isTraceAware ? View.VISIBLE : View.GONE }"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv6"
+                app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv6"
+                style="@style/text_view_style"
+                android:layout_marginTop="@dimen/_3dp"
+                android:text="@{avgRecallAccuracy}"
+                android:fontFamily="@font/ws_medium"
+                android:textSize="@dimen/_12sp"
+                android:visibility="@{isTraceAware ? View.VISIBLE : View.GONE }"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv7"
+                style="@style/text_view_style"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/_3dp"
+                android:text="@string/avg_response_time2"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/tv8"
+                app:layout_constraintTop_toBottomOf="@id/tv5" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv8"
+                style="@style/text_view_style"
+                android:layout_marginTop="@dimen/_3dp"
+                android:text="@{avgResponseTime}"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

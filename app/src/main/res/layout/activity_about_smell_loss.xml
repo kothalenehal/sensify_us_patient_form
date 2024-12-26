@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="level"
+            type="String" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pageMargin"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_10dp"
+                android:src="@drawable/ic_close_cross"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/color_text"
+                android:src="@drawable/about_test_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view"
+                style="@style/text_view_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pageMargin"
+                android:fontFamily="@font/ws_regular"
+                android:text="@string/understanding_nsmell_loss"
+                android:textSize="@dimen/_19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/pageMargin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img"
+                app:layout_constraintVertical_bias="0.0">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:text="@string/smell_loss_medically_known_as"
+                    android:textSize="@dimen/_12sp" />
+
+                <include
+                    android:id="@+id/ll_viral_infaction"
+                    layout="@layout/layout_about_smell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25dp"
+                    app:icon="@{@drawable/infection_img}"
+                    app:message="@{@string/such_as_the}"
+                    app:title="@{@string/viral_infections}" />
+
+                <include
+                    android:id="@+id/ll_nasal_issues"
+                    layout="@layout/layout_about_smell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    app:icon="@{@drawable/nasal_issues_icon}"
+                    app:message="@{@string/conditions_like_allergies}"
+                    app:title="@{@string/nasal_and_sinus_issues}" />
+
+                <include
+                    android:id="@+id/ll_head_injuries"
+                    layout="@layout/layout_about_smell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    app:icon="@{@drawable/head_injuries}"
+                    app:message="@{@string/trauma_to_the_head}"
+                    app:title="@{@string/head_injuries}" />
+
+                <include
+                    android:id="@+id/ll_damage_system"
+                    layout="@layout/layout_about_smell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    app:icon="@{@drawable/damage_system}"
+                    app:message="@{@string/degeneration_or_inflammation}"
+                    app:title="@{@string/damage_to_nervous_system}" />
+
+
+                <include
+                    android:id="@+id/ll_medication"
+                    layout="@layout/layout_about_smell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    app:icon="@{@drawable/medication}"
+                    app:message="@{@string/certain_medications}"
+                    app:title="@{@string/medication}" />
+
+                <include
+                    android:id="@+id/ll_age"
+                    layout="@layout/layout_about_smell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    app:icon="@{@drawable/age_icon}"
+                    app:message="@{@string/as_we_age_our}"
+                    app:title="@{@string/age}" />
+
+                <include
+                    android:id="@+id/ll_smoking"
+                    layout="@layout/layout_about_smell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    app:icon="@{@drawable/smoking_icon}"
+                    app:message="@{@string/smoking_or_vaping}"
+                    app:title="@{@string/smoking}" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:text="@string/loss_of_smell_can"
+                    android:textSize="@dimen/_12sp" />
+
+                <include
+                    android:id="@+id/ll_anosmia"
+                    layout="@layout/layout_about_smell_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_22dp"
+                    app:icon="@{@drawable/trace_aware_img}"
+
+                    app:title="@{@string/anosmia}" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    app:dividerColor="@color/divider_grey" />
+
+
+                <include
+                    android:id="@+id/ll_hyposmia"
+                    layout="@layout/layout_about_smell_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    app:icon="@{@drawable/trace_aware_img}"
+                    app:message="@{@string/partial_loss}"
+                    app:title="@{@string/hyposmia}" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    app:dividerColor="@color/divider_grey" />
+
+                <include
+                    android:id="@+id/ll_parosmia"
+                    layout="@layout/layout_about_smell_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    app:icon="@{@drawable/trace_aware_img}"
+                    app:message="@{@string/distorted_sense_of_smell}"
+                    app:title="@{@string/parosmia}" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    app:dividerColor="@color/divider_grey" />
+
+                <include
+                    android:id="@+id/ll_phantosmia"
+                    layout="@layout/layout_about_smell_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    app:icon="@{@drawable/trace_aware_img}"
+                    app:message="@{@string/condition_that_causes}"
+                    app:title="@{@string/phantosmia}" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="photo"
+            type="android.graphics.drawable.Drawable" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.glanceaware.fragments.ResponseFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250dp"
+                android:src="@{photo}"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_name"
+                style="@style/text_view_style"
+                android:layout_marginTop="@dimen/_20dp"
+                android:gravity="center"
+                android:text="@string/what_is_the_name_of_the_person_in_nthe_picture"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_photo" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_19dp"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingHorizontal="@dimen/_10dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_name"
+                app:spanCount="2"
+                tools:itemCount="4"
+                tools:listitem="@layout/row_glance_aware_options" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_next"
+                style="@style/card_style"
+                android:layout_marginTop="@dimen/_20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_options">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_title"
+                        style="@style/text_view_style"
+                        android:fontFamily="@font/ws_semi_bold"
+                        android:text="@string/next"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_20sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_msg"
+            style="@style/text_view_new"
+            android:layout_marginTop="@dimen/_32dp"
+            android:fontFamily="@font/ws_regular"
+            android:gravity="center"
+            android:text="@string/are_you_sure_you_wish_to_ncancel_the_test"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/card_yes"
+            style="@style/button_style_light"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_32dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:text="@string/yes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn_no"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_msg" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_no"
+            style="@style/button_style_dark"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_32dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:text="@string/no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/card_yes"
+            app:layout_constraintTop_toBottomOf="@+id/tv_msg" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

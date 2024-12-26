@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_audio_aware"
+    app:startDestination="@+id/MemorizeFragment">
+    <fragment
+        android:id="@+id/MemorizeFragment"
+        android:name="com.sensifyawareapp.ui.glanceaware.fragments.MemorizeFragment"
+        android:label="MemorizeFragment"
+        tools:layout="@layout/fragment_memorize">
+
+        <action
+            android:id="@+id/action_MemorizeFragment_to_ReadyToBeginFragment"
+            app:destination="@id/ReadyToBeginFragment" />
+        <action
+            android:id="@+id/action_MemorizeFragment_self"
+            app:destination="@id/MemorizeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ReadyToBeginFragment"
+        android:name="com.sensifyawareapp.ui.glanceaware.fragments.ReadyToBeginFragment"
+        android:label="ReadyToBeginFragment"
+        tools:layout="@layout/fragment_ready_to_begin">
+        <action
+            android:id="@+id/action_ReadyToBeginFragment_to_ResponseFragment"
+            app:destination="@id/ResponseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ResponseFragment"
+        android:name="com.sensifyawareapp.ui.glanceaware.fragments.ResponseFragment"
+        android:label="ResponseFragment"
+        tools:layout="@layout/fragment_response">
+        <action
+            android:id="@+id/action_ResponseFragment_self"
+            app:destination="@id/ResponseFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="overallWellness"
+            type="String" />
+
+        <variable
+            name="renal_score"
+            type="Float" />
+
+        <variable
+            name="renal_score_value"
+            type="String" />
+
+        <variable
+            name="liver_score"
+            type="Float" />
+
+        <variable
+            name="liver_score_value"
+            type="String" />
+
+        <variable
+            name="hydration_score"
+            type="Float" />
+
+        <variable
+            name="hydration_score_value"
+            type="String" />
+
+        <variable
+            name="energy_score"
+            type="Float" />
+
+        <variable
+            name="energy_score_value"
+            type="String" />
+
+        <variable
+            name="immunity_score"
+            type="Float" />
+
+        <variable
+            name="immunity_score_value"
+            type="String" />
+
+        <variable
+            name="bone_score"
+            type="Float" />
+
+        <variable
+            name="bone_score_value"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        tools:context=".ui.renaware.RenAwareResultActivity">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@id/btn_back_tests"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                tools:context=".ui.renaware.RenAwareResultActivity">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/header_title"
+                    style="@style/text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="@dimen/_16dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:gravity="center"
+                    android:text="@string/test_completed"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_16dp"
+                    android:layout_marginStart="@dimen/_16dp"
+                    app:cardCornerRadius="@dimen/_12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/header_title">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/green"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tx_overallWellness"
+                            style="@style/text_view_style"
+                            android:layout_margin="@dimen/_12dp"
+                            android:fontFamily="@font/ws_light"
+                            android:gravity="center"
+                            android:text="@{overallWellness}"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_40sp"
+                            tools:text="8.0" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/sub_title"
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="@dimen/_14dp"
+                            android:layout_marginEnd="@dimen/_8dp"
+                            android:fontFamily="@font/ws_light"
+                            android:gravity="start"
+                            android:text="@string/your_score_is_within_the_optimal_range"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sp" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/card_view">
+
+                    <include
+                        android:id="@+id/ll_renal_health"
+                        layout="@layout/layout_health_menu"
+                        app:score="@{renal_score}"
+                        app:scoreValue="@{renal_score_value}"
+                        app:title="@{@string/renal_health}" />
+
+                    <include
+                        android:id="@+id/ll_liver_health"
+                        layout="@layout/layout_health_menu"
+                        app:score="@{liver_score}"
+                        app:scoreValue="@{renal_score_value}"
+                        app:title="@{@string/liver_health}" />
+
+                    <include
+                        android:id="@+id/ll_hydration"
+                        layout="@layout/layout_health_menu"
+                        app:score="@{hydration_score}"
+                        app:scoreValue="@{hydration_score_value}"
+                        app:title="@{@string/hydration}" />
+
+                    <include
+                        android:id="@+id/ll_energy_balance"
+                        layout="@layout/layout_health_menu"
+                        app:score="@{energy_score}"
+                        app:scoreValue="@{energy_score_value}"
+                        app:title="@{@string/energy_balance}" />
+
+                    <include
+                        android:id="@+id/ll_immunity"
+                        layout="@layout/layout_health_menu"
+                        app:score="@{immunity_score}"
+                        app:scoreValue="@{immunity_score_value}"
+                        app:title="@{@string/immunity}" />
+
+                    <include
+                        android:id="@+id/ll_bone_health"
+                        layout="@layout/layout_health_menu"
+                        app:score="@{bone_score}"
+                        app:scoreValue="@{bone_score_value}"
+                        app:title="@{@string/bone_health}" />
+
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back_tests"
+            style="@style/button_style"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:text="@string/return_to_tests" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_audio_aware"
+    app:startDestination="@+id/AudioAwareBeginningFragment">
+    <fragment
+        android:id="@+id/AudioAwareBeginningFragment"
+        android:name="com.sensifyawareapp.ui.audioaware.fragments.AudioAwareBeginningFragment"
+        android:label="AudioAwareBeginningFragment"
+        tools:layout="@layout/fragment_audio_aware_beginning">
+
+        <action
+            android:id="@+id/action_AudioAwareBeginningFragment_to_AudioAwareCountdownFragment"
+            app:destination="@id/AudioAwareCountdownFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AudioAwareCountdownFragment"
+        android:name="com.sensifyawareapp.ui.audioaware.fragments.AudioAwareCountdownFragment"
+        android:label="AudioAwareCountdownFragment"
+        tools:layout="@layout/fragment_audio_aware_countdown">
+
+        <action
+            android:id="@+id/action_AudioAwareCountdownFragment_to_AudioAwareListingFragment"
+            app:destination="@id/AudioAwareListingFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AudioAwareListingFragment"
+        android:name="com.sensifyawareapp.ui.audioaware.fragments.AudioAwareListingFragment"
+        android:label="AudioAwareListingFragment"
+        tools:layout="@layout/fragment_audio_aware_listing">
+
+        <action
+            android:id="@+id/action_AudioAwareListingFragment_to_AudioAwareWaitingFragment"
+            app:destination="@id/AudioAwareWaitingFragment" />
+
+        <action
+            android:id="@+id/action_AudioAwareListingFragment_to_AudioAwareRecallFragment"
+            app:destination="@id/AudioAwareRecallFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AudioAwareWaitingFragment"
+        android:name="com.sensifyawareapp.ui.audioaware.fragments.AudioAwareWaitingFragment"
+        android:label="AudioAwareWaitingFragment"
+        tools:layout="@layout/fragment_audio_aware_waiting">
+
+        <action
+            android:id="@+id/action_AudioAwareWaitingFragment_to_AudioAwareRecallFragment"
+            app:destination="@id/AudioAwareRecallFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AudioAwareRecallFragment"
+        android:name="com.sensifyawareapp.ui.audioaware.fragments.AudioAwareRecallFragment"
+        android:label="AudioAwareRecallFragment"
+        tools:layout="@layout/fragment_audio_aware_recall">
+
+    </fragment>
+</navigation>

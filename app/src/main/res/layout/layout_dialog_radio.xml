@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/radioGrp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/tvSelectGender">
+
+    <RadioButton
+        android:id="@+id/btn_no_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:buttonTint="@color/blue"
+        android:checked="true"
+        android:paddingStart="@dimen/_10dp"
+        android:text="@string/does_not_repeat"
+        />
+
+    <RadioButton
+        android:id="@+id/btnDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:buttonTint="@color/blue"
+        android:paddingStart="@dimen/_10dp"
+        android:text="@string/every_day"
+        />
+
+    <RadioButton
+        android:id="@+id/btnWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:buttonTint="@color/blue"
+        android:paddingStart="@dimen/_10dp"
+        android:text="@string/every_week"
+        />
+    <RadioButton
+        android:id="@+id/btnMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:buttonTint="@color/blue"
+        android:paddingLeft="@dimen/_10dp"
+        android:text="@string/every_month"
+        />
+    <RadioButton
+        android:id="@+id/btnYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:buttonTint="@color/blue"
+        android:paddingStart="@dimen/_10dp"
+        android:text="@string/every_year"
+        />
+    <RadioButton
+        android:id="@+id/btnCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:buttonTint="@color/blue"
+        android:paddingStart="@dimen/_10dp"
+        android:text="@string/custom"
+        />
+</RadioGroup>

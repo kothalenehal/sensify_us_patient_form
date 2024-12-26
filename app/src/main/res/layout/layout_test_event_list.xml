@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="time"
+            type="String" />
+
+        <variable
+            name="repeat"
+            type="String" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.CardView.Elevated"
+        app:cardCornerRadius="@dimen/_8dp"
+        app:cardElevation="@dimen/_4dp"
+        android:layout_margin="@dimen/_6dp"
+        android:backgroundTint="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scent_aware"
+                android:layout_marginStart="@dimen/_6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_title"
+                style="@style/text_view_new"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_10dp"
+                android:fontFamily="@font/ws_bold"
+                android:textColor="@color/text_color"
+                android:text="@{title}"
+               app:layout_constraintStart_toEndOf="@+id/iv_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                tool:text="ScentAware Test" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_time"
+                style="@style/text_view_new"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:fontFamily="@font/ws_light"
+                android:text="@{time}"
+                android:textSize="@dimen/_10sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                tool:text="Not Tested Yet" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_repeat"
+                style="@style/text_view_new"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:fontFamily="@font/ws_light"
+                android:text="@{@string/repeat_at(repeat)}"
+                android:textSize="@dimen/_10sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_title"
+                app:layout_constraintTop_toBottomOf="@id/tv_time"
+                tool:text="Not Tested Yet" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

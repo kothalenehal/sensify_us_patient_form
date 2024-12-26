@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="timerProgress"
+            type="Integer" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.audioaware.fragments.AudioAwareBeginningFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progress_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="4"
+                android:progress="@{timerProgress}"
+                app:indicatorColor="@color/green"
+                app:layout_constraintTop_toTopOf="parent"
+                app:trackColor="@color/white"
+                app:trackThickness="@dimen/_5dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/iv_speaker"
+                style="@style/card_style"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_100dp"
+                android:outlineAmbientShadowColor="@color/yellow"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:shadowColor="@color/divider_grey"
+                app:cardCornerRadius="@dimen/_50sdp"
+                app:layout_constraintBottom_toBottomOf="@id/guideline3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/guideline3"
+                app:strokeColor="@color/yellow"
+                app:strokeWidth="@dimen/_3dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_speaker"
+                    app:tint="@color/yellow" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ws_medium"
+                android:gravity="center"
+                android:text="@string/after_the_countdown_n20_words_will_be_read_out_to_you"
+                android:textSize="@dimen/_14sp"
+                android:layout_marginStart="@dimen/_8dp"
+                android:layout_marginEnd="@dimen/_8dp"
+                app:layout_constraintBottom_toTopOf="@id/iv_speaker"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_stop_test"
+                style="@style/button_style"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:background="@drawable/orange_button_shadow"
+                android:enabled="false"
+                android:paddingBottom="@dimen/_20dp"
+                android:text="@string/stop_test"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_54dp"
+                android:layout_marginTop="@dimen/_6dp"
+                android:layout_marginEnd="@dimen/_54dp"
+                android:layout_marginBottom="@dimen/_38dp"
+                android:progress="0"
+                app:indicatorColor="@color/green"
+                app:layout_constraintBottom_toTopOf="@id/btn_stop_test"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:trackColor="@color/progress_grey"
+                app:trackCornerRadius="@dimen/_4dp"
+                app:trackThickness="@dimen/_4dp" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.sensifyawareapp.ui.auth.AuthenticationViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.ProfileSetup4Fragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pageMargin"
+                tools:context=".view.ProfileSetup4Fragment">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="@dimen/_12dp"
+                    android:src="@drawable/ic_close_cross"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_msg"
+                    style="@style/text_view_new"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:fontFamily="@font/ws_bold"
+                    android:gravity="start"
+                    android:text="@string/are_you_currently_taking_any_medication"
+                    android:textSize="@dimen/_19sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_sub_msg"
+                    style="@style/text_view_new"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:gravity="start"
+                    android:text="@string/certain_medication_are_known_to_cause_a_loss_or_distortion_in_the_sense_of_smell"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_msg" />
+
+                <RadioGroup
+                    android:id="@+id/radioGrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_28dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_sub_msg">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/option1"
+                        style="@style/radioButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:onCheckedChanged="@{(cb, isChecked) -> viewmodel.onItemChecked(@string/strOption1, isChecked)}"
+                        android:text="@string/strOption1"
+                        android:textColor="@color/them_color" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/option2"
+                        style="@style/radioButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onCheckedChanged="@{(cb, isChecked) -> viewmodel.onItemChecked(@string/strOption2,isChecked)}"
+                        android:text="@string/strOption2"
+                        android:textColor="@color/them_color" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/option3"
+                        style="@style/radioButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onCheckedChanged="@{(cb, isChecked) -> viewmodel.onItemChecked(@string/strOption3,isChecked)}"
+                        android:text="@string/strOption3"
+                        android:textColor="@color/them_color" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/option4"
+                        style="@style/radioButtonText"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onCheckedChanged="@{(cb, isChecked) -> viewmodel.onItemChecked(@string/strOption4,isChecked)}"
+                        android:text="@string/strOption4"
+                        android:textColor="@color/them_color" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/option5"
+                        style="@style/radioButtonText"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:onCheckedChanged="@{(cb, isChecked) -> viewmodel.onItemChecked(@string/strOption5,isChecked)}"
+                        android:text="@string/strOption5"
+                        android:textColor="@color/them_color" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/option6"
+                        style="@style/radioButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onCheckedChanged="@{(cb, isChecked) -> viewmodel.onItemChecked(`Others`,isChecked)}"
+                        android:text="@string/strOption6"
+                        android:textColor="@color/them_color" />
+
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etOther"
+                    style="@style/editTextNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/largeMargin"
+                    app:hintEnabled="false"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGrp"
+                    app:layout_goneMarginTop="@dimen/largeMargin">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/text_other"
+                        style="@style/textInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/e_g_vasodilators"
+                        android:paddingVertical="@dimen/largeMargin"
+                        android:text="@={viewmodel.strMedicationOtherOption}"
+                        android:textColorHint="@color/them_color" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNext"
+                    style="@style/button_style_dark"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:text="@string/begin_test"
+                    android:textSize="@dimen/_11sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etOther" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/_16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnNext"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

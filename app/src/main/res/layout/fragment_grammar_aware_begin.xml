@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="timerProgress"
+            type="Integer" />
+
+        <variable
+            name="words"
+            type="String" />
+
+        <variable
+            name="level"
+            type="String" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.wordsaware.fragment.WordsAwareBeginningFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/progress_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="70"
+                android:progress="@{timerProgress}"
+                app:indicatorColor="@color/green"
+                app:layout_constraintTop_toTopOf="parent"
+                app:trackColor="@color/white"
+                app:trackThickness="@dimen/_5dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/iv_mic"
+                style="@style/card_style_mic"
+                android:layout_width="@dimen/_80dp"
+                android:layout_height="@dimen/_32dp"
+                app:cardBackgroundColor="@color/mic_border"
+                app:cardCornerRadius="@dimen/_16dp"
+                app:layout_constraintBottom_toTopOf="@+id/tx_word1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/mic"
+                        android:layout_width="@dimen/_11dp"
+                        android:layout_height="@dimen/_15dp"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:src="@drawable/vector"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/stand_by"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/divider_grey"
+                        android:textSize="@dimen/_12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mic"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tx_word1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_8dp"
+                android:fontFamily="@font/ws_medium"
+                android:gravity="start"
+                android:text="@{words}"
+                android:textAllCaps="true"
+                android:textColor="@color/box_stroke_color"
+                android:textSize="@dimen/_14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tx_phrases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:gravity="start"
+                android:text="@string/phrases_submitted"
+                android:textColor="@color/box_stroke_color"
+                android:textSize="@dimen/_10sp"
+                app:layout_constraintEnd_toStartOf="@+id/tx_count"
+                app:layout_constraintTop_toTopOf="@+id/tx_word1" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tx_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:fontFamily="@font/ws_medium"
+                android:gravity="start"
+                android:text="@{level}"
+                android:textColor="@color/box_stroke_color"
+                android:textSize="@dimen/_10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tx_phrases"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tx_phrases" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_2dp"
+                android:background="@color/box_stroke_color"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tx_speech"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_12dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:layout_marginBottom="@dimen/_16dp"
+                android:fontFamily="@font/ws_semi_bold"
+                android:gravity="start"
+                android:textSize="@dimen/_20sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                app:layout_constraintBottom_toTopOf="@+id/iv_speaker"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/iv_speaker"
+                style="@style/card_style"
+                android:layout_width="@dimen/_80dp"
+                android:layout_height="@dimen/_38dp"
+                android:layout_marginBottom="@dimen/_30dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:strokeColor="@color/blue"
+                app:strokeWidth="@dimen/_2dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/speaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/border_mic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/restart_speech"
+                android:layout_width="@dimen/_38dp"
+                android:layout_height="@dimen/_38dp"
+                android:layout_gravity="center"
+                android:src="@drawable/restart_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_speaker"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_speaker"
+                app:layout_constraintTop_toTopOf="@+id/iv_speaker" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.30" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</layout>

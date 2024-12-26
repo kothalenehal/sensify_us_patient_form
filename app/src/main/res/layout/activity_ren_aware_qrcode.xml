@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                app:title="@{title}" />
+
+            <com.budiyev.android.codescanner.CodeScannerView
+                android:id="@+id/scanner_view"
+                android:layout_width="@dimen/_250dp"
+                android:layout_height="@dimen/_250dp"
+                android:layout_marginTop="@dimen/_16dp"
+                app:autoFocusButtonVisible="false"
+                app:flashButtonVisible="false"
+                app:frameColor="@color/black"
+                app:frameCornersSize="@dimen/_44dp"
+                app:frameSize="0.9"
+                app:frameThickness="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar"
+                app:maskColor="@color/white" />
+
+            <!--<com.budiyev.android.codescanner.CodeScannerView
+                android:id="@+id/scanner_view"
+                android:layout_width="@dimen/_250dp"
+                android:layout_height="@dimen/_250dp"
+                app:autoFocusButtonVisible="false"
+                app:flashButtonVisible="false"
+                app:frameSize="0.9"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar"
+              />-->
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_style"
+                android:layout_width="0dp"
+                app:fontFamily="@font/ws_medium"
+                android:layout_margin="@dimen/_32dp"
+                android:gravity="center"
+                android:text="@string/scan_the_qr_code_n_on_the_renaware_test_strip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scanner_view" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

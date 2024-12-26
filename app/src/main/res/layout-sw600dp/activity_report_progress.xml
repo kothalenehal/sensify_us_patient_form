@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="subtitle"
+            type="String" />
+
+        <variable
+            name="noDataFound"
+            type="Boolean" />
+
+        <variable
+            name="loading"
+            type="Boolean" />
+
+        <variable
+            name="color"
+            type="Integer" />
+
+        <variable
+            name="model"
+            type="com.sensifyawareapp.ui.trackprogress.TrackProgressViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80dp"
+            android:padding="@dimen/_9dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_10dp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_title"
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ws_medium"
+                android:gravity="center"
+                android:text="@{title}"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_back"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:padding="@dimen/_8dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_take_test"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            tools:context=".ui.trackprogress.ProgressReportActivity">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/card_style"
+                    android:layout_width="@dimen/_250dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_height="wrap_content"
+                    android:visibility="@{loading ? View.GONE : View.VISIBLE}">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv1"
+                            style="@style/text_view_style"
+                            android:layout_width="0dp"
+                            android:fontFamily="@font/ws_medium"
+                            android:text="@{title}"
+                            android:textSize="@dimen/_14sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <!--  <androidx.appcompat.widget.AppCompatImageButton
+                              android:id="@+id/iv_previous"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:backgroundTint="@color/white"
+                              android:onClick="@{()->model.previousPage()}"
+                              android:padding="@dimen/_7sdp"
+                              android:src="@drawable/ic_previous"
+                              app:layout_constraintRight_toLeftOf="@id/iv_next"
+                              app:layout_constraintTop_toTopOf="parent" />
+
+                          <androidx.appcompat.widget.AppCompatImageButton
+                              android:id="@+id/iv_next"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:backgroundTint="@color/white"
+                              android:onClick="@{()->model.nextPage()}"
+                              android:padding="@dimen/_7sdp"
+                              android:src="@drawable/ic_next"
+                              app:layout_constraintRight_toRightOf="parent"
+                              app:layout_constraintTop_toTopOf="parent" />-->
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv2"
+                            style="@style/text_view_style"
+                            android:layout_width="0dp"
+                            android:layout_marginTop="@dimen/_6dp"
+                            android:fontFamily="@font/ws_medium"
+                            android:gravity="start"
+                            android:text="@{subtitle}"
+                            android:textSize="@dimen/_10sp"
+                            android:visibility="gone"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/chart"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_200dp"
+                            android:layout_marginTop="@dimen/_6dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv2" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/iv_download"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:clickable="@{!noDataFound}"
+                            android:src="@drawable/ic_download"
+                            app:layout_constraintBottom_toBottomOf="@id/iv_share"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/iv_share"
+                            app:tint="@{color}" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/iv_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10dp"
+                            android:layout_marginTop="@dimen/_6dp"
+                            android:backgroundTint="@color/white"
+                            android:clickable="@{!noDataFound}"
+                            android:src="@drawable/ic_share"
+                            app:layout_constraintLeft_toRightOf="@id/iv_download"
+                            app:layout_constraintTop_toBottomOf="@id/chart"
+                            app:tint="@{color}" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_15dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:fontFamily="@font/ws_medium"
+                    android:text="@string/recent_tests"
+                    android:textSize="@dimen/_14sp"
+                    android:visibility="@{noDataFound || loading ? View.GONE : View.VISIBLE}" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_tests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15dp"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:visibility="@{noDataFound || loading ? View.GONE : View.VISIBLE}"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/row_track" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:gravity="center"
+                    android:text="@string/you_haven_t_attempted_any_tests_yet"
+                    android:textSize="@dimen/_14sp"
+                    android:visibility="@{noDataFound ? View.VISIBLE : View.GONE}"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_share"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/iv_share" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:visibility="@{loading ? View.VISIBLE : View.GONE}"
+                    app:indeterminateAnimationType="contiguous"
+                    app:indicatorColor="@color/orange" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_take_test"
+            style="@style/button_style"
+            android:layout_marginTop="@dimen/_20dp"
+            android:background="@drawable/orange_button_shadow"
+            android:paddingBottom="@dimen/_20dp"
+            android:text="@string/take_a_test"
+            android:visibility="gone"
+            app:backgroundTint="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

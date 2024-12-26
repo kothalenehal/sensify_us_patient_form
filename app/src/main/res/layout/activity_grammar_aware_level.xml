@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.traceaware.SelectTraceAwareLevelActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:title="@{@string/title_level_of_difficulty}" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_25dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_easy"
+                    style="@style/card_style"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="@dimen/_19dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_19dp"
+                        android:paddingVertical="@dimen/_22dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_title_easy"
+                            style="@style/text_view_style"
+                            android:fontFamily="@font/ws_semi_bold"
+                            android:text="@string/easy"
+                            android:textSize="@dimen/_20sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_hard"
+                    style="@style/card_style"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="@dimen/_19dp"
+                    android:layout_marginBottom="@dimen/_51dp"
+                    android:layout_marginTop="@dimen/_5dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_19dp"
+                        android:paddingVertical="@dimen/_22dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_title_hard"
+                            style="@style/text_view_style"
+                            android:fontFamily="@font/ws_semi_bold"
+                            android:text="@string/hard"
+                            android:textSize="@dimen/_20sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

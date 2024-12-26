@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.settings.UpdateProfileActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:title="@{@string/update_profile}" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_16dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etUserName"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user_name"
+                    app:placeholderText="type your first name and last name here">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/textInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName|textCapWords"
+                        android:maxLength="255"
+                        android:paddingVertical="@dimen/largeMargin" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvHowOld"
+                    style="@style/text_view_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:fontFamily="@font/ws_medium"
+                    android:text="@string/strHowOld"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etAge"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:hint="@string/strAge"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvHowOld"
+                    app:placeholderText="Type in your age">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/textInputEditText"
+                        android:id="@+id/age_tx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingVertical="@dimen/largeMargin" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSelectGender"
+                    style="@style/text_view_new"
+                    android:layout_marginTop="@dimen/_32dp"
+                    android:text="@string/strSelectGender"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/etAge" />
+
+                <RadioGroup
+                    android:id="@+id/radioGrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tvSelectGender">
+
+                    <RadioButton
+                        android:id="@+id/btnMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:buttonTint="@color/color_light"
+                        android:fontFamily="@font/ws_regular"
+                        android:paddingStart="@dimen/_10dp"
+                        android:text="@string/strMale"
+                        android:textSize="@dimen/_12sp" />
+
+                    <RadioButton
+                        android:id="@+id/btnFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:buttonTint="@color/color_light"
+                        android:fontFamily="@font/ws_regular"
+                        android:paddingStart="@dimen/_10dp"
+                        android:text="@string/strFemale"
+                        android:textSize="@dimen/_12sp" />
+
+                    <RadioButton
+                        android:id="@+id/btnOthers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:buttonTint="@color/color_light"
+                        android:fontFamily="@font/ws_regular"
+                        android:paddingStart="@dimen/_10dp"
+                        android:text="@string/strOther"
+                        android:textSize="@dimen/_12sp" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_submit"
+                    style="@style/button_style_dark"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_32dp"
+                    android:text="@string/submit" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

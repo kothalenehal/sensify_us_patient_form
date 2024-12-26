@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_words_aware"
+    app:startDestination="@id/wordsAwareBeginningFragment">
+
+    <fragment
+        android:id="@+id/wordsAwareBeginningFragment"
+        android:name="com.sensifyawareapp.ui.wordsaware.fragment.WordsAwareBeginningFragment"
+        android:label="WordsAwareBeginningFragment"
+        tools:layout="@layout/fragment_words_aware_beginning">
+        <action
+            android:id="@+id/action_wordsAwareBeginningFragment_to_wordsAwareCountdownFragment"
+            app:destination="@id/wordsAwareCountdownFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordsAwareCountdownFragment"
+        android:name="com.sensifyawareapp.ui.wordsaware.fragment.WordsAwareCountdownFragment"
+        android:label="WordsAwareCountdownFragment"
+        tools:layout="@layout/fragment_words_aware_countdown">
+        <action
+            android:id="@+id/action_wordsAwareCountdownFragment_to_wordsAwareListeningFragment"
+            app:destination="@id/wordsAwareListeningFragment" />
+        <action
+            android:id="@+id/action_wordsAwareCountdownFragment_to_newSample"
+            app:destination="@id/newSample" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordsAwareListeningFragment"
+        android:name="com.sensifyawareapp.ui.wordsaware.fragment.WordsAwareListeningFragment"
+        android:label="WordsAwareListeningFragment"
+        tools:layout="@layout/fragment_words_aware_listening">
+        <action
+            android:id="@+id/action_wordsAwareListeningFragment_to_wordsAwareTestOverFragment"
+            app:destination="@id/wordsAwareTestOverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordsAwareTestOverFragment"
+        android:name="com.sensifyawareapp.ui.wordsaware.fragment.WordsAwareTestOverFragment"
+        android:label="WordsAwareTestOverFragment"
+        tools:layout="@layout/fragment_words_aware_testover">
+        <action
+            android:id="@+id/action_wordsAwareTestOverFragment_to_wordsAwareWaitingFragment"
+            app:destination="@id/wordsAwareWaitingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordsAwareWaitingFragment"
+        android:name="com.sensifyawareapp.ui.wordsaware.fragment.WordsAwareWaitingFragment"
+        android:label="WordsAwareWaitingFragment" />
+    <fragment
+        android:id="@+id/newSample"
+        android:name="com.sensifyawareapp.ui.sample.NewSample"
+        android:label="NewSample" />
+</navigation>

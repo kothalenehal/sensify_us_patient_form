@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="test"
+            type="String" />
+
+        <variable
+            name="time"
+            type="String" />
+
+        <variable
+            name="repeat"
+            type="String" />
+
+        <variable
+            name="reminder"
+            type="String" />
+
+        <variable
+            name="isDetails"
+            type="Boolean" />
+
+        <variable
+            name="isSelected"
+            type="Boolean" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/largeMargin"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/text_view_style"
+                        android:fontFamily="@font/ws_semi_bold"
+                        android:text="@{reminder}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!--<ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="@dimen/_10dp"
+                        android:src="@drawable/ic_close_cross"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="@dimen/_10dp"
+                        android:src="@drawable/ic_close_cross"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/normalMargin">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_view"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:layout_marginEnd="@dimen/_6dp"
+                        app:cardElevation="@dimen/_4dp"
+                        app:cardMaxElevation="@dimen/_6dp"
+                        android:backgroundTint="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_16dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/iv_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/scent_aware" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/tv_test"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/_12dp"
+                                android:fontFamily="@font/ws_bold"
+                                android:gravity="center"
+                                android:text="@string/scentaware_8_scent_test" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_date"
+                        style="@style/text_view_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:layout_marginTop="@dimen/_26dp"
+                        android:fontFamily="@font/ws_light"
+                        android:text="@string/set_a_date"
+                        android:textSize="@dimen/_19sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/card_view" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_starts"
+                        style="@style/text_view_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_26dp"
+                        android:fontFamily="@font/ws_regular"
+                        android:text="@string/starts_on"
+                        android:textColor="@color/box_stroke_color"
+                        android:textSize="@dimen/_12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/card_start_date"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/card_start_date" />
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_start_date"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="@dimen/_4dp"
+                        app:cardElevation="@dimen/_4dp"
+                        app:cardMaxElevation="@dimen/_6dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_date">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_start_date"
+                            style="@style/text_view_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/ws_bold"
+                            android:gravity="center"
+                            android:padding="@dimen/_10dp"
+                            android:textAlignment="gravity"
+                            android:textSize="@dimen/_11sp"
+                            tools:text="13-Aug-2023" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10dp"
+                        android:id="@+id/divider"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:dividerColor="@color/divider_grey"
+                        app:layout_constraintTop_toBottomOf="@id/card_start_date" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_ends"
+                        style="@style/text_view_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_26dp"
+                        android:fontFamily="@font/ws_regular"
+                        android:text="@string/ends_on"
+                        android:textColor="@color/box_stroke_color"
+                        android:textSize="@dimen/_12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/card_end_date"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/card_end_date" />
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_end_date"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="@dimen/_4dp"
+                        app:cardElevation="@dimen/_4dp"
+                        app:cardMaxElevation="@dimen/_6dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divider">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_end_date"
+                            style="@style/text_view_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/ws_bold"
+                            android:gravity="center"
+                            android:padding="@dimen/_10dp"
+                            android:text="-------"
+                            android:textSize="@dimen/_11sp"
+                            tools:text="13-Aug-2023" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_time"
+                        style="@style/text_view_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:layout_marginTop="@dimen/_26dp"
+                        android:fontFamily="@font/ws_light"
+                        android:text="@string/set_a_time"
+                        android:textSize="@dimen/_19sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/card_end_date" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tv_remind"
+                        style="@style/text_view_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_26dp"
+                        android:fontFamily="@font/ws_regular"
+                        android:text="@string/remind_me"
+                        android:textColor="@color/box_stroke_color"
+                        android:textSize="@dimen/_12sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/card_time"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/card_time" />
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_time"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="@dimen/_4dp"
+                        app:cardElevation="@dimen/_4dp"
+                        app:cardMaxElevation="@dimen/_6dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_time">
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_set_time"
+                            style="@style/text_view_new"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/ws_bold"
+                            android:gravity="center"
+                            android:padding="@dimen/_10dp"
+                            android:textAlignment="gravity"
+                            android:textSize="@dimen/_11sp"
+                            tools:text="10:00 AM" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/repeat_card"
+                        style="@style/Widget.Material3.CardView.Elevated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6dp"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_6dp"
+                        android:layout_marginBottom="@dimen/_8dp"
+                        android:backgroundTint="@color/white"
+                        app:cardElevation="@dimen/_2dp"
+                        app:cardMaxElevation="@dimen/_4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/card_time"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_repeat"
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_14dp"
+                            android:fontFamily="@font/ws_bold"
+                            android:text="@string/repeat"
+                            android:textSize="@dimen/_12sp" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+        <!-- <com.google.android.material.button.MaterialButton
+             android:id="@+id/save_button"
+             style="@style/button_style"
+             android:layout_width="match_parent"
+             android:text="@string/save"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             tools:icon="@drawable/outline_save_24"
+             tools:iconGravity="textStart" />-->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save_button"
+            style="@style/button_style_dark"
+            android:layout_margin="@dimen/pageMargin"
+            android:text="@string/save"
+            app:icon="@drawable/outline_save"
+            app:iconGravity="textStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

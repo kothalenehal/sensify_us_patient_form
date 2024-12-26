@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/walkThroughFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.sensifyawareapp.ui.auth.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.sensifyawareapp.ui.auth.fragments.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_profileSetup1Fragment"
+            app:destination="@id/profileSetup1Fragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/signUpFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileSetup1Fragment"
+        android:name="com.sensifyawareapp.ui.auth.fragments.ProfileSetup1Fragment"
+        android:label="fragment_profile_setup1"
+        tools:layout="@layout/fragment_profile_setup1">
+        <!--        <action-->
+        <!--            android:id="@+id/action_profileSetup1Fragment_to_profileSetUp2Fragment"-->
+        <!--            app:destination="@id/profileSetUp2Fragment" />-->
+        <action
+            android:id="@+id/action_profileSetup1Fragment_to_profileSetup4Fragment"
+            app:destination="@id/profileSetup4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSetUp2Fragment"
+        android:name="com.sensifyawareapp.ui.auth.fragments.ProfileSetUp2Fragment"
+        android:label="ProfileSetUp2Fragment"
+        tools:layout="@layout/fragment_profile_setup2">
+        <action
+            android:id="@+id/action_profileSetUp2Fragment_to_profileSetup3Fragment"
+            app:destination="@id/profileSetup3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSetup3Fragment"
+        android:name="com.sensifyawareapp.ui.auth.fragments.ProfileSetup3Fragment"
+        android:label="fragment_profile_setup3"
+        tools:layout="@layout/fragment_profile_setup3">
+        <action
+            android:id="@+id/action_profileSetup3Fragment_to_profileSetup4Fragment"
+            app:destination="@id/profileSetup4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSetup4Fragment"
+        android:name="com.sensifyawareapp.ui.auth.fragments.ProfileSetup4Fragment"
+        android:label="ProfileSetup4Fragment"
+        tools:layout="@layout/fragment_profile_setup4" />
+
+    <fragment
+        android:id="@+id/walkThroughFragment"
+        tools:layout="@layout/fragment_walk_through"
+        android:name="com.sensifyawareapp.ui.auth.fragments.WalkThroughFragment"
+        android:label="WalkThroughFragment">
+        <action
+            android:id="@+id/action_walkThroughFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        tools:layout="@layout/fragment_forgot_password"
+        android:name="com.sensifyawareapp.ui.auth.fragments.ForgotPasswordFragment"
+        android:label="ForgotPasswordFragment" />
+</navigation>

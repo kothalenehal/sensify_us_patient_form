@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="recentActivity"
+            type="String" />
+
+        <variable
+            name="message"
+            type="String" />
+
+        <variable
+            name="canTest"
+            type="Boolean" />
+
+        <variable
+            name="icon"
+            type="android.graphics.drawable.Drawable" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_menu"
+            style="@style/card_style"
+            android:layout_width="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="@{canTest ? 1.0f : 0.5f}"
+                android:padding="@dimen/_10dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_title"
+                    style="@style/text_view_style"
+                    android:layout_width="0dp"
+                    android:fontFamily="@font/ws_medium"
+                    android:text="@{title}"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tool:text="ScentAware Test" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_msg"
+                    style="@style/text_view_style"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:fontFamily="@font/ws_light"
+                    android:text="@{message}"
+                    android:textSize="@dimen/_10sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/iv_arrow"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title"
+                    tool:text="ScentAware Test" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@{icon}"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tool:src="@drawable/scent_aware" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

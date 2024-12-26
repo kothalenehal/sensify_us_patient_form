@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="time"
+            type="Float" />
+
+        <variable
+            name="tracingAccuracy"
+            type="String" />
+
+        <variable
+            name="recallAccuracy"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.traceaware.TraceAwareResultActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:title="@{@string/done}" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_try_smell_evaluation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/_20dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_100dp"
+                    android:layout_height="@dimen/_80dp"
+                    android:src="@drawable/ic_done" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_19dp"
+                    android:gravity="center"
+                    android:text="@string/msg_trace_aware_result"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv8" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_25dp"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:gravity="center"
+                    android:text="@{@string/average_response_time_(time)}"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_19dp"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:text="@{@string/tracing_accuracy_(tracingAccuracy)}"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_style"
+                    android:layout_marginTop="@dimen/_19dp"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:text="@{@string/recall_accuracy_(recallAccuracy)}"
+                    android:textSize="@dimen/_14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_back_to_homescreen"
+                    style="@style/text_view_style"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:text="@string/back_to_homescreen"
+                    android:textColor="@color/blue"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_try_smell_evaluation"
+            style="@style/button_style"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:text="@string/return_to_tests"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"  />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

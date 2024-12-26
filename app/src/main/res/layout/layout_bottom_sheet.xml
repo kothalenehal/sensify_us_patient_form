@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="msg"
+            type="String" />
+    </data>
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_header"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normalMargin"
+            android:fontFamily="@font/ws_semi_bold"
+            android:text="@string/choose_tube_type"
+            android:textSize="@dimen/_14sp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_subHeader"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ws_medium"
+            android:text="@string/please_select_an_tube"
+            android:textSize="@dimen/_14sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_marginTop="@dimen/normalMargin"
+            android:background="@color/text_color"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_scent8"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:layout_marginTop="@dimen/normalMargin"
+            android:fontFamily="@font/ws_semi_bold"
+            android:text="@string/scentaware_8_scent_kit"
+            android:textSize="@dimen/_14sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_marginTop="@dimen/normalMargin"
+            android:background="@color/text_color"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_scent16"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ws_semi_bold"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_marginTop="@dimen/_16dp"
+            android:text="@string/scentaware_16_scent_kit"
+            android:textSize="@dimen/_14sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_marginTop="@dimen/normalMargin"
+            android:background="@color/text_color"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_dismiss"
+            style="@style/card_style"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginHorizontal="@dimen/_26dp"
+            android:outlineAmbientShadowColor="@color/blue"
+            android:outlineSpotShadowColor="@color/blue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_msg">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_try_intelliplot"
+                    style="@style/text_view_style"
+                    android:fontFamily="@font/ws_semi_bold"
+                    android:text="@string/dismiss"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

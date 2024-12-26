@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="@dimen/_22dp"
+        android:left="@dimen/_16dp"
+        android:right="@dimen/_16dp"
+        android:top="@dimen/_2dp">
+        <bitmap android:src="@drawable/shadow_click" />
+    </item>
+</layer-list>

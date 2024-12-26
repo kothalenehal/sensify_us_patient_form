@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="userName"
+            type="String" />
+
+        <variable
+            name="isClinicalTestVersion"
+            type="Boolean" />
+
+        <variable
+            name="scentAwareLastTest"
+            type="String" />
+
+        <variable
+            name="traceAwareLastTest"
+            type="String" />
+
+        <variable
+            name="audioAwareLastTest"
+            type="String" />
+
+        <variable
+            name="glanceAwareLastTest"
+            type="String" />
+
+        <variable
+            name="wordsAwareLastTest"
+            type="String" />
+
+        <variable
+            name="grammarAwareLastTest"
+            type="String" />
+
+        <variable
+            name="canTestScentAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestTraceAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestAudioAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestGlanceAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestWordsAware"
+            type="Boolean" />
+
+        <variable
+            name="canTestGramarAware"
+            type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity">
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_12dp">
+
+                <include
+                    android:id="@+id/ll_scent_aware_re_training_8"
+                    layout="@layout/layout_training_menu"
+                    android:textSize="@dimen/_8dp"
+                    android:visibility="@{isClinicalTestVersion ? View.GONE : View.VISIBLE}"
+                    app:canTest="@{true}"
+                    app:icon="@{@drawable/training}"
+                    app:message="@{@string/msg_scent_aware_re_training}"
+                    app:title="@{@string/scent_aware_re_training8}" />
+
+                <include
+                    android:id="@+id/ll_scent_aware_re_training_16"
+                    layout="@layout/layout_training_menu"
+                    android:textSize="@dimen/_8dp"
+                    android:visibility="@{isClinicalTestVersion ? View.GONE : View.VISIBLE}"
+                    app:canTest="@{true}"
+                    app:icon="@{@drawable/training}"
+                    app:message="@{@string/msg_scent_aware_re_training}"
+                    app:title="@{@string/scent_aware_re_training16}" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_10dp"
+            android:src="@drawable/indict_logo"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tx_alert"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/ws_medium"
+            android:gravity="center"
+            android:text="@string/training_features_are_unavailable_during_an_active_clinical_trial"
+            android:textColor="@color/tx_color"
+            android:textSize="@dimen/_12sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

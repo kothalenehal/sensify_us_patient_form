@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.grammaraware.GrammarAwareIntroActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:title="GrammarAware" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            tools:context=".ui.wordsaware.fragment.WordsAwareBeginningFragment">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/iv_mic"
+                    style="@style/card_style_mic"
+                    android:layout_width="@dimen/_80dp"
+                    android:layout_height="@dimen/_32dp"
+                    app:cardBackgroundColor="@color/mic_border"
+                    app:cardCornerRadius="@dimen/_16dp"
+                    app:layout_constraintBottom_toTopOf="@id/nameText"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tx_header">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/mic"
+                            android:layout_width="@dimen/_11dp"
+                            android:layout_height="@dimen/_15dp"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:src="@drawable/vector"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/stand_by"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/divider_grey"
+                            android:textSize="@dimen/_12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/mic"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/nameText"
+                    style="@style/text_view_style"
+                    android:fontFamily="@font/ws_bold"
+                    android:gravity="center"
+                    android:letterSpacing="0.2"
+                    android:text="@string/words2"
+                    android:textAllCaps="true"
+                    android:textColor="@color/box_stroke_color"
+                    android:textSize="@dimen/_30ssp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@id/guideline3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/guideline3" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tx_header"
+                    style="@style/text_view_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:fontFamily="@font/ws_medium"
+                    android:gravity="center"
+                    android:text="@string/using_words_shown_below_construct_3_sentences_that_are_grammatically_correct"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintBottom_toTopOf="@id/iv_mic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_submit"
+                    style="@style/button_style"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:text="@string/begin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@id/btn_submit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nameText">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sentence1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_pin1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_4dp"
+                            android:src="@drawable/pin"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/text_view_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:fontFamily="@font/ws_medium"
+                            android:gravity="start"
+                            android:text="@string/use_the_words_as_they_are_presented_without_modifying_them_grammatically"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_pin1"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sentence2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/sentence1">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_pin2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_4dp"
+                            android:src="@drawable/pin"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/text_view_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:fontFamily="@font/ws_medium"
+                            android:gravity="start"
+                            android:text="@string/speak_your_sentences_and_submit_3_such_sentences_to_complete_the_test"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_pin2"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sentence3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_8dp"
+                        android:layout_marginEnd="@dimen/_16dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/sentence2">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/iv_pin3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8dp"
+                            android:layout_marginTop="@dimen/_4dp"
+                            android:src="@drawable/pin"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/text_view_style"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_16dp"
+                            android:fontFamily="@font/ws_medium"
+                            android:gravity="start"
+                            android:text="@string/you_ll_have_90_seconds_to_construct_each_sentence"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_pin3"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

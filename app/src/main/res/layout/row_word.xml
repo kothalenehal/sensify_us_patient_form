@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="word"
+            type="String" />
+
+        <variable
+            name="isSelected"
+            type="Boolean" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_2dp"
+            android:background="@{isSelected ? @color/green : @color/white}"
+            android:gravity="center">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_word"
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ws_medium"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_2dp"
+                android:paddingVertical="@dimen/_8dp"
+                android:text="@{word}"
+                android:textAllCaps="true"
+                android:textColor="@{isSelected ? @color/white : @color/text_color}"
+                android:textSize="@dimen/_12sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

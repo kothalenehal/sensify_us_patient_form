@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<data>
+
+    <variable
+        name="level"
+        type="String" />
+</data>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pageMargin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_10dp"
+            android:src="@drawable/ic_close_cross"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/color_text"
+            android:src="@drawable/about_test_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_view"
+            style="@style/text_view_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/pageMargin"
+            android:fontFamily="@font/ws_regular"
+            android:text="@string/interpreting_health_"
+            android:textSize="@dimen/_19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pageMargin"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/pageMargin"
+                android:fontFamily="@font/ws_regular"
+                android:text="@string/the_ability_to_clearly_think"
+                android:textSize="@dimen/_12sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16dp"
+                android:src="@drawable/congnitive_icon" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pageMargin"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/pageMargin"
+                android:fontFamily="@font/ws_regular"
+                android:text="@string/the_brain_translates_sensory"
+                android:textSize="@dimen/_12sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pageMargin"
+                android:layout_marginTop="@dimen/_16dp"
+                android:layout_marginEnd="@dimen/pageMargin"
+                android:fontFamily="@font/ws_bold"
+                android:text="@string/trace_aware"
+                android:textSize="@dimen/_19sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pageMargin"
+                android:layout_marginEnd="@dimen/pageMargin"
+                android:fontFamily="@font/ws_light"
+                android:text="@string/test_your_memory_and_motor_skills"
+                android:textSize="@dimen/_19sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pageMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/trace_aware_full_icon" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pageMargin"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/pageMargin"
+                android:fontFamily="@font/ws_regular"
+                android:text="@string/traceaware_is_a_game_where_you"
+                android:textSize="@dimen/_12sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pageMargin"
+                android:layout_marginTop="@dimen/_25dp"
+                android:layout_marginEnd="@dimen/pageMargin"
+                android:fontFamily="@font/ws_bold"
+                android:text="@string/audio_aware"
+                android:textSize="@dimen/_19sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pageMargin"
+                android:layout_marginEnd="@dimen/pageMargin"
+                android:fontFamily="@font/ws_light"
+                android:text="@string/word_listening_and_recognition"
+                android:textSize="@dimen/_19sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pageMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/audio_aware_full_icon" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pageMargin"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/pageMargin"
+                android:fontFamily="@font/ws_regular"
+                android:text="@string/audioaware_is_a_word_listening_game"
+                android:textSize="@dimen/_12sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pageMargin"
+                android:layout_marginTop="@dimen/_25dp"
+                android:layout_marginEnd="@dimen/pageMargin"
+                android:fontFamily="@font/ws_bold"
+                android:text="@string/glance_aware"
+                android:textSize="@dimen/_19sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pageMargin"
+                android:layout_marginEnd="@dimen/pageMargin"
+                android:fontFamily="@font/ws_light"
+                android:text="@string/connect_faces_and_names_for_a_memory_challenge"
+                android:textSize="@dimen/_19sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pageMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/glanceaware_full_icon" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/pageMargin"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/pageMargin"
+                android:fontFamily="@font/ws_regular"
+                android:text="@string/glanceaware_is_an_associative_memory"
+                android:textSize="@dimen/_12sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</layout>

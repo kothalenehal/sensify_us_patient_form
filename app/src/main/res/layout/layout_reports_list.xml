@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="recentActivity"
+            type="String" />
+
+        <variable
+            name="message"
+            type="String" />
+
+        <variable
+            name="canTest"
+            type="Boolean" />
+
+        <variable
+            name="icon"
+            type="android.graphics.drawable.Drawable" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="@{canTest ? 1.0f : 0.5f}"
+        android:padding="@dimen/_16dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@{icon}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:src="@drawable/scent_aware"
+            app:tint="@color/color_light" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title"
+            style="@style/text_view_style"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:layout_width="0dp"
+            android:textSize="@dimen/_12sp"
+            android:fontFamily="@font/ws_regular"
+            android:text="@{title}"
+            android:textColor="@color/them_color"
+            app:layout_constraintEnd_toStartOf="@id/iv_arrow"
+            app:layout_constraintStart_toEndOf="@id/iv_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="ScentAware Test" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_recent"
+            style="@style/text_view_style"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:layout_marginTop="@dimen/_2dp"
+            android:text="@{recentActivity}"
+            android:textSize="@dimen/_10sp"
+            app:layout_constraintEnd_toStartOf="@id/iv_arrow"
+            app:layout_constraintStart_toEndOf="@id/iv_icon"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            tool:text="Not Tested Yet" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/color_light" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

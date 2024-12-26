@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="timerProgress"
+            type="Integer" />
+
+        <variable
+            name="questionId"
+            type="Integer" />
+
+        <variable
+            name="checkpointProgress"
+            type="Integer" />
+
+        <variable
+            name="totalQuestions"
+            type="Integer" />
+
+        <variable
+            name="checked"
+            type="Integer" />
+
+        <variable
+            name="option1"
+            type="String" />
+
+        <variable
+            name="option2"
+            type="String" />
+
+        <variable
+            name="option3"
+            type="String" />
+
+        <variable
+            name="option4"
+            type="String" />
+
+        <variable
+            name="option5"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.scentaware.QuestionAnswerActivity"
+        tools:targetApi="p">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:visibility="gone"
+            app:title="@{@string/odor_identification_test_of_(questionId.toString(), totalQuestions.toString())}" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:fontFamily="@font/ws_light"
+                    android:hint="@string/no_data_found"
+                    android:text="@{@string/odor_identification_test_of_(questionId.toString(), totalQuestions.toString())}"
+                    android:textSize="@dimen/_19sp" />
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progress_timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="30"
+                    android:progress="@{timerProgress}"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/green"
+                    app:trackColor="@color/white"
+                    app:trackThickness="@dimen/_5dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/_22dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:text="@string/can_you_guess_what_the_sample_is"
+                    app:fontFamily="@font/ws_regular" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    style="@style/Widget.Material3.ChipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_25dp"
+                    android:padding="@dimen/_10dp"
+                    app:chipSpacing="@dimen/_12dp"
+                    app:selectionRequired="true"
+                    app:singleLine="false"
+                    app:singleSelection="true">
+
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_1"
+                        style="@style/Widget.MyApp.Chip.Choice1"
+                        android:text="@{option1}"
+                        android:textColor="@{checked == chip1.getId() ? @color/white : @color/them_color}"
+                        app:chipBackgroundColor="@{checked == chip1.getId() ? @color/them_color : @color/white}" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_2"
+                        style="@style/Widget.MyApp.Chip.Choice1"
+                        android:text="@{option2}"
+                        android:textColor="@{checked == chip2.getId() ? @color/white : @color/them_color}"
+                        app:chipBackgroundColor="@{checked == chip2.getId() ? @color/them_color : @color/white}" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_3"
+                        style="@style/Widget.MyApp.Chip.Choice1"
+                        android:text="@{option3}"
+                        android:textColor="@{checked == chip3.getId() ? @color/white : @color/them_color}"
+                        app:chipBackgroundColor="@{checked == chip3.getId() ? @color/them_color : @color/white}" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_4"
+                        style="@style/Widget.MyApp.Chip.Choice1"
+                        android:text="@{option4}"
+                        android:textColor="@{checked == chip4.getId() ? @color/white : @color/them_color}"
+                        app:chipBackgroundColor="@{checked == chip4.getId() ? @color/them_color : @color/white}" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_5"
+                        style="@style/Widget.MyApp.Chip.Choice1"
+                        android:text="@{option5}"
+                        android:textColor="@{checked == chip5.getId() ? @color/white : @color/them_color}"
+                        app:chipBackgroundColor="@{checked == chip5.getId() ? @color/them_color : @color/white}" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_54dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_marginEnd="@dimen/_54dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:weightSum="4">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@{checkpointProgress > totalQuestions ? @drawable/down_polygon_green : @drawable/down_polygon}" />
+
+                    <!-- <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:src="@{checkpointProgress > totalQuestions*2 ? @drawable/down_polygon_green : @drawable/down_polygon}"
+                         android:visibility="@{totalQuestions == 8 ? View.GONE : View.VISIBLE}" />
+
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:src="@{checkpointProgress > totalQuestions*3 ? @drawable/down_polygon_green : @drawable/down_polygon}"
+                         android:visibility="@{totalQuestions == 8 ? View.GONE : View.VISIBLE}" />-->
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_54dp"
+                    android:layout_marginTop="@dimen/_6dp"
+                    android:layout_marginEnd="@dimen/_54dp"
+                    android:max="@{totalQuestions*2}"
+                    android:progress="@{checkpointProgress}"
+                    android:visibility="gone"
+                    app:indicatorColor="@color/green"
+                    app:trackColor="@color/progress_grey"
+                    app:trackCornerRadius="@dimen/_4dp"
+                    app:trackThickness="@dimen/_4dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_submit"
+                    style="@style/button_style_dark"
+                    android:layout_marginStart="@dimen/_16dp"
+                    android:layout_marginTop="@dimen/_32dp"
+                    android:layout_marginEnd="@dimen/_16dp"
+                    android:enabled="@{checked != null}"
+                    android:text="@string/submit" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/text_view_new"
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ws_bold"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_16dp"
+                    android:padding="@dimen/_16dp"
+                    android:text="@string/cancel_test"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/color_light" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

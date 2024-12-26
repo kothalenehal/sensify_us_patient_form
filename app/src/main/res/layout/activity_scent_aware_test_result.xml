@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="correctAnswers"
+            type="Integer" />
+
+        <variable
+            name="totalQuestions"
+            type="Integer" />
+
+        <variable
+            name="testResult"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.scentaware.ScentAwareTestResultActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_training"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/img_top_back" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/pageMargin"
+                    android:layout_marginEnd="@dimen/pageMargin"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/text_view_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:fontFamily="@font/ws_bold"
+                        android:text="@string/test_completed_successfully"
+                        android:textColor="@color/white" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/text_view_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ws_regular"
+                        android:text="@{@string/questions(correctAnswers.toString(), totalQuestions.toString())}"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_50sp"
+                        tools:text="7/16" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/text_view_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/for_more_details"
+                        android:textColor="@color/white" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_32dp"
+                        android:layout_marginBottom="@dimen/_16dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/text_view_new"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/ws_bold"
+                            android:text="@string/scents"
+                            android:textColor="@color/white" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/text_view_new"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/ws_bold"
+                            android:text="@string/your_responses"
+                            android:textColor="@color/white" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/_4dp"
+                        android:background="@color/them_color" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/layout_scent_answer" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/img_bottom_back" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/top_round_corner_background"
+            android:orientation="vertical"
+            android:padding="@dimen/pageMargin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ws_bold"
+                android:text="@{testResult}"
+                android:textSize="@dimen/_19sp"
+                tools:text="You may have hyposmia/parosmia." />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_learn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:fontFamily="@font/ws_regular"
+                android:text="@string/learn_more"
+                android:textColor="@color/color_light" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/text_view_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:text="@string/consider_setting_up_reminders" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pageMargin"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/btn_close"
+                    style="@style/text_view_new"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_border"
+                    android:fontFamily="@font/ws_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/_12dp"
+                    android:text="@string/close"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_reminder"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/them_color" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/btn_reminder"
+                    style="@style/text_view_new"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_border"
+                    android:backgroundTint="@color/them_color"
+                    android:ellipsize="none"
+                    android:fontFamily="@font/ws_bold"
+                    android:gravity="center"
+                    android:padding="@dimen/_12dp"
+                    android:singleLine="true"
+                    android:text="@string/set_reminder"
+                    android:textColor="@color/white"
+                    app:drawableStartCompat="@drawable/outline_notifications_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_close"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_try_retraining"
+            style="@style/button_style"
+            android:layout_marginBottom="@dimen/_28dp"
+            android:text="@string/return_to_tests"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

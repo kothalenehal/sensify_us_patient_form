@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "236445517936",
+    "project_id": "sensifyaware-b9936",
+    "storage_bucket": "sensifyaware-b9936.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236445517936:android:49c8879f37b9fac6ec0cb5",
+        "android_client_info": {
+          "package_name": "com.sensifyaware"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236445517936-4c6fb9nalsjh14pdu9r936jqik8b2u42.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sensifyaware",
+            "certificate_hash": "b9a79eb761c3cacf550df9173449c892dd1bf6bf"
+          }
+        },
+        {
+          "client_id": "236445517936-j1eculgveljs5t90eh2dvioqshamqoac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu0G6SsJUnd3tl-d9PacjM7lK34l99qFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236445517936-j1eculgveljs5t90eh2dvioqshamqoac.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "236445517936-u8k0v7ho2ic0krt0lbvl5snd4v0tkkfq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "sensifyaware.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

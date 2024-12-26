@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="currentQuestion"
+            type="Integer" />
+
+        <variable
+            name="visibleProgressBar"
+            type="Boolean" />
+
+        <variable
+            name="maxProgress"
+            type="Integer" />
+
+        <variable
+            name="greenProgress"
+            type="Boolean" />
+
+        <variable
+            name="level"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80dp"
+        android:padding="@dimen/_9dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_10dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_title"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ws_medium"
+            android:gravity="center"
+            android:text="@{title}"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_level"
+            app:layout_constraintLeft_toRightOf="@id/iv_back"
+            app:layout_constraintRight_toLeftOf="@id/iv_temp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_level"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ws_light"
+            android:gravity="center"
+            android:text="@{@string/audio_aware_level(level)}"
+            android:textSize="@dimen/_14sp"
+            android:visibility="@{level == null ? View.GONE : View.VISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/iv_back"
+            app:layout_constraintRight_toLeftOf="@id/iv_temp"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <ImageView
+            android:id="@+id/iv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/_10dp"
+            android:src="@drawable/ic_back"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_timer"
+            style="@style/text_view_style"
+            android:fontFamily="@font/ws_bold"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_54dp"
+            android:layout_marginEnd="@dimen/_54dp"
+            android:max="@{maxProgress}"
+            android:progress="@{currentQuestion}"
+            android:visibility="@{visibleProgressBar ? View.VISIBLE : View.GONE}"
+            app:indicatorColor="@{greenProgress ? @color/green : @color/blue}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:trackColor="@color/progress_grey"
+            app:trackCornerRadius="@dimen/_4dp"
+            app:trackThickness="@dimen/_4dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

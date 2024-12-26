@@ -1,0 +1,449 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SensifyAwareApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorSecondaryVariant">@color/orange</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.SensifyAwareApp.BlueStatusBar">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/blue</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/blue</item>
+    </style>
+
+    <style name="MaterialAlertDialog_rounded" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/DialogCorners</item>
+    </style>
+
+    <style name="DialogCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_15dp</item>
+    </style>
+
+    <style name="text_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="android:fontFamily">@font/ws_light</item>
+    </style>
+
+    <style name="color_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_10sp</item>
+        <item name="android:fontFamily">@font/ws_medium</item>
+        <item name="android:layout_margin">@dimen/_4dp</item>
+    </style>
+
+    <style name="card_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:outlineAmbientShadowColor">@color/card_shadow_color</item>
+        <item name="android:outlineSpotShadowColor">@color/card_shadow_color</item>
+        <item name="cardCornerRadius">@dimen/_6dp</item>
+        <item name="cardElevation">@dimen/_8dp</item>
+        <item name="android:layout_marginHorizontal">@dimen/_10dp</item>
+        <item name="android:layout_marginTop">@dimen/_3dp</item>
+        <item name="android:layout_marginBottom">@dimen/_10dp</item>
+    </style>
+
+    <style name="card_style_2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:outlineAmbientShadowColor">@color/card_shadow_color</item>
+        <item name="android:outlineSpotShadowColor">@color/card_shadow_color</item>
+        <item name="cardCornerRadius">@dimen/_6dp</item>
+        <item name="cardElevation">@dimen/_8dp</item>
+    </style>
+
+    <style name="card_style_mic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">@dimen/_10dp</item>
+        <item name="android:layout_marginTop">@dimen/_3dp</item>
+        <item name="android:layout_marginBottom">@dimen/_10dp</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/ws_semi_bold</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="cornerRadius">@dimen/_6dp</item>
+        <item name="android:paddingBottom">@dimen/_38dp</item>
+        <item name="android:background">@drawable/blue_button_shadow</item>
+        <item name="android:paddingHorizontal">@dimen/_38dp</item>
+    </style>
+
+    <style name="button_style_new">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/ws_semi_bold</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="cornerRadius">@dimen/_6dp</item>
+        <item name="android:paddingBottom">@dimen/_38dp</item>
+        <item name="android:background">@drawable/orange_button_shadow</item>
+    </style>
+
+    <!--<editor-fold desc="options chip">-->
+    <style name="Widget.MyApp.Chip.Choice" parent="Widget.Material3.Chip.Filter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_44dp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="chipBackgroundColor">@color/white</item>
+        <item name="android:textAppearance">@style/chip_title_style</item>
+        <item name="android:textSize">@dimen/_12sp</item>
+        <item name="chipMinHeight">@dimen/_40sdp</item>
+        <item name="chipMinTouchTargetSize">@dimen/_44dp</item>
+        <item name="android:elevation">@dimen/_6dp</item>
+        <item name="chipCornerRadius">@dimen/_8dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Widget.MyApp.Chip.Choice1" parent="Widget.Material3.Chip.Filter">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_54dp</item>
+        <item name="chipBackgroundColor">@color/white</item>
+        <item name="android:textAppearance">@style/chip_title_style</item>
+        <item name="android:textSize">@dimen/_12sp</item>
+        <item name="chipMinHeight">@dimen/_40sdp</item>
+        <item name="chipMinTouchTargetSize">@dimen/_44dp</item>
+        <item name="chipCornerRadius">@dimen/_8dp</item>
+        <item name="chipIconEnabled">false</item>
+        <item name="checkedIcon">@null</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="chip_title_style" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/ws_bold</item>
+        <item name="android:fontFamily">@font/ws_regular</item>
+        <item name="android:textSize">@dimen/_12sp</item>
+    </style>
+
+
+    <style name="textLight">
+        <item name="fontFamily">@font/ws_light</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="textBold">
+        <item name="android:fontFamily">@font/ws_bold</item>
+        <item name="android:textSize">@dimen/_12sp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="textNormal">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="textInputEditText">
+        <item name="fontFamily">@font/ws_regular</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="radioButtonText">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="fontFamily">@font/ws_regular</item>
+        <item name="buttonTint">@color/color_light</item>
+        <item name="android:textSize">@dimen/_12sp</item>
+        <item name="android:textColor">@color/them_color</item>
+    </style>
+
+    <style name="progressBar" parent="Widget.MaterialComponents.LinearProgressIndicator">
+        <item name="trackThickness">@dimen/trackThickness</item>
+        <item name="trackCornerRadius">@dimen/trackCornerRadius</item>
+        <item name="trackColor">@color/progress_grey</item>
+        <item name="trackColorActive">@color/blue</item>
+        <item name="indicatorColor">@color/blue</item>
+
+    </style>
+
+    <style name="CustomProgressBarTheme">
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+    <style name="textTitle">
+        <item name="fontFamily">@font/ws_medium</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="textSize14Medium">
+        <item name="fontFamily">@font/ws_medium</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="editText" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/box_stroke_color</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/_5dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/_5dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/_5dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/_5dp</item>
+        <item name="hintTextColor">@color/text_color</item>
+        <item name="hintTextAppearance">@style/EditTextHintTextStyle</item>
+        <item name="errorTextAppearance">@style/ErrorTextStyle</item>
+        <item name="placeholderTextAppearance">@style/PlaceHolderTextStyle</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="endIconTint">@color/endIconColor</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="EditTextHintTextStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/_11sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/ws_medium</item>
+    </style>
+
+    <style name="ErrorTextStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/_10sp</item>
+        <item name="android:fontFamily">@font/ws_regular</item>
+    </style>
+
+    <style name="PlaceHolderTextStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/_11sp</item>
+        <item name="android:fontFamily">@font/ws_light_italic</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <style name="ratingbar">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:numStars">4</item>
+        <item name="android:progressDrawable">@drawable/custom_rating_bar</item>
+    </style>
+
+    <style name="ratingstar">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:numStars">5</item>
+        <item name="android:progressDrawable">@drawable/custom_rating_bar</item>
+    </style>
+
+    <style name="bottom_nav_text_active">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_10dp</item>
+        <item name="android:fontFamily">@font/ws_bold</item>
+    </style>
+
+    <style name="bottom_nav_text_inactive">
+        <item name="android:textColor">@color/font_color</item>
+        <item name="android:textSize">@dimen/_10dp</item>
+        <item name="android:fontFamily">@font/ws_bold</item>
+    </style>
+
+    <style name="fab_square">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_12dp</item>
+    </style>
+
+    <style name="Widget.Button.Toggle" parent="android:Widget">
+        <item name="android:background">@drawable/toggle_bg</item>
+    </style>
+
+    <style name="toggleButton">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+        <item name="android:textColor">@drawable/toogle_text_color</item>
+    </style>
+
+
+    <!--New UI-->
+    <style name="editTextNew" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="hintTextColor">@color/them_color</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/_5dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/_5dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/_5dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/_5dp</item>
+        <item name="hintTextAppearance">@style/EditTextHintTextStyle2</item>
+        <item name="errorTextAppearance">@style/ErrorTextStyle2</item>
+        <item name="placeholderTextAppearance">@style/PlaceHolderTextStyle2</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="errorTextColor">@color/black</item>
+        <item name="android:textSize">@dimen/_14sp</item>
+        <item name="endIconTint">@color/black</item>
+        <item name="android:textColor">@color/them_color</item>
+    </style>
+
+    <style name="EditTextHintTextStyle2" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/_11sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/ws_medium</item>
+    </style>
+
+    <style name="ErrorTextStyle2" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/_10sp</item>
+        <item name="android:fontFamily">@font/ws_regular</item>
+    </style>
+
+    <style name="PlaceHolderTextStyle2" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/_11sp</item>
+        <item name="android:fontFamily">@font/ws_light_italic</item>
+
+    </style>
+
+    <style name="text_view_style_new">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12sp</item>
+        <item name="android:fontFamily">@font/ws_light</item>
+    </style>
+
+    <style name="button_style_light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/ws_semi_bold</item>
+        <item name="android:paddingTop">@dimen/btnPaddingVertical</item>
+        <item name="android:paddingBottom">@dimen/btnPaddingVertical</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_light</item>
+        <item name="android:textSize">@dimen/_12sp</item>
+        <item name="strokeWidth">@dimen/_2dp</item>
+        <item name="strokeColor">@color/color_light</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="cornerRadius">@dimen/_6dp</item>
+    </style>
+
+    <style name="button_style_dark">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/ws_semi_bold</item>
+        <item name="android:paddingTop">@dimen/btnPaddingVertical</item>
+        <item name="android:paddingBottom">@dimen/btnPaddingVertical</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_12sp</item>
+        <item name="cornerRadius">@dimen/_6dp</item>
+        <item name="backgroundTint">@color/color_light</item>
+
+    </style>
+
+    <style name="text_view_new">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/them_color</item>
+        <item name="android:textSize">@dimen/_12sp</item>
+        <item name="android:fontFamily">@font/ws_medium</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/round_background</item>
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/green</item>
+    </style>
+
+
+    <style name="CustomDatePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize the OK and Cancel button text color -->
+        <item name="android:colorAccent">@color/them_color</item>
+    </style>
+
+
+    <style name="CustomMaterialTimePicker">
+        <item name="colorControlActivated">@android:color/white
+        </item> <!-- Set the selected (activated) color to white -->
+        <item name="colorControlNormal">@android:color/black
+        </item> <!-- Set the unselected (normal) color to black -->
+    </style>
+
+    <style name="ThemeOverlay.App.TimePicker" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="android:numbersTextColor">#ffffff</item>
+        <item name="android:numbersBackgroundColor">@color/text_color</item>
+        <item name="android:numbersSelectorColor">#88000000</item>
+        <item name="android:headerBackground">@color/white</item>
+        <item name="android:colorAccent">@color/text_color</item>
+
+        <!-- clock hand color change -->
+
+        <item name="android:hand_hour">@color/color_light</item>
+        <item name="android:hand_minute">@color/color_light</item>
+    </style>
+
+    <style name="TextAppearance.App.TimePicker.Title" parent="TextAppearance.MaterialComponents.TimePicker.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="colorControlActivated">@color/white
+        </item> <!-- Set the selected (activated) color to white -->
+        <item name="colorControlNormal">@color/black</item>
+    </style>
+
+    <style name="MaterialThemeDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/them_color</item>
+    </style>
+
+    <!-- Style for enabled RadioGroup -->
+    <style name="EnabledRadioGroup">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Style for disabled RadioGroup -->
+    <style name="DisabledRadioGroup">
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+   <!-- &lt;!&ndash; Style for enabled RadioButton &ndash;&gt;
+    <style name="EnabledRadioButton">
+        <item name="android:button">@drawable/radio_button_enabled</item>
+        <item name="android:textColor">@color/radio_button_text_color_enabled</item>
+    </style>
+
+    &lt;!&ndash; Style for disabled RadioButton &ndash;&gt;
+    <style name="DisabledRadioButton">
+        <item name="android:button">@drawable/radio_button_disabled</item>
+        <item name="android:textColor">@color/radio_button_text_color_disabled</item>
+    </style>-->
+
+</resources>
+

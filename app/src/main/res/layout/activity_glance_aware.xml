@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="level"
+            type="String" />
+
+        <variable
+            name="index"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.glanceaware.GlanceAwareActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80dp"
+            android:padding="@dimen/_9dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_10dp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_title"
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ws_medium"
+                android:gravity="center"
+                android:text="@string/glance_aware"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintBottom_toTopOf="@id/tv_level"
+                app:layout_constraintLeft_toRightOf="@id/iv_back"
+                app:layout_constraintRight_toLeftOf="@id/iv_temp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_level"
+                style="@style/text_view_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ws_light"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@{@string/audio_aware_level(level)}"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintBottom_toTopOf="@id/tv_index"
+                app:layout_constraintLeft_toRightOf="@id/iv_back"
+                app:layout_constraintRight_toLeftOf="@id/iv_temp"
+                app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_index"
+                style="@style/text_view_style"
+                android:text="@{@string/showing_image_12(index)}"
+                android:textSize="@dimen/_10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/iv_back"
+                app:layout_constraintRight_toLeftOf="@id/iv_temp"
+                app:layout_constraintTop_toBottomOf="@id/tv_level" />
+
+            <ImageView
+                android:id="@+id/iv_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_10dp"
+                android:src="@drawable/ic_back"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_timer"
+                style="@style/text_view_style"
+                android:fontFamily="@font/ws_bold"
+                android:textSize="@dimen/_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment_activity_audio_aware"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintVertical_bias="0.0"
+            app:navGraph="@navigation/nav_graph_glance_aware" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

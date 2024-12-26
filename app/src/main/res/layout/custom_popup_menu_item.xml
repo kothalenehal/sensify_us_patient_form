@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_scent16"
+            style="@style/text_view_new"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/scent_aware"
+            android:drawablePadding="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:fontFamily="@font/ws_regular"
+            android:gravity="start"
+            android:padding="@dimen/_10dp"
+            android:text="@string/scentaware_16_scent_test"
+            android:textSize="@dimen/_11sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_scent8"
+            style="@style/text_view_new"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/scent_aware"
+            android:drawablePadding="@dimen/_16dp"
+            android:fontFamily="@font/ws_regular"
+            android:gravity="start"
+            android:padding="@dimen/_10dp"
+            android:text="@string/scentaware_8_scent_test"
+            android:textSize="@dimen/_11sp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_training16"
+            style="@style/text_view_new"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/training_icon"
+            android:drawablePadding="@dimen/_16dp"
+            android:fontFamily="@font/ws_regular"
+            android:gravity="start"
+            android:layout_marginTop="@dimen/_10dp"
+            android:padding="@dimen/_10dp"
+            android:text="@string/scentaware_16_smell_training"
+            android:textSize="@dimen/_11sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_training8"
+            style="@style/text_view_new"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/training_icon"
+            android:drawablePadding="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:fontFamily="@font/ws_regular"
+            android:gravity="start"
+            android:padding="@dimen/_10dp"
+            android:text="@string/scentaware_8_smell_training"
+            android:textSize="@dimen/_11sp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_traceAware"
+            style="@style/text_view_new"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/trace_aware"
+            android:drawablePadding="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:fontFamily="@font/ws_regular"
+            android:gravity="start"
+            android:padding="@dimen/_10dp"
+            android:text="@string/trace_aware"
+            android:textSize="@dimen/_11sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_audioAware"
+            style="@style/text_view_new"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/audio_aware"
+            android:drawablePadding="@dimen/_16dp"
+            android:fontFamily="@font/ws_regular"
+            android:gravity="start"
+            android:padding="@dimen/_10dp"
+            android:text="@string/audio_aware"
+            android:textSize="@dimen/_11sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_glanceAware"
+            style="@style/text_view_new"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_face"
+            android:drawablePadding="@dimen/_16dp"
+            android:fontFamily="@font/ws_regular"
+            android:gravity="start"
+            android:padding="@dimen/_10dp"
+            android:text="@string/glance_aware"
+            android:textSize="@dimen/_11sp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

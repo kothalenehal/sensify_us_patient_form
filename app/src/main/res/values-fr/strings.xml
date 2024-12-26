@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"SensifyAware"</string>
+    <string name="loading">"Chargement…"</string>
+    <string name="api_failure">"Échec de l'API"</string>
+    <string name="internet_not_available">"S'il vous plaît, vérifiez votre connexion à internet et réessayez"</string>
+    <string name="resource_not_found">"Ressource introuvable"</string>
+    <string name="server_conflict">"Conflits de serveur"</string>
+    <string name="unknown_error_occurred">"Une erreur inconnue s'est produite"</string>
+    <string name="hi_user_name">"Son."</string>
+    <string name="tap_on_any_of_the_cards_to_begin_your_sensify_experience">"Appuyez sur l'une des cartes pour commencer votre expérience Sensify."</string>
+    <string name="scentaware_evaluate">"Test ScentAware"</string>
+    <string name="msg_scent_aware_evaluate">"Évaluez votre sens olfactif."</string>
+    <string name="scent_aware_re_training">"Formation ScentAware"</string>
+    <string name="scent_aware_re_training8">"Kit de 8 parfums de recyclage ScentAware"</string>
+    <string name="scent_aware_re_training16">"Kit de 16 parfums de recyclage ScentAware"</string>
+    <string name="msg_scent_aware_training">"Re-testez votre odorat perdu."</string>
+    <string name="msg_scent_aware_re_training">"Rééduquez votre odorat"</string>
+    <string name="trace_aware_test">"Test TraceAware"</string>
+    <string name="trace_aware">"TraceAware"</string>
+    <string name="msg_trace_aware">"Évaluez votre motricité fine et votre mémoire visuelle."</string>
+    <string name="audio_aware_test">"Test d'AudioAware"</string>
+    <string name="audio_aware">"AudioAware"</string>
+    <string name="msg_audio_aware">"Accédez à votre mémoire de rappel verbal dans AudioAware."</string>
+    <string name="track_progress">"Rapport"</string>
+    <string name="msg_track_progress">"Suivez les résultats des tests que vous avez effectués."</string>
+    <string name="select_your_kit">"Sélectionnez votre kit"</string>
+    <string name="_8_scent_test_kit">"Kit de test 8 parfums"</string>
+    <string name="_16_scent_test_kit">"Kit de test de 16 parfums"</string>
+    <string name="begin">"Commencer"</string>
+    <string name="title_tutorial_scent_aware">"Comment effectuer une
+test d'identification des odeurs?"</string>
+    <string name="odor_identification_test">"Test d'identification des odeurs"</string>
+    <string name="scan_the_qr_code_on_the_smell_test_tube">"1. Scannez le code QR sur le tube à essai d'odeur."</string>
+    <string name="after_scanning_open_the_tube_and_smell_the_sample">"2. Après la numérisation, ouvrez le tube et sentez l'échantillon."</string>
+    <string name="put_the_tube_in_lid_container">"3. Mettez le tube dans le récipient avec couvercle."</string>
+    <string name="rational_msg_camera_permission">"L'autorisation de l'appareil photo est requise pour scanner le code QR"</string>
+    <string name="rational_msg_storage_permission">"Une autorisation de stockage est requise pour scanner le code QR"</string>
+    <string name="odor_identification_test_of_">"Test d'identification des odeurs
+%s/%s"</string>
+    <string name="odor_differentiation_test_of_">"Test de différenciation des odeurs
+%s/%s"</string>
+    <string name="odor_intensity_test_of_">"Test d'intensité d'odeur
+%s/%s"</string>
+    <string name="can_you_guess_what_the_sample_is">"Pouvez-vous deviner quel est l'échantillon?"</string>
+    <string name="submit">"Soumettre"</string>
+    <string name="send_code">Envoyer le code</string>
+    <string name="next">"Suivant"</string>
+    <string name="please_select_different_tube">"Veuillez sélectionner un tube différent !"</string>
+    <string name="_continue">"Continuer"</string>
+    <string name="msg_checkpoint">"Vous avez atteint un point de contrôle. Nous allons maintenant retester vos sens olfactifs. Continuez la procédure en replaçant les tubes dans le plateau en mousse après les avoir sentis."</string>
+    <string name="msg_2_checkpoint">"Remarque : Les tests suivants incluront une minuterie de 30 secondes."</string>
+    <string name="checkpoint_reached">"Point de contrôle atteint"</string>
+    <string name="done">"Fait!"</string>
+    <string name="evaluation">"Évaluation"</string>
+    <string name="between_13_and_16">"Entre 13 et 16"</string>
+    <string name="between_29_and_36">"Entre 29 et 36"</string>
+    <string name="normal">"Normal"</string>
+    <string name="between_9_and_12">"Entre 9 et 12"</string>
+    <string name="between_22_and_28">"Entre 22 et 28"</string>
+    <string name="mild_anosmia">"Anosmie légère"</string>
+    <string name="between_5_and_8">"Entre 5 et 8"</string>
+    <string name="between_14_and_21">"Entre 14 et 21"</string>
+    <string name="moderate_anosmia">"Anosmie modérée"</string>
+    <string name="between_0_and_4">"Entre 0 et 4"</string>
+    <string name="between_0_and_13">"Entre 0 et 13"</string>
+    <string name="severe_anosmia">"Anosmie sévère"</string>
+    <string name="consult_your_doctor_for_a_more_comprehensive_examination_of_your_loss_of_olfactory_senses">"Consultez votre médecin pour un examen plus complet de votre perte des sens olfactifs."</string>
+    <string name="try_traceaware">"Essayez TraceAware"</string>
+    <string name="try_smell_re_training">"Essayez de re-tester l'odeur"</string>
+    <string name="you_answered_out_of_nquestions_correctly">"Test terminé avec succès !
+Vous avez obtenu %s sur 4 étoiles."</string>
+    <string name="msg_3_checkpoint">"Test d'identification des odeurs
+complet!"</string>
+    <string name="msg_4_checkpoint_diff">"Nous allons maintenant tester votre capacité à différencier des odeurs particulières. Suivez les instructions affichées sur votre écran pour terminer le test."</string>
+    <string name="msg_5_checkpoint_intensity">"Nous allons maintenant tester votre capacité à différencier des odeurs particulières. Suivez les instructions affichées sur votre écran pour terminer le test."</string>
+    <string name="odor_diff_intro_text_1">"Choisissez les tubes de votre kit ScentAware avec les symboles suivants"</string>
+    <string name="odor_diff_intro_text_2">"Sentez les bâtonnets d'inhalateur, un à la fois, et identifiez celui qui est différent d'entre eux."</string>
+    <string name="odor_intensity_intro_text_2">"Sentez les bâtonnets d'inhalateur, un à la fois, et identifiez l'odeur la plus forte parmi eux."</string>
+    <string name="odor_intensity_intro_text_1">"Choisissez les tubes de votre kit ScentAware avec les symboles suivants"</string>
+    <string name="odor_diff_msg">"Sélectionnez l'option que vous pensez être <b>différente</b>."</string>
+    <string name="odor_intensity_msg">"Sélectionnez l'option qui, selon vous, est la <b>odeur la plus forte</b>."</string>
+    <string name="could_not_ndifferentiate">"Ne pourrait pas
+différencier"</string>
+    <string name="title_tutorial_odor_diff_test">"Comment effectuer une odeur
+test de différenciation ?"</string>
+    <string name="title_tutorial_odor_intensity_test">"Comment effectuer une odeur
+essai d'intensité?"</string>
+    <string name="title_tutorial_re_test">"Comment effectuer
+un re-test ?"</string>
+    <string name="trace_aware_questions">"TraceAware
+%s/%s"</string>
+    <string name="traces_remaining">"Traces restantes :"</string>
+    <string name="msg_trace_aware_checkpoint_1">"Vous avez tracé tous les symboles avec succès !"</string>
+    <string name="msg_trace_aware_checkpoint_2">"Vous avez réussi la première série de questions."</string>
+    <string name="msg_trace_aware_checkpoint_3">"Vous avez réussi le deuxième segment du test. Nous allons maintenant tester votre capacité à vous rappeler de votre mémoire."</string>
+    <string name="msg_trace_aware_recall">"Essayez de rappeler et de tracer le chiffre associé au numéro affiché dans la case."</string>
+    <string name="msg_trace_aware_result">"Vous avez réussi le test d'évaluation TraceAware et TraceAware-Recall."</string>
+    <string name="try_smell_evaluation">"Essayez l'évaluation des odeurs"</string>
+    <string name="return_to_tests">"Retour aux essais"</string>
+    <string name="back_to_homescreen">"Retour à l'écran d'accueil"</string>
+    <string name="average_response_time_">"Temps de réponse moyen :
+%s s"</string>
+    <string name="strWelcome">"Accueillir"</string>
+    <string name="strLoginID">"Identifiant de connexion"</string>
+    <string name="strFirsName">"Prénom"</string>
+    <string name="strLastName">"Nom de famille"</string>
+    <string name="strEmail">"E-mail"</string>
+    <string name="strPhone">"Numéro de téléphone"</string>
+    <string name="strLogin">"Connexion"</string>
+    <string name="strSignUp">"S'inscrire"</string>
+    <string name="strEnterEmail">"Entrez votre identifiant de messagerie
+et mot de passe pour s'inscrire"</string>
+    <string name="strHiThere">"Bonjour à tous!"</string>
+    <string name="strHowOld">"Quel âge as-tu?"</string>
+    <string name="strLowMemory">"Vous subissez une perte de
+mémoire?"</string>
+    <string name="strSetUp4Que">"Êtes-vous actuellement prescrit à un médicament? Sélectionnez les options qui peuvent s'appliquer."</string>
+    <string name="strStuffyNose">"Vous avez le nez bouché ?"</string>
+    <string name="strSelectGender">"Sélectionnez votre sexe :"</string>
+    <string name="strNext">"Suivant"</string>
+    <string name="strPassword">"Mot de passe"</string>
+    <string name="strWarnPassword">"Veuillez entrer le mot de passe"</string>
+    <string name="strWarnOldPassword">"Veuillez saisir l'ancien mot de passe"</string>
+    <string name="strWarnNewPassword">"Veuillez saisir un nouveau mot de passe"</string>
+    <string name="strValidPassword">"Veuillez entrer un mot de passe valide"</string>
+    <string name="strValidNewPassword">"Veuillez entrer un nouveau mot de passe valide"</string>
+    <string name="strWarnRePassword">"Veuillez saisir à nouveau le mot de passe"</string>
+    <string name="strMatchPassword">"Le mot de passe et le mot de passe ressaisi ne correspondent pas"</string>
+    <string name="strValidEmail">"Veuillez saisir un identifiant de messagerie valide"</string>
+    <string name="strWarnEmail">"Veuillez saisir l'identifiant de messagerie"</string>
+    <string name="strWarnFirstName">"Veuillez entrer le prénom"</string>
+    <string name="strWarnLastname">"Veuillez entrer le nom de famille"</string>
+    <string name="strWarnPhoneNumber">"Veuillez entrer le numéro de téléphone"</string>
+    <string name="strReenterPassword">"Entrez à nouveau le mot de passe"</string>
+    <string name="strAge">"Âge"</string>
+    <string name="strWarnAge">"Veuillez entrer l'âge"</string>
+    <string name="strWarnUserName">"Veuillez entrer le nom d'utilisateur"</string>
+    <string name="strWarnOtherMedication">"Veuillez entrer les médicaments"</string>
+    <string name="strWarnGender">"Veuillez sélectionner le sexe"</string>
+    <string name="strWarnSelectMedications">"Veuillez sélectionner un médicament"</string>
+    <string name="strMale">"Homme"</string>
+    <string name="strFemale">"Femme"</string>
+    <string name="strOther">"Autre"</string>
+    <string name="strNo">"Non"</string>
+    <string name="strYes">"Oui"</string>
+    <string name="strOption1">"Aucune"</string>
+    <string name="strOption2">"Antibiotiques"</string>
+    <string name="strOption3">"Médicaments pour la tension artérielle"</string>
+    <string name="strOption4">"Antidépresseurs"</string>
+    <string name="strOption5">"Stéroïdes"</string>
+    <string name="strOption6">"Autres si il vous plaît spécifiez)"</string>
+    <string name="strWalkThrough1">"Évaluez vos sens olfactifs
+avec ScentAware"</string>
+    <string name="strWalkThrough2">"Évaluez votre motricité fine et
+mémoire visuelle avec TraceAware"</string>
+    <string name="strWalkThrough3">"Évaluez votre mémoire de rappel verbal
+avec AudioAware"</string>
+    <string name="strWalkThroughTitle1">"Attention à votre nez !"</string>
+    <string name="strWalkThroughTitle2">"Évaluez vos capacités"</string>
+    <string name="strWalkThroughTitle3">"Testez votre mémoire"</string>
+    <string name="already_user"><u>Déjà utilisateur ? Allez à la connexion.</u></string>
+
+    <string name="strForgotPassword">"<u>Mot de passe oublié ?</u>"</string>
+    <string name="e_g_vasodilators">"par exemple. vasodilatateurs"</string>
+    <string name="title_verify_email">"Vérifier les courriels"</string>
+    <string name="msg_verification_screen">"Un code de vérification a été envoyé à votre adresse e-mail. Veuillez le saisir pour valider votre compte"</string>
+    <string name="enter_code_here">"Entrez le code ici"</string>
+    <string name="verify">"Vérifier"</string>
+    <string name="msg_enter_verification_code">"Veuillez entrer le code de vérification"</string>
+    <string name="title_retraining">"Comment recycler votre
+odorat?"</string>
+    <string name="open_the_tube_and_smell_nthe_sample">"Ouvrir le tube et sentir l'échantillon"</string>
+    <string name="the_sample_you_are_smelling_is">"L'échantillon que vous sentez est,"</string>
+    <string name="tap_next_when_you_re_ready">"Appuyez sur Suivant lorsque vous êtes prêt"</string>
+    <string name="you_ve_successfully_completed_nsmell_retraining">"Vous avez terminé avec succès
+retester l'odeur."</string>
+    <string name="try_intelliplot">"Essayez IntelliPlot"</string>
+    <string name="smell_retraining">"Réentraînement à l'odorat"</string>
+    <string name="smell_retraining_">"Re-test d'odeur
+%s/%s"</string>
+    <string name="no">"Non"</string>
+    <string name="are_you_sure_you_wish_to_ncancel_the_test">"Êtes-vous sûr de vouloir
+annuler le test ?"</string>
+    <string name="yes">"Oui"</string>
+    <string name="how_to_use_audio_aware">"Comment utiliser
+Conscient de l'audio ?"</string>
+    <string name="title_level_of_difficulty">"Choisi ton
+niveau de difficulté"</string>
+    <string name="easy">"Facile"</string>
+    <string name="immediate_recall_no_delay">"Rappel immédiat (sans délai)"</string>
+    <string name="intermediate">"Intermédiaire"</string>
+    <string name="recall_after_a_2_minute_delay">"Rappel après un délai de 2 minutes"</string>
+    <string name="hard">"Dur"</string>
+    <string name="recall_after_a_10_minute_delay">"Rappel après un délai de 10 minutes"</string>
+    <string name="audio_aware_level">"Les niveaux"</string>
+    <string name="click_on_begin_to_start_nthe_test">"Cliquez sur \"Commencer\" pour commencer
+le test."</string>
+    <string name="after_the_countdown_n20_words_will_be_read_out_to_you">"Après le compte à rebours,
+20 mots vous seront lus."</string>
+    <string name="stop_test">"Arrêter l'essai"</string>
+    <string name="reading_words_ntry_to_remember_as_many_nas_you_can">"Lire des mots.
+Essayez de vous souvenir d'autant
+comme tu peux."</string>
+    <string name="reading_complete_nclick_on_next_to_proceed">"Lecture terminée.
+Cliquez sur Suivant pour continuer"</string>
+    <string name="please_wait_for_minutes_nbefore_you_proceed">"Veuillez patienter %s minutes
+avant de continuer."</string>
+    <string name="select_the_words_that_were_nread_to_you">"Veuillez sélectionner 5 mots qui vous ont été joués dans la liste."</string>
+    <string name="_15_words_selected">"%s/5 mots sélectionnés"</string>
+    <string name="page_of_2">"Page %s/2"</string>
+    <string name="retry_audioaware">"Réessayez AudioAware"</string>
+    <string name="excellent">"Excellent"</string>
+    <string name="good">"Bien"</string>
+    <string name="average">"Moyenne"</string>
+    <string name="poor">"Pauvre"</string>
+    <string name="between_3_and_0">"Entre 0 et 3"</string>
+    <string name="between_4_and_5">"Entre 4 et 5"</string>
+    <string name="between_6_and_7">"Entre 6 et 7"</string>
+    <string name="between_8_and_10">"Entre 8 et 10"</string>
+    <string name="score_out_of_10">"Note (sur 10)"</string>
+    <string name="test_complete_nhere_s_your_score">"Essai terminé.
+Voici votre score"</string>
+    <string name="are_you_experiencing_a_stuffy_nose">"Vous avez le nez bouché ?"</string>
+    <string name="are_you_currently_on_any_medication">"Prenez-vous actuellement des médicaments ?"</string>
+    <string name="please_select_one_of_the_option">"Veuillez sélectionner l'une des options"</string>
+    <string name="tracing_accuracy_">"Précision de traçage :
+%s%%"</string>
+    <string name="recall_accuracy_">"Précision de rappel :
+%s%%"</string>
+    <string name="recent_tests">"Essais récents :"</string>
+    <string name="scentaware_8_scent_kit">"Kit de 8 parfums ScentAware"</string>
+    <string name="scentaware_16_scent_kit">"Kit de 16 parfums ScentAware"</string>
+    <string name="your_scores_are_improving">"Vos scores s'améliorent !"</string>
+    <string name="low_scores_consult_your_doctor">"Des notes faibles ? Consultez votre médecin."</string>
+    <string name="take_a_test">"Passer un test"</string>
+    <string name="avg_response_time">"Moy. Temps de réponse :"</string>
+    <string name="avg_tracing_accuracy">"Moy. précision de traçage :"</string>
+    <string name="avg_recall_accuracy">"Moy. précision du rappel :"</string>
+    <string name="take_tests_routinely_to_improve_your_response_time">"Faites des tests régulièrement pour améliorer votre temps de réponse."</string>
+    <string name="you_haven_t_attempted_any_tests_yet">"Vous n'avez encore tenté aucun test."</string>
+    <string name="no_data_found">"Aucune donnée disponible"</string>
+    <string name="score">"Score"</string>
+    <string name="avg_tracing_accuracy2">"Précision de traçage moyenne"</string>
+    <string name="avg_recall_accuracy2">"Moy. Précision de rappel"</string>
+    <string name="avg_response_time2">"Moy. Temps de réponse"</string>
+    <string name="date">"Date"</string>
+    <string name="settings">"Paramètres"</string>
+    <string name="change_password">"Changer le mot de passe"</string>
+    <string name="update_profile">"Mettre à jour le profil"</string>
+    <string name="logout">"Se déconnecter"</string>
+    <string name="old_password">"ancien mot de passe"</string>
+    <string name="new_password">"nouveau mot de passe"</string>
+    <string name="_10_traces">"10 images à tracer et à rappeler."</string>
+    <string name="_8_traces">"8 images à tracer et à rappeler."</string>
+    <string name="_6_traces">"6 images à tracer et à rappeler."</string>
+    <string name="password_helper_text">"Inclure au moins une majuscule, un caractère spécial, un chiffre et la longueur doit être de 8 caractères"</string>
+    <string name="user_name">"Nom d'utilisateur"</string>
+    <string name="draw_the_figure_associated_with_the_number_displayed_below_as_accurately_as_you_can">"Dessinez le chiffre associé au nombre affiché ci-dessous, aussi précisément que possible.
+
+Essayez de vous souvenir du chiffre associé aux nombres."</string>
+    <string name="glance_aware_test">"Test GlanceAware"</string>
+    <string name="glance_aware">"GlanceAware"</string>
+    <string name="msg_glace_aware">"GlanceAware est un examen de mémoire associative de nom de visage."</string>
+    <string name="name">"Nom:"</string>
+    <string name="profession">"Profession :"</string>
+    <string name="showing_image_12">"Affichage de l'image %s/12"</string>
+    <string name="msg_glance_aware_delay">"Aperçu de l'image terminé.
+Veuillez patienter %s minutes avant de continuer."</string>
+    <string name="msg_glance_aware_begin">"Aperçu de l'image terminé.
+Appuyez sur le bouton ci-dessous pour
+commencer l'essai."</string>
+    <string name="what_is_the_name_of_the_person_in_nthe_picture">"Quel est le nom de la personne dans
+l'image?"</string>
+    <string name="what_is_the_profession_of_the_person_in_nthe_picture">"Quelle est la profession de la personne
+sur la photo?"</string>
+    <string name="please_select_answer">"Veuillez sélectionner une réponse."</string>
+    <string name="total_number_of_faces_to_nidentify">"Nombre total de faces à
+identité :"</string>
+    <string name="persons_whose_name_and_nprofession_were_nidentified_correctly">"Les personnes dont le nom et
+profession étaient
+identifié <b>correctement :</b>"</string>
+    <string name="persons_whose_name_and_nprofession_were_nidentified_incorrectly">"Les personnes dont le nom et
+profession étaient
+identifié <b>incorrectement :</b>"</string>
+    <string name="retry_glanceaware">"Réessayer GlanceAware"</string>
+    <string name="glanceaware_tutorial_1">"Dans ce test, il vous sera demandé de
+mémoriser les noms des personnes
+et leurs métiers."</string>
+    <string name="glanceaware_tutorial_2">"Des images vous seront présentées
+de personnes avec leur nom
+et métier."</string>
+    <string name="glanceaware_tutorial_3">"Après l'aperçu, essayez de rappeler
+les noms et professions
+du mieux que vous pouvez."</string>
+    <string name="glanceaware_tutorial_4">"Après l'aperçu, essayez de rappeler
+les noms et professions
+du mieux que vous pouvez."</string>
+    <string name="glanceaware_tutorial_5">"Pour le niveau de difficulté Difficile, le test
+commencer après un délai de 5 minutes."</string>
+    <string name="glanceaware_tutorial_6">"Vos performances seront
+marqué, à la fin de l'épreuve."</string>
+    <string name="skip">"Sauter"</string>
+    <string name="msg_forgot_password_screen1">"Un code de vérification sera envoyé à votre adresse e-mail enregistrée."</string>
+    <string name="msg_forgot_password_screen2">"Veuillez entrer le code ici et vous pouvez maintenant réinitialiser votre mot de passe. Entrez votre nouveau mot de passe ici et cliquez sur Soumettre."</string>
+    <string name="strWarnCode">"Veuillez entrer le code de vérification"</string>
+    <string name="delete_account">"Supprimer le compte"</string>
+    <string name="medication">"Médicament"</string>
+    <string name="enter_medication_here">"Entrez le médicament ici"</string>
+    <string name="not_tested_yet">"Pas encore testé"</string>
+    <string name="last_tested_on_">"Dernier test le : %s"</string>
+    <string name="ready_to_test">"Prêt à tester"</string>
+    <string name="words_aware_test">"Test WordsAware"</string>
+    <string name="words_aware">"WordsAware"</string>
+    <string name="using_letters_shown_below_as_the_first_two_characters_speak_as_many_words_as_you_can_in_60_seconds">"En utilisant les lettres ci-dessous comme les deux premiers caractères, prononcez autant de mots que possible en 60 secondes."</string>
+    <string name="d_p">"FL"</string>
+    <string name="the_test_will_begin_shortly_speak_the_words_clearly_after_the_countdown">"Le test va commencer sous peu. Prononcez clairement les mots après le compte à rebours."</string>
+    <string name="keep_the_order_of_the_first_two_letters_the_same_use_words_that_are_defined_by_the_oxford_english_dictionary">"Gardez l'ordre des deux premières lettres le même. Utilisez des mots définis par le dictionnaire anglais Oxford."</string>
+    <string name="stand_by">"Etre prêt"</string>
+    <string name="commencing">"Commencer..."</string>
+    <string name="listening">"Écoute"</string>
+    <string name="speak_as_many_words_as_you_can_before_the_timer_runs_out">"Prononcez autant de mots que possible avant la fin du temps imparti."</string>
+    <string name="test_over">"Test sur"</string>
+    <string name="reference_letters">"Lettres de référence :"</string>
+    <string name="unique_words_identified">"Mots uniques identifiés :"</string>
+    <string name="words_that_were_repeated">"Mots répétés :"</string>
+    <string name="longest_word_detected">"Mot le plus long détecté :"</string>
+    <string name="shortest_word_detected">"Mot le plus court détecté :"</string>
+    <string name="dash">"- -"</string>
+    <string name="get_results">"Obtenir des résultats"</string>
+    <string name="please_wait_while_we_process_your_final_score">"Veuillez patienter pendant que nous traitons votre score final."</string>
+    <string name="retry_wordsaware">"Réessayer WordsAware"</string>
+    <string name="grammar_aware_test">"Test de connaissance de la grammaire"</string>
+    <string name="grammar_aware">"Conscient de la grammaire"</string>
+    <string name="using_words_shown_below_construct_3_sentences_that_are_grammatically_correct">"En utilisant les mots ci-dessous, construisez 3 phrases grammaticalement correctes."</string>
+    <string name="use_the_words_as_they_are_presented_without_modifying_them_grammatically">"Utilisez les mots tels qu'ils sont présentés, sans les modifier grammaticalement."</string>
+    <string name="words2">"Sel
+Chiffre"</string>
+    <string name="words3">"Voiture
+paresseux
+récit"</string>
+    <string name="you_ll_have_90_seconds_to_construct_each_sentence">"Vous aurez 90 secondes pour construire chaque phrase."</string>
+    <string name="speak_your_sentences_and_submit_3_such_sentences_to_complete_the_test">"Prononcez vos phrases et soumettez 3 de ces phrases pour terminer le test."</string>
+    <string name="active">"Actif"</string>
+    <string name="phrases_submitted">"Phrases soumises :"</string>
+    <string name="test_completed_successfully">"Test terminé avec succès !"</string>
+    <string name="grammatical_accuracy">"Grammatical
+précision :"</string>
+    <string name="average_response_time">"Réponse moyenne
+temps :"</string>
+    <string name="longest_sentence">"Phrase la plus longue :"</string>
+    <string name="shortest_sentence">"Phrase la plus courte :"</string>
+    <string name="words">"mots"</string>
+    <string name="secs">"secondes"</string>
+    <string name="trainings">"Formations"</string>
+    <string name="tests">"Essais"</string>
+    <string name="reports">"Rapports"</string>
+    <string name="it_s_quiet_in_here">"C'est calme ici..."</string>
+    <string name="we_couldn_t_get">"Nous n'avons pas pu obtenir de réponse de votre part avant la fin du temps imparti. La session en cours a été annulée. Vous pouvez réessayer depuis le menu Tests."</string>
+    <string name="done_1">"Fait"</string>
+    <string name="alert_2">"Nous n'avons pas pu obtenir de réponse de votre part avant la fin du temps imparti. Voulez-vous continuer?"</string>
+    <string name="cancel_test">"Annuler le test"</string>
+    <string name="sentences_submitted">"Phrases soumises :"</string>
+    <string name="sentences_remaining">"Phrases restantes :"</string>
+    <string name="you_ve_submitted_your_response_successfully">"Vous avez envoyé votre réponse avec succès."</string>
+    <string name="record_audio_is_required">"Nous n'utiliserons l'autorisation d'enregistrement audio que pour utiliser la fonction de synthèse vocale"</string>
+    <string name="training_features_are_unavailable_during_an_active_clinical_trial">"Les fonctionnalités de formation ne sont pas disponibles pendant un essai clinique actif !"</string>
+    <string name="choose_tube_type">"Choisissez le type de tube"</string>
+    <string name="please_select_an_tube">"Veuillez sélectionner un tube"</string>
+    <string name="dismiss">"Rejeter"</string>
+    <string name="rate_the_app">"Évaluer l'application"</string>
+    <string name="share_app">"Partager l'application"</string>
+    <string name="description">"SensifyAware est une application de bien-être mobile pour suivre vos sens et votre cognition. Regardez à l'intérieur de votre cerveau avec SensifyAware. J'aime l'installer : Téléphone/Tablette :
+https://play.google.com/store/apps/details?id="</string>
+
+    <string name="are_you_sure_you_want_to_logout">Êtes-vous sûr de vouloir vous déconnecter?</string>
+    <string name="are_you_sure_you_want_to_delete_your_account">Voulez-vous vraiment supprimer le compte ?</string>
+    <string name="do_you_want_to_take_the_test_again">Voulez-vous refaire le test ?</string>
+    <string name="note_a_re_test_makes_the_test_longer_but_increases_the_statistical_power_of_the_score">Remarque : Un re-test rend le test plus long, mais augmente la puissance statistique du score.</string>
+    <string name="go_to_result">Aller au résultat</string>
+
+    <string name="changelog_file">fr/words_for_audio_aware.txt</string>
+    <string name="adjective">fr/Adjectives.txt</string>
+    <string name="nouns">fr/Nouns.txt</string>
+    <string name="verbs">fr/Verbs.txt</string>
+    <string name="glance_aware_json">fr/GlanceAware.json</string>
+
+    <string name="ren_aware_test">RenAware Test</string>
+    <string name="ren_aware">RenAware</string>
+    <string name="ren_aware_wellness_check">RenAware \nWellness check</string>
+    <string name="place_the_camera_above_the_grid_so_that_it_captures_the_colored_squares">Place the camera above the grid so that it captures the colored squares.</string>
+    <string name="overall_wellness">Overall wellness</string>
+    <string name="your_score_is_within_the_optimal_range">Your score is within the optimal range.</string>
+    <string name="renal_health">Renal health</string>
+    <string name="liver_health">Liver health</string>
+    <string name="hydration">Hydration</string>
+    <string name="energy_balance">Energy balance</string>
+    <string name="immunity">Immunity</string>
+    <string name="bone_health">Bone health</string>
+    <string name="_8_scent_test">8-Test de parfum</string>
+    <string name="_16_scent_test">16-Test de parfum</string>
+    <string name="fine_motor_skills">Dextérité</string>
+    <string name="verbal_memory">Mémoire verbale</string>
+
+
+    <!--to be Change-->
+    <string name="test_completed">"Test terminé
+avec succès!"</string>
+    <string name="calendar">"Calendrier"</string>
+    <string name="scentaware">"Sensible au parfum"</string>
+    <string name="scentaware_8">"ScentAware-8"</string>
+    <string name="scentaware_16">"ScentAware-16"</string>
+    <string name="smell_training">"Entraînement à l'odorat"</string>
+    <string name="cancel">"Annuler"</string>
+    <string name="a_stuffy_nose_is_a_condition">"Un nez bouché est une condition dans laquelle les voies nasales deviennent congestionnées ou obstruées, ce qui rend difficile la respiration par le nez."</string>
+    <string name="yes_i_have_a_stuffy_nose">"Oui, j'ai le nez bouché"</string>
+    <string name="no_i_am_okay">"Non, je vais bien"</string>
+    <string name="be_proactive">"Etre pro-actif,
+pas réactif."</string>
+    <string name="the_scentaware_kit">"Le kit ScentAware"</string>
+    <string name="the_scentaware_kit_contains">"Le kit ScentAware contient des inhalateurs contenant des stimulants olfactifs naturels à base d'huiles essentielles comme la rose, la lavande, l'orange et la cannelle. Votre familiarité avec ces parfums peut varier légèrement en fonction de la variété et de l'origine de la plante. Le kit reste efficace six mois après la première utilisation. Chaque tube ScentAware est étiqueté avec un code QR pour l'administration du test. Les tubes ont également une forme colorée pour un étiquetage précis et ne sont pas nécessaires pour effectuer le test à l'aide de votre téléphone."</string>
+    <string name="smell_test">"Test d'odeur"</string>
+    <string name="the_smell_test_assesses">"Le test d'odeur évalue votre capacité à identifier correctement les odeurs. Cela implique d'inhaler un parfum, de le rappeler de mémoire, puis de sélectionner l'odeur la plus probable parmi quatre options grâce à un processus mental d'élimination."</string>
+    <string name="regular_smell_evaluations">"Des évaluations régulières des odeurs peuvent fournir des informations sur les problèmes de santé sous-jacents."</string>
+    <string name="the_smell_training_module">"Le module Smell Training révèle les identités olfactives, vous permettant de vous familiariser avec elles. Combiner l’entraînement à l’odorat et l’évaluation de l’odorat peut être un moyen efficace de surveiller et de retrouver votre odorat perdu. La recherche indique que l’entraînement à l’odorat peut aider à restaurer le sens de l’odorat chez 30 % des personnes, le succès variant en fonction de la cause sous-jacente de la perte de l’odorat."</string>
+    <string name="odor_identification_test_complete">"Test d'identification des odeurs terminé !"</string>
+    <string name="great_job_you_ve_finished_">"Bon travail! Vous avez terminé le test d'identification des odeurs. Pour améliorer la précision de vos résultats, nous vous recommandons d’envisager un nouveau test. Vous pouvez également choisir de terminer le test maintenant et de consulter vos résultats immédiatement."</string>
+    <string name="re_test">"Re-tester"</string>
+    <string name="view_result">"Voir résultat"</string>
+    <string name="you_ve_successfully_signed_up_with_sensifyaware">"Vous vous êtes inscrit avec succès sur SensifyAware !"</string>
+    <string name="effective_care_starts">"Des soins efficaces commencent par une intervention précoce."</string>
+    <string name="get_started">"Commencer!"</string>
+    <string name="custom_recurrence">"Récurrence personnalisée"</string>
+    <string name="repeats_every">"Se répète tous les"</string>
+    <string name="_1">"1"</string>
+    <string name="repeats_on">"Se répète sur"</string>
+    <string name="s">"S"</string>
+    <string name="m">"M"</string>
+    <string name="t">"T"</string>
+    <string name="w">"W"</string>
+    <string name="f">"F"</string>
+    <string name="ends">"Prend fin"</string>
+    <string name="never">"Jamais"</string>
+    <string name="on">"Sur"</string>
+    <string name="after">"Après"</string>
+    <string name="occurence">"occurrence"</string>
+    <string name="start_test">"Démarrer le test"</string>
+    <string name="add_reminder">"Ajouter un rappel"</string>
+    <string name="save">"Sauvegarder"</string>
+    <string name="edit_reminder">"Modifier le rappel"</string>
+    <string name="repeat">"Répéter"</string>
+    <string name="select_test">"Sélectionnez un test"</string>
+    <string name="renal_health_is_vital">"La santé rénale est essentielle au bien-être général, car des reins sains assurent une filtration adéquate, l’élimination des déchets et le maintien des fonctions corporelles essentielles."</string>
+    <string name="scan_the_qr_code_n_on_the_renaware_test_strip">"Scannez le code QR
+sur la bandelette de test RenAware."</string>
+    <string name="how_intense_is_the_smell">"Quelle est l’intensité de l’odeur ?"</string>
+    <string name="please_rate_the_intensity">"Veuillez évaluer l'intensité de l'odeur que vous détectez sur une échelle de 0 à 5. Veuillez noter 0 si vous ne détectez pas d'odeur."</string>
+    <string name="is_the_odor_you_are_smelling_pleasant_to_you">"L’odeur que vous sentez vous plaît-elle ?"</string>
+    <string name="yes_i_like_this_smell">"Oui, j'aime cette odeur."</string>
+    <string name="i_can_tolerate_this">"Je peux tolérer ça"</string>
+    <string name="no_this_smell_is_repulsive">"Non, cette odeur est répugnante !"</string>
+    <string name="end_training">"Terminer la formation"</string>
+    <string name="for_more_details">"Pour plus de détails sur votre résultat, veuillez faire défiler vers le bas."</string>
+    <string name="scents">"Parfums"</string>
+    <string name="your_responses">"Vos réponses"</string>
+    <string name="consider_setting_up_reminders">"Pensez à configurer des rappels pour effectuer périodiquement des tests olfactifs et des entraînements et suivre tout changement dans votre olfaction."</string>
+    <string name="close">"Fermer"</string>
+    <string name="set_reminder">"Définir un rappel"</string>
+    <string name="verify_email">"Vérifier les courriels"</string>
+    <string name="verification_code">"Le code de vérification"</string>
+    <string name="today">"Aujourd'hui"</string>
+    <string name="smell_tests">"Tests d'odeur"</string>
+    <string name="learn_more">"Apprendre encore plus"</string>
+    <string name="are_you_experiencing">"Vous ressentez une baisse ou une distorsion de votre odorat ? Des tests olfactifs périodiques peuvent vous aider à suivre vos progrès."</string>
+    <string name="watch_video">"Regarder la vidéo"</string>
+    <string name="depending_on_the_root">"Selon la cause profonde, l’entraînement à l’odorat peut aider à restaurer l’odorat perdu. Pourtant, son efficacité varie selon les individus."</string>
+    <string name="cognitive_tests">"Tests cognitifs"</string>
+    <string name="patient_test">Sensify | NetraKumbh 2025</string>
+    <string name="fun_non_addictive_memory_games">"Des jeux de mémoire amusants et non addictifs peuvent aider à déterminer si la perte de l'olfaction est liée à la cognition"</string>
+    <string name="does_not_repeat">"Ne pas répéter la dose"</string>
+    <string name="every_day">"Tous les jours"</string>
+    <string name="every_week">"Toutes les semaines"</string>
+    <string name="every_month">"Chaque mois"</string>
+    <string name="every_year">"Chaque année"</string>
+    <string name="custom">"Coutume"</string>
+    <string name="the_presence_of_ketones">"La présence de cétones dans le sang et l'urine, généralement formées comme source d'énergie alternative à partir des graisses lorsque le glucose est insuffisant, peut indiquer un diabète et justifie des tests plus approfondis, tandis que la cétonurie est une condition médicale dans laquelle des corps cétoniques se trouvent dans l'urine, bien que chez les individus en bonne santé, seules des quantités minimes sont détectables."</string>
+    <string name="questions">"%s/%s"</string>
+    <string name="avg_user_accuracy">"Moy. précision de l'utilisateur : %s%%"</string>
+    <string name="starts_on">"Commence le :"</string>
+    <string name="remind_me">"Rappelez-moi à :"</string>
+    <string name="ends_on">"se termine le :"</string>
+    <string name="scentaware_8_smell_training">"Formation sur les odeurs ScentAware-8"</string>
+    <string name="scentaware_16_smell_training">"Formation sur les odeurs ScentAware-16"</string>
+    <string name="scentaware_8_scent_test">"Test de parfum ScentAware-8"</string>
+    <string name="scentaware_16_scent_test">"Test de parfum ScentAware-16"</string>
+    <string name="day">"Jour"</string>
+    <string name="week">"Semaine"</string>
+    <string name="month">"Mois"</string>
+    <string name="event_will_occur_every_">"L'événement se produira tous les %s."</string>
+    <string name="no_smell_detected">"Aucune odeur détectée"</string>
+    <string name="very_weak">"Très faible"</string>
+    <string name="weak">"Faible"</string>
+    <string name="strong">"Fort"</string>
+    <string name="very_strong">"Très fort"</string>
+    <string name="viewall">"Voir tout"</string>
+    <string name="finish_training">"Terminer la formation"</string>
+    <string name="restart">"Redémarrage"</string>
+    <string name="consider_setting_up_">"Pensez à configurer des rappels pour effectuer des tests olfactifs et des entraînements périodiques pour suivre tout changement dans votre olfaction."</string>
+    <string name="smell_training_completed_successfully">"Entraînement olfactif terminé avec succès !"</string>
+    <string name="no_event_found">"Aucun événement trouvé !"</string>
+    <string name="repeat_at">"Répétez %s."</string>
+    <string name="all_day">"Toute la journée"</string>
+    <string name="associative_memory">"Mémoire associative"</string>
+    <string name="the_brain_translates_sensory">"Le cerveau traduit les informations sensorielles reçues par le toucher, le goût, l’odorat, la vision et l’ouïe tout en coordonnant les fonctions essentielles du corps, consciemment et inconsciemment.
+Il existe six domaines cognitifs :
+• Mémoire et apprentissage
+• Langue
+• Fonctions executives
+• Attention complexe,
+• Cognition sociale
+• Fonctions perceptuelles et motrices."</string>
+    <string name="interpreting_health_">"Interpréter la santé
+Par les sens."</string>
+    <string name="the_ability_to_clearly_think">"La capacité de penser, d’apprendre et de se souvenir clairement est un élément important de l’exécution des activités quotidiennes. La santé cognitive n’est qu’un aspect de la santé globale du cerveau."</string>
+    <string name="traceaware_is_a_game_where_you">"TraceAware est un jeu dans lequel vous dessinez des symboles spéciaux à l'aide de votre doigt. Les symboles, associés aux chiffres, doivent être tracés rapidement et avec précision. Au début, vous copiez les symboles que vous voyez, mais cela se transforme bientôt en un test de mémoire où vous rappelez ce que vous avez copié. C'est une façon amusante d'exercer votre coordination cérébrale et manuelle."</string>
+    <string name="test_your_memory_and_motor_skills">"Testez votre mémoire et votre motricité."</string>
+    <string name="word_listening_and_recognition">"Écoute et reconnaissance des mots."</string>
+    <string name="audioaware_is_a_word_listening_game">"AudioAware est un jeu d'écoute de mots. L'appareil prononce des mots à un rythme régulier via son haut-parleur. Votre travail consiste à reconnaître ces mots dans une liste qui vous est présentée. Il s'agit de rappeler ce que vous entendez."</string>
+    <string name="connect_faces_and_names_for_a_memory_challenge">"Connectez des visages et des noms pour un défi de mémoire."</string>
+    <string name="glanceaware_is_an_associative_memory">"GlanceAware est une tâche de mémoire associative. Des visages vous sont montrés avec des noms et une profession associés au visage. Une fois que l'on vous montre un ensemble de visages et les noms, il vous est demandé de vous rappeler. La tâche implique comment vous pouvez traiter des choses sans rapport."</string>
+    <string name="understanding_nsmell_loss">"Compréhension
+Perte d'odeur"</string>
+    <string name="smell_loss_medically_known_as">"La perte de l’odorat, connue médicalement sous le nom d’anosmie, est la perte totale du sens de l’odorat. Cela peut se produire en raison de divers facteurs, notamment :"</string>
+    <string name="viral_infections">"Infections virales"</string>
+    <string name="such_as_the">"Comme le rhume ou la grippe, qui peuvent affecter temporairement votre odorat."</string>
+    <string name="nasal_and_sinus_issues">"Problèmes nasaux et sinusaux"</string>
+    <string name="conditions_like_allergies">"Des conditions telles que les allergies, la sinusite ou les polypes nasaux peuvent obstruer vos voies nasales, affectant votre capacité à sentir."</string>
+    <string name="head_injuries">"Blessures à la tête"</string>
+    <string name="trauma_to_the_head">"Un traumatisme à la tête peut endommager les nerfs olfactifs responsables de l'odorat."</string>
+    <string name="damage_to_nervous_system">"Dommages au système nerveux"</string>
+    <string name="degeneration_or_inflammation">"La dégénérescence ou l’inflammation du système nerveux peut également entraîner des modifications de la capacité de l’odorat."</string>
+    <string name="certain_medications">"Certains médicaments peuvent altérer l'odorat."</string>
+    <string name="age">"Âge"</string>
+    <string name="as_we_age_our">"En vieillissant, notre odorat peut naturellement décliner."</string>
+    <string name="smoking">"Fumeur"</string>
+    <string name="smoking_or_vaping">"Fumer ou vapoter peut provoquer une congestion nasale et avoir un impact négatif sur votre capacité à sentir."</string>
+    <string name="loss_of_smell_can">"La perte de l'odorat peut être partielle (hyposmie) ou complète (anosmie), et peut être temporaire ou permanente, selon la cause."</string>
+    <string name="anosmia">"Anosmie"</string>
+    <string name="hyposmia">"Hyposmie"</string>
+    <string name="parosmia">"Parosmie"</string>
+    <string name="phantosmia">"Fantosmie"</string>
+    <string name="this_refers_to">"Cela fait référence à une perte totale de la capacité de sentir."</string>
+    <string name="partial_loss">"Il s’agit d’une perte partielle de la capacité de sentir."</string>
+    <string name="distorted_sense_of_smell">"Il s’agit d’un odorat déformé. Les choses qui sentaient agréables sentent désormais nauséabondes."</string>
+    <string name="condition_that_causes">"Il s’agit d’une condition qui vous amène à détecter des odeurs qui ne sont pas réellement présentes dans votre environnement."</string>
+    <string name="set_a_reminder">"Fixer un rappel?"</string>
+    <string name="if_you_have_temporary">"Si vous avez une perte d’odorat temporaire, pratiquez régulièrement un entraînement à l’odorat. Son efficacité varie selon les individus, il est donc crucial d’identifier la cause profonde."</string>
+    <string name="are_you_currently_taking_any_medication">"Prenez-vous actuellement des médicaments ?"</string>
+    <string name="certain_medication_are_known_to_cause_a_loss_or_distortion_in_the_sense_of_smell">"Certains médicaments sont connus pour provoquer une perte ou une distorsion de l’odorat."</string>
+    <string name="begin_test">"Commence l'exercice"</string>
+    <string name="smell_training_">"Entraînement à l'odorat
+%s/%s"</string>
+    <string name="smell_normal">"Votre odorat
+Est normal."</string>
+    <string name="smell_hyposmia">"Votre sens de la douceur
+hyposmie/parosmie."</string>
+    <string name="smell_mild">"Votre sens de la douceur
+hyposmie/parosmie."</string>
+    <string name="smell_moderate">"Votre sentiment de modération
+hyposmie/parosmie."</string>
+    <string name="smell_anosmia">"Votre sentiment d'anosmie."</string>
+    <string name="every">Tous les %s %s</string>
+    <string name="set_a_time">Définir une heure</string>
+    <string name="set_a_date">Choisir une date</string>
+    <string name="study_id">Numéro d\'identification de l\'étude :</string>
+    <string name="patient_id">Numéro du patient :</string>
+    <string name="please_enter_patient_id">Veuillez saisir l\'ID du patient</string>
+    <string name="id_not_found">ID introuvable</string>
+    <string name="select_site">Sélectionnez un site</string>
+    <string name="delete_reminder">Voulez-vous supprimer ce rappel ?</string>
+    <string name="strCorrectAge">Veuillez entrer l\'âge correct</string>
+    <string name="strOldnNewPassword">L\'ancien mot de passe et le nouveau mot de passe ne doivent pas être identiques</string>
+    <string name="forgot_password">Mot de passe oublié?</string>
+    <string name="privacy_policy">politique de confidentialité</string>
+</resources>
