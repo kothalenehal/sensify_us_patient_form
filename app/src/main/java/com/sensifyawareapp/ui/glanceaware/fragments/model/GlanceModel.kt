@@ -9,13 +9,6 @@ class GlanceModel(
     val correctName: String,
     val correctProfession: String,
 
-    // English Properties
     val extraNames: ArrayList<String>,
-    val extraProfession: ArrayList<String>,
-
-    // Hindi Properties
-    val correctNameHindi: String,
-    val correctProfessionHindi: String,
-    val extraNamesHindi: ArrayList<String>,
-    val extraProfessionHindi: ArrayList<String>
+    val extraProfession: ArrayList<String>
 )

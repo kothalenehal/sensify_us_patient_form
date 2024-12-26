@@ -1,563 +1,2284 @@
 {
   "glaces": [
     {
-      "imageA": "image1",
-      "imageB": "image1",
+      "imageA": "face_1a",
+      "imageB": "face_1b",
       "isFistShownA": false,
-      "correctName": "Mahesh",
-      "correctProfession": "Teacher",
-      "correctNameHindi": "महेश",
-      "correctProfessionHindi": "शिक्षक",
-      "extraNames": ["Mahesh", "Ganesh", "Ramesh", "Suresh"],
-      "extraNamesHindi": ["महेश", "गणेश", "रामेश", "सुरेश"],
-      "extraProfession": ["Teacher", "Doctor", "Police Officer", "Bank Manager"],
-      "extraProfessionHindi": ["शिक्षक", "डॉक्टर", "पुलिस अधिकारी", "बैंक मैनेजर"]
-    },
-    {
-      "imageA": "image2",
-      "imageB": "image2",
-      "isFistShownA": false,
-      "correctName": "Ramesh",
-      "correctProfession": "Doctor",
-      "correctNameHindi": "रामेश",
-      "correctProfessionHindi": "डॉक्टर",
-      "extraNames": ["Mahesh", "Ganesh", "Ramesh", "Suresh"],
-      "extraNamesHindi": ["महेश", "गणेश", "रामेश", "सुरेश"],
-      "extraProfession": ["Doctor", "Teacher", "Police Officer", "Bank Manager"],
-      "extraProfessionHindi": ["डॉक्टर", "शिक्षक", "पुलिस अधिकारी", "बैंक मैनेजर"]
-    },
-    {
-      "imageA": "image3",
-      "imageB": "image3",
-      "isFistShownA": false,
-      "correctName": "Ganesh",
-      "correctProfession": "Bank Manager",
-      "correctNameHindi": "गणेश",
-      "correctProfessionHindi": "बैंक मैनेजर",
-      "extraNames": ["Mahesh", "Ganesh", "Ramesh", "Suresh"],
-      "extraNamesHindi": ["महेश", "गणेश", "रामेश", "सुरेश"],
-      "extraProfession": ["Bank Manager", "Doctor", "Teacher", "Police Officer"],
-      "extraProfessionHindi": ["बैंक मैनेजर", "डॉक्टर", "शिक्षक", "पुलिस अधिकारी"]
-    },
-    {
-      "imageA": "image4",
-      "imageB": "image4",
-      "isFistShownA": false,
-      "correctName": "Suresh",
-      "correctProfession": "Police Officer",
-      "correctNameHindi": "सुरेश",
-      "correctProfessionHindi": "पुलिस अधिकारी",
-      "extraNames": ["Mahesh", "Ganesh", "Ramesh", "Suresh"],
-      "extraNamesHindi": ["महेश", "गणेश", "रामेश", "सुरेश"],
-      "extraProfession": ["Doctor", "Teacher", "Police Officer", "Bank Manager"],
-      "extraProfessionHindi": ["डॉक्टर", "शिक्षक", "पुलिस अधिकारी", "बैंक मैनेजर"]
-    },
-    {
-      "imageA": "image5",
-      "imageB": "image5",
-      "isFistShownA": false,
-      "correctName": "Prateek",
-      "correctProfession": "Engineer",
-      "correctNameHindi": "प्रतीक",
-      "correctProfessionHindi": "इंजीनियर",
-      "extraNames": ["Nikhil", "Yogesh", "Prateek", "Vimal"],
-      "extraNamesHindi": ["निखिल", "योगेश", "प्रतीक", "विमल"],
-      "extraProfession": ["Doctor", "Lawyer", "Engineer", "Soldier"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "इंजीनियर", "सैनिक"]
-    },
-    {
-      "imageA": "image6",
-      "imageB": "image6",
-      "isFistShownA": false,
-      "correctName": "Vimal",
-      "correctProfession": "Chemist",
-      "correctNameHindi": "विमल",
-      "correctProfessionHindi": "औषधि-विक्रेता",
-      "extraNames": ["Nikhil", "Yogesh", "Prateek", "Vimal"],
-      "extraNamesHindi": ["निखिल", "योगेश", "प्रतीक", "विमल"],
-      "extraProfession": ["Doctor", "Lawyer", "Engineer", "Chemist"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "इंजीनियर", "औषधि-विक्रेता"]
-    },
-    {
-      "imageA": "image7",
-      "imageB": "image7",
-      "isFistShownA": false,
-      "correctName": "Yogesh",
-      "correctProfession": "Doctor",
-      "correctNameHindi": "योगेश",
-      "correctProfessionHindi": "डॉक्टर",
-      "extraNames": ["Nikhil", "Yogesh", "Prateek", "Vimal"],
-      "extraNamesHindi": ["निखिल", "योगेश", "प्रतीक", "विमल"],
-      "extraProfession": ["Doctor", "Lawyer", "Engineer", "Accountant"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "अभियंता", "अकाउंटेंट"]
-    },
-    {
-      "imageA": "image8",
-      "imageB": "image8",
-      "isFistShownA": false,
-      "correctName": "Nikhil",
-      "correctProfession": "Lawyer",
-      "correctNameHindi": "निखिल",
-      "correctProfessionHindi": "वकील",
-      "extraNames": ["Nikhil", "Yogesh", "Prateek", "Vimal"],
-      "extraNamesHindi": ["निखिल", "योगेश", "प्रतीक", "विमल"],
-      "extraProfession": ["Doctor", "Lawyer", "Engineer", "Accountant"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "अभियंता", "अकाउंटेंट"]
-    },
-    {
-      "imageA": "image9",
-      "imageB": "image9",
-      "isFistShownA": false,
-      "correctName": "Sneha",
-      "correctProfession": "Nurse",
-      "correctNameHindi": "स्नेहा",
-      "correctProfessionHindi": "नर्स",
-      "extraNames": ["Sneha", "Amita", "Poonam", "Devika"],
-      "extraNamesHindi": ["स्नेहा", "अमिता", "पूनम", "देविका"],
-      "extraProfession": ["Doctor", "Lawyer", "Bank Manager", "Nurse"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "बैंक मैनेजर", "नर्स"]
-    },
-    {
-      "imageA": "image10",
-      "imageB": "image10",
-      "isFistShownA": false,
-      "correctName": "Poonam",
-      "correctProfession": "Lawyer",
-      "correctNameHindi": "पूनम",
-      "correctProfessionHindi": "वकील",
-      "extraNames": ["Sneha", "Amita", "Poonam", "Devika"],
-      "extraNamesHindi": ["स्नेहा", "अमिता", "पूनम", "देविका"],
-      "extraProfession": ["Doctor", "Lawyer", "Bank Manager", "Nurse"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "बैंक मैनेजर", "नर्स"]
-    },
-    {
-      "imageA": "image11",
-      "imageB": "image11",
-      "isFistShownA": false,
-      "correctName": "Amita",
-      "correctProfession": "Bank Manager",
-      "correctNameHindi": "अमिता",
-      "correctProfessionHindi": "बैंक मैनेजर",
-      "extraNames": ["Sneha", "Amita", "Poonam", "Devika"],
-      "extraNamesHindi": ["स्नेहा", "अमिता", "पूनम", "देविका"],
-      "extraProfession": ["Doctor", "Lawyer", "Bank Manager", "Nurse"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "बैंक मैनेजर", "नर्स"]
-    },
-    {
-      "imageA": "image12",
-      "imageB": "image11",
-      "isFistShownA": false,
-      "correctName": "Devika",
-      "correctProfession": "Singer",
-      "correctNameHindi": "देविका",
-      "correctProfessionHindi": "गायिका",
-      "extraNames": ["Sneha", "Amita", "Poonam", "Devika"],
-      "extraNamesHindi": ["स्नेहा", "अमिता", "पूनम", "देविका"],
-      "extraProfession": ["Singer", "Lawyer", "Dentist", "Nurse"],
-      "extraProfessionHindi": ["गायिका", "वकील", "दंत चिकित्सक", "नर्स"]
-    },
-    {
-      "imageA": "image13",
-      "imageB": "image13",
-      "isFistShownA": false,
-      "correctName": "Priyanka",
-      "correctProfession": "Cook",
-      "correctNameHindi": "प्रियंका",
-      "correctProfessionHindi": "रसोइया",
-      "extraNames": ["Sneha", "Amita", "Priyanka", "Devika"],
-      "extraNamesHindi": ["स्नेहा", "अमिता", "प्रियंका", "देविका"],
-      "extraProfession": ["Singer", "Student", "Cook", "Nurse"],
-      "extraProfessionHindi": ["गायिका", "छात्र", "रसोइया", "नर्स"]
-    },
-    {
-      "imageA": "image14",
-      "imageB": "image14",
-      "isFistShownA": false,
-      "correctName": "Umang",
-      "correctProfession": "Dentist",
-      "correctNameHindi": "उमंग",
-      "correctProfessionHindi": "दंत चिकित्सक",
-      "extraNames": ["Umang", "Praveen", "Venkat", "Ravi"],
-      "extraNamesHindi": ["उमंग", "प्रवीण", "वेंकट", "रवि"],
-      "extraProfession": ["Singer", "Lawyer", "Dentist", "Chemist"],
-      "extraProfessionHindi": ["गायक", "वकील", "दंत चिकित्सक", "औषधि-विक्रेता"]
-    },
-    {
-      "imageA": "image15",
-      "imageB": "image15",
-      "isFistShownA": false,
-      "correctName": "Praveen",
-      "correctProfession": "Lawyer",
-      "correctNameHindi": "प्रवीण",
-      "correctProfessionHindi": "वकील",
-      "extraNames": ["Umang", "Praveen", "Venkat", "Ravi"],
-      "extraNamesHindi": ["उमंग", "प्रवीण", "वेंकट", "रवि"],
-      "extraProfession": ["Singer", "Lawyer", "Dentist", "Chemist"],
-      "extraProfessionHindi": ["गायक", "वकील", "दंत चिकित्सक", "औषधि-विक्रेता"]
-    },
-    {
-      "imageA": "image16",
-      "imageB": "image16",
-      "isFistShownA": false,
-      "correctName": "Anil",
-      "correctProfession": "Soldier",
-      "correctNameHindi": "अनिल",
-      "correctProfessionHindi": "सैनिक",
-      "extraNames": ["Anurag", "Anil", "Venkat", "Ravi"],
-      "extraNamesHindi": ["अनुराग", "अनिल", "वेंकट", "रवि"],
-      "extraProfession": ["Accountant", "Soldier", "Scientist", "Engineer"],
-      "extraProfessionHindi": ["अकाउंटेंट", "सैनिक", "वैज्ञानिक", "अभियंता"]
-    },
-    {
-      "imageA": "image17",
-      "imageB": "image17",
-      "isFistShownA": false,
-      "correctName": "Anurag",
-      "correctProfession": "Accountant",
-      "correctNameHindi": "अनुराग",
-      "correctProfessionHindi": "अकाउंटेंट",
-      "extraNames": ["Anurag", "Anil", "Venkat", "Ravi"],
-      "extraNamesHindi": ["अनुराग", "अनिल", "वेंकट", "रवि"],
-      "extraProfession": ["Accountant", "Soldier", "Scientist", "Engineer"],
-      "extraProfessionHindi": ["अकाउंटेंट", "सैनिक", "वैज्ञानिक", "अभियंता"]
-    },
-    {
-      "imageA": "image18",
-      "imageB": "image18",
-      "isFistShownA": false,
-      "correctName": "Ravi",
-      "correctProfession": "Engineer",
-      "correctNameHindi": "रवि",
-      "correctProfessionHindi": "अभियंता",
-      "extraNames": ["Anurag", "Anil", "Venkat", "Ravi"],
-      "extraNamesHindi": ["अनुराग", "अनिल", "वेंकट", "रवि"],
-      "extraProfession": ["Accountant", "Soldier", "Scientist", "Engineer"],
-      "extraProfessionHindi": ["अकाउंटेंट", "सैनिक", "वैज्ञानिक", "अभियंता"]
-    },
-
-    {
-      "imageA": "image19",
-      "imageB": "image19",
-      "isFistShownA": false,
-      "correctName": "Venkat",
-      "correctNameHindi": "वेंकट",
-      "correctProfession": "Scientist",
-      "correctProfessionHindi": "वैज्ञानिक",
-      "extraNames": ["Anurag","Anil","Venkat","Ravi"],
-      "extraNamesHindi": ["अनुराग","अनिल","वेंकट","रवि"],
-      "extraProfession": ["Accountant","Soldier","Scientist","Engineer"],
-      "extraProfessionHindi": ["मुनीम","सैनिक","वैज्ञानिक","इंजीनियर"]
-    },
-    {
-      "imageA": "image20",
-      "imageB": "image20",
-      "isFistShownA": false,
-      "correctName": "Balbir",
-      "correctNameHindi": "बलबीर",
-      "correctProfession": "Farmer",
-      "correctProfessionHindi": "किसान",
-      "extraNames": ["Balbir","Ajeet","Amar","Ranveer"],
-      "extraNamesHindi": ["बलबीर","अजीत","अमर","रणवीर"],
-      "extraProfession": ["Farmer","Barber","Tailor","Bus Driver"],
-      "extraProfessionHindi": ["किसान","नाई","दर्जी","बस चालक"]
-    },
-    {
-      "imageA": "image21",
-      "imageB": "image21",
-      "isFistShownA": false,
-      "correctName": "Ajeet",
-      "correctNameHindi": "अजीत",
-      "correctProfession": "Barber",
-      "correctProfessionHindi": "नाई",
-      "extraNames": ["Balbir","Ajeet","Amar","Ranveer"],
-      "extraNamesHindi": ["बलबीर","अजीत","अमर","रणवीर"],
-      "extraProfession": ["Farmer","Barber","Tailor","Bus Driver"],
-      "extraProfessionHindi": ["किसान","नाई","दर्जी","बस चालक"]
-    },
-    {
-      "imageA": "image22",
-      "imageB": "image22",
-      "isFistShownA": false,
-      "correctName": "Ranveer",
-      "correctNameHindi": "रणवीर",
-      "correctProfession": "Bus Driver",
-      "correctProfessionHindi": "बस चालक",
-      "extraNames": ["Balbir","Ajeet","Amar","Ranveer"],
-      "extraNamesHindi": ["बलबीर","अजीत","अमर","रणवीर"],
-      "extraProfession": ["Farmer","Barber","Tailor","Bus Driver"],
-      "extraProfessionHindi": ["किसान","नाई","दर्जी","बस चालक"]
-    },
-    {
-      "imageA": "image23",
-      "imageB": "image23",
-      "isFistShownA": false,
-      "correctName": "Amar",
-      "correctNameHindi": "अमर",
-      "correctProfession": "Tailor",
-      "correctProfessionHindi": "दर्जी",
-      "extraNames": ["Balbir","Ajeet","Amar",
-        "Ranveer"
-      ],
-      "extraNamesHindi": [
-        "बलबीर",
-        "अजीत",
-        "अमर",
-        "रणवीर"
+      "correctName": "Betsy",
+      "correctProfession": "Enfermera",
+      "extraNames": [
+        "Laurie",
+        "Pamela",
+        "Betsy",
+        "Cindy"
       ],
       "extraProfession": [
-        "Farmer",
-        "Barber",
-        "Tailor",
-        "Bus Driver"
-      ],
-      "extraProfessionHindi": [
-        "किसान",
-        "नाई",
-        "दर्जी",
-        "बस चालक"
+        "Enfermero",
+        "Higienista dental",
+        "Veterinario",
+        "Ayuda de administrador"
       ]
     },
     {
-      "imageA": "image24",
-      "imageB": "image24",
+      "imageA": "face_2a",
+      "imageB": "face_2b",
       "isFistShownA": false,
-      "correctName": "Laxmi",
-      "correctNameHindi": "लक्ष्मी",
-      "correctProfession": "Singer",
-      "correctProfessionHindi": "गायिका",
+      "correctName": "Laurie",
+      "correctProfession": "Farmacéutico",
       "extraNames": [
-        "Laxmi",
-        "Indira",
-        "Anjali",
-        "Aditi"
+        "Sandra",
+        "Pamela",
+        "Laurie",
+        "Cindy"
       ],
-      "extraNamesHindi": [
-        "लक्ष्मी",
-        "इंदिरा",
-        "अंजलि",
-        "अदिति"
+      "extraProfession": [
+        "Enfermero",
+        "Farmacéutico",
+        "Químico",
+        "Óptico"
+      ]
+    },
+    {
+      "imageA": "face_3a",
+      "imageB": "face_3b",
+      "isFistShownA": false,
+      "correctName": "Audrey",
+      "correctProfession": "Lector de noticias",
+      "extraNames": [
+        "Abril",
+        "Ana",
+        "Aubrey",
+        "Audrey"
+      ],
+      "extraProfession": [
+        "Enfermero",
+        "Actriz",
+        "Lector de noticias",
+        "Óptico"
+      ]
+    },
+    {
+      "imageA": "face_4a",
+      "imageB": "face_4b",
+      "isFistShownA": false,
+      "correctName": "Vicente",
+      "correctProfession": "Químico",
+      "extraNames": [
+        "Pedro",
+        "Marcelo",
+        "eric",
+        "Vicente"
+      ],
+      "extraProfession": [
+        "Farmacéutico",
+        "Peluquero",
+        "Químico",
+        "Óptico"
+      ]
+    },
+    {
+      "imageA": "face_5a",
+      "imageB": "face_5b",
+      "isFistShownA": false,
+      "correctName": "Tim",
+      "correctProfession": "Piloto",
+      "extraNames": [
+        "Tim",
+        "jim",
+        "greg",
+        "Pedro"
+      ],
+      "extraProfession": [
+        "Atleta",
+        "Peluquero",
+        "Maestro",
+        "Piloto"
+      ]
+    },
+    {
+      "imageA": "face_6a",
+      "imageB": "face_6b",
+      "isFistShownA": false,
+      "correctName": "Margarita",
+      "correctProfession": "Ejecutivo de Ventas",
+      "extraNames": [
+        "Ana",
+        "Sandra",
+        "Natasha",
+        "margarita"
+      ],
+      "extraProfession": [
+        "Maestro",
+        "Ejecutivo de Ventas",
+        "Fotógrafo",
+        "Farmacéutico"
+      ]
+    },
+    {
+      "imageA": "face_7a",
+      "imageB": "face_7b",
+      "isFistShownA": false,
+      "correctName": "Pedro",
+      "correctProfession": "Atleta",
+      "extraNames": [
+        "Tomás",
+        "Pedro",
+        "Claude",
+        "Atravesar"
       ],
       "extraProfession": [
         "Actor",
-        "Singer",
-        "Doctor",
-        "Teacher"
-      ],
-      "extraProfessionHindi": [
-        "अभिनेता",
-        "गायिका",
-        "डॉक्टर",
-        "शिक्षक"
+        "Fotógrafo",
+        "Atleta",
+        "Desarrollador de software"
       ]
     },
     {
-      "imageA": "image25",
-      "imageB": "image25",
+      "imageA": "face_8a",
+      "imageB": "face_8b",
       "isFistShownA": false,
-      "correctName": "Indira",
-      "correctProfession": "Teacher",
-      "correctNameHindi": "इंदिरा",
-      "correctProfessionHindi": "शिक्षक",
-      "extraNames": ["Laxmi", "Indira", "Anjali", "Aditi"],
-      "extraNamesHindi": ["लक्ष्मी", "इंदिरा", "अंजलि", "आदिति"],
-      "extraProfession": ["Actress", "Singer", "Doctor", "Teacher"],
-      "extraProfessionHindi": ["अभिनेत्री", "गायक", "डॉक्टर", "शिक्षक"]
+      "correctName": "Greg",
+      "correctProfession": "Electricista",
+      "extraNames": [
+        "Tim",
+        "Tomás",
+        "greg",
+        "John"
+      ],
+      "extraProfession": [
+        "Electricista",
+        "Científico",
+        "Abogado",
+        "Radiólogo"
+      ]
     },
     {
-      "imageA": "image26",
-      "imageB": "image26",
+      "imageA": "face_9a",
+      "imageB": "face_9b",
       "isFistShownA": false,
-      "correctName": "Anjali",
-      "correctProfession": "Actress",
-      "correctNameHindi": "अंजलि",
-      "correctProfessionHindi": "अभिनेत्री",
-      "extraNames": ["Laxmi", "Indira", "Anjali", "Aditi"],
-      "extraNamesHindi": ["लक्ष्मी", "इंदिरा", "अंजलि", "आदिति"],
-      "extraProfession": ["Actress", "Singer", "Doctor", "Teacher"],
-      "extraProfessionHindi": ["अभिनेत्री", "गायक", "डॉक्टर", "शिक्षक"]
+      "correctName": "David",
+      "correctProfession": "Gerente Financiero",
+      "extraNames": [
+        "Tim",
+        "Tomás",
+        "David",
+        "John"
+      ],
+      "extraProfession": [
+        "Electricista",
+        "Gerente Financiero",
+        "Abogado",
+        "Contador"
+      ]
     },
     {
-      "imageA": "image27",
-      "imageB": "image27",
+      "imageA": "face_10a",
+      "imageB": "face_10b",
       "isFistShownA": false,
-      "correctName": "Aditi",
-      "correctProfession": "Doctor",
-      "correctNameHindi": "आदिति",
-      "correctProfessionHindi": "डॉक्टर",
-      "extraNames": ["Laxmi", "Indira", "Anjali", "Aditi"],
-      "extraNamesHindi": ["लक्ष्मी", "इंदिरा", "अंजलि", "आदिति"],
-      "extraProfession": ["Actress", "Singer", "Doctor", "Teacher"],
-      "extraProfessionHindi": ["अभिनेत्री", "गायक", "डॉक्टर", "शिक्षक"]
+      "correctName": "Sandra",
+      "correctProfession": "Trabajador Social",
+      "extraNames": [
+        "Valerie",
+        "janet",
+        "Sandra",
+        "Laurie"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Consejero genético",
+        "Pediatra",
+        "Farmacéutico"
+      ]
     },
     {
-      "imageA": "image28",
-      "imageB": "image28",
+      "imageA": "face_11a",
+      "imageB": "face_11b",
       "isFistShownA": false,
-      "correctName": "Vinod",
-      "correctProfession": "Teacher",
-      "correctNameHindi": "विनोद",
-      "correctProfessionHindi": "शिक्षक",
-      "extraNames": ["Vinod", "Varun", "Vaibhav", "Vajid"],
-      "extraNamesHindi": ["विनोद", "वरुण", "वैभव", "वाजिद"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Teacher"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "शिक्षक"]
+      "correctName": "Manuela",
+      "correctProfession": "Desarrollador Web",
+      "extraNames": [
+        "Margarita",
+        "Manuela",
+        "Natasha",
+        "Nichole"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Desarrollador web",
+        "Ingeniero civil",
+        "Farmacéutico"
+      ]
     },
     {
-      "imageA": "image29",
-      "imageB": "image29",
+      "imageA": "face_12a",
+      "imageB": "face_12b",
       "isFistShownA": false,
-      "correctName": "Varun",
-      "correctProfession": "Chemist",
-      "correctNameHindi": "वरुण",
-      "correctProfessionHindi": "केमिस्ट",
-      "extraNames": ["Vinod", "Varun", "Vaibhav", "Vajid"],
-      "extraNamesHindi": ["विनोद", "वरुण", "वैभव", "वाजिद"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Teacher"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "शिक्षक"]
+      "correctName": "Ricardo",
+      "correctProfession": "Paramédico",
+      "extraNames": [
+        "Jaime",
+        "Ricardo",
+        "greg",
+        "Cristóbal"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Paramédico",
+        "Oficial de policía",
+        "Farmacéutico"
+      ]
     },
     {
-      "imageA": "image30",
-      "imageB": "image30",
+      "imageA": "face_13a",
+      "imageB": "face_13b",
       "isFistShownA": false,
-      "correctName": "Vaibhav",
-      "correctProfession": "Scientist",
-      "correctNameHindi": "वैभव",
-      "correctProfessionHindi": "वैज्ञानिक",
-      "extraNames": ["Vinod", "Varun", "Vaibhav", "Virat"],
-      "extraNamesHindi": ["विनोद", "वरुण", "वैभव", "विराट"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Teacher"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "शिक्षक"]
+      "correctName": "María",
+      "correctProfession": "Trabajador Social",
+      "extraNames": [
+        "María",
+        "Eva",
+        "Gloria",
+        "Stefania"
+      ],
+      "extraProfession": [
+        "Desarrollador web",
+        "Paramédico",
+        "Trabajador social",
+        "Farmacéutico"
+      ]
     },
     {
-      "imageA": "image31",
-      "imageB": "image31",
+      "imageA": "face_14a",
+      "imageB": "face_14b",
       "isFistShownA": false,
-      "correctName": "Virat",
-      "correctProfession": "Engineer",
-      "correctNameHindi": "विराट",
-      "correctProfessionHindi": "इंजीनियर",
-      "extraNames": ["Vinod", "Varun", "Vaibhav", "Virat"],
-      "extraNamesHindi": ["विनोद", "वरुण", "वैभव", "विराट"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Teacher"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "शिक्षक"]
+      "correctName": "Stephanie",
+      "correctProfession": "Dermatólogo",
+      "extraNames": [
+        "Estefania",
+        "María",
+        "silvia",
+        "patricia"
+      ],
+      "extraProfession": [
+        "Cardiólogo",
+        "Dermatólogo",
+        "Patólogo",
+        "Farmacéutico"
+      ]
     },
     {
-      "imageA": "image32",
-      "imageB": "image32",
+      "imageA": "face_15a",
+      "imageB": "face_15b",
       "isFistShownA": false,
-      "correctName": "Parth",
-      "correctProfession": "Scientist",
-      "correctNameHindi": "पार्थ",
-      "correctProfessionHindi": "वैज्ञानिक",
-      "extraNames": ["Parth", "Pranab", "Piyush", "Pavan"],
-      "extraNamesHindi": ["पार्थ", "प्रणब", "पीयूष", "पवन"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Bank Manager"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "बैंक मैनेजर"]
+      "correctName": "Sofía",
+      "correctProfession": "Fisioterapeuta",
+      "extraNames": [
+        "Sofía",
+        "Manuela",
+        "Estefania",
+        "Lucía"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Fisioterapeuta",
+        "Instructor de gimnasio",
+        "Higienista dental"
+      ]
     },
     {
-      "imageA": "image33",
-      "imageB": "image33",
+      "imageA": "face_16a",
+      "imageB": "face_16b",
       "isFistShownA": false,
-      "correctName": "Pranab",
-      "correctProfession": "Bank Manager",
-      "correctNameHindi": "प्रणब",
-      "correctProfessionHindi": "बैंक मैनेजर",
-      "extraNames": ["Parth", "Pranab", "Piyush", "Pavan"],
-      "extraNamesHindi": ["पार्थ", "प्रणब", "पीयूष", "पवन"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Bank Manager"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "बैंक मैनेजर"]
+      "correctName": "Marta",
+      "correctProfession": "Veterinario",
+      "extraNames": [
+        "clara",
+        "Shannon",
+        "silvia",
+        "marta"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Paramédico",
+        "Veterinario",
+        "Farmacéutico"
+      ]
     },
     {
-      "imageA": "image34",
-      "imageB": "image34",
+      "imageA": "face_17a",
+      "imageB": "face_17b",
       "isFistShownA": false,
-      "correctName": "Pavan",
-      "correctProfession": "Chemist",
-      "correctNameHindi": "पवन",
-      "correctProfessionHindi": "केमिस्ट",
-      "extraNames": ["Parth", "Pranab", "Parvez", "Pavan"],
-      "extraNamesHindi": ["पार्थ", "प्रणब", "परवेज़", "पवन"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Bank Manager"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "बैंक मैनेजर"]
+      "correctName": "Valerie",
+      "correctProfession": "Higienista dental",
+      "extraNames": [
+        "Cortney",
+        "Valerie",
+        "Melanie",
+        "Kelsey"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Paramédico",
+        "Higienista dental",
+        "Farmacéutico"
+      ]
     },
     {
-      "imageA": "image35",
-      "imageB": "image35",
+      "imageA": "face_18a",
+      "imageB": "face_18b",
       "isFistShownA": false,
-      "correctName": "Sakshi",
-      "correctProfession": "Teacher",
-      "correctNameHindi": "साक्षी",
-      "correctProfessionHindi": "शिक्षक",
-      "extraNames": ["Sakshi", "Shreya", "Madhavi", "Malini"],
-      "extraNamesHindi": ["साक्षी", "श्रेय", "माधवी", "मालिनी"],
-      "extraProfession": ["Nurse", "Lawyer", "Accountant", "Teacher"],
-      "extraProfessionHindi": ["नर्स", "वकील", "अकाउंटेंट", "शिक्षक"]
+      "correctName": "Lucía",
+      "correctProfession": "Ingeniero Civil",
+      "extraNames": [
+        "Lucía",
+        "Jun",
+        "Lirio",
+        "janet"
+      ],
+      "extraProfession": [
+        "Periodista",
+        "Desarrollador web",
+        "Ingeniero civil",
+        "Farmacéutico"
+      ]
     },
     {
-      "imageA": "image36",
-      "imageB": "image36",
+      "imageA": "face_19a",
+      "imageB": "face_19b",
       "isFistShownA": false,
-      "correctName": "Shreya",
-      "correctProfession": "Lawyer",
-      "correctNameHindi": "श्रेय",
-      "correctProfessionHindi": "वकील",
-      "extraNames": ["Sakshi", "Shreya", "Madhavi", "Malini"],
-      "extraNamesHindi": ["साक्षी", "श्रेय", "माधवी", "मालिनी"],
-      "extraProfession": ["Nurse", "Lawyer", "Accountant", "Teacher"],
-      "extraProfessionHindi": ["नर्स", "वकील", "अकाउंटेंट", "शिक्षक"]
+      "correctName": "Ian",
+      "correctProfession": "Plomero",
+      "extraNames": [
+        "Lucas",
+        "Ian",
+        "greg",
+        "Chris"
+      ],
+      "extraProfession": [
+        "Paramédico",
+        "Plomero",
+        "Oficial de policía",
+        "Farmacéutico"
+      ]
     },
     {
-      "imageA": "image37",
-      "imageB": "image37",
+      "imageA": "face_20a",
+      "imageB": "face_20b",
       "isFistShownA": false,
-      "correctName": "Madhavi",
-      "correctProfession": "Accountant",
-      "correctNameHindi": "माधवी",
-      "correctProfessionHindi": "अकाउंटेंट",
-      "extraNames": ["Sakshi", "Shreya", "Madhavi", "Malini"],
-      "extraNamesHindi": ["साक्षी", "श्रेय", "माधवी", "मालिनी"],
-      "extraProfession": ["Nurse", "Lawyer", "Accountant", "Teacher"],
-      "extraProfessionHindi": ["नर्स", "वकील", "अकाउंटेंट", "शिक्षक"]
+      "correctName": "Shannon",
+      "correctProfession": "Profesor",
+      "extraNames": [
+        "Shannon",
+        "Melanie",
+        "Ellen",
+        "Lynn"
+      ],
+      "extraProfession": [
+        "Maestro",
+        "Camarera",
+        "Trabajador social",
+        "Higienista dental"
+      ]
     },
     {
-      "imageA": "image38",
-      "imageB": "image38",
+      "imageA": "face_21a",
+      "imageB": "face_21b",
       "isFistShownA": false,
-      "correctName": "Malini",
-      "correctProfession": "Nurse",
-      "correctNameHindi": "मालिनी",
-      "correctProfessionHindi": "नर्स",
-      "extraNames": ["Mukta", "Maheen", "Madhavi", "Malini"],
-      "extraNamesHindi": ["मुक्ता", "महीन", "माधवी", "मालिनी"],
-      "extraProfession": ["Nurse", "Lawyer", "Accountant", "Teacher"],
-      "extraProfessionHindi": ["नर्स", "वकील", "अकाउंटेंट", "शिक्षक"]
+      "correctName": "Mary Lou",
+      "correctProfession": "Psicólogo",
+      "extraNames": [
+        "Cindy Leigh",
+        "Mary Jane",
+        "martina",
+        "Mary Lou"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Psicólogo",
+        "Periodista",
+        "Enfermero"
+      ]
     },
     {
-      "imageA": "image39",
-      "imageB": "image39",
+      "imageA": "face_22a",
+      "imageB": "face_22b",
       "isFistShownA": false,
-      "correctName": "Kamala",
-      "correctProfession": "Scientist",
-      "correctNameHindi": "कमला",
-      "correctProfessionHindi": "वैज्ञानिक",
-      "extraNames": ["Kamala", "Kaajal", "Kiran", "Karima"],
-      "extraNamesHindi": ["कमला", "काजल", "किरण", "करीमा"],
-      "extraProfession": ["Nurse", "Doctor", "Accountant", "Scientist"],
-      "extraProfessionHindi": ["नर्स", "डॉक्टर", "अकाउंटेंट", "वैज्ञानिक"]
+      "correctName": "Eileen",
+      "correctProfession": "Dentista",
+      "extraNames": [
+        "Eileen",
+        "Shannon",
+        "Natalie",
+        "Melanie"
+      ],
+      "extraProfession": [
+        "Periodista",
+        "Camarera",
+        "Cocinar",
+        "Dentista"
+      ]
     },
     {
-      "imageA": "image40",
-      "imageB": "image40",
+      "imageA": "face_23a",
+      "imageB": "face_23b",
       "isFistShownA": false,
-      "correctName": "Kaajal",
-      "correctProfession": "Accountant",
-      "correctNameHindi": "काजल",
-      "correctProfessionHindi": "अकाउंटेंट",
-      "extraNames": ["Kamala", "Kaajal", "Kiran", "Karima"],
-      "extraNamesHindi": ["कमला", "काजल", "किरण", "करीमा"],
-      "extraProfession": ["Nurse", "Doctor", "Accountant", "Scientist"],
-      "extraProfessionHindi": ["नर्स", "डॉक्टर", "अकाउंटेंट", "वैज्ञानिक"]
+      "correctName": "Gary",
+      "correctProfession": "Pastor",
+      "extraNames": [
+        "Dan",
+        "gary",
+        "John",
+        "Andrés"
+      ],
+      "extraProfession": [
+        "Gerente Financiero",
+        "Pastor",
+        "Oficial de policía",
+        "Farmacéutico"
+      ]
+    },
+    {
+      "imageA": "face_24a",
+      "imageB": "face_24b",
+      "isFistShownA": false,
+      "correctName": "Lynn",
+      "correctProfession": "Científico",
+      "extraNames": [
+        "Jessica",
+        "Melanie",
+        "Lynn",
+        "natalia"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Científico",
+        "Periodista",
+        "Maestro"
+      ]
+    },
+    {
+      "imageA": "face_25a",
+      "imageB": "face_25b",
+      "isFistShownA": false,
+      "correctName": "Ahmed",
+      "correctProfession": "Ejecutivo de Ventas",
+      "extraNames": [
+        "Ahmed",
+        "Roberto",
+        "Orlando",
+        "Tariq"
+      ],
+      "extraProfession": [
+        "Ejecutivo de Ventas",
+        "Cajero",
+        "Oficial de policía",
+        "Científico"
+      ]
+    },
+    {
+      "imageA": "face_26a",
+      "imageB": "face_26b",
+      "isFistShownA": false,
+      "correctName": "Juan",
+      "correctProfession": "Profesor",
+      "extraNames": [
+        "Jaime",
+        "John",
+        "gary",
+        "Cristóbal"
+      ],
+      "extraProfession": [
+        "Asesor financiero",
+        "Dentista",
+        "Profesor",
+        "Abogado"
+      ]
+    },
+    {
+      "imageA": "face_27a",
+      "imageB": "face_27b",
+      "isFistShownA": false,
+      "correctName": "Lucía",
+      "correctProfession": "Estudiante",
+      "extraNames": [
+        "María",
+        "Lucía",
+        "Jessica",
+        "Silvia"
+      ],
+      "extraProfession": [
+        "Maestro",
+        "Alumno",
+        "Desarrollador web",
+        "Camarera"
+      ]
+    },
+    {
+      "imageA": "face_28a",
+      "imageB": "face_28b",
+      "isFistShownA": false,
+      "correctName": "Nancy",
+      "correctProfession": "Cardiólogo",
+      "extraNames": [
+        "Nancy",
+        "Natasha",
+        "martina",
+        "silvia"
+      ],
+      "extraProfession": [
+        "Dentista",
+        "Cardiólogo",
+        "Dermatólogo",
+        "Neurólogo"
+      ]
+    },
+    {
+      "imageA": "face_29a",
+      "imageB": "face_29b",
+      "isFistShownA": false,
+      "correctName": "Rebeca",
+      "correctProfession": "Político",
+      "extraNames": [
+        "Natasha",
+        "kim",
+        "Cintia",
+        "Rebeca"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Paramédico",
+        "Político",
+        "Farmacéutico"
+      ]
+    },
+    {
+      "imageA": "face_30a",
+      "imageB": "face_30b",
+      "isFistShownA": false,
+      "correctName": "Andrés",
+      "correctProfession": "Oficial de Policía",
+      "extraNames": [
+        "Andrés",
+        "Roberto",
+        "Howard",
+        "bruce"
+      ],
+      "extraProfession": [
+        "Fotógrafo",
+        "Paramédico",
+        "Oficial de policía",
+        "Piloto"
+      ]
+    },
+    {
+      "imageA": "face_31a",
+      "imageB": "face_31b",
+      "isFistShownA": false,
+      "correctName": "Erin",
+      "correctProfession": "Paralegal",
+      "extraNames": [
+        "Irlanda",
+        "samantha",
+        "Lucía",
+        "Rebeca"
+      ],
+      "extraProfession": [
+        "Científico",
+        "Psicólogo",
+        "Contador",
+        "Paralegal"
+      ]
+    },
+    {
+      "imageA": "face_32a",
+      "imageB": "face_32b",
+      "isFistShownA": false,
+      "correctName": "Bárbara",
+      "correctProfession": "Arquitecto",
+      "extraNames": [
+        "Bárbara",
+        "Rebeca",
+        "Kate",
+        "clara"
+      ],
+      "extraProfession": [
+        "Arquitecto",
+        "Científico",
+        "Óptico",
+        "Periodista"
+      ]
+    },
+    {
+      "imageA": "face_33a",
+      "imageB": "face_33b",
+      "isFistShownA": false,
+      "correctName": "Kevin",
+      "correctProfession": "Químico",
+      "extraNames": [
+        "Kevin",
+        "Howard",
+        "greg",
+        "bruce"
+      ],
+      "extraProfession": [
+        "Ejecutivo de Ventas",
+        "Paramédico",
+        "Guardia de seguridad",
+        "Químico"
+      ]
+    },
+    {
+      "imageA": "face_34a",
+      "imageB": "face_34b",
+      "isFistShownA": false,
+      "correctName": "Bruce",
+      "correctProfession": "Contador",
+      "extraNames": [
+        "Roberto",
+        "Howard",
+        "greg",
+        "bruce"
+      ],
+      "extraProfession": [
+        "Contador",
+        "Desarrollador web",
+        "Paralegal",
+        "Cajero"
+      ]
+    },
+    {
+      "imageA": "face_35a",
+      "imageB": "face_35b",
+      "isFistShownA": false,
+      "correctName": "Howard",
+      "profesión correcta": "Locutor",
+      "extraNames": [
+        "Howard",
+        "Andrés",
+        "Antonio",
+        "Patricio"
+      ],
+      "extraProfession": [
+        "Locutor",
+        "Autor",
+        "Cirujano",
+        "Contador"
+      ]
+    },
+    {
+      "imageA": "face_36a",
+      "imageB": "face_36b",
+      "isFistShownA": false,
+      "correctName": "Melanie",
+      "correctProfession": "Terapeuta Ocupacional",
+      "extraNames": [
+        "Melanie",
+        "Irlanda",
+        "Cintia",
+        "samantha"
+      ],
+      "extraProfession": [
+        "Terapeuta ocupacional",
+        "Consejero de Genética",
+        "Farmacéutico",
+        "Higienista dental"
+      ]
+    },
+    {
+      "imageA": "face_37a",
+      "imageB": "face_37b",
+      "isFistShownA": false,
+      "correctName": "Steve",
+      "correctProfession": "Ingeniero",
+      "extraNames": [
+        "steve",
+        "Ricardo",
+        "greg",
+        "Andrés"
+      ],
+      "extraProfession": [
+        "Ingeniero",
+        "Político",
+        "Maestro",
+        "Contador"
+      ]
+    },
+    {
+      "imageA": "face_38a",
+      "imageB": "face_38b",
+      "isFistShownA": false,
+      "correctName": "Natalie",
+      "correctProfession": "Asistente médico",
+      "extraNames": [
+        "Sofía",
+        "Natalie",
+        "Irlanda",
+        "Lynn"
+      ],
+      "extraProfession": [
+        "Paralegal",
+        "Asistente médico",
+        "Maestro",
+        "Consejero Genético"
+      ]
+    },
+    {
+      "imageA": "face_39a",
+      "imageB": "face_39b",
+      "isFistShownA": false,
+      "correctName": "Ron",
+      "correctProfession": "Conductor de Taxi",
+      "extraNames": [
+        "Tim",
+        "ron",
+        "Dan",
+        "José"
+      ],
+      "extraProfession": [
+        "Cajero",
+        "Taxista",
+        "Mesero",
+        "Encargado de tienda"
+      ]
+    },
+    {
+      "imageA": "face_40a",
+      "imageB": "face_40b",
+      "isFistShownA": false,
+      "correctName": "Paula",
+      "correctProfession": "Bibliotecario",
+      "extraNames": [
+        "Paula",
+        "María Jo",
+        "Bárbara",
+        "martina"
+      ],
+      "extraProfession": [
+        "Bibliotecario",
+        "Abogado",
+        "Pintor",
+        "Cajero"
+      ]
+    },
+    {
+      "imageA": "face_41a",
+      "imageB": "face_41b",
+      "isFistShownA": false,
+      "correctName": "Elisa",
+      "correctProfession": "Peluquero",
+      "extraNames": [
+        "Elisa",
+        "Lucía",
+        "emily",
+        "lisa"
+      ],
+      "extraProfession": [
+        "Peluquero",
+        "Trabajador social",
+        "Desarrollador de software",
+        "Enfermero"
+      ]
+    },
+    {
+      "imageA": "face_42a",
+      "imageB": "face_42b",
+      "isFistShownA": false,
+      "correctName": "Cintia",
+      "correctProfession": "Agente inmobiliario",
+      "extraNames": [
+        "Cintia",
+        "Valerie",
+        "Irlanda",
+        "Laurie"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Contador",
+        "Corredor de bienes raíces",
+        "Fotógrafo"
+      ]
+    },
+    {
+      "imageA": "face_43a",
+      "imageB": "face_43b",
+      "isFistShownA": false,
+      "correctName": "Ana",
+      "correctProfession": "Chef",
+      "extraNames": [
+        "Valerie",
+        "Lynn",
+        "Ana",
+        "Laurie"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Cocinero",
+        "Cajero",
+        "Farmacéutico"
+      ]
+    },
+    {
+      "imageA": "face_44a",
+      "imageB": "face_44b",
+      "isFistShownA": false,
+      "correctName": "Rita",
+      "correctProfession": "Gerente de Banco",
+      "extraNames": [
+        "Rita",
+        "sonia",
+        "Pooja",
+        "Kavita"
+      ],
+      "extraProfession": [
+        "Dermatólogo",
+        "Gerente del Banco",
+        "Pediatra",
+        "Ejecutivo de ventas"
+      ]
+    },
+    {
+      "imageA": "face_45a",
+      "imageB": "face_45b",
+      "isFistShownA": false,
+      "correctName": "Tomás",
+      "correctProfession": "Granjero",
+      "extraNames": [
+        "Tomás",
+        "Mateo",
+        "Jorge",
+        "Enrique"
+      ],
+      "extraProfession": [
+        "Atleta",
+        "Agricultor",
+        "Ingeniero civil",
+        "Alumno"
+      ]
+    },
+    {
+      "imageA": "face_46a",
+      "imageB": "face_46b",
+      "isFistShownA": false,
+      "correctName": "Clara",
+      "correctProfession": "Radiólogo",
+      "extraNames": [
+        "clara",
+        "Alison",
+        "Ana",
+        "Laura"
+      ],
+      "extraProfession": [
+        "Cardiólogo",
+        "Radiólogo",
+        "Dermatólogo",
+        "internista"
+      ]
+    },
+    {
+      "imageA": "face_47a",
+      "imageB": "face_47b",
+      "isFistShownA": false,
+      "correctName": "Gordon",
+      "correctProfession": "Entrenador Físico",
+      "extraNames": [
+        "Gordón",
+        "Toby",
+        "Tomás",
+        "Jacob"
+      ],
+      "extraProfession": [
+        "Trabajador postal",
+        "Obrero",
+        "Preparador Físico",
+        "Taxista"
+      ]
+    },
+    {
+      "imageA": "face_48a",
+      "imageB": "face_48b",
+      "isFistShownA": false,
+      "correctName": "Miguel",
+      "correctProfession": "Gerente de Proyecto",
+      "extraNames": [
+        "Miguel",
+        "Tomás",
+        "Jasón",
+        "ian"
+      ],
+      "extraProfession": [
+        "Ejecutivo de Ventas",
+        "Gerente de proyecto",
+        "Empleado bancario",
+        "Entrenador Físico"
+      ]
+    },
+    {
+      "imageA": "face_49a",
+      "imageB": "face_49b",
+      "isFistShownA": false,
+      "correctName": "Hua",
+      "correctProfession": "Florista",
+      "extraNames": [
+        "Teng",
+        "Yupeng",
+        "Hua",
+        "Mei"
+      ],
+      "extraProfession": [
+        "Trabajador postal",
+        "Florista",
+        "Peluquero",
+        "Empleado bancario"
+      ]
+    },
+    {
+      "imageA": "face_50a",
+      "imageB": "face_50b",
+      "isFistShownA": false,
+      "correctName": "Pedro",
+      "correctProfession": "Gerente de Tienda de Comestibles",
+      "extraNames": [
+        "Pedro",
+        "Mella",
+        "Justino",
+        "Julian"
+      ],
+      "extraProfession": [
+        "Trabajador postal",
+        "Obrero",
+        "Gerente de tienda de comestibles",
+        "Agricultor"
+      ]
+    },
+    {
+      "imageA": "face_51a",
+      "imageB": "face_51b",
+      "isFistShownA": false,
+      "correctName": "Esteban",
+      "correctProfession": "Físico",
+      "extraNames": [
+        "Esteban",
+        "Justino",
+        "Jared",
+        "Alejandro"
+      ],
+      "extraProfession": [
+        "Desarrollador web",
+        "Físico",
+        "Empleado bancario",
+        "Contador"
+      ]
+    },
+    {
+      "imageA": "face_52a",
+      "imageB": "face_52b",
+      "isFistShownA": false,
+      "nombre correcto": "Marca",
+      "correctProfession": "dramaturgo",
+      "extraNames": [
+        "Marca",
+        "Tomás",
+        "Jeffery",
+        "Derek"
+      ],
+      "extraProfession": [
+        "Físico",
+        "Dramaturgo",
+        "Electricista",
+        "Ingeniero civil"
+      ]
+    },
+    {
+      "imageA": "face_53a",
+      "imageB": "face_53b",
+      "isFistShownA": false,
+      "correctName": "Victoria",
+      "correctProfession": "Agente inmobiliario",
+      "extraNames": [
+        "jamie",
+        "Victoria",
+        "Lucía",
+        "ada"
+      ],
+      "extraProfession": [
+        "Físico",
+        "Corredor de bienes raíces",
+        "Empleado bancario",
+        "Trabajador postal"
+      ]
+    },
+    {
+      "imageA": "face_54a",
+      "imageB": "face_54b",
+      "isFistShownA": false,
+      "correctName": "Francine",
+      "correctProfession": "Contador",
+      "extraNames": [
+        "Krista",
+        "francina",
+        "Kelly",
+        "Madeilene"
+      ],
+      "extraProfession": [
+        "Empleado bancario",
+        "Trabajador social",
+        "Contador",
+        "Florista"
+      ]
+    },
+    {
+      "imageA": "face_55a",
+      "imageB": "face_55b",
+      "isFistShownA": false,
+      "correctName": "Edmundo",
+      "correctProfession": "Trabajador de Correos",
+      "extraNames": [
+        "Edmundo",
+        "Roberto",
+        "Julian",
+        "Juan"
+      ],
+      "extraProfession": [
+        "Trabajador postal",
+        "Desarrollador web",
+        "Maestro",
+        "Ingeniero"
+      ]
+    },
+    {
+      "imageA": "face_56a",
+      "imageB": "face_56b",
+      "isFistShownA": false,
+      "correctName": "Ari",
+      "correctProfession": "Desarrollador de Software",
+      "extraNames": [
+        "Arí",
+        "ben",
+        "Jacob",
+        "Isaac"
+      ],
+      "extraProfession": [
+        "Desarrollador de software",
+        "Maestro",
+        "Químico",
+        "Electricista"
+      ]
+    },
+    {
+      "imageA": "face_57a",
+      "imageB": "face_57b",
+      "isFistShownA": false,
+      "correctName": "Víctor",
+      "correctProfession": "Electricista",
+      "extraNames": [
+        "Ígor",
+        "Sergei",
+        "Víctor",
+        "Boris"
+      ],
+      "extraProfession": [
+        "Electricista",
+        "Químico",
+        "Contador",
+        "Empleado bancario"
+      ]
+    },
+    {
+      "imageA": "face_58a",
+      "imageB": "face_58b",
+      "isFistShownA": false,
+      "correctName": "Mateo",
+      "correctProfession": "Profesor",
+      "extraNames": [
+        "Mateo",
+        "Josué",
+        "Jaime",
+        "Andrés"
+      ],
+      "extraProfession": [
+        "Electricista",
+        "Químico",
+        "Contador",
+        "Maestro"
+      ]
+    },
+    {
+      "imageA": "face_59a",
+      "imageB": "face_59b",
+      "isFistShownA": false,
+      "correctName": "Toby",
+      "correctProfession": "Agente inmobiliario",
+      "extraNames": [
+        "Toby",
+        "Connor",
+        "Derek",
+        "Andrés"
+      ],
+      "extraProfession": [
+        "Corredor de bienes raíces",
+        "Ejecutivo de Ventas",
+        "Empleado bancario",
+        "Científico"
+      ]
+    },
+    {
+      "imageA": "face_60a",
+      "imageB": "face_60b",
+      "isFistShownA": false,
+      "correctName": "Felipe",
+      "correctProfession": "Mecánico Automático",
+      "extraNames": [
+        "Jaime",
+        "Felipe",
+        "José",
+        "Miguel"
+      ],
+      "extraProfession": [
+        "Mecánico",
+        "Corredor de bienes raíces",
+        "Electricista",
+        "Oficial de policía"
+      ]
+    },
+    {
+      "imageA": "face_61a",
+      "imageB": "face_61b",
+      "isFistShownA": false,
+      "correctName": "Mónica",
+      "correctProfession": "Dentista",
+      "extraNames": [
+        "Rita",
+        "Mónica",
+        "Rebeca",
+        "Vanessa"
+      ],
+      "extraProfession": [
+        "Químico",
+        "Trabajador social",
+        "Dentista",
+        "Dermatólogo"
+      ]
+    },
+    {
+      "imageA": "face_62a",
+      "imageB": "face_62b",
+      "isFistShownA": false,
+      "correctName": "Sara",
+      "correctProfession": "Oficial de préstamos",
+      "extraNames": [
+        "Valerie",
+        "Vanessa",
+        "Sandra",
+        "sara"
+      ],
+      "extraProfession": [
+        "Oficial de préstamo",
+        "Farmacéutico",
+        "Corredor de bienes raíces",
+        "Gerente de banco"
+      ]
+    },
+    {
+      "imageA": "face_63a",
+      "imageB": "face_63b",
+      "isFistShownA": false,
+      "correctName": "Nigel",
+      "correctProfession": "Analista de Negocios",
+      "extraNames": [
+        "Nigel",
+        "Daniel",
+        "eric",
+        "graham"
+      ],
+      "extraProfession": [
+        "Analista de negocios",
+        "Desarrollador web",
+        "Científico",
+        "Ejecutivo de ventas"
+      ]
+    },
+    {
+      "imageA": "face_64a",
+      "imageB": "face_64b",
+      "isFistShownA": false,
+      "correctName": "Vanessa",
+      "correctProfession": "Especialista en recursos humanos",
+      "extraNames": [
+        "Vanessa",
+        "Victoria",
+        "Peng",
+        "Diana"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Dermatólogo",
+        "Especialista en Recursos Humanos",
+        "Peluquero"
+      ]
+    },
+    {
+      "imageA": "face_65a",
+      "imageB": "face_65b",
+      "isFistShownA": false,
+      "correctName": "Amy",
+      "correctProfession": "Abogado",
+      "extraNames": [
+        "Linda",
+        "Amy",
+        "amanda",
+        "Estefania"
+      ],
+      "extraProfession": [
+        "Maestro",
+        "Científico",
+        "Abogado",
+        "Contador"
+      ]
+    },
+    {
+      "imageA": "face_66a",
+      "imageB": "face_66b",
+      "isFistShownA": false,
+      "correctName": "Courtney",
+      "correctProfession": "Estadístico",
+      "extraNames": [
+        "lisa",
+        "Cortney",
+        "Britney",
+        "Jessica"
+      ],
+      "extraProfession": [
+        "Empleado bancario",
+        "Estadístico",
+        "Químico",
+        "Florista"
+      ]
+    },
+    {
+      "imageA": "face_67a",
+      "imageB": "face_67b",
+      "isFistShownA": false,
+      "correctName": "Nathan",
+      "correctProfession": "Político",
+      "extraNames": [
+        "Daniel",
+        "Natán",
+        "John",
+        "kyle"
+      ],
+      "extraProfession": [
+        "Político",
+        "Ejecutivo de Ventas",
+        "Profesor",
+        "Gerente de TI"
+      ]
+    },
+    {
+      "imageA": "face_68a",
+      "imageB": "face_68b",
+      "isFistShownA": false,
+      "correctName": "Harry",
+      "correctProfession": "Agente de Seguros",
+      "extraNames": [
+        "Harry",
+        "Mella",
+        "John",
+        "Pedro"
+      ],
+      "extraProfession": [
+        "Agente de seguros",
+        "Gerente del Banco",
+        "Corredor de bienes raíces",
+        "Empleado de la tienda"
+      ]
+    },
+    {
+      "imageA": "face_69a",
+      "imageB": "face_69b",
+      "isFistShownA": false,
+      "nombre correcto": "Kyle",
+      "correctProfession": "Gerente Financiero",
+      "extraNames": [
+        "Kyle",
+        "Pablo",
+        "Natán",
+        "Derek"
+      ],
+      "extraProfession": [
+        "Gerente Financiero",
+        "Profesor",
+        "Maestro",
+        "Farmacéutico"
+      ]
+    },
+    {
+      "imageA": "face_70a",
+      "imageB": "face_70b",
+      "isFistShownA": false,
+      "correctName": "Judy",
+      "correctProfession": "Terapeuta del habla",
+      "extraNames": [
+        "judy",
+        "Kelly",
+        "Jessica",
+        "Bretaña"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Logopeda",
+        "Terapeuta ocupacional",
+        "Farmacéutico"
+      ]
+    },
+    {
+      "imageA": "face_71a",
+      "imageB": "face_71b",
+      "isFistShownA": false,
+      "correctName": "Brezo",
+      "correctProfession": "Neurólogo",
+      "extraNames": [
+        "Brezo",
+        "Beth",
+        "Kristine",
+        "Raquel"
+      ],
+      "extraProfession": [
+        "Neurólogo",
+        "Ginecólogo",
+        "Patólogo",
+        "Pediatra"
+      ]
+    },
+    {
+      "imageA": "face_72a",
+      "imageB": "face_72b",
+      "isFistShownA": false,
+      "correctName": "Eva",
+      "correctProfession": "Ginecólogo",
+      "extraNames": [
+        "Eva",
+        "Natascha",
+        "Kimberley",
+        "Raquel"
+      ],
+      "extraProfession": [
+        "Neurólogo",
+        "Ginecólogo",
+        "Oftalmólogo",
+        "Pediatra"
+      ]
+    },
+    {
+      "imageA": "face_73a",
+      "imageB": "face_73b",
+      "isFistShownA": false,
+      "correctName": "Ryan",
+      "correctProfession": "Gastroenterólogo",
+      "extraNames": [
+        "ryan",
+        "Daniel",
+        "Tomás",
+        "Benjamín"
+      ],
+      "extraProfession": [
+        "Cirujano plástico",
+        "Gastroenterólogo",
+        "Oftalmólogo",
+        "Radiólogo"
+      ]
+    },
+    {
+      "imageA": "face_74a",
+      "imageB": "face_74b",
+      "isFistShownA": false,
+      "correctName": "Meghan",
+      "correctProfession": "Diseñador de Interiores",
+      "extraNames": [
+        "Daniela",
+        "Megan",
+        "Kayla",
+        "Melanie"
+      ],
+      "extraProfession": [
+        "Ayudante Administrativo",
+        "Diseñador de interiores",
+        "Corredor de bienes raíces",
+        "Maestro"
+      ]
+    },
+    {
+      "imageA": "face_75a",
+      "imageB": "face_75b",
+      "isFistShownA": false,
+      "correctName": "Aimée",
+      "correctProfession": "Enfermera",
+      "extraNames": [
+        "Aimée",
+        "sara",
+        "Alison",
+        "andrea"
+      ],
+      "extraProfession": [
+        "Enfermero",
+        "Dentista",
+        "Agente de seguros",
+        "Maestro"
+      ]
+    },
+    {
+      "imageA": "face_76a",
+      "imageB": "face_76b",
+      "isFistShownA": false,
+      "correctName": "Jaya",
+      "correctProfession": "Oncólogo",
+      "extraNames": [
+        "Jaya",
+        "Kavita",
+        "Pooja",
+        "Preeti"
+      ],
+      "extraProfession": [
+        "Químico",
+        "Oncólogo",
+        "Oftalmólogo",
+        "Farmacéutico"
+      ]
+    },
+    {
+      "imageA": "face_77a",
+      "imageB": "face_77b",
+      "isFistShownA": false,
+      "correctName": "Sweta",
+      "correctProfession": "Especialista en Finanzas",
+      "extraNames": [
+        "Vineeta",
+        "Neha",
+        "Radhika",
+        "Sweta"
+      ],
+      "extraProfession": [
+        "Especialista en Finanzas",
+        "Oftalmólogo",
+        "Radiólogo",
+        "Oncólogo"
+      ]
+    },
+    {
+      "imageA": "face_78a",
+      "imageB": "face_78b",
+      "isFistShownA": false,
+      "correctName": "Brent",
+      "correctProfession": "Oficial de Policía",
+      "extraNames": [
+        "Brent",
+        "Kevin",
+        "Jacobo",
+        "Travis"
+      ],
+      "extraProfession": [
+        "Oficial de policía",
+        "Gerente de Mercadotecnia",
+        "Maestro",
+        "Electricista"
+      ]
+    },
+    {
+      "imageA": "face_79a",
+      "imageB": "face_79b",
+      "isFistShownA": false,
+      "correctName": "Travis",
+      "correctProfession": "Gerente de Marketing",
+      "extraNames": [
+        "Brent",
+        "Kevin",
+        "Jacobo",
+        "Travis"
+      ],
+      "extraProfession": [
+        "Gerente de Mercadotecnia",
+        "Ecógrafo",
+        "Banquero",
+        "Actor"
+      ]
+    },
+    {
+      "imageA": "face_80a",
+      "imageB": "face_80b",
+      "isFistShownA": false,
+      "correctName": "Neha",
+      "correctProfession": "Músico",
+      "extraNames": [
+        "Vineeta",
+        "Neha",
+        "Radhika",
+        "Sweta"
+      ],
+      "extraProfession": [
+        "Músico",
+        "Curador de Arte",
+        "Desarrollador web",
+        "Maestro"
+      ]
+    },
+    {
+      "imageA": "face_81a",
+      "imageB": "face_81b",
+      "isFistShownA": false,
+      "correctName": "Bob",
+      "correctProfession": "Dibujante",
+      "extraNames": [
+        "Beto",
+        "ron",
+        "steve",
+        "Brent"
+      ],
+      "extraProfession": [
+        "Músico",
+        "Químico",
+        "Trabajador social",
+        "Dibujante"
+      ]
+    },
+    {
+      "imageA": "face_82a",
+      "imageB": "face_82b",
+      "isFistShownA": false,
+      "correctName": "Judy",
+      "correctProfession": "Oftalmólogo",
+      "extraNames": [
+        "judy",
+        "Leiping",
+        "Lucía",
+        "Mei"
+      ],
+      "extraProfession": [
+        "Oftalmólogo",
+        "Geriatra",
+        "Pediatra",
+        "Oncólogo"
+      ]
+    },
+    {
+      "imageA": "face_83a",
+      "imageB": "face_83b",
+      "isFistShownA": false,
+      "correctName": "Marca",
+      "correctProfession": "Banquero de inversiones",
+      "extraNames": [
+        "Marca",
+        "Martín",
+        "Jeffery",
+        "Kevin"
+      ],
+      "extraProfession": [
+        "Especialista en Finanzas",
+        "Banquero de inversión",
+        "Desarrollador web",
+        "Maestro"
+      ]
+    },
+    {
+      "imageA": "face_84a",
+      "imageB": "face_84b",
+      "isFistShownA": false,
+      "correctName": "Beau",
+      "correctProfession": "Biólogo Computacional",
+      "extraNames": [
+        "Galán",
+        "Víctor",
+        "Rolando",
+        "Howard"
+      ],
+      "extraProfession": [
+        "Químico",
+        "Biólogo Computacional",
+        "Inmunólogo",
+        "Especialista en Finanzas"
+      ]
+    },
+    {
+      "imageA": "face_85a",
+      "imageB": "face_85b",
+      "isFistShownA": false,
+      "correctName": "Radhika",
+      "correctProfession": "Editor de noticias",
+      "extraNames": [
+        "Vineeta",
+        "Neha",
+        "Radhika",
+        "Meena"
+      ],
+      "extraProfession": [
+        "Músico",
+        "Editor de noticias",
+        "Desarrollador web",
+        "Cardiólogo"
+      ]
+    },
+    {
+      "imageA": "face_86a",
+      "imageB": "face_86b",
+      "esPuñoMostradoA": false,
+      "correctName": "Cristal",
+      "correctProfession": "Abogado",
+      "extraNames": [
+        "Cristal",
+        "Vanessa",
+        "Lucía",
+        "jia"
+      ],
+      "extraProfession": [
+        "Director de arte",
+        "Ayudante legal",
+        "Desarrollador web",
+        "Especialista en Finanzas"
+      ]
+    },
+    {
+      "imageA": "face_87a",
+      "imageB": "face_87b",
+      "isFistShownA": false,
+      "correctName": "Catherine",
+      "correctProfession": "Director de Arte",
+      "extraNames": [
+        "Catalina",
+        "Érica",
+        "Heidi",
+        "Miguel"
+      ],
+      "extraProfession": [
+        "Diseñador grafico",
+        "Director de arte",
+        "Desarrollador web",
+        "Maestro"
+      ]
+    },
+    {
+      "imageA": "face_88a",
+      "imageB": "face_88b",
+      "isFistShownA": false,
+      "correctName": "Miguel",
+      "correctProfession": "Administrador de Cumplimiento",
+      "extraNames": [
+        "Catalina",
+        "Érica",
+        "Heidi",
+        "Miguel"
+      ],
+      "extraProfession": [
+        "Gerente de Logistica",
+        "Gerente de Cumplimiento",
+        "Jefe de producción",
+        "Enfermero"
+      ]
+    },
+    {
+      "imageA": "face_89a",
+      "imageB": "face_89b",
+      "isFistShownA": false,
+      "correctName": "Zhiyang",
+      "correctProfession": "Bioquímico",
+      "extraNames": [
+        "Zhenxu",
+        "Zhiyang",
+        "Mínimo",
+        "ke"
+      ],
+      "extraProfession": [
+        "bioquímico",
+        "Oncólogo",
+        "Electricista",
+        "Ayudante legal"
+      ]
+    },
+    {
+      "imageA": "face_90a",
+      "imageB": "face_90b",
+      "isFistShownA": false,
+      "correctName": "Igor",
+      "correctProfession": "Ingeniero Mecánico",
+      "extraNames": [
+        "Víctor",
+        "Ígor",
+        "Oleg",
+        "Vladimir"
+      ],
+      "extraProfession": [
+        "bioquímico",
+        "Ingeniero mecánico",
+        "Electricista",
+        "Ingeniero de software"
+      ]
+    },
+    {
+      "imageA": "face_91a",
+      "imageB": "face_91b",
+      "isFistShownA": false,
+      "correctName": "Allison",
+      "correctProfession": "Fisioterapeuta",
+      "extraNames": [
+        "Aimée",
+        "Alison",
+        "lisa",
+        "Nichole"
+      ],
+      "extraProfession": [
+        "bioquímico",
+        "Fisioterapeuta",
+        "Enfermero",
+        "Ayudante legal"
+      ]
+    },
+    {
+      "imageA": "face_92a",
+      "imageB": "face_92b",
+      "isFistShownA": false,
+      "correctName": "Eduardo",
+      "correctProfession": "Corredor de bolsa",
+      "extraNames": [
+        "Eduardo",
+        "Tomás",
+        "bruce",
+        "Brian"
+      ],
+      "extraProfession": [
+        "Especialista en Finanzas",
+        "Contador",
+        "Corredor de valores",
+        "Abogado"
+      ]
+    },
+    {
+      "imageA": "face_93a",
+      "imageB": "face_93b",
+      "isFistShownA": false,
+      "correctName": "Enrique",
+      "correctProfession": "Ingeniero de Software",
+      "extraNames": [
+        "Julian",
+        "Pedro",
+        "Enrique",
+        "Juan"
+      ],
+      "extraProfession": [
+        "Ingeniero de software",
+        "Ingeniero mecánico",
+        "Ingeniero civil",
+        "Contador"
+      ]
+    },
+    {
+      "imageA": "face_94a",
+      "imageB": "face_94b",
+      "isFistShownA": false,
+      "correctName": "Brian",
+      "correctProfession": "Antropólogo",
+      "extraNames": [
+        "Brian",
+        "Víctor",
+        "eric",
+        "Roberto"
+      ],
+      "extraProfession": [
+        "Antropólogo",
+        "Oncólogo",
+        "Especialista en Finanzas",
+        "anestesiólogo"
+      ]
+    },
+    {
+      "imageA": "face_95a",
+      "imageB": "face_95b",
+      "isFistShownA": false,
+      "correctName": "Lilibeth",
+      "correctProfession": "Artesanía",
+      "extraNames": [
+        "Lilibeth",
+        "Fátima",
+        "Victoria",
+        "Mariana"
+      ],
+      "extraProfession": [
+        "Artista artesanal",
+        "Coreógrafo",
+        "Fotógrafo",
+        "Cocinero"
+      ]
+    },
+    {
+      "imageA": "face_96a",
+      "imageB": "face_96b",
+      "isFistShownA": false,
+      "correctName": "Mariana",
+      "correctProfession": "Bioquímico",
+      "extraNames": [
+        "Mariana",
+        "Carrie",
+        "Daniela",
+        "Estefania"
+      ],
+      "extraProfession": [
+        "bioquímico",
+        "Pediatra",
+        "Especialista en Finanzas",
+        "Jefe de producción"
+      ]
+    },
+    {
+      "imageA": "face_97a",
+      "imageB": "face_97b",
+      "isFistShownA": false,
+      "correctName": "Carrie",
+      "correctProfession": "Gerente de Logística",
+      "extraNames": [
+        "Mariana",
+        "Carrie",
+        "emily",
+        "María"
+      ],
+      "extraProfession": [
+        "bioquímico",
+        "Gerente de Logistica",
+        "Especialista en Finanzas",
+        "Jefe de producción"
+      ]
+    },
+    {
+      "imageA": "face_98a",
+      "imageB": "face_98b",
+      "isFistShownA": false,
+      "correctName": "Gloria",
+      "correctProfession": "Científico forense",
+      "extraNames": [
+        "Gloria",
+        "Mariana",
+        "Daniela",
+        "Victoria"
+      ],
+      "extraProfession": [
+        "Director de arte",
+        "Pediatra",
+        "Especialista en Finanzas",
+        "Científico forense"
+      ]
+    },
+    {
+      "imageA": "face_99a",
+      "imageB": "face_99b",
+      "isFistShownA": false,
+      "correctName": "Steve",
+      "correctProfession": "Conductor de camión",
+      "extraNames": [
+        "steve",
+        "Brian",
+        "bruce",
+        "Jim"
+      ],
+      "extraProfession": [
+        "Conductor de camión",
+        "Gerente de Cumplimiento",
+        "Especialista en Finanzas",
+        "Jefe de producción"
+      ]
+    },
+    {
+      "imageA": "face_100a",
+      "imageB": "face_100b",
+      "isFistShownA": false,
+      "correctName": "Rakesh",
+      "correctProfession": "Corredor de bolsa",
+      "extraNames": [
+        "Raja",
+        "Ramesh",
+        "Rakesh",
+        "Rahim"
+      ],
+      "extraProfession": [
+        "Corredor de valores",
+        "Pediatra",
+        "Especialista en Finanzas",
+        "Jefe de producción"
+      ]
+    },
+    {
+      "imageA": "face_101a",
+      "imageB": "face_101b",
+      "isFistShownA": false,
+      "correctName": "James",
+      "correctProfession": "Optometrista",
+      "extraNames": [
+        "Jaime",
+        "Tomás",
+        "Tim",
+        "Marca"
+      ],
+      "extraProfession": [
+        "bioquímico",
+        "Pediatra",
+        "Optometrista",
+        "Patólogo"
+      ]
+    },
+    {
+      "imageA": "face_102a",
+      "imageB": "face_102b",
+      "isFistShownA": false,
+      "correctName": "Mansoor",
+      "correctProfession": "Agente de Seguros",
+      "extraNames": [
+        "Wasim",
+        "Adán",
+        "Mansoor",
+        "Ahmed"
+      ],
+      "extraProfession": [
+        "bioquímico",
+        "Agente de seguros",
+        "Especialista en Finanzas",
+        "Jefe de producción"
+      ]
+    },
+    {
+      "imageA": "face_103a",
+      "imageB": "face_103b",
+      "isFistShownA": false,
+      "correctName": "Cindy",
+      "correctProfession": "Abogado Corporativo",
+      "extraNames": [
+        "cindi",
+        "Leiping",
+        "Yitang",
+        "Vanessa"
+      ],
+      "extraProfession": [
+        "Abogado corporativo",
+        "Agente de seguros",
+        "Especialista en Finanzas",
+        "Especialista en ventas"
+      ]
+    },
+    {
+      "imageA": "face_104a",
+      "imageB": "face_104b",
+      "isFistShownA": false,
+      "correctName": "Juan",
+      "correctProfession": "Neurocirujano",
+      "extraNames": [
+        "Adán",
+        "Juan",
+        "Marca",
+        "Brent"
+      ],
+      "extraProfession": [
+        "Neurocirujano",
+        "Oftalmólogo",
+        "Cardiólogo",
+        "Patólogo"
+      ]
+    },
+    {
+      "imageA": "face_105a",
+      "imageB": "face_105b",
+      "isFistShownA": false,
+      "correctName": "Noor",
+      "correctProfession": "Desarrollador de Software",
+      "extraNames": [
+        "Noor",
+        "Rehelé",
+        "Daria",
+        "Farah"
+      ],
+      "extraProfession": [
+        "Trabajador social",
+        "Maestro",
+        "Pediatra",
+        "Desarrollador de software"
+      ]
+    },
+    {
+      "imageA": "face_106a",
+      "imageB": "face_106b",
+      "isFistShownA": false,
+      "correctName": "Boris",
+      "correctProfession": "Gerente de Logística",
+      "extraNames": [
+        "Ian",
+        "Howard",
+        "Boris",
+        "Matías"
+      ],
+      "extraProfession": [
+        "bioquímico",
+        "Gerente de Logistica",
+        "Especialista en Finanzas",
+        "Jefe de producción"
+      ]
+    },
+    {
+      "imageA": "face_107a",
+      "imageB": "face_107b",
+      "isFistShownA": false,
+      "correctName": "Jack",
+      "correctProfession": "Especialista en telecomunicaciones",
+      "extraNames": [
+        "Jacobo",
+        "Guillermo",
+        "Miguel",
+        "Federico"
+      ],
+      "extraProfession": [
+        "Especialista en telecomunicaciones",
+        "Agente de seguros",
+        "Especialista en Finanzas",
+        "Biólogo Computacional"
+      ]
+    },
+    {
+      "imageA": "face_108a",
+      "imageB": "face_108b",
+      "isFistShownA": false,
+      "correctName": "Carolina",
+      "correctProfession": "Microbiólogo",
+      "extraNames": [
+        "Denise",
+        "Carolina",
+        "martina",
+        "Jennifer"
+      ],
+      "extraProfession": [
+        "Especialista en telecomunicaciones",
+        "Ingeniero Petroquímico",
+        "Microbiólogo",
+        "Científico forense"
+      ]
+    },
+    {
+      "imageA": "face_109a",
+      "imageB": "face_109b",
+      "isFistShownA": false,
+      "correctName": "Denise",
+      "correctProfession": "Geólogo",
+      "extraNames": [
+        "Denise",
+        "Carolina",
+        "martina",
+        "Jennifer"
+      ],
+      "extraProfession": [
+        "Microbiólogo",
+        "Geólogo",
+        "Químico",
+        "Biólogo Computacional"
+      ]
+    },
+    {
+      "imageA": "face_110a",
+      "imageB": "face_110b",
+      "isFistShownA": false,
+      "correctName": "Patricia",
+      "correctProfession": "Economista",
+      "extraNames": [
+        "Denise",
+        "Carolina",
+        "Patricia",
+        "Jennifer"
+      ],
+      "extraProfession": [
+        "Economista",
+        "Especialista en Finanzas",
+        "Patólogo",
+        "Biólogo Computacional"
+      ]
+    },
+    {
+      "imageA": "face_111a",
+      "imageB": "face_111b",
+      "isFistShownA": false,
+      "correctName": "Derick",
+      "correctProfession": "Ingeniero Petroquímico",
+      "extraNames": [
+        "Derick",
+        "Federico",
+        "Pedro",
+        "Jeffery"
+      ],
+      "extraProfession": [
+        "Microbiólogo",
+        "Geólogo",
+        "Químico",
+        "Ingeniero Petroquímico"
+      ]
+    },
+    {
+      "imageA": "face_112a",
+      "imageB": "face_112b",
+      "isFistShownA": false,
+      "correctName": "Mónica",
+      "correctProfession": "Sociólogo",
+      "extraNames": [
+        "Yitang",
+        "Vanessa",
+        "Mónica",
+        "Jingyu"
+      ],
+      "extraProfession": [
+        "Microbiólogo",
+        "Geólogo",
+        "Patólogo",
+        "Sociólogo"
+      ]
+    },
+    {
+      "imageA": "face_113a",
+      "imageB": "face_113b",
+      "isFistShownA": false,
+      "correctName": "Meryl",
+      "correctProfession": "Patólogo",
+      "extraNames": [
+        "Donna",
+        "Christina",
+        "Meryl",
+        "Jennifer"
+      ],
+      "extraProfession": [
+        "Microbiólogo",
+        "Geólogo",
+        "Patólogo",
+        "Sociólogo"
+      ]
+    },
+    {
+      "imageA": "face_114a",
+      "imageB": "face_114b",
+      "isFistShownA": false,
+      "correctName": "Martín",
+      "correctProfession": "Ingeniero de audio",
+      "extraNames": [
+        "Miguel",
+        "Marca",
+        "Martín",
+        "máximo"
+      ],
+      "extraProfession": [
+        "Ingeniero de sonido",
+        "Geólogo",
+        "Electricista",
+        "Conductor de camión"
+      ]
+    },
+    {
+      "imageA": "face_115a",
+      "imageB": "face_115b",
+      "isFistShownA": false,
+      "correctName": "Milán",
+      "correctProfession": "Planificador Urbano",
+      "extraNames": [
+        "Milán",
+        "Miroslav",
+        "Jozef",
+        "Lucas"
+      ],
+      "extraProfession": [
+        "Radiólogo",
+        "Nefrólogo",
+        "Planificador urbano",
+        "Asesor financiero"
+      ]
+    },
+    {
+      "imageA": "face_116a",
+      "imageB": "face_116b",
+      "isFistShownA": false,
+      "correctName": "Brandon",
+      "correctProfession": "Nefrólogo",
+      "extraNames": [
+        "Puntilla",
+        "Brandon",
+        "ryan",
+        "Brent"
+      ],
+      "extraProfession": [
+        "Patólogo",
+        "Nefrólogo",
+        "Cardiólogo",
+        "Radiólogo"
+      ]
+    },
+    {
+      "imageA": "face_117a",
+      "imageB": "face_117b",
+      "isFistShownA": false,
+      "correctName": "Kevin",
+      "correctProfession": "Ecólogo",
+      "extraNames": [
+        "John",
+        "Kevin",
+        "Jacob",
+        "Mate"
+      ],
+      "extraProfession": [
+        "Radiólogo",
+        "Ecologista",
+        "Geólogo",
+        "Químico"
+      ]
+    },
+    {
+      "imageA": "face_118a",
+      "imageB": "face_118b",
+      "isFistShownA": false,
+      "correctName": "Mayuree",
+      "correctProfession": "Botánico",
+      "extraNames": [
+        "Luwan",
+        "Ratana",
+        "Mayuree",
+        "Prija"
+      ],
+      "extraProfession": [
+        "Botánico",
+        "Ecologista",
+        "Geólogo",
+        "Veterinario"
+      ]
+    },
+    {
+      "imageA": "face_119a",
+      "imageB": "face_119b",
+      "isFistShownA": false,
+      "correctName": "Helena",
+      "correctProfession": "Científico de datos",
+      "extraNames": [
+        "Ana",
+        "Helena",
+        "Mónica",
+        "María"
+      ],
+      "extraProfession": [
+        "Desarrollador web",
+        "Científico de datos",
+        "Analista de negocios",
+        "Diseñador grafico"
+      ]
+    },
+    {
+      "imageA": "face_120a",
+      "imageB": "face_120b",
+      "isFistShownA": false,
+      "correctName": "Joanna",
+      "correctProfession": "Dieticionista",
+      "extraNames": [
+        "Juana",
+        "Jennifer",
+        "Jane",
+        "Joslyn"
+      ],
+      "extraProfession": [
+        "Dietético",
+        "Asistente administrativo",
+        "Farmacéutico",
+        "Pediatra"
+      ]
     }
   ]
 }
-

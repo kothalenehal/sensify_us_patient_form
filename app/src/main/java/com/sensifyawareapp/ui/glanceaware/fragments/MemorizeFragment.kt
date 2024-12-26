@@ -82,7 +82,6 @@ class MemorizeFragment : BaseFragment() {
     private fun onNext() {
         if (isVisible) {
             if (currentIndex == 11) {
-                //if (currentIndex == 1) {
                 SensifyAwareApplication.glanceModelList!!.shuffle()
                 findNavController().navigate(MemorizeFragmentDirections.actionMemorizeFragmentToReadyToBeginFragment())
             } else {
@@ -97,30 +96,19 @@ class MemorizeFragment : BaseFragment() {
     }
 
     private fun showInXml() {
-        // Get the current GlanceModel
-        val currentGlance = SensifyAwareApplication.glanceModelList!![currentIndex]
-
-        // Get English and Hindi name/profession
-        val nameText = "${currentGlance.correctName} / ${currentGlance.correctNameHindi}"
-        val professionText = "${currentGlance.correctProfession} / ${currentGlance.correctProfessionHindi}"
-
-        // Set both English and Hindi name and profession
-        binding.name = nameText
-        binding.profession = professionText
-
+        binding.name = SensifyAwareApplication.glanceModelList!![currentIndex].correctName
+        binding.profession = SensifyAwareApplication.glanceModelList!![currentIndex].correctProfession
         viewModel.IndexLivedata.value = "${currentIndex + 1}"
-
-        Log.e("TAG", "showInXml: ${currentGlance.imageA}")
-        Log.e("TAG", "showInXml: 11 ${currentGlance.imageB}")
-
-        // Set image based on isFistShownA
-        if (currentGlance.isFistShownA)
-            binding.photo = getResource(currentGlance.imageA)
+        Log.e("TAG", "showInXml: ${SensifyAwareApplication.glanceModelList!![currentIndex].imageA}", )
+        Log.e("TAG", "showInXml: 11 ${SensifyAwareApplication.glanceModelList!![currentIndex].imageB}", )
+        if (SensifyAwareApplication.glanceModelList!![currentIndex].isFistShownA)
+            binding.photo =
+                getResource(SensifyAwareApplication.glanceModelList!![currentIndex].imageA)
         else
-            binding.photo = getResource(currentGlance.imageB)
+            binding.photo =
+                getResource(SensifyAwareApplication.glanceModelList!![currentIndex].imageB)
+
     }
-
-
 
     override fun onPause() {
         super.onPause()
@@ -130,9 +118,9 @@ class MemorizeFragment : BaseFragment() {
 
     private fun readJsonFromFile() {
         try {
-           /* val glancesJson = context?.assets?.open("GlanceAware.json")?.bufferedReader().use {
-                it?.readText()
-            }*/
+            /* val glancesJson = context?.assets?.open("GlanceAware.json")?.bufferedReader().use {
+                 it?.readText()
+             }*/
             val glancesJson = context?.assets?.open("GlanceAware.json")?.bufferedReader().use {
                 it?.readText()
             }
@@ -150,9 +138,7 @@ class MemorizeFragment : BaseFragment() {
         val arrayListTemp = java.util.ArrayList<Int>()
         val random = Random(System.nanoTime())
         while (arrayListTemp.size < 12) {
-            //while (arrayListTemp.size < 2) {
-            val nextInt = (0..39).random(random)
-            //val nextInt = (0..4).random(random)
+            val nextInt = (0..119).random(random)
             if (!arrayListTemp.contains(nextInt)) {
                 arrayListTemp.add(nextInt)
 
@@ -178,41 +164,12 @@ class MemorizeFragment : BaseFragment() {
                         glance.getString("correctName"),
                         glance.getString("correctProfession"),
                         extraNames,
-                        extraProfession,
-
-                        // Adding Hindi fields
-                        glance.getString("correctNameHindi"),
-                        glance.getString("correctProfessionHindi"),
-                        getExtraNamesInHindi(glance),
-                        getExtraProfessionsInHindi(glance)
+                        extraProfession
                     )
                 )
-
             }
         }
     }
-
-
-    // Helper method to get the extra names in Hindi
-    private fun getExtraNamesInHindi(glance: JSONObject): ArrayList<String> {
-        val extraNamesHindiJson = glance.getJSONArray("extraNamesHindi")
-        val extraNamesHindi = ArrayList<String>()
-        for (i in 0 until extraNamesHindiJson.length()) {
-            extraNamesHindi.add(extraNamesHindiJson.getString(i))
-        }
-        return extraNamesHindi
-    }
-
-    // Helper method to get the extra professions in Hindi
-    private fun getExtraProfessionsInHindi(glance: JSONObject): ArrayList<String> {
-        val extraProfessionHindiJson = glance.getJSONArray("extraProfessionHindi")
-        val extraProfessionHindi = ArrayList<String>()
-        for (i in 0 until extraProfessionHindiJson.length()) {
-            extraProfessionHindi.add(extraProfessionHindiJson.getString(i))
-        }
-        return extraProfessionHindi
-    }
-
 
     override fun onDestroy() {
         timer.cancel();

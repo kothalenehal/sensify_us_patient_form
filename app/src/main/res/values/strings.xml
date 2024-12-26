@@ -47,7 +47,7 @@
     <string name="odor_identification_test_of_">Odor identification test\n%s/%s</string>
     <string name="odor_differentiation_test_of_">Odor differentiation test\n%s/%s</string>
     <string name="odor_intensity_test_of_">Odor intensity test\n%s/%s</string>
-    <string name="can_you_guess_what_the_sample_is">Can you guess what the sample is?  \nक्या आप अनुमान लगा सकते हैं कि यह नमूना क्या है?</string>
+    <string name="can_you_guess_what_the_sample_is">Can you guess what the sample is?</string>
     <string name="submit">Submit</string>
     <string name="send_code">Send verification Code</string>
     <string name="next">Next</string>
@@ -250,8 +250,8 @@
     <string name="showing_image_12">Showing image %s/12</string>
     <string name="msg_glance_aware_delay">Image preview complete.\nPlease wait for %s minutes before you proceed.</string>
     <string name="msg_glance_aware_begin">Image preview complete.\nTap on the button below to\nbegin the test.</string>
-    <string name="what_is_the_name_of_the_person_in_nthe_picture">What is the name of the person in\nthe picture? \n चित्र में दिख रहे व्यक्ति का नाम क्या है? </string>
-    <string name="what_is_the_profession_of_the_person_in_nthe_picture">What is the profession of the person\nin the picture? \n चित्र में दिख रहे व्यक्ति का पेशा क्या है?</string>
+    <string name="what_is_the_name_of_the_person_in_nthe_picture">What is the name of the person in\nthe picture?  </string>
+    <string name="what_is_the_profession_of_the_person_in_nthe_picture">What is the profession of the person\nin the picture?</string>
     <string name="please_select_answer">Please select answer.</string>
     <string name="total_number_of_faces_to_nidentify">Total number of faces to\nidentify :</string>
     <string name="persons_whose_name_and_nprofession_were_nidentified_correctly">Persons whose name and\nprofession were\nidentified <b>correctly :</b></string>
@@ -348,7 +348,7 @@
     <string name="nouns">en/Nouns.txt</string>
     <string name="verbs">en/Verbs.txt</string>
     <string name="glance_aware_json">en/GlanceAware.json</string>
-<!--    -->
+    <!--    -->
     <string name="ren_aware_test">RenAware Test</string>
     <string name="ren_aware">RenAware</string>
     <string name="ren_aware_wellness_check">RenAware \nWellness check</string>
@@ -435,7 +435,7 @@
     <string name="watch_video">Watch video</string>
     <string name="depending_on_the_root">Depending on the root cause, smell training may help restore the lost sense of smell. Yet its effectiveness varies among individuals.</string>
     <string name="cognitive_tests">Cognitive tests</string>
-    <string name="patient_test">Sensify | NetraKumbh 2025</string>
+    <string name="patient_test">Sensify | NeuroScreen 2025</string>
     <string name="fun_non_addictive_memory_games">Fun non-addictive memory games can help rule out if loss of olfaction is related to cognition</string>
     <string name="does_not_repeat">Does not repeat</string>
     <string name="every_day">Every day</string>

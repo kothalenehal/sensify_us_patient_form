@@ -314,7 +314,7 @@ class AddPatientActivity : AppCompatActivity() {
             UserId = userId,
             PatientId = generatePatientId(),
             Url = "/create-participant", // Default API endpoint
-            LanguageFluency = "Hindi" // Default or dynamic value
+            LanguageFluency = "English" // Default or dynamic value
         )
 
         Log.d("AddPatient", "hereee About to make API call with request: $patientRequest")

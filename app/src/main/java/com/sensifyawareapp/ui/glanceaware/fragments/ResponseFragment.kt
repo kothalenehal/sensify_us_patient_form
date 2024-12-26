@@ -72,19 +72,14 @@ class ResponseFragment : BaseFragment() {
             binding.photo =
                 getResource(SensifyAwareApplication.glanceModelList!![currentIndex].imageA)
 
+
         binding.rvOptions.layoutManager = GridLayoutManager(requireActivity(), 2)
 
-        // Get extra names and combine English/Hindi
         val extraNames = SensifyAwareApplication.glanceModelList!![currentIndex].extraNames
-        val extraNamesHindi = SensifyAwareApplication.glanceModelList!![currentIndex].extraNamesHindi
-        for (i in 0 until extraNames.size) {
-            val combinedName = "${extraNames[i]} / ${extraNamesHindi[i]}"
-            list.add(OptionsModel(combinedName))
-        }
+        for (i in 0 until extraNames.size)
+            list.add(OptionsModel(extraNames[i]))
 
-        // Setup RecyclerView
         setupRecyclerView()
-
         var name = ""
         binding.cardNext.setOnClickListener {
 
@@ -99,16 +94,13 @@ class ResponseFragment : BaseFragment() {
                 selectedNames += "," + list.first { it.isSelected }.value
                 name = list.first { it.isSelected }.value
                 isNameCorrect =
-                    list.first { it.isSelected }.value.contains(SensifyAwareApplication.glanceModelList!![currentIndex].correctName)
-                list.clear()
+                    list.first { it.isSelected }.value == SensifyAwareApplication.glanceModelList!![currentIndex].correctName
 
-                // Get extra professions and combine English/Hindi
-                val extraProfession = SensifyAwareApplication.glanceModelList!![currentIndex].extraProfession
-                val extraProfessionHindi = SensifyAwareApplication.glanceModelList!![currentIndex].extraProfessionHindi
-                for (i in 0 until extraProfession.size) {
-                    val combinedProfession = "${extraProfession[i]} / ${extraProfessionHindi[i]}"
-                    list.add(OptionsModel(combinedProfession))
-                }
+                list.clear()
+                val extraProfession =
+                    SensifyAwareApplication.glanceModelList!![currentIndex].extraProfession
+                for (i in 0 until extraProfession.size)
+                    list.add(OptionsModel(extraProfession[i]))
 
                 setupRecyclerView()
 
@@ -122,7 +114,7 @@ class ResponseFragment : BaseFragment() {
                 profession = list.first { it.isSelected }.value
 
                 val b =
-                    list.first { it.isSelected }.value.contains(SensifyAwareApplication.glanceModelList!![currentIndex].correctProfession)
+                    list.first { it.isSelected }.value == SensifyAwareApplication.glanceModelList!![currentIndex].correctProfession
                 if (b && isNameCorrect) {
                     correctAnsCount++
                 }
@@ -206,9 +198,6 @@ class ResponseFragment : BaseFragment() {
         })
         binding.rvOptions.adapter = optionsAdapter
     }
-
-
-
 
     private fun getResource(name: String): Drawable? {
         val resID = this.resources.getIdentifier(name, "drawable", requireActivity().packageName)
