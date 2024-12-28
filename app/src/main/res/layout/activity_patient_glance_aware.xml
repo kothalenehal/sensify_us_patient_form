@@ -25,10 +25,10 @@
         android:layout_height="match_parent"
         android:layout_gravity="bottom"
         android:background="@drawable/patient_back"
-        tools:context=".ui.scentaware.PatientActivity">
+        tools:context=".ui.glanceaware.PatientActivityGlanceAware">
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tx_back"
+            android:id="@+id/tx_backs"
             style="@style/text_view_style_new"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tx_back" />
+            app:layout_constraintTop_toBottomOf="@id/tx_backs" />
 
 
         <androidx.constraintlayout.widget.ConstraintLayout

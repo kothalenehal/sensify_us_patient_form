@@ -33,7 +33,7 @@
                 android:id="@+id/tv_patient_form"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Patient Form"
+                android:text="@string/patient_form"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -43,7 +43,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Basic Information"
+                android:text="@string/form_basic_information"
                 android:fontFamily="@font/ws_semi_bold"
                 android:textColor="@color/black"
                 android:textSize="16sp"
@@ -58,7 +58,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="First Name:"
+                    android:text="@string/form_first_name"
                     android:fontFamily="@font/ws_bold"
                     android:textColor="@color/button"
                     android:textSize="14sp"
@@ -68,7 +68,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Last Name:"
+                    android:text="@string/form_last_name"
                     android:fontFamily="@font/ws_bold"
                     android:textColor="@color/button"
                     android:textSize="14sp"
@@ -115,7 +115,7 @@
                     android:id="@+id/date_of_birth_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Date of Birth:"
+                    android:text="@string/form_date_of_birth"
                     android:fontFamily="@font/ws_bold"
                     android:textColor="@color/button"
                     android:textSize="14sp"
@@ -144,7 +144,7 @@
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gender: "
+                android:text="@string/form_gender"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/button"
                 android:textSize="14sp"
@@ -174,7 +174,7 @@
                 android:id="@+id/education"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Education: "
+                android:text="@string/form_education"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/button"
                 android:textSize="14sp"
@@ -204,7 +204,7 @@
                 android:id="@+id/language_fluency"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Language fluency : "
+                android:text="@string/form_language_fluency"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/button"
                 android:textSize="14sp"
@@ -230,7 +230,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Address: "
+                    android:text="@string/form_address"
                     android:fontFamily="@font/ws_bold"
                     android:textColor="@color/black"
                     android:textSize="16sp"
@@ -248,7 +248,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Address line 1:"
+                    android:text="@string/form_address_line_1"
                     android:fontFamily="@font/ws_bold"
                     android:textColor="@color/button"
                     android:textSize="14sp"
@@ -258,7 +258,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Address line 2:"
+                    android:text="@string/form_address_line_2"
                     android:fontFamily="@font/ws_bold"
                     android:textColor="@color/button"
                     android:textSize="14sp"
@@ -304,7 +304,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pin Code"
+                        android:text="@string/form_pin_code"
                         android:fontFamily="@font/ws_bold"
                         android:textColor="@color/button"
                         android:textSize="14sp"
@@ -314,7 +314,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City"
+                        android:text="@string/form_city"
                         android:fontFamily="@font/ws_bold"
                         android:textColor="@color/button"
                         android:textSize="14sp"
@@ -361,7 +361,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="State:"
+                        android:text="@string/form_state"
                         android:fontFamily="@font/ws_bold"
                         android:textColor="@color/button"
                         android:textSize="14sp"
@@ -393,7 +393,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Medical Information"
+                android:text="@string/form_medical_information"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/black"
                 android:textSize="16sp"
@@ -404,8 +404,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Medication :
-                " android:paddingStart="6dp"
+                android:text="@string/form_medication"
+                android:paddingStart="6dp"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/button"
                 android:textSize="14sp"
@@ -425,8 +425,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Known personal health conditions :
-"
+                android:text="@string/form_known_personal_health_condition"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/button"
                 android:textSize="14sp"
@@ -444,7 +443,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Known family health conditions :"
+                android:text="@string/form_known_family_health_condition"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/button"
                 android:paddingStart="6dp"
@@ -475,7 +474,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="QR Code"
+                android:text="@string/form_qr_code"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/black"
                 android:textSize="24sp"
@@ -493,7 +492,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button"
-                    android:text="Generate QR"
+                    android:text="@string/form_generate_qr"
                     android:fontFamily="@font/ws_semi_bold"
                     android:textColor="@color/button"
                     android:layout_gravity="center" />
@@ -512,7 +511,7 @@
                 android:id="@+id/smoker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Do you Smoke?"
+                android:text="@string/form_do_you_smoke"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/button"
                 android:textSize="14sp"
@@ -544,7 +543,7 @@
                 android:id="@+id/profession"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Profession : "
+                android:text="@string/form_profession"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/button"
                 android:textSize="14sp"
@@ -564,7 +563,7 @@
                 android:id="@+id/Ethnicity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ethnicity :"
+                android:text="@string/form_ethnicity"
                 android:fontFamily="@font/ws_bold"
                 android:textColor="@color/button"
                 android:textSize="14sp"
@@ -619,7 +618,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@drawable/button_background"
                 android:textColor="@android:color/white"
-                android:text="Save Form" />
+                android:text="@string/form_save" />
 
             <Button
                 android:id="@+id/btn_discard_form"
@@ -628,7 +627,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@android:color/white"
                 app:backgroundTint="@android:color/white"
-                android:text="Clear Fields"
+                android:text="@string/form_clear"
                 android:textColor="@color/disbutton" />
 
             <Button
@@ -638,7 +637,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@android:color/white"
                 app:backgroundTint="@android:color/white"
-                android:text="Discard"
+                android:text="@string/form_discard"
                 android:textColor="@color/disbutton" />
 
 

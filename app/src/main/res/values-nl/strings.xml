@@ -476,7 +476,7 @@ op de RenAware-teststrip."</string>
     <string name="watch_video">"Bekijk video"</string>
     <string name="depending_on_the_root">"Afhankelijk van de oorzaak kan reuktraining helpen het verloren reukvermogen te herstellen. Toch varieert de effectiviteit ervan van persoon tot persoon."</string>
     <string name="cognitive_tests">"Cognitieve tests"</string>
-    <string name="patient_test">Sensify | NeuroScreenbh 2025</string>
+    <string name="patient_test">Sensify | NeuroScreen 2025</string>
     <string name="fun_non_addictive_memory_games">"Leuke, niet-verslavende geheugenspelletjes kunnen helpen uitsluiten of reukverlies verband houdt met cognitie"</string>
     <string name="does_not_repeat">"Dosis niet herhalen"</string>
     <string name="every_day">"Elke dag"</string>
@@ -583,4 +583,73 @@ hyposmie/parosmie."</string>
     <string name="strOldnNewPassword">Oud wachtwoord en Nieuw wachtwoord mogen niet hetzelfde zijn</string>
     <string name="forgot_password">Wachtwoord vergeten?</string>
     <string name="privacy_policy">Privacybeleid</string>
+    <string name="new_patient_form">+ Nieuw patiëntenformulier</string>
+    <string name="patient_form">Patiëntformulier</string>
+    <string name="form_basic_information">Basisinformatie</string>
+    <string name="form_first_name">Voornaam:</string>
+    <string name="form_last_name">Achternaam:</string>
+    <string name="form_date_of_birth">Geboortedatum:</string>
+    <string name="form_gender">Geslacht:</string>
+    <string name="form_education">Opleiding:</string>
+    <string name="form_language_fluency">Taalvaardigheid:</string>
+    <string name="form_address">Adres:</string>
+    <string name="form_address_line_1">Adresregel 1:</string>
+    <string name="form_address_line_2">Adresregel 2:</string>
+    <string name="form_pin_code">Postcode:</string>
+    <string name="form_city">Stad:</string>
+    <string name="form_state">Staat:</string>
+    <string name="form_medical_information">Medische Informatie</string>
+    <string name="form_medication">Medicatie:</string>
+    <string name="form_known_personal_health_condition">Bekende Persoonlijke Gezondheidsconditie:</string>
+    <string name="form_known_family_health_condition">Bekende Gezondheidsconditie in de Familie:</string>
+    <string name="form_do_you_smoke">Rook je?</string>
+    <string name="form_profession">Beroep:</string>
+    <string name="form_ethnicity">Etniciteit:</string>
+    <string name="form_save">Formulier Opslaan</string>
+    <string name="form_clear">Velden Wissen</string>
+    <string name="form_discard">Verwijderen</string>
+    <string name="form_qr_code">QR-code</string>
+    <string name="form_generate_qr">QR Genereren</string>
+
+
+    <string-array name="gender_options">
+        <item>Selecteer</item>
+        <item>Man</item>
+        <item>Vrouw</item>
+        <item>Anders</item>
+    </string-array>
+
+    <string-array name="education_options">
+        <item>Selecteer</item>
+        <item>Geen formele opleiding</item>
+        <item>Primair onderwijs</item>
+        <item>Secundair onderwijs</item>
+        <item>Hoger secundair onderwijs</item>
+        <item>Diploma</item>
+        <item>"Bachelor's graad"</item>
+        <item>"Master's graad"</item>
+        <item>Doctoraat/PhD</item>
+    </string-array>
+
+    <string-array name="smoke_options">
+        <item>Selecteer</item>
+        <item>Ja</item>
+        <item>Nee</item>
+    </string-array>
+
+    <string-array name="ethnicity_options">
+        <item>Selecteer</item>
+        <item>Amerikaanse Indiaan of Alaska Inheemse</item>
+        <item>Aziatisch</item>
+        <item>Zwart of Afro-Amerikaans</item>
+        <item>Hispanic, Latino of Spaanse oorsprong</item>
+        <item>Midden-Oosters of Noord-Afrikaans</item>
+        <item>Inheemse Hawaiiaans of andere Pacifische eilandbewoner</item>
+        <item>Wit</item>
+        <item>Multi-etnisch</item>
+        <item>Wil ik niet aangeven</item>
+        <item>Anders</item>
+    </string-array>
+
+
 </resources>

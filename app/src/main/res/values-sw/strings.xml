@@ -476,7 +476,7 @@ kwenye ukanda wa majaribio wa RenAware."</string>
     <string name="watch_video">"Tazama video"</string>
     <string name="depending_on_the_root">"Kulingana na sababu ya mizizi, mafunzo ya harufu yanaweza kusaidia kurejesha hisia iliyopotea ya harufu. Hata hivyo ufanisi wake hutofautiana kati ya watu binafsi."</string>
     <string name="cognitive_tests">"Vipimo vya utambuzi"</string>
-    <string name="patient_test">Sensify | NeuroScreenbh 2025</string>
+    <string name="patient_test">Sensify | NeuroScreen 2025</string>
     <string name="fun_non_addictive_memory_games">"Michezo ya kumbukumbu ya kufurahisha isiyo na uraibu inaweza kusaidia kuondoa ikiwa upotezaji wa harufu unahusiana na utambuzi"</string>
     <string name="does_not_repeat">"Usirudie kipimo"</string>
     <string name="every_day">"Kila siku"</string>
@@ -583,4 +583,72 @@ hyposmia/parosmia."</string>
     <string name="strOldnNewPassword">Nenosiri la zamani na nywila mpya lazima visifanane</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="privacy_policy">Sera ya Faragha</string>
+    <string name="new_patient_form">+ Fomu Mpya ya Mgonjwa</string>
+    <string name="patient_form">Fomu ya Mgonjwa</string>
+    <string name="form_basic_information">Maelezo ya Msingi</string>
+    <string name="form_first_name">Jina la Kwanza:</string>
+    <string name="form_last_name">Jina la Mwisho:</string>
+    <string name="form_date_of_birth">Tarehe ya Kuzaliwa:</string>
+    <string name="form_gender">Jinsia:</string>
+    <string name="form_education">Elimu:</string>
+    <string name="form_language_fluency">Uwezo wa Lugha:</string>
+    <string name="form_address">Anwani:</string>
+    <string name="form_address_line_1">Mstari wa Anwani 1:</string>
+    <string name="form_address_line_2">Mstari wa Anwani 2:</string>
+    <string name="form_pin_code">Nambari ya Posta:</string>
+    <string name="form_city">Mji:</string>
+    <string name="form_state">Jimbo:</string>
+    <string name="form_medical_information">Maelezo ya Matibabu</string>
+    <string name="form_medication">Dawa:</string>
+    <string name="form_known_personal_health_condition">Hali ya Afya ya Kibinafsi Inayojulikana:</string>
+    <string name="form_known_family_health_condition">Hali ya Afya ya Familia Inayojulikana:</string>
+    <string name="form_do_you_smoke">Unavuta sigara?</string>
+    <string name="form_profession">Kazi:</string>
+    <string name="form_ethnicity">Kabila:</string>
+    <string name="form_save">Hifadhi Fomu</string>
+    <string name="form_clear">Futa Sehemu</string>
+    <string name="form_discard">Tupa</string>
+    <string name="form_qr_code">QR Code</string>
+    <string name="form_generate_qr">Tengeneza QR</string>
+
+    <string-array name="gender_options">
+        <item>Chagua</item>
+        <item>Mwanaume</item>
+        <item>Mwanamke</item>
+        <item>Nyingine</item>
+    </string-array>
+
+    <string-array name="education_options">
+        <item>Chagua</item>
+        <item>Hakuna elimu rasmi</item>
+        <item>Elimu ya msingi</item>
+        <item>Elimu ya sekondari</item>
+        <item>Elimu ya sekondari ya juu</item>
+        <item>Stashahada</item>
+        <item>Shahada ya kwanza</item>
+        <item>Shahada ya uzamili</item>
+        <item>Udaktari/PhD</item>
+    </string-array>
+
+    <string-array name="smoke_options">
+        <item>Chagua</item>
+        <item>Ndio</item>
+        <item>Hapana</item>
+    </string-array>
+
+    <string-array name="ethnicity_options">
+        <item>Chagua</item>
+        <item>Mhindi wa Marekani au Mzawa wa Alaska</item>
+        <item>Muasia</item>
+        <item>Mweusi au Mwafrika wa Marekani</item>
+        <item>Hispania, Latino au Asili ya Kihispania</item>
+        <item>Wa Kati Mashariki au Kaskazini mwa Afrika</item>
+        <item>Mhawai wa Asili au Mkazi wa Kisiwa cha Pasifiki</item>
+        <item>Mweupe</item>
+        <item>Mchanganyiko wa kikabila</item>
+        <item>Napendelea kutotaja</item>
+        <item>Nyingine</item>
+    </string-array>
+
+
 </resources>

@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/screen_confirmation"
+        android:background="@drawable/screen_confirmation2"
         tools:context=".ui.scentaware.CheckPointActivity">
 
         <androidx.appcompat.widget.LinearLayoutCompat

@@ -39,11 +39,16 @@
             layout="@layout/toolbar"
             android:visibility="gone"
             app:title="@{@string/checkpoint_reached}" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/tablet_back"
+            android:scaleType="centerCrop" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/screen_confirmation"
+
             android:fillViewport="true"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbar">

@@ -475,7 +475,7 @@ https://play.google.com/store/apps/details?id="</string>
     <string name="depending_on_the_root">"اعتمادًا على السبب الجذري، قد يساعد التدريب على الشم في استعادة حاسة الشم المفقودة. ومع ذلك فإن فعاليتها تختلف بين الأفراد."</string>
     <string name="cognitive_tests">"الاختبارات المعرفية"</string>
     <string name="fun_non_addictive_memory_games">"يمكن لألعاب الذاكرة الممتعة التي لا تسبب الإدمان أن تساعد في استبعاد ما إذا كان فقدان حاسة الشم مرتبطًا بالإدراك"</string>
-    <string name="patient_test">Sensify | NeuroScreenbh 2025</string>
+    <string name="patient_test">Sensify | NeuroScreen 2025</string>
     <string name="does_not_repeat">"لا يتكرر"</string>
     <string name="every_day">"كل يوم"</string>
     <string name="every_week">"كل اسبوع"</string>
@@ -581,4 +581,73 @@ https://play.google.com/store/apps/details?id="</string>
     <string name="strOldnNewPassword">"كلمة المرور القديمة وكلمة المرور الجديدة يجب ألا تكونا متماثلتين"</string>
     <string name="forgot_password">هل نسيت كلمة السر؟</string>
     <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="new_patient_form">+ نموذج مريض جديد</string>
+    <string name="patient_form">نموذج المريض</string>
+    <string name="form_basic_information">معلومات أساسية</string>
+    <string name="form_first_name">الاسم الأول:</string>
+    <string name="form_last_name">الاسم الأخير:</string>
+    <string name="form_date_of_birth">تاريخ الميلاد:</string>
+    <string name="form_gender">الجنس:</string>
+    <string name="form_education">التعليم:</string>
+    <string name="form_language_fluency">إتقان اللغة:</string>
+    <string name="form_address">العنوان:</string>
+    <string name="form_address_line_1">السطر الأول للعناوين:</string>
+    <string name="form_address_line_2">السطر الثاني للعناوين:</string>
+    <string name="form_pin_code">الرمز البريدي:</string>
+    <string name="form_city">المدينة:</string>
+    <string name="form_state">الولاية:</string>
+    <string name="form_medical_information">المعلومات الطبية</string>
+    <string name="form_medication">الأدوية:</string>
+    <string name="form_known_personal_health_condition">الحالة الصحية الشخصية المعروفة:</string>
+    <string name="form_known_family_health_condition">الحالة الصحية العائلية المعروفة:</string>
+    <string name="form_do_you_smoke">هل تدخن؟</string>
+    <string name="form_profession">المهنة:</string>
+    <string name="form_ethnicity">العرق:</string>
+    <string name="form_save">حفظ النموذج</string>
+    <string name="form_clear">مسح الحقول</string>
+    <string name="form_discard">تجاهل</string>
+    <string name="form_qr_code">رمز الاستجابة السريعة</string>
+    <string name="form_generate_qr">إنشاء رمز الاستجابة السريعة</string>
+
+
+    <string-array name="gender_options">
+        <item>اختر</item>
+        <item>ذكر</item>
+        <item>أنثى</item>
+        <item>آخر</item>
+    </string-array>
+
+    <string-array name="education_options">
+        <item>اختر</item>
+        <item>بدون تعليم رسمي</item>
+        <item>تعليم ابتدائي</item>
+        <item>تعليم ثانوي</item>
+        <item>تعليم ثانوي عالي</item>
+        <item>دبلوم</item>
+        <item>درجة البكالوريوس</item>
+        <item>درجة الماجستير</item>
+        <item>دكتوراه/PhD</item>
+    </string-array>
+
+    <string-array name="smoke_options">
+        <item>اختر</item>
+        <item>نعم</item>
+        <item>لا</item>
+    </string-array>
+
+    <string-array name="ethnicity_options">
+        <item>اختر</item>
+        <item>هندي أمريكي أو سكان ألاسكا الأصليين</item>
+        <item>آسيوي</item>
+        <item>أسود أو أمريكي من أصل أفريقي</item>
+        <item>من أصل إسباني أو لاتيني أو إسباني</item>
+        <item>شرق أوسطي أو شمال أفريقي</item>
+        <item>هاواي الأصلي أو سكان جزر المحيط الهادئ الآخر</item>
+        <item>أبيض</item>
+        <item>متعدد الأعراق</item>
+        <item>أفضل عدم الكشف</item>
+        <item>آخر</item>
+    </string-array>
+
+
 </resources>

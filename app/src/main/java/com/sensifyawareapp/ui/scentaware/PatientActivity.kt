@@ -62,7 +62,7 @@ class PatientActivity : BaseActivity(), KeyboardObserver.OnKeyboardStateChangeLi
         lp.height = resources.getDimension(com.intuit.sdp.R.dimen._300sdp).toInt()
 
 
-        keyboardObserver = KeyboardObserver(this, this)
+        //keyboardObserver = KeyboardObserver(this, this)
 
 
 

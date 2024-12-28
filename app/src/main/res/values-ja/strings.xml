@@ -476,7 +476,7 @@ RenAware テストストリップで。"</string>
     <string name="watch_video">"ビデオを見る"</string>
     <string name="depending_on_the_root">"根本原因によっては、嗅覚トレーニングが失われた嗅覚を回復するのに役立つ場合があります。ただし、その効果には個人差があります。"</string>
     <string name="cognitive_tests">"認知機能検査"</string>
-    <string name="patient_test">Sensify | NeuroScreenbh 2025</string>
+    <string name="patient_test">Sensify | NeuroScreen 2025</string>
     <string name="fun_non_addictive_memory_games">"楽しくて中毒性のない記憶ゲームは、嗅覚の喪失が認知に関連しているかどうかを除外するのに役立ちます"</string>
     <string name="does_not_repeat">"繰り返し投与しないでください"</string>
     <string name="every_day">"毎日"</string>
@@ -583,4 +583,72 @@ RenAware テストストリップで。"</string>
     <string name="strOldnNewPassword">古いパスワードと新しいパスワードは同じであってはなりません</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="new_patient_form">+ 新しい患者フォーム</string>
+    <string name="patient_form">患者フォーム</string>
+    <string name="form_basic_information">基本情報</string>
+    <string name="form_first_name">名:</string>
+    <string name="form_last_name">姓:</string>
+    <string name="form_date_of_birth">生年月日:</string>
+    <string name="form_gender">性別:</string>
+    <string name="form_education">教育:</string>
+    <string name="form_language_fluency">言語能力:</string>
+    <string name="form_address">住所:</string>
+    <string name="form_address_line_1">住所 1 行目:</string>
+    <string name="form_address_line_2">住所 2 行目:</string>
+    <string name="form_pin_code">郵便番号:</string>
+    <string name="form_city">市:</string>
+    <string name="form_state">都道府県:</string>
+    <string name="form_medical_information">医療情報</string>
+    <string name="form_medication">薬:</string>
+    <string name="form_known_personal_health_condition">既知の個人の健康状態:</string>
+    <string name="form_known_family_health_condition">既知の家族の健康状態:</string>
+    <string name="form_do_you_smoke">喫煙しますか？</string>
+    <string name="form_profession">職業:</string>
+    <string name="form_ethnicity">民族:</string>
+    <string name="form_save">フォームを保存</string>
+    <string name="form_clear">フィールドをクリア</string>
+    <string name="form_discard">破棄</string>
+    <string name="form_qr_code">QRコード</string>
+    <string name="form_generate_qr">QR生成</string>
+
+    <string-array name="gender_options">
+        <item>選択してください</item>
+        <item>男性</item>
+        <item>女性</item>
+        <item>その他</item>
+    </string-array>
+
+    <string-array name="education_options">
+        <item>選択してください</item>
+        <item>正式な教育なし</item>
+        <item>初等教育</item>
+        <item>中等教育</item>
+        <item>高等中等教育</item>
+        <item>ディプロマ</item>
+        <item>学士号</item>
+        <item>修士号</item>
+        <item>博士号/PhD</item>
+    </string-array>
+
+    <string-array name="smoke_options">
+        <item>選択してください</item>
+        <item>はい</item>
+        <item>いいえ</item>
+    </string-array>
+
+    <string-array name="ethnicity_options">
+        <item>選択してください</item>
+        <item>アメリカ先住民またはアラスカ先住民</item>
+        <item>アジア人</item>
+        <item>黒人またはアフリカ系アメリカ人</item>
+        <item>ヒスパニック、ラテン系またはスペイン系の出自</item>
+        <item>中東または北アフリカ</item>
+        <item>ハワイ先住民またはその他の太平洋諸島出身者</item>
+        <item>白人</item>
+        <item>多民族</item>
+        <item>開示を希望しない</item>
+        <item>その他</item>
+    </string-array>
+
+
 </resources>

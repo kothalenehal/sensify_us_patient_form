@@ -475,7 +475,7 @@ auf dem RenAware-Teststreifen."</string>
     <string name="watch_video">"Schau Video"</string>
     <string name="depending_on_the_root">"Abhängig von der Grundursache kann ein Geruchstraining dazu beitragen, den verlorenen Geruchssinn wiederherzustellen. Die Wirksamkeit ist jedoch von Person zu Person unterschiedlich."</string>
     <string name="cognitive_tests">"Kognitive Tests"</string>
-    <string name="patient_test">Sensify | NeuroScreenbh 2025</string>
+    <string name="patient_test">Sensify | NeuroScreen 2025</string>
     <string name="fun_non_addictive_memory_games">"Unterhaltsame, nicht süchtig machende Gedächtnisspiele können helfen auszuschließen, ob der Verlust des Geruchssinns mit der Wahrnehmung zusammenhängt"</string>
     <string name="does_not_repeat">"Dosierung nicht wiederholen"</string>
     <string name="every_day">"Täglich"</string>
@@ -582,4 +582,73 @@ Hyposmie/Parosmie."</string>
     <string name="strOldnNewPassword">Altes und neues Passwort dürfen nicht identisch sein</string>
     <string name="forgot_password">Passwort vergessen?</string>
     <string name="privacy_policy">Datenschutzrichtlinie</string>
+    <string name="new_patient_form">+ Neues Patientenformular</string>
+    <string name="patient_form">Patientenformular</string>
+    <string name="form_basic_information">Grundinformationen</string>
+    <string name="form_first_name">Vorname:</string>
+    <string name="form_last_name">Nachname:</string>
+    <string name="form_date_of_birth">Geburtsdatum:</string>
+    <string name="form_gender">Geschlecht:</string>
+    <string name="form_education">Bildung:</string>
+    <string name="form_language_fluency">Sprachkenntnisse:</string>
+    <string name="form_address">Adresse:</string>
+    <string name="form_address_line_1">Adresszeile 1:</string>
+    <string name="form_address_line_2">Adresszeile 2:</string>
+    <string name="form_pin_code">Postleitzahl:</string>
+    <string name="form_city">Stadt:</string>
+    <string name="form_state">Bundesland:</string>
+    <string name="form_medical_information">Medizinische Informationen</string>
+    <string name="form_medication">Medikamente:</string>
+    <string name="form_known_personal_health_condition">Bekannte Persönliche Gesundheitszustände:</string>
+    <string name="form_known_family_health_condition">Bekannte Familiäre Gesundheitszustände:</string>
+    <string name="form_do_you_smoke">Rauchen Sie?</string>
+    <string name="form_profession">Beruf:</string>
+    <string name="form_ethnicity">Ethnizität:</string>
+    <string name="form_save">Formular Speichern</string>
+    <string name="form_clear">Felder Löschen</string>
+    <string name="form_discard">Verwerfen</string>
+    <string name="form_qr_code">QR-Code</string>
+    <string name="form_generate_qr">QR Erstellen</string>
+
+
+    <string-array name="gender_options">
+        <item>Wählen</item>
+        <item>Männlich</item>
+        <item>Weiblich</item>
+        <item>Andere</item>
+    </string-array>
+
+    <string-array name="education_options">
+        <item>Wählen</item>
+        <item>Keine formale Bildung</item>
+        <item>Primarbildung</item>
+        <item>Sekundarbildung</item>
+        <item>Höhere Sekundarbildung</item>
+        <item>Diplom</item>
+        <item>Bachelor-Abschluss</item>
+        <item>Master-Abschluss</item>
+        <item>Doktor/PhD</item>
+    </string-array>
+
+    <string-array name="smoke_options">
+        <item>Wählen</item>
+        <item>Ja</item>
+        <item>Nein</item>
+    </string-array>
+
+    <string-array name="ethnicity_options">
+        <item>Wählen</item>
+        <item>Indianer oder Ureinwohner Alaskas</item>
+        <item>Asiat</item>
+        <item>Schwarz oder Afroamerikaner</item>
+        <item>Hispanisch, Latino oder spanischer Herkunft</item>
+        <item>Nahöstlich oder Nordafrikanisch</item>
+        <item>Hawaiianischer Ureinwohner oder anderer Pazifikinsulaner</item>
+        <item>Weiß</item>
+        <item>Multiethnisch</item>
+        <item>Bevorzuge keine Angabe</item>
+        <item>Andere</item>
+    </string-array>
+
+
 </resources>

@@ -543,7 +543,7 @@
                         android:id="@+id/btn_new_patient_form"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="+ New Patient Form"
+                        android:text="@string/new_patient_form"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/_14sp"
                         android:layout_marginTop="@dimen/_8dp"

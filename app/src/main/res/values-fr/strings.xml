@@ -475,7 +475,7 @@ sur la bandelette de test RenAware."</string>
     <string name="watch_video">"Regarder la vidéo"</string>
     <string name="depending_on_the_root">"Selon la cause profonde, l’entraînement à l’odorat peut aider à restaurer l’odorat perdu. Pourtant, son efficacité varie selon les individus."</string>
     <string name="cognitive_tests">"Tests cognitifs"</string>
-    <string name="patient_test">Sensify | NeuroScreenbh 2025</string>
+    <string name="patient_test">Sensify | NeuroScreen 2025</string>
     <string name="fun_non_addictive_memory_games">"Des jeux de mémoire amusants et non addictifs peuvent aider à déterminer si la perte de l'olfaction est liée à la cognition"</string>
     <string name="does_not_repeat">"Ne pas répéter la dose"</string>
     <string name="every_day">"Tous les jours"</string>
@@ -582,4 +582,73 @@ hyposmie/parosmie."</string>
     <string name="strOldnNewPassword">L\'ancien mot de passe et le nouveau mot de passe ne doivent pas être identiques</string>
     <string name="forgot_password">Mot de passe oublié?</string>
     <string name="privacy_policy">politique de confidentialité</string>
+    <string name="new_patient_form">+ Nouveau formulaire de patient</string>
+    <string name="patient_form">Formulaire patient</string>
+    <string name="form_basic_information">Informations de base</string>
+    <string name="form_first_name">Prénom:</string>
+    <string name="form_last_name">Nom:</string>
+    <string name="form_date_of_birth">Date de naissance:</string>
+    <string name="form_gender">Sexe:</string>
+    <string name="form_education">Éducation:</string>
+    <string name="form_language_fluency">Compétence linguistique:</string>
+    <string name="form_address">Adresse:</string>
+    <string name="form_address_line_1">Adresse Ligne 1:</string>
+    <string name="form_address_line_2">Adresse Ligne 2:</string>
+    <string name="form_pin_code">Code Postal:</string>
+    <string name="form_city">Ville:</string>
+    <string name="form_state">État:</string>
+    <string name="form_medical_information">Informations Médicales</string>
+    <string name="form_medication">Médicaments:</string>
+    <string name="form_known_personal_health_condition">Condition de Santé Personnelle Connue:</string>
+    <string name="form_known_family_health_condition">Condition de Santé Familiale Connue:</string>
+    <string name="form_do_you_smoke">Fumez-vous?</string>
+    <string name="form_profession">Profession:</string>
+    <string name="form_ethnicity">Ethnicité:</string>
+    <string name="form_save">Enregistrer le Formulaire</string>
+    <string name="form_clear">Effacer les Champs</string>
+    <string name="form_discard">Annuler</string>
+    <string name="form_qr_code">Code QR</string>
+    <string name="form_generate_qr">Générer le QR</string>
+
+
+    <string-array name="gender_options">
+        <item>Sélectionnez</item>
+        <item>Homme</item>
+        <item>Femme</item>
+        <item>Autre</item>
+    </string-array>
+
+    <string-array name="education_options">
+        <item>Sélectionnez</item>
+        <item>"Pas d'éducation formelle"</item>
+        <item>Éducation primaire</item>
+        <item>Éducation secondaire</item>
+        <item>Éducation secondaire supérieure</item>
+        <item>Diplôme</item>
+        <item>Licence</item>
+        <item>Master</item>
+        <item>Doctorat/PhD</item>
+    </string-array>
+
+    <string-array name="smoke_options">
+        <item>Sélectionnez</item>
+        <item>Oui</item>
+        <item>Non</item>
+    </string-array>
+
+    <string-array name="ethnicity_options">
+        <item>Sélectionnez</item>
+        <item>"Amérindien ou natif de l'Alaska"</item>
+        <item>Asiatique</item>
+        <item>Noir ou Afro-Américain</item>
+        <item>Hispanique, Latino ou origine espagnole</item>
+        <item>Moyen-Oriental ou Nord-Africain</item>
+        <item>Hawaïen natif ou autre insulaire du Pacifique</item>
+        <item>Blanc</item>
+        <item>Multiethnique</item>
+        <item>Je préfère ne pas divulguer</item>
+        <item>Autre</item>
+    </string-array>
+
+
 </resources>

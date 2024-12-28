@@ -1,563 +1,2284 @@
 {
   "glaces": [
     {
-      "imageA": "image1",
-      "imageB": "image1",
+      "imageA": "face_1a",
+      "imageB": "face_1b",
       "isFistShownA": false,
-      "correctName": "Mahesh",
-      "correctProfession": "Teacher",
-      "correctNameHindi": "महेश",
-      "correctProfessionHindi": "शिक्षक",
-      "extraNames": ["Mahesh", "Ganesh", "Ramesh", "Suresh"],
-      "extraNamesHindi": ["महेश", "गणेश", "रामेश", "सुरेश"],
-      "extraProfession": ["Teacher", "Doctor", "Police Officer", "Bank Manager"],
-      "extraProfessionHindi": ["शिक्षक", "डॉक्टर", "पुलिस अधिकारी", "बैंक मैनेजर"]
-    },
-    {
-      "imageA": "image2",
-      "imageB": "image2",
-      "isFistShownA": false,
-      "correctName": "Ramesh",
-      "correctProfession": "Doctor",
-      "correctNameHindi": "रामेश",
-      "correctProfessionHindi": "डॉक्टर",
-      "extraNames": ["Mahesh", "Ganesh", "Ramesh", "Suresh"],
-      "extraNamesHindi": ["महेश", "गणेश", "रामेश", "सुरेश"],
-      "extraProfession": ["Doctor", "Teacher", "Police Officer", "Bank Manager"],
-      "extraProfessionHindi": ["डॉक्टर", "शिक्षक", "पुलिस अधिकारी", "बैंक मैनेजर"]
-    },
-    {
-      "imageA": "image3",
-      "imageB": "image3",
-      "isFistShownA": false,
-      "correctName": "Ganesh",
-      "correctProfession": "Bank Manager",
-      "correctNameHindi": "गणेश",
-      "correctProfessionHindi": "बैंक मैनेजर",
-      "extraNames": ["Mahesh", "Ganesh", "Ramesh", "Suresh"],
-      "extraNamesHindi": ["महेश", "गणेश", "रामेश", "सुरेश"],
-      "extraProfession": ["Bank Manager", "Doctor", "Teacher", "Police Officer"],
-      "extraProfessionHindi": ["बैंक मैनेजर", "डॉक्टर", "शिक्षक", "पुलिस अधिकारी"]
-    },
-    {
-      "imageA": "image4",
-      "imageB": "image4",
-      "isFistShownA": false,
-      "correctName": "Suresh",
-      "correctProfession": "Police Officer",
-      "correctNameHindi": "सुरेश",
-      "correctProfessionHindi": "पुलिस अधिकारी",
-      "extraNames": ["Mahesh", "Ganesh", "Ramesh", "Suresh"],
-      "extraNamesHindi": ["महेश", "गणेश", "रामेश", "सुरेश"],
-      "extraProfession": ["Doctor", "Teacher", "Police Officer", "Bank Manager"],
-      "extraProfessionHindi": ["डॉक्टर", "शिक्षक", "पुलिस अधिकारी", "बैंक मैनेजर"]
-    },
-    {
-      "imageA": "image5",
-      "imageB": "image5",
-      "isFistShownA": false,
-      "correctName": "Prateek",
-      "correctProfession": "Engineer",
-      "correctNameHindi": "प्रतीक",
-      "correctProfessionHindi": "इंजीनियर",
-      "extraNames": ["Nikhil", "Yogesh", "Prateek", "Vimal"],
-      "extraNamesHindi": ["निखिल", "योगेश", "प्रतीक", "विमल"],
-      "extraProfession": ["Doctor", "Lawyer", "Engineer", "Soldier"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "इंजीनियर", "सैनिक"]
-    },
-    {
-      "imageA": "image6",
-      "imageB": "image6",
-      "isFistShownA": false,
-      "correctName": "Vimal",
-      "correctProfession": "Chemist",
-      "correctNameHindi": "विमल",
-      "correctProfessionHindi": "औषधि-विक्रेता",
-      "extraNames": ["Nikhil", "Yogesh", "Prateek", "Vimal"],
-      "extraNamesHindi": ["निखिल", "योगेश", "प्रतीक", "विमल"],
-      "extraProfession": ["Doctor", "Lawyer", "Engineer", "Chemist"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "इंजीनियर", "औषधि-विक्रेता"]
-    },
-    {
-      "imageA": "image7",
-      "imageB": "image7",
-      "isFistShownA": false,
-      "correctName": "Yogesh",
-      "correctProfession": "Doctor",
-      "correctNameHindi": "योगेश",
-      "correctProfessionHindi": "डॉक्टर",
-      "extraNames": ["Nikhil", "Yogesh", "Prateek", "Vimal"],
-      "extraNamesHindi": ["निखिल", "योगेश", "प्रतीक", "विमल"],
-      "extraProfession": ["Doctor", "Lawyer", "Engineer", "Accountant"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "अभियंता", "अकाउंटेंट"]
-    },
-    {
-      "imageA": "image8",
-      "imageB": "image8",
-      "isFistShownA": false,
-      "correctName": "Nikhil",
-      "correctProfession": "Lawyer",
-      "correctNameHindi": "निखिल",
-      "correctProfessionHindi": "वकील",
-      "extraNames": ["Nikhil", "Yogesh", "Prateek", "Vimal"],
-      "extraNamesHindi": ["निखिल", "योगेश", "प्रतीक", "विमल"],
-      "extraProfession": ["Doctor", "Lawyer", "Engineer", "Accountant"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "अभियंता", "अकाउंटेंट"]
-    },
-    {
-      "imageA": "image9",
-      "imageB": "image9",
-      "isFistShownA": false,
-      "correctName": "Sneha",
-      "correctProfession": "Nurse",
-      "correctNameHindi": "स्नेहा",
-      "correctProfessionHindi": "नर्स",
-      "extraNames": ["Sneha", "Amita", "Poonam", "Devika"],
-      "extraNamesHindi": ["स्नेहा", "अमिता", "पूनम", "देविका"],
-      "extraProfession": ["Doctor", "Lawyer", "Bank Manager", "Nurse"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "बैंक मैनेजर", "नर्स"]
-    },
-    {
-      "imageA": "image10",
-      "imageB": "image10",
-      "isFistShownA": false,
-      "correctName": "Poonam",
-      "correctProfession": "Lawyer",
-      "correctNameHindi": "पूनम",
-      "correctProfessionHindi": "वकील",
-      "extraNames": ["Sneha", "Amita", "Poonam", "Devika"],
-      "extraNamesHindi": ["स्नेहा", "अमिता", "पूनम", "देविका"],
-      "extraProfession": ["Doctor", "Lawyer", "Bank Manager", "Nurse"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "बैंक मैनेजर", "नर्स"]
-    },
-    {
-      "imageA": "image11",
-      "imageB": "image11",
-      "isFistShownA": false,
-      "correctName": "Amita",
-      "correctProfession": "Bank Manager",
-      "correctNameHindi": "अमिता",
-      "correctProfessionHindi": "बैंक मैनेजर",
-      "extraNames": ["Sneha", "Amita", "Poonam", "Devika"],
-      "extraNamesHindi": ["स्नेहा", "अमिता", "पूनम", "देविका"],
-      "extraProfession": ["Doctor", "Lawyer", "Bank Manager", "Nurse"],
-      "extraProfessionHindi": ["डॉक्टर", "वकील", "बैंक मैनेजर", "नर्स"]
-    },
-    {
-      "imageA": "image12",
-      "imageB": "image11",
-      "isFistShownA": false,
-      "correctName": "Devika",
-      "correctProfession": "Singer",
-      "correctNameHindi": "देविका",
-      "correctProfessionHindi": "गायिका",
-      "extraNames": ["Sneha", "Amita", "Poonam", "Devika"],
-      "extraNamesHindi": ["स्नेहा", "अमिता", "पूनम", "देविका"],
-      "extraProfession": ["Singer", "Lawyer", "Dentist", "Nurse"],
-      "extraProfessionHindi": ["गायिका", "वकील", "दंत चिकित्सक", "नर्स"]
-    },
-    {
-      "imageA": "image13",
-      "imageB": "image13",
-      "isFistShownA": false,
-      "correctName": "Priyanka",
-      "correctProfession": "Cook",
-      "correctNameHindi": "प्रियंका",
-      "correctProfessionHindi": "रसोइया",
-      "extraNames": ["Sneha", "Amita", "Priyanka", "Devika"],
-      "extraNamesHindi": ["स्नेहा", "अमिता", "प्रियंका", "देविका"],
-      "extraProfession": ["Singer", "Student", "Cook", "Nurse"],
-      "extraProfessionHindi": ["गायिका", "छात्र", "रसोइया", "नर्स"]
-    },
-    {
-      "imageA": "image14",
-      "imageB": "image14",
-      "isFistShownA": false,
-      "correctName": "Umang",
-      "correctProfession": "Dentist",
-      "correctNameHindi": "उमंग",
-      "correctProfessionHindi": "दंत चिकित्सक",
-      "extraNames": ["Umang", "Praveen", "Venkat", "Ravi"],
-      "extraNamesHindi": ["उमंग", "प्रवीण", "वेंकट", "रवि"],
-      "extraProfession": ["Singer", "Lawyer", "Dentist", "Chemist"],
-      "extraProfessionHindi": ["गायक", "वकील", "दंत चिकित्सक", "औषधि-विक्रेता"]
-    },
-    {
-      "imageA": "image15",
-      "imageB": "image15",
-      "isFistShownA": false,
-      "correctName": "Praveen",
-      "correctProfession": "Lawyer",
-      "correctNameHindi": "प्रवीण",
-      "correctProfessionHindi": "वकील",
-      "extraNames": ["Umang", "Praveen", "Venkat", "Ravi"],
-      "extraNamesHindi": ["उमंग", "प्रवीण", "वेंकट", "रवि"],
-      "extraProfession": ["Singer", "Lawyer", "Dentist", "Chemist"],
-      "extraProfessionHindi": ["गायक", "वकील", "दंत चिकित्सक", "औषधि-विक्रेता"]
-    },
-    {
-      "imageA": "image16",
-      "imageB": "image16",
-      "isFistShownA": false,
-      "correctName": "Anil",
-      "correctProfession": "Soldier",
-      "correctNameHindi": "अनिल",
-      "correctProfessionHindi": "सैनिक",
-      "extraNames": ["Anurag", "Anil", "Venkat", "Ravi"],
-      "extraNamesHindi": ["अनुराग", "अनिल", "वेंकट", "रवि"],
-      "extraProfession": ["Accountant", "Soldier", "Scientist", "Engineer"],
-      "extraProfessionHindi": ["अकाउंटेंट", "सैनिक", "वैज्ञानिक", "अभियंता"]
-    },
-    {
-      "imageA": "image17",
-      "imageB": "image17",
-      "isFistShownA": false,
-      "correctName": "Anurag",
-      "correctProfession": "Accountant",
-      "correctNameHindi": "अनुराग",
-      "correctProfessionHindi": "अकाउंटेंट",
-      "extraNames": ["Anurag", "Anil", "Venkat", "Ravi"],
-      "extraNamesHindi": ["अनुराग", "अनिल", "वेंकट", "रवि"],
-      "extraProfession": ["Accountant", "Soldier", "Scientist", "Engineer"],
-      "extraProfessionHindi": ["अकाउंटेंट", "सैनिक", "वैज्ञानिक", "अभियंता"]
-    },
-    {
-      "imageA": "image18",
-      "imageB": "image18",
-      "isFistShownA": false,
-      "correctName": "Ravi",
-      "correctProfession": "Engineer",
-      "correctNameHindi": "रवि",
-      "correctProfessionHindi": "अभियंता",
-      "extraNames": ["Anurag", "Anil", "Venkat", "Ravi"],
-      "extraNamesHindi": ["अनुराग", "अनिल", "वेंकट", "रवि"],
-      "extraProfession": ["Accountant", "Soldier", "Scientist", "Engineer"],
-      "extraProfessionHindi": ["अकाउंटेंट", "सैनिक", "वैज्ञानिक", "अभियंता"]
-    },
-
-    {
-      "imageA": "image19",
-      "imageB": "image19",
-      "isFistShownA": false,
-      "correctName": "Venkat",
-      "correctNameHindi": "वेंकट",
-      "correctProfession": "Scientist",
-      "correctProfessionHindi": "वैज्ञानिक",
-      "extraNames": ["Anurag","Anil","Venkat","Ravi"],
-      "extraNamesHindi": ["अनुराग","अनिल","वेंकट","रवि"],
-      "extraProfession": ["Accountant","Soldier","Scientist","Engineer"],
-      "extraProfessionHindi": ["मुनीम","सैनिक","वैज्ञानिक","इंजीनियर"]
-    },
-    {
-      "imageA": "image20",
-      "imageB": "image20",
-      "isFistShownA": false,
-      "correctName": "Balbir",
-      "correctNameHindi": "बलबीर",
-      "correctProfession": "Farmer",
-      "correctProfessionHindi": "किसान",
-      "extraNames": ["Balbir","Ajeet","Amar","Ranveer"],
-      "extraNamesHindi": ["बलबीर","अजीत","अमर","रणवीर"],
-      "extraProfession": ["Farmer","Barber","Tailor","Bus Driver"],
-      "extraProfessionHindi": ["किसान","नाई","दर्जी","बस चालक"]
-    },
-    {
-      "imageA": "image21",
-      "imageB": "image21",
-      "isFistShownA": false,
-      "correctName": "Ajeet",
-      "correctNameHindi": "अजीत",
-      "correctProfession": "Barber",
-      "correctProfessionHindi": "नाई",
-      "extraNames": ["Balbir","Ajeet","Amar","Ranveer"],
-      "extraNamesHindi": ["बलबीर","अजीत","अमर","रणवीर"],
-      "extraProfession": ["Farmer","Barber","Tailor","Bus Driver"],
-      "extraProfessionHindi": ["किसान","नाई","दर्जी","बस चालक"]
-    },
-    {
-      "imageA": "image22",
-      "imageB": "image22",
-      "isFistShownA": false,
-      "correctName": "Ranveer",
-      "correctNameHindi": "रणवीर",
-      "correctProfession": "Bus Driver",
-      "correctProfessionHindi": "बस चालक",
-      "extraNames": ["Balbir","Ajeet","Amar","Ranveer"],
-      "extraNamesHindi": ["बलबीर","अजीत","अमर","रणवीर"],
-      "extraProfession": ["Farmer","Barber","Tailor","Bus Driver"],
-      "extraProfessionHindi": ["किसान","नाई","दर्जी","बस चालक"]
-    },
-    {
-      "imageA": "image23",
-      "imageB": "image23",
-      "isFistShownA": false,
-      "correctName": "Amar",
-      "correctNameHindi": "अमर",
-      "correctProfession": "Tailor",
-      "correctProfessionHindi": "दर्जी",
-      "extraNames": ["Balbir","Ajeet","Amar",
-        "Ranveer"
-      ],
-      "extraNamesHindi": [
-        "बलबीर",
-        "अजीत",
-        "अमर",
-        "रणवीर"
-      ],
-      "extraProfession": [
-        "Farmer",
-        "Barber",
-        "Tailor",
-        "Bus Driver"
-      ],
-      "extraProfessionHindi": [
-        "किसान",
-        "नाई",
-        "दर्जी",
-        "बस चालक"
-      ]
-    },
-    {
-      "imageA": "image24",
-      "imageB": "image24",
-      "isFistShownA": false,
-      "correctName": "Laxmi",
-      "correctNameHindi": "लक्ष्मी",
-      "correctProfession": "Singer",
-      "correctProfessionHindi": "गायिका",
+      "correctName": "ベッツィ",
+      "correctProfession": "看護師",
       "extraNames": [
-        "Laxmi",
-        "Indira",
-        "Anjali",
-        "Aditi"
-      ],
-      "extraNamesHindi": [
-        "लक्ष्मी",
-        "इंदिरा",
-        "अंजलि",
-        "अदिति"
+        "ローリー",
+        "パメラ",
+        "ベッツィ",
+        "シンディ"
       ],
       "extraProfession": [
-        "Actor",
-        "Singer",
-        "Doctor",
-        "Teacher"
-      ],
-      "extraProfessionHindi": [
-        "अभिनेता",
-        "गायिका",
-        "डॉक्टर",
-        "शिक्षक"
+        "看護婦",
+        "歯科衛生士",
+        "獣医",
+        "アドミンアシスト"
       ]
     },
     {
-      "imageA": "image25",
-      "imageB": "image25",
+      "imageA": "face_2a",
+      "imageB": "face_2b",
       "isFistShownA": false,
-      "correctName": "Indira",
-      "correctProfession": "Teacher",
-      "correctNameHindi": "इंदिरा",
-      "correctProfessionHindi": "शिक्षक",
-      "extraNames": ["Laxmi", "Indira", "Anjali", "Aditi"],
-      "extraNamesHindi": ["लक्ष्मी", "इंदिरा", "अंजलि", "आदिति"],
-      "extraProfession": ["Actress", "Singer", "Doctor", "Teacher"],
-      "extraProfessionHindi": ["अभिनेत्री", "गायक", "डॉक्टर", "शिक्षक"]
+      "correctName": "ローリー",
+      "correctProfession": "薬剤師",
+      "extraNames": [
+        "サンドラ",
+        "パメラ",
+        "ローリー",
+        "シンディ"
+      ],
+      "extraProfession": [
+        "看護婦",
+        "薬剤師",
+        "化学者",
+        "眼鏡屋"
+      ]
     },
     {
-      "imageA": "image26",
-      "imageB": "image26",
+      "imageA": "face_3a",
+      "imageB": "face_3b",
       "isFistShownA": false,
-      "correctName": "Anjali",
-      "correctProfession": "Actress",
-      "correctNameHindi": "अंजलि",
-      "correctProfessionHindi": "अभिनेत्री",
-      "extraNames": ["Laxmi", "Indira", "Anjali", "Aditi"],
-      "extraNamesHindi": ["लक्ष्मी", "इंदिरा", "अंजलि", "आदिति"],
-      "extraProfession": ["Actress", "Singer", "Doctor", "Teacher"],
-      "extraProfessionHindi": ["अभिनेत्री", "गायक", "डॉक्टर", "शिक्षक"]
+      "correctName": "オードリー",
+      "correctProfession": "ニュースリーダー",
+      "extraNames": [
+        "4月",
+        "アンナ",
+        "オーブリー",
+        "オードリー"
+      ],
+      "extraProfession": [
+        "看護婦",
+        "女優",
+        "ニュースリーダー",
+        "眼鏡屋"
+      ]
     },
     {
-      "imageA": "image27",
-      "imageB": "image27",
+      "imageA": "face_4a",
+      "imageB": "face_4b",
       "isFistShownA": false,
-      "correctName": "Aditi",
-      "correctProfession": "Doctor",
-      "correctNameHindi": "आदिति",
-      "correctProfessionHindi": "डॉक्टर",
-      "extraNames": ["Laxmi", "Indira", "Anjali", "Aditi"],
-      "extraNamesHindi": ["लक्ष्मी", "इंदिरा", "अंजलि", "आदिति"],
-      "extraProfession": ["Actress", "Singer", "Doctor", "Teacher"],
-      "extraProfessionHindi": ["अभिनेत्री", "गायक", "डॉक्टर", "शिक्षक"]
+      "correctName": "ヴィンセント",
+      "correctProfession": "化学者",
+      "extraNames": [
+        "ピーター",
+        "マルセル",
+        "エリック",
+        "ヴィンセント"
+      ],
+      "extraProfession": [
+        "薬剤師",
+        "美容師",
+        "化学者",
+        "眼鏡屋"
+      ]
     },
     {
-      "imageA": "image28",
-      "imageB": "image28",
+      "imageA": "face_5a",
+      "imageB": "face_5b",
       "isFistShownA": false,
-      "correctName": "Vinod",
-      "correctProfession": "Teacher",
-      "correctNameHindi": "विनोद",
-      "correctProfessionHindi": "शिक्षक",
-      "extraNames": ["Vinod", "Varun", "Vaibhav", "Vajid"],
-      "extraNamesHindi": ["विनोद", "वरुण", "वैभव", "वाजिद"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Teacher"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "शिक्षक"]
+      "correctName": "ティム",
+      "correctProfession": "パイロット",
+      "extraNames": [
+        "ティム",
+        "ジム",
+        "グレッグ",
+        "ピーター"
+      ],
+      "extraProfession": [
+        "アスリート",
+        "美容師",
+        "教師",
+        "パイロット"
+      ]
     },
     {
-      "imageA": "image29",
-      "imageB": "image29",
+      "imageA": "face_6a",
+      "imageB": "face_6b",
       "isFistShownA": false,
-      "correctName": "Varun",
-      "correctProfession": "Chemist",
-      "correctNameHindi": "वरुण",
-      "correctProfessionHindi": "केमिस्ट",
-      "extraNames": ["Vinod", "Varun", "Vaibhav", "Vajid"],
-      "extraNamesHindi": ["विनोद", "वरुण", "वैभव", "वाजिद"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Teacher"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "शिक्षक"]
+      "correctName": "マーガレット",
+      "correctProfession": "営業担当者",
+      "extraNames": [
+        "アンナ",
+        "サンドラ",
+        "ナターシャ",
+        "マーガレット"
+      ],
+      "extraProfession": [
+        "教師",
+        "セールスエグゼクティブ",
+        "写真家",
+        "薬剤師"
+      ]
     },
     {
-      "imageA": "image30",
-      "imageB": "image30",
+      "imageA": "face_7a",
+      "imageB": "face_7b",
       "isFistShownA": false,
-      "correctName": "Vaibhav",
-      "correctProfession": "Scientist",
-      "correctNameHindi": "वैभव",
-      "correctProfessionHindi": "वैज्ञानिक",
-      "extraNames": ["Vinod", "Varun", "Vaibhav", "Virat"],
-      "extraNamesHindi": ["विनोद", "वरुण", "वैभव", "विराट"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Teacher"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "शिक्षक"]
+      "correctName": "ピーター",
+      "correctProfession": "アスリート",
+      "extraNames": [
+        "トーマス",
+        "ピーター",
+        "クロード",
+        "ピアス"
+      ],
+      "extraProfession": [
+        "俳優",
+        "写真家",
+        "アスリート",
+        "ソフトウェア開発者"
+      ]
     },
     {
-      "imageA": "image31",
-      "imageB": "image31",
+      "imageA": "face_8a",
+      "imageB": "face_8b",
       "isFistShownA": false,
-      "correctName": "Virat",
-      "correctProfession": "Engineer",
-      "correctNameHindi": "विराट",
-      "correctProfessionHindi": "इंजीनियर",
-      "extraNames": ["Vinod", "Varun", "Vaibhav", "Virat"],
-      "extraNamesHindi": ["विनोद", "वरुण", "वैभव", "विराट"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Teacher"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "शिक्षक"]
+      "correctName": "グレッグ",
+      "correctProfession": "電気技師",
+      "extraNames": [
+        "ティム",
+        "トーマス",
+        "グレッグ",
+        "ジョン"
+      ],
+      "extraProfession": [
+        "電気技師",
+        "科学者",
+        "法律家",
+        "放射線医"
+      ]
     },
     {
-      "imageA": "image32",
-      "imageB": "image32",
+      "imageA": "face_9a",
+      "imageB": "face_9b",
       "isFistShownA": false,
-      "correctName": "Parth",
-      "correctProfession": "Scientist",
-      "correctNameHindi": "पार्थ",
-      "correctProfessionHindi": "वैज्ञानिक",
-      "extraNames": ["Parth", "Pranab", "Piyush", "Pavan"],
-      "extraNamesHindi": ["पार्थ", "प्रणब", "पीयूष", "पवन"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Bank Manager"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "बैंक मैनेजर"]
+      "correctName": "デビッド",
+      "correctProfession": "財務マネージャー",
+      "extraNames": [
+        "ティム",
+        "トーマス",
+        "デビッド",
+        "ジョン"
+      ],
+      "extraProfession": [
+        "電気技師",
+        "財務管理者",
+        "法律家",
+        "会計士"
+      ]
     },
     {
-      "imageA": "image33",
-      "imageB": "image33",
+      "imageA": "face_10a",
+      "imageB": "face_10b",
       "isFistShownA": false,
-      "correctName": "Pranab",
-      "correctProfession": "Bank Manager",
-      "correctNameHindi": "प्रणब",
-      "correctProfessionHindi": "बैंक मैनेजर",
-      "extraNames": ["Parth", "Pranab", "Piyush", "Pavan"],
-      "extraNamesHindi": ["पार्थ", "प्रणब", "पीयूष", "पवन"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Bank Manager"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "बैंक मैनेजर"]
+      "correctName": "サンドラ",
+      "correctProfession": "社会福祉士",
+      "extraNames": [
+        "ヴァレリー",
+        "ジャネット",
+        "サンドラ",
+        "ロリ"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "遺伝カウンセラー",
+        "小児科医",
+        "薬剤師"
+      ]
     },
     {
-      "imageA": "image34",
-      "imageB": "image34",
+      "imageA": "face_11a",
+      "imageB": "face_11b",
       "isFistShownA": false,
-      "correctName": "Pavan",
-      "correctProfession": "Chemist",
-      "correctNameHindi": "पवन",
-      "correctProfessionHindi": "केमिस्ट",
-      "extraNames": ["Parth", "Pranab", "Parvez", "Pavan"],
-      "extraNamesHindi": ["पार्थ", "प्रणब", "परवेज़", "पवन"],
-      "extraProfession": ["Chemist", "Engineer", "Scientist", "Bank Manager"],
-      "extraProfessionHindi": ["केमिस्ट", "इंजीनियर", "वैज्ञानिक", "बैंक मैनेजर"]
+      "correctName": "マヌエラ",
+      "correctProfession": "ウェブ開発者",
+      "extraNames": [
+        "マーガレット",
+        "マヌエラ",
+        "ナターシャ",
+        "ニコル"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "ウェブ開発者",
+        "土木技師",
+        "薬剤師"
+      ]
     },
     {
-      "imageA": "image35",
-      "imageB": "image35",
+      "imageA": "face_12a",
+      "imageB": "face_12b",
       "isFistShownA": false,
-      "correctName": "Sakshi",
-      "correctProfession": "Teacher",
-      "correctNameHindi": "साक्षी",
-      "correctProfessionHindi": "शिक्षक",
-      "extraNames": ["Sakshi", "Shreya", "Madhavi", "Malini"],
-      "extraNamesHindi": ["साक्षी", "श्रेय", "माधवी", "मालिनी"],
-      "extraProfession": ["Nurse", "Lawyer", "Accountant", "Teacher"],
-      "extraProfessionHindi": ["नर्स", "वकील", "अकाउंटेंट", "शिक्षक"]
+      "correctName": "リチャード",
+      "correctProfession": "救急救命士",
+      "extraNames": [
+        "ジェームス",
+        "リチャード",
+        "グレッグ",
+        "クリストファー"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "救急救命士",
+        "警察官",
+        "薬剤師"
+      ]
     },
     {
-      "imageA": "image36",
-      "imageB": "image36",
+      "imageA": "face_13a",
+      "imageB": "face_13b",
       "isFistShownA": false,
-      "correctName": "Shreya",
-      "correctProfession": "Lawyer",
-      "correctNameHindi": "श्रेय",
-      "correctProfessionHindi": "वकील",
-      "extraNames": ["Sakshi", "Shreya", "Madhavi", "Malini"],
-      "extraNamesHindi": ["साक्षी", "श्रेय", "माधवी", "मालिनी"],
-      "extraProfession": ["Nurse", "Lawyer", "Accountant", "Teacher"],
-      "extraProfessionHindi": ["नर्स", "वकील", "अकाउंटेंट", "शिक्षक"]
+      "correctName": "マリア",
+      "correctProfession": "社会福祉士",
+      "extraNames": [
+        "マリア",
+        "エヴァ",
+        "グロリア",
+        "ステファニー"
+      ],
+      "extraProfession": [
+        "ウェブ開発者",
+        "救急救命士",
+        "ソーシャルワーカー",
+        "薬剤師"
+      ]
     },
     {
-      "imageA": "image37",
-      "imageB": "image37",
+      "imageA": "face_14a",
+      "imageB": "face_14b",
       "isFistShownA": false,
-      "correctName": "Madhavi",
-      "correctProfession": "Accountant",
-      "correctNameHindi": "माधवी",
-      "correctProfessionHindi": "अकाउंटेंट",
-      "extraNames": ["Sakshi", "Shreya", "Madhavi", "Malini"],
-      "extraNamesHindi": ["साक्षी", "श्रेय", "माधवी", "मालिनी"],
-      "extraProfession": ["Nurse", "Lawyer", "Accountant", "Teacher"],
-      "extraProfessionHindi": ["नर्स", "वकील", "अकाउंटेंट", "शिक्षक"]
+      "correctName": "ステファニー",
+      "correctProfession": "皮膚科医",
+      "extraNames": [
+        "ステファニー",
+        "マリア",
+        "シルビア",
+        "パトリシア"
+      ],
+      "extraProfession": [
+        "心臓専門医",
+        "皮膚科医",
+        "病理学者",
+        "薬剤師"
+      ]
     },
     {
-      "imageA": "image38",
-      "imageB": "image38",
+      "imageA": "face_15a",
+      "imageB": "face_15b",
       "isFistShownA": false,
-      "correctName": "Malini",
-      "correctProfession": "Nurse",
-      "correctNameHindi": "मालिनी",
-      "correctProfessionHindi": "नर्स",
-      "extraNames": ["Mukta", "Maheen", "Madhavi", "Malini"],
-      "extraNamesHindi": ["मुक्ता", "महीन", "माधवी", "मालिनी"],
-      "extraProfession": ["Nurse", "Lawyer", "Accountant", "Teacher"],
-      "extraProfessionHindi": ["नर्स", "वकील", "अकाउंटेंट", "शिक्षक"]
+      "correctName": "ソフィア",
+      "correctProfession": "理学療法士",
+      "extraNames": [
+        "ソフィア",
+        "マヌエラ",
+        "ステファニー",
+        "ルシア"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "理学療法士",
+        "ジムインストラクター",
+        "歯科衛生士"
+      ]
     },
     {
-      "imageA": "image39",
-      "imageB": "image39",
+      "imageA": "face_16a",
+      "imageB": "face_16b",
       "isFistShownA": false,
-      "correctName": "Kamala",
-      "correctProfession": "Scientist",
-      "correctNameHindi": "कमला",
-      "correctProfessionHindi": "वैज्ञानिक",
-      "extraNames": ["Kamala", "Kaajal", "Kiran", "Karima"],
-      "extraNamesHindi": ["कमला", "काजल", "किरण", "करीमा"],
-      "extraProfession": ["Nurse", "Doctor", "Accountant", "Scientist"],
-      "extraProfessionHindi": ["नर्स", "डॉक्टर", "अकाउंटेंट", "वैज्ञानिक"]
+      "correctName": "マルタ",
+      "correctProfession": "獣医",
+      "extraNames": [
+        "クレア",
+        "シャノン",
+        "シルビア",
+        "マルタ"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "救急救命士",
+        "獣医",
+        "薬剤師"
+      ]
     },
     {
-      "imageA": "image40",
-      "imageB": "image40",
+      "imageA": "face_17a",
+      "imageB": "face_17b",
       "isFistShownA": false,
-      "correctName": "Kaajal",
-      "correctProfession": "Accountant",
-      "correctNameHindi": "काजल",
-      "correctProfessionHindi": "अकाउंटेंट",
-      "extraNames": ["Kamala", "Kaajal", "Kiran", "Karima"],
-      "extraNamesHindi": ["कमला", "काजल", "किरण", "करीमा"],
-      "extraProfession": ["Nurse", "Doctor", "Accountant", "Scientist"],
-      "extraProfessionHindi": ["नर्स", "डॉक्टर", "अकाउंटेंट", "वैज्ञानिक"]
+      "correctName": "ヴァレリー",
+      "correctProfession": "歯科衛生士",
+      "extraNames": [
+        "コートニー",
+        "ヴァレリー",
+        "メラニー",
+        "ケルシー"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "救急救命士",
+        "歯科衛生士",
+        "薬剤師"
+      ]
+    },
+    {
+      "imageA": "face_18a",
+      "imageB": "face_18b",
+      "isFistShownA": false,
+      "correctName": "ルーシー",
+      "correctProfession": "土木技師",
+      "extraNames": [
+        "ルーシー",
+        "じゅん",
+        "リリー",
+        "ジャネット"
+      ],
+      "extraProfession": [
+        "ジャーナリスト",
+        "ウェブ開発者",
+        "土木技師",
+        "薬剤師"
+      ]
+    },
+    {
+      "imageA": "face_19a",
+      "imageB": "face_19b",
+      "isFistShownA": false,
+      "correctName": "イアン",
+      "correctProfession": "配管工",
+      "extraNames": [
+        "ルーク",
+        "イアン",
+        "グレッグ",
+        "クリス"
+      ],
+      "extraProfession": [
+        "救急救命士",
+        "配管工",
+        "警察官",
+        "薬剤師"
+      ]
+    },
+    {
+      "imageA": "face_20a",
+      "imageB": "face_20b",
+      "isFistShownA": false,
+      "correctName": "シャノン",
+      "correctProfession": "教師",
+      "extraNames": [
+        "シャノン",
+        "メラニー",
+        "エレン",
+        "リン"
+      ],
+      "extraProfession": [
+        "教師",
+        "ウェイトレス",
+        "ソーシャルワーカー",
+        "歯科衛生士"
+      ]
+    },
+    {
+      "imageA": "face_21a",
+      "imageB": "face_21b",
+      "isFistShownA": false,
+      "correctName": "メアリー・ルー",
+      "correctProfession": "心理学者",
+      "extraNames": [
+        "シンディ・リー",
+        "メリージェーン",
+        "マルティナ",
+        "マリー・ルー"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "心理学者",
+        "ジャーナリスト",
+        "看護婦"
+      ]
+    },
+    {
+      "imageA": "face_22a",
+      "imageB": "face_22b",
+      "isFistShownA": false,
+      "correctName": "アイリーン",
+      "correctProfession": "歯科医",
+      "extraNames": [
+        "アイリーン",
+        "シャノン",
+        "ナタリー",
+        "メラニー"
+      ],
+      "extraProfession": [
+        "ジャーナリスト",
+        "ウェイトレス",
+        "料理",
+        "歯医者"
+      ]
+    },
+    {
+      "imageA": "face_23a",
+      "imageB": "face_23b",
+      "isFistShownA": false,
+      "correctName": "ゲイリー",
+      "correctProfession": "牧師",
+      "extraNames": [
+        "ダン",
+        "ゲイリー",
+        "ジョン",
+        "アンドリュー"
+      ],
+      "extraProfession": [
+        "財務管理者",
+        "牧師",
+        "警察官",
+        "薬剤師"
+      ]
+    },
+    {
+      "imageA": "face_24a",
+      "imageB": "face_24b",
+      "isFistShownA": false,
+      "correctName": "リン",
+      "correctProfession": "科学者",
+      "extraNames": [
+        "ジェシカ",
+        "メラニー",
+        "リン",
+        "ナタリー"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "科学者",
+        "ジャーナリスト",
+        "教師"
+      ]
+    },
+    {
+      "imageA": "face_25a",
+      "imageB": "face_25b",
+      "isFistShownA": false,
+      "correctName": "アーメド",
+      "correctProfession": "営業担当者",
+      "extraNames": [
+        "アーメド",
+        "ロベルト",
+        "オーランド",
+        "タリク"
+      ],
+      "extraProfession": [
+        "セールスエグゼクティブ",
+        "レジ",
+        "警察官",
+        "科学者"
+      ]
+    },
+    {
+      "imageA": "face_26a",
+      "imageB": "face_26b",
+      "isFistShownA": false,
+      "correctName": "ジョン",
+      "correctProfession": "教授",
+      "extraNames": [
+        "ジェームス",
+        "ジョン",
+        "ゲイリー",
+        "クリストファー"
+      ],
+      "extraProfession": [
+        "財務顧問",
+        "歯医者",
+        "教授",
+        "法律家"
+      ]
+    },
+    {
+      "imageA": "face_27a",
+      "imageB": "face_27b",
+      "isFistShownA": false,
+      "correctName": "ルチア",
+      "correctProfession": "学生",
+      "extraNames": [
+        "マリア",
+        "ルシア",
+        "ジェシカ",
+        "シルビア"
+      ],
+      "extraProfession": [
+        "教師",
+        "学生",
+        "ウェブ開発者",
+        "ウェイトレス"
+      ]
+    },
+    {
+      "imageA": "face_28a",
+      "imageB": "face_28b",
+      "isFistShownA": false,
+      "correctName": "ナンシー",
+      "correctProfession": "心臓専門医",
+      "extraNames": [
+        "ナンシー",
+        "ナターシャ",
+        "マルティナ",
+        "シルビア"
+      ],
+      "extraProfession": [
+        "歯医者",
+        "心臓専門医",
+        "皮膚科医",
+        "神経内科医"
+      ]
+    },
+    {
+      "imageA": "face_29a",
+      "imageB": "face_29b",
+      "isFistShownA": false,
+      "correctName": "レベッカ",
+      "correctProfession": "政治家",
+      "extraNames": [
+        "ナターシャ",
+        "キム",
+        "シンシア",
+        "レベッカ"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "救急救命士",
+        "政治家",
+        "薬剤師"
+      ]
+    },
+    {
+      "imageA": "face_30a",
+      "imageB": "face_30b",
+      "isFistShownA": false,
+      "correctName": "アンドリュー",
+      "correctProfession": "警察官",
+      "extraNames": [
+        "アンドリュー",
+        "ロバート",
+        "ハワード",
+        "ブルース"
+      ],
+      "extraProfession": [
+        "写真家",
+        "救急救命士",
+        "警察官",
+        "パイロット"
+      ]
+    },
+    {
+      "imageA": "face_31a",
+      "imageB": "face_31b",
+      "isFistShownA": false,
+      "correctName": "エリン",
+      "correctProfession": "パラリーガル",
+      "extraNames": [
+        "エリン",
+        "サマンサ",
+        "ルーシー",
+        "レベッカ"
+      ],
+      "extraProfession": [
+        "科学者",
+        "心理学者",
+        "会計士",
+        "パラリーガル"
+      ]
+    },
+    {
+      "imageA": "face_32a",
+      "imageB": "face_32b",
+      "isFistShownA": false,
+      "correctName": "バーバラ",
+      "correctProfession": "建築家",
+      "extraNames": [
+        "バーバラ",
+        "レベッカ",
+        "ケイト",
+        "クレア"
+      ],
+      "extraProfession": [
+        "建築家",
+        "科学者",
+        "眼鏡屋",
+        "ジャーナリスト"
+      ]
+    },
+    {
+      "imageA": "face_33a",
+      "imageB": "face_33b",
+      "isFistShownA": false,
+      "correctName": "ケビン",
+      "correctProfession": "化学者",
+      "extraNames": [
+        "ケビン",
+        "ハワード",
+        "グレッグ",
+        "ブルース"
+      ],
+      "extraProfession": [
+        "セールスエグゼクティブ",
+        "救急救命士",
+        "警備員",
+        "化学者"
+      ]
+    },
+    {
+      "imageA": "face_34a",
+      "imageB": "face_34b",
+      "isFistShownA": false,
+      "correctName": "ブルース",
+      "correctProfession": "会計士",
+      "extraNames": [
+        "ロバート",
+        "ハワード",
+        "グレッグ",
+        "ブルース"
+      ],
+      "extraProfession": [
+        "会計士",
+        "ウェブ開発者",
+        "パラリーガル",
+        "レジ"
+      ]
+    },
+    {
+      "imageA": "face_35a",
+      "imageB": "face_35b",
+      "isFistShownA": false,
+      "correctName": "ハワード",
+      "correctProfession": "放送局",
+      "extraNames": [
+        "ハワード",
+        "アンドリュー",
+        "アントニー",
+        "パトリック"
+      ],
+      "extraProfession": [
+        "放送局",
+        "著者",
+        "外科医",
+        "会計士"
+      ]
+    },
+    {
+      "imageA": "face_36a",
+      "imageB": "face_36b",
+      "isFistShownA": false,
+      "correctName": "メラニー",
+      "correctProfession": "作業療法士",
+      "extraNames": [
+        "メラニー",
+        "エリン",
+        "シンシア",
+        "サマンサ"
+      ],
+      "extraProfession": [
+        "作業療法士",
+        "遺伝カウンセラー",
+        "薬剤師",
+        "歯科衛生士"
+      ]
+    },
+    {
+      "imageA": "face_37a",
+      "imageB": "face_37b",
+      "isFistShownA": false,
+      "correctName": "スティーブ",
+      "correctProfession": "エンジニア",
+      "extraNames": [
+        "スティーブ",
+        "リチャード",
+        "グレッグ",
+        "アンドリュー"
+      ],
+      "extraProfession": [
+        "エンジニア",
+        "政治家",
+        "教師",
+        "会計士"
+      ]
+    },
+    {
+      "imageA": "face_38a",
+      "imageB": "face_38b",
+      "isFistShownA": false,
+      "correctName": "ナタリー",
+      "correctProfession": "医師のアシスタント",
+      "extraNames": [
+        "ソフィア",
+        "ナタリー",
+        "エリン",
+        "リン"
+      ],
+      "extraProfession": [
+        "パラリーガル",
+        "医師のアシスタント",
+        "教師",
+        "遺伝カウンセラー"
+      ]
+    },
+    {
+      "imageA": "face_39a",
+      "imageB": "face_39b",
+      "isFistShownA": false,
+      "correctName": "ロン",
+      "correctProfession": "キャブドライバー",
+      "extraNames": [
+        "ティム",
+        "ロン",
+        "ダン",
+        "ジョー"
+      ],
+      "extraProfession": [
+        "レジ",
+        "タクシーの運転手",
+        "ウェイター",
+        "店主"
+      ]
+    },
+    {
+      "imageA": "face_40a",
+      "imageB": "face_40b",
+      "isFistShownA": false,
+      "correctName": "ポーラ",
+      "correctProfession": "司書",
+      "extraNames": [
+        "ポーラ",
+        "メアリー・ジョー",
+        "バーバラ",
+        "マルティナ"
+      ],
+      "extraProfession": [
+        "司書",
+        "法律家",
+        "画家",
+        "レジ"
+      ]
+    },
+    {
+      "imageA": "face_41a",
+      "imageB": "face_41b",
+      "isFistShownA": false,
+      "correctName": "エリーゼ",
+      "correctProfession": "美容師",
+      "extraNames": [
+        "エリーゼ",
+        "ルーシー",
+        "エミリー",
+        "リサ"
+      ],
+      "extraProfession": [
+        "美容師",
+        "ソーシャルワーカー",
+        "ソフトウェア開発者",
+        "看護婦"
+      ]
+    },
+    {
+      "imageA": "face_42a",
+      "imageB": "face_42b",
+      "isFistShownA": false,
+      "correctName": "シンシア",
+      "correctProfession": "全米リアルター協会加入者",
+      "extraNames": [
+        "シンシア",
+        "ヴァレリー",
+        "エリン",
+        "ロリ"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "会計士",
+        "不動産業者",
+        "写真家"
+      ]
+    },
+    {
+      "imageA": "face_43a",
+      "imageB": "face_43b",
+      "isFistShownA": false,
+      "correctName": "アン",
+      "correctProfession": "シェフ",
+      "extraNames": [
+        "ヴァレリー",
+        "リン",
+        "アン",
+        "ローリー"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "シェフ",
+        "レジ",
+        "薬剤師"
+      ]
+    },
+    {
+      "imageA": "face_44a",
+      "imageB": "face_44b",
+      "isFistShownA": false,
+      "correctName": "リタ",
+      "correctProfession": "銀行マネージャー",
+      "extraNames": [
+        "リタ",
+        "ソニア",
+        "プージャ",
+        "カビタ"
+      ],
+      "extraProfession": [
+        "皮膚科医",
+        "銀行の支店長",
+        "小児科医",
+        "営業担当"
+      ]
+    },
+    {
+      "imageA": "face_45a",
+      "imageB": "face_45b",
+      "isFistShownA": false,
+      "correctName": "トーマス",
+      "correctProfession": "農家",
+      "extraNames": [
+        "トーマス",
+        "マシュー",
+        "ジョージ",
+        "ヘンリー"
+      ],
+      "extraProfession": [
+        "アスリート",
+        "農家",
+        "土木技師",
+        "学生"
+      ]
+    },
+    {
+      "imageA": "face_46a",
+      "imageB": "face_46b",
+      "isFistShownA": false,
+      "correctName": "クレア",
+      "correctProfession": "放射線科医",
+      "extraNames": [
+        "クレア",
+        "アリソン",
+        "アン",
+        "ローラ"
+      ],
+      "extraProfession": [
+        "心臓専門医",
+        "放射線技師",
+        "皮膚科医",
+        "内科医"
+      ]
+    },
+    {
+      "imageA": "face_47a",
+      "imageB": "face_47b",
+      "isFistShownA": false,
+      "correctName": "ゴードン",
+      "correctProfession": "フィジカルトレーナー",
+      "extraNames": [
+        "ゴードン",
+        "トビー",
+        "トーマス",
+        "ジェイコブ"
+      ],
+      "extraProfession": [
+        "郵便局員",
+        "建設労働者",
+        "フィジカルトレーナー",
+        "タクシーの運転手"
+      ]
+    },
+    {
+      "imageA": "face_48a",
+      "imageB": "face_48b",
+      "isFistShownA": false,
+      "correctName": "マイケル",
+      "correctProfession": "プロジェクト マネージャー",
+      "extraNames": [
+        "マイケル",
+        "トーマス",
+        "ジェイソン",
+        "イアン"
+      ],
+      "extraProfession": [
+        "セールスエグゼクティブ",
+        "プロジェクトマネージャ",
+        "銀行員",
+        "フィジカルトレーナー"
+      ]
+    },
+    {
+      "imageA": "face_49a",
+      "imageB": "face_49b",
+      "isFistShownA": false,
+      "correctName": "華",
+      "correctProfession": "花屋",
+      "extraNames": [
+        "テン",
+        "玉鵬",
+        "華",
+        "メイ"
+      ],
+      "extraProfession": [
+        "郵便局員",
+        "花屋",
+        "美容師",
+        "銀行員"
+      ]
+    },
+    {
+      "imageA": "face_50a",
+      "imageB": "face_50b",
+      "isFistShownA": false,
+      "correctName": "ペドロ",
+      "correctProfession": "食料品店の店長",
+      "extraNames": [
+        "ペドロ",
+        "ニック",
+        "ジャスティン",
+        "ジュリアーノ"
+      ],
+      "extraProfession": [
+        "郵便局員",
+        "建設労働者",
+        "食料品店の店長",
+        "農家"
+      ]
+    },
+    {
+      "imageA": "face_51a",
+      "imageB": "face_51b",
+      "isFistShownA": false,
+      "correctName": "スティーブン",
+      "correctProfession": "物理学者",
+      "extraNames": [
+        "スティーブン",
+        "ジャスティン",
+        "ジャレッド",
+        "アレキサンダー"
+      ],
+      "extraProfession": [
+        "ウェブ開発者",
+        "物理学者",
+        "銀行員",
+        "会計士"
+      ]
+    },
+    {
+      "imageA": "face_52a",
+      "imageB": "face_52b",
+      "isFistShownA": false,
+      "correctName": "マーク",
+      "correctProfession": "劇作家",
+      "extraNames": [
+        "マーク",
+        "トーマス",
+        "ジェフリー",
+        "デレク"
+      ],
+      "extraProfession": [
+        "物理学者",
+        "劇作家",
+        "電気技師",
+        "土木技師"
+      ]
+    },
+    {
+      "imageA": "face_53a",
+      "imageB": "face_53b",
+      "isFistShownA": false,
+      "correctName": "ビクトリア",
+      "correctProfession": "全米リアルター協会加入者",
+      "extraNames": [
+        "ジェイミー",
+        "ビクトリア",
+        "ルーシー",
+        "エイダ"
+      ],
+      "extraProfession": [
+        "物理学者",
+        "不動産業者",
+        "銀行員",
+        "郵便局員"
+      ]
+    },
+    {
+      "imageA": "face_54A",
+      "imageB": "face_54B",
+      "isFistShownA": false,
+      "correctName": "フランシーヌ",
+      "correctProfession": "会計士",
+      "extraNames": [
+        "クリスタ",
+        "フランシーヌ",
+        "ケリー",
+        "マドレーヌ"
+      ],
+      "extraProfession": [
+        "銀行員",
+        "ソーシャルワーカー",
+        "会計士",
+        "花屋"
+      ]
+    },
+    {
+      "imageA": "face_55a",
+      "imageB": "face_55b",
+      "isFistShownA": false,
+      "correctName": "エドマンド",
+      "correctProfession": "郵便局員",
+      "extraNames": [
+        "エドマンド",
+        "ロベルト",
+        "ジュリアーノ",
+        "ファン"
+      ],
+      "extraProfession": [
+        "郵便局員",
+        "ウェブ開発者",
+        "教師",
+        "エンジニア"
+      ]
+    },
+    {
+      "imageA": "face_56a",
+      "imageB": "face_56b",
+      "isFistShownA": false,
+      "correctName": "アリ",
+      "correctProfession": "ソフトウェア開発者",
+      "extraNames": [
+        "アリ",
+        "ベン",
+        "ジェイコブ",
+        "アイザック"
+      ],
+      "extraProfession": [
+        "ソフトウェア開発者",
+        "教師",
+        "化学者",
+        "電気技師"
+      ]
+    },
+    {
+      "imageA": "face_57a",
+      "imageB": "face_57b",
+      "isFistShownA": false,
+      "correctName": "ビクター",
+      "correctProfession": "電気技師",
+      "extraNames": [
+        "イゴール",
+        "セルゲイ",
+        "ビクター",
+        "ボリス"
+      ],
+      "extraProfession": [
+        "電気技師",
+        "化学者",
+        "会計士",
+        "銀行員"
+      ]
+    },
+    {
+      "imageA": "face_58a",
+      "imageB": "face_58b",
+      "isFistShownA": false,
+      "correctName": "マシュー",
+      "correctProfession": "先生",
+      "extraNames": [
+        "マシュー",
+        "ジョシュア",
+        "ジェームス",
+        "アンドリュー"
+      ],
+      "extraProfession": [
+        "電気技師",
+        "化学者",
+        "会計士",
+        "教師"
+      ]
+    },
+    {
+      "imageA": "face_59a",
+      "imageB": "face_59b",
+      "isFistShownA": false,
+      "correctName": "トビー",
+      "correctProfession": "全米リアルター協会加入者",
+      "extraNames": [
+        "トビー",
+        "コナー",
+        "デレク",
+        "アンドリュー"
+      ],
+      "extraProfession": [
+        "不動産業者",
+        "セールスエグゼクティブ",
+        "銀行員",
+        "科学者"
+      ]
+    },
+    {
+      "imageA": "face_60a",
+      "imageB": "face_60b",
+      "isFistShownA": false,
+      "correctName": "フィリップ",
+      "correctProfession": "自動車整備士",
+      "extraNames": [
+        "ジェームス",
+        "フィリップ",
+        "ジョシュ",
+        "マイケル"
+      ],
+      "extraProfession": [
+        "自動車整備士",
+        "不動産業者",
+        "電気技師",
+        "警察官"
+      ]
+    },
+    {
+      "imageA": "face_61a",
+      "imageB": "face_61b",
+      "isFistShownA": false,
+      "correctName": "モニカ",
+      "correctProfession": "歯科医",
+      "extraNames": [
+        "リタ",
+        "モニカ",
+        "レベッカ",
+        "ヴァネッサ"
+      ],
+      "extraProfession": [
+        "化学者",
+        "ソーシャルワーカー",
+        "歯医者",
+        "皮膚科"
+      ]
+    },
+    {
+      "imageA": "face_62a",
+      "imageB": "face_62b",
+      "isFistShownA": false,
+      "correctName": "サラ",
+      "correctProfession": "融資担当者",
+      "extraNames": [
+        "ヴァレリー",
+        "ヴァネッサ",
+        "サンドラ",
+        "サラ"
+      ],
+      "extraProfession": [
+        "融資担当者",
+        "薬剤師",
+        "不動産業者",
+        "銀行の支店長"
+      ]
+    },
+    {
+      "imageA": "face_63a",
+      "imageB": "face_63b",
+      "isFistShownA": false,
+      "correctName": "ナイジェル",
+      "correctProfession": "ビジネスアナリスト",
+      "extraNames": [
+        "ナイジェル",
+        "ダニエル",
+        "エリック",
+        "グラハム"
+      ],
+      "extraProfession": [
+        "ビジネスアナリスト",
+        "ウェブ開発者",
+        "科学者",
+        "営業担当"
+      ]
+    },
+    {
+      "imageA": "face_64a",
+      "imageB": "face_64b",
+      "isFistShownA": false,
+      "correctName": "ヴァネッサ",
+      "correctProfession": "人事スペシャリスト",
+      "extraNames": [
+        "ヴァネッサ",
+        "ビクトリア",
+        "鵬",
+        "ダイアン"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "皮膚科医",
+        "人事スペシャリスト",
+        "美容師"
+      ]
+    },
+    {
+      "imageA": "face_65a",
+      "imageB": "face_65b",
+      "isFistShownA": false,
+      "correctName": "エイミー",
+      "correctProfession": "弁護士",
+      "extraNames": [
+        "リンダ",
+        "エイミー",
+        "アマンダ",
+        "ステファニー"
+      ],
+      "extraProfession": [
+        "教師",
+        "科学者",
+        "法律家",
+        "会計士"
+      ]
+    },
+    {
+      "imageA": "face_66a",
+      "imageB": "face_66b",
+      "isFistShownA": false,
+      "correctName": "コートニー",
+      "correctProfession": "統計学者",
+      "extraNames": [
+        "リサ",
+        "コートニー",
+        "ブリトニー",
+        "ジェシカ"
+      ],
+      "extraProfession": [
+        "銀行員",
+        "統計学者",
+        "化学者",
+        "花屋"
+      ]
+    },
+    {
+      "imageA": "face_67a",
+      "imageB": "face_67b",
+      "isFistShownA": false,
+      "correctName": "ネイサン",
+      "correctProfession": "政治家",
+      "extraNames": [
+        "ダニエル",
+        "ネイサン",
+        "ジョン",
+        "カイル"
+      ],
+      "extraProfession": [
+        "政治家",
+        "セールスエグゼクティブ",
+        "教授",
+        "ITマネージャ"
+      ]
+    },
+    {
+      "imageA": "face_68a",
+      "imageB": "face_68b",
+      "isFistShownA": false,
+      "correctName": "ハリー",
+      "correctProfession": "保険代理店",
+      "extraNames": [
+        "ハリー",
+        "ニック",
+        "ジョン",
+        "ピーター"
+      ],
+      "extraProfession": [
+        "保険代理店",
+        "銀行の支店長",
+        "不動産業者",
+        "食料品店員"
+      ]
+    },
+    {
+      "imageA": "face_69a",
+      "imageB": "face_69b",
+      "isFistShownA": false,
+      "correctName": "カイル",
+      "correctProfession": "財務マネージャー",
+      "extraNames": [
+        "カイル",
+        "ポール",
+        "ネイサン",
+        "デレク"
+      ],
+      "extraProfession": [
+        "財務管理者",
+        "教授",
+        "教師",
+        "薬剤師"
+      ]
+    },
+    {
+      "imageA": "face_70a",
+      "imageB": "face_70b",
+      "isFistShownA": false,
+      "correctName": "ジュディ",
+      "correctProfession": "言語聴覚士",
+      "extraNames": [
+        "ジュディ",
+        "ケリー",
+        "ジェシカ",
+        "ブルターニュ"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "言語療法士",
+        "作業療法士",
+        "薬剤師"
+      ]
+    },
+    {
+      "imageA": "face_71a",
+      "imageB": "face_71b",
+      "isFistShownA": false,
+      "correctName": "ヘザー",
+      "correctProfession": "神経科医",
+      "extraNames": [
+        "ヘザー",
+        "ベス",
+        "クリスティン",
+        "レイチェル"
+      ],
+      "extraProfession": [
+        "神経科医",
+        "婦人科医",
+        "病理学者",
+        "小児科医"
+      ]
+    },
+    {
+      "imageA": "face_72a",
+      "imageB": "face_72b",
+      "isFistShownA": false,
+      "correctName": "エヴァ",
+      "correctProfession": "婦人科医",
+      "extraNames": [
+        "エヴァ",
+        "ナターシャ",
+        "キンバリー",
+        "レイチェル"
+      ],
+      "extraProfession": [
+        "神経科医",
+        "婦人科医",
+        "眼科医",
+        "小児科医"
+      ]
+    },
+    {
+      "imageA": "face_73a",
+      "imageB": "face_73b",
+      "isFistShownA": false,
+      "correctName": "ライアン",
+      "correctProfession": "消化器科医",
+      "extraNames": [
+        "ライアン",
+        "ダニエル",
+        "トーマス",
+        "ベンジャミン"
+      ],
+      "extraProfession": [
+        "形成外科医",
+        "消化器内科医",
+        "眼科医",
+        "放射線医"
+      ]
+    },
+    {
+      "imageA": "face_74a",
+      "imageB": "face_74b",
+      "isFistShownA": false,
+      "correctName": "メーガン",
+      "correctProfession": "インテリア デザイナー",
+      "extraNames": [
+        "ダニエラ",
+        "メーガン",
+        "ケイラ",
+        "メラニー"
+      ],
+      "extraProfession": [
+        "事務補助",
+        "インテリアデザイナー",
+        "不動産業者",
+        "教師"
+      ]
+    },
+    {
+      "imageA": "face_75a",
+      "imageB": "face_75b",
+      "isFistShownA": false,
+      "correctName": "エイミー",
+      "correctProfession": "看護師",
+      "extraNames": [
+        "エイミー",
+        "サラ",
+        "アリソン",
+        "アンドレア"
+      ],
+      "extraProfession": [
+        "看護婦",
+        "歯医者",
+        "保険代理店",
+        "教師"
+      ]
+    },
+    {
+      "imageA": "face_76a",
+      "imageB": "face_76b",
+      "isFistShownA": false,
+      "correctName": "ジャヤ",
+      "correctProfession": "腫瘍学者",
+      "extraNames": [
+        "ジャヤ",
+        "カビタ",
+        "プージャ",
+        "プリティ"
+      ],
+      "extraProfession": [
+        "化学者",
+        "腫瘍学者",
+        "眼科医",
+        "薬剤師"
+      ]
+    },
+    {
+      "imageA": "face_77a",
+      "imageB": "face_77b",
+      "isFistShownA": false,
+      "correctName": "Sweta",
+      "correctProfession": "金融スペシャリスト",
+      "extraNames": [
+        "ヴィニータ",
+        "ネハ",
+        "ラディカ",
+        "スウェタ"
+      ],
+      "extraProfession": [
+        "ファイナンシャルスペシャリスト",
+        "眼科医",
+        "放射線技師",
+        "腫瘍学者"
+      ]
+    },
+    {
+      "imageA": "face_78a",
+      "imageB": "face_78b",
+      "isFistShownA": false,
+      "correctName": "ブレント",
+      "correctProfession": "警察官",
+      "extraNames": [
+        "ブレント",
+        "ケビン",
+        "ジャック",
+        "トラヴィス"
+      ],
+      "extraProfession": [
+        "警察官",
+        "マーケティング・マネージャー",
+        "教師",
+        "電気技師"
+      ]
+    },
+    {
+      "imageA": "face_79a",
+      "imageB": "face_79b",
+      "isFistShownA": false,
+      "correctName": "トラヴィス",
+      "correctProfession": "マーケティング マネージャー",
+      "extraNames": [
+        "ブレント",
+        "ケビン",
+        "ジャック",
+        "トラヴィス"
+      ],
+      "extraProfession": [
+        "マーケティング・マネージャー",
+        "ソノグラファー",
+        "バンカー",
+        "俳優"
+      ]
+    },
+    {
+      "imageA": "face_80a",
+      "imageB": "face_80b",
+      "isFistShownA": false,
+      "correctName": "ネハ",
+      "correctProfession": "ミュージシャン",
+      "extraNames": [
+        "ヴィニータ",
+        "ネハ",
+        "ラディカ",
+        "スウェタ"
+      ],
+      "extraProfession": [
+        "音楽家",
+        "アートキュレーター",
+        "ウェブ開発者",
+        "教師"
+      ]
+    },
+    {
+      "imageA": "face_81a",
+      "imageB": "face_81b",
+      "isFistShownA": false,
+      "correctName": "ボブ",
+      "correctProfession": "漫画家",
+      "extraNames": [
+        "ボブ",
+        "ロン",
+        "スティーブ",
+        "ブレント"
+      ],
+      "extraProfession": [
+        "音楽家",
+        "化学者",
+        "ソーシャルワーカー",
+        "漫画家"
+      ]
+    },
+    {
+      "imageA": "face_82a",
+      "imageB": "face_82b",
+      "isFistShownA": false,
+      "correctName": "ジュディ",
+      "correctProfession": "眼科医",
+      "extraNames": [
+        "ジュディ",
+        "ライピン",
+        "ルーシー",
+        "メイ"
+      ],
+      "extraProfession": [
+        "眼科医",
+        "老年病専門医",
+        "小児科医",
+        "腫瘍学者"
+      ]
+    },
+    {
+      "imageA": "face_83a",
+      "imageB": "face_83b",
+      "isFistShownA": false,
+      "correctName": "マーク",
+      "correctProfession": "投資銀行家",
+      "extraNames": [
+        "マーク",
+        "マーティン",
+        "ジェフリー",
+        "ケビン"
+      ],
+      "extraProfession": [
+        "ファイナンシャルスペシャリスト",
+        "インベストメントバンカー",
+        "ウェブ開発者",
+        "教師"
+      ]
+    },
+    {
+      "imageA": "face_84a",
+      "imageB": "face_84b",
+      "isFistShownA": false,
+      "correctName": "ボー",
+      "correctProfession": "計算生物学者",
+      "extraNames": [
+        "ボー",
+        "ビクター",
+        "ローランド",
+        "ハワード"
+      ],
+      "extraProfession": [
+        "化学者",
+        "計算生物学者",
+        "免疫学者",
+        "金融スペシャリスト"
+      ]
+    },
+    {
+      "imageA": "face_85a",
+      "imageB": "face_85b",
+      "isFistShownA": false,
+      "correctName": "ラディカ",
+      "correctProfession": "ニュース編集者",
+      "extraNames": [
+        "ヴィニータ",
+        "ネハ",
+        "ラディカ",
+        "ミーナ"
+      ],
+      "extraProfession": [
+        "音楽家",
+        "ニュース編集者",
+        "ウェブ開発者",
+        "心臓専門医"
+      ]
+    },
+    {
+      "imageA": "face_86a",
+      "imageB": "face_86b",
+      "isFistShownA": false,
+      "correctName": "クリスタル",
+      "correctProfession": "法律事務員",
+      "extraNames": [
+        "結晶",
+        "ヴァネッサ",
+        "ルーシー",
+        "ジア"
+      ],
+      "extraProfession": [
+        "美術監督",
+        "法務官",
+        "ウェブ開発者",
+        "金融スペシャリスト"
+      ]
+    },
+    {
+      "imageA": "face_87a",
+      "imageB": "face_87b",
+      "isFistShownA": false,
+      "correctName": "キャサリン",
+      "correctProfession": "アートディレクター",
+      "extraNames": [
+        "キャサリン",
+        "エリカ",
+        "ハイジ",
+        "ミケーレ"
+      ],
+      "extraProfession": [
+        "グラフィックデザイナー",
+        "美術監督",
+        "ウェブ開発者",
+        "教師"
+      ]
+    },
+    {
+      "imageA": "face_88a",
+      "imageB": "face_88b",
+      "isFistShownA": false,
+      "correctName": "ミケーレ",
+      "correctProfession": "コンプライアンス マネージャー",
+      "extraNames": [
+        "キャサリン",
+        "エリカ",
+        "ハイジ",
+        "ミケーレ"
+      ],
+      "extraProfession": [
+        "物流マネージャー",
+        "コンプライアンスマネージャー",
+        "プロダクションマネージャー",
+        "看護婦"
+      ]
+    },
+    {
+      "imageA": "face_89a",
+      "imageB": "face_89b",
+      "isFistShownA": false,
+      "correctName": "智陽",
+      "correctProfession": "生化学者",
+      "extraNames": [
+        "真緒",
+        "ジヤン",
+        "ミン",
+        "ケ"
+      ],
+      "extraProfession": [
+        "生化学者",
+        "腫瘍学者",
+        "電気技師",
+        "法務官"
+      ]
+    },
+    {
+      "imageA": "face_90a",
+      "imageB": "face_90b",
+      "isFistShownA": false,
+      "correctName": "イゴール",
+      "correctProfession": "機械エンジニア",
+      "extraNames": [
+        "ビクター",
+        "イゴール",
+        "オレグ",
+        "ウラジミール"
+      ],
+      "extraProfession": [
+        "生化学者",
+        "機械工学士",
+        "電気技師",
+        "ソフトウェアエンジニア"
+      ]
+    },
+    {
+      "imageA": "face_91a",
+      "imageB": "face_91b",
+      "isFistShownA": false,
+      "correctName": "アリソン",
+      "correctProfession": "理学療法士",
+      "extraNames": [
+        "エイミー",
+        "アリソン",
+        "リサ",
+        "ニコル"
+      ],
+      "extraProfession": [
+        "生化学者",
+        "理学療法士",
+        "看護婦",
+        "法務官"
+      ]
+    },
+    {
+      "imageA": "face_92a",
+      "imageB": "face_92b",
+      "isFistShownA": false,
+      "correctName": "エドワード",
+      "correctProfession": "株式仲買人",
+      "extraNames": [
+        "エドワード",
+        "トーマス",
+        "ブルース",
+        "ブライアン"
+      ],
+      "extraProfession": [
+        "ファイナンシャルスペシャリスト",
+        "会計士",
+        "ストックブローカー",
+        "法律家"
+      ]
+    },
+    {
+      "imageA": "face_93a",
+      "imageB": "face_93b",
+      "isFistShownA": false,
+      "correctName": "エンリケ",
+      "correctProfession": "ソフトウェア エンジニア",
+      "extraNames": [
+        "ジュリアーノ",
+        "ペドロ",
+        "エンリケ",
+        "ファン"
+      ],
+      "extraProfession": [
+        "ソフトウェアエンジニア",
+        "機械工学士",
+        "土木技師",
+        "会計士"
+      ]
+    },
+    {
+      "imageA": "face_94a",
+      "imageB": "face_94b",
+      "isFistShownA": false,
+      "correctName": "ブライアン",
+      "correctProfession": "人類学者",
+      "extraNames": [
+        "ブライアン",
+        "ビクター",
+        "エリック",
+        "ロバート"
+      ],
+      "extraProfession": [
+        "人類学者",
+        "腫瘍学者",
+        "ファイナンシャルスペシャリスト",
+        "麻酔科医"
+      ]
+    },
+    {
+      "imageA": "face_95a",
+      "imageB": "face_95b",
+      "isFistShownA": false,
+      "correctName": "リリベス",
+      "correctProfession": "クラフト アーティスト",
+      "extraNames": [
+        "リリベス",
+        "ファティマ",
+        "ビクトリア",
+        "マリアナ"
+      ],
+      "extraProfession": [
+        "クラフトアーティスト",
+        "振付家",
+        "写真家",
+        "シェフ"
+      ]
+    },
+    {
+      "imageA": "face_96a",
+      "imageB": "face_96b",
+      "isFistShownA": false,
+      "correctName": "マリアナ",
+      "correctProfession": "生化学者",
+      "extraNames": [
+        "マリアナ",
+        "キャリー",
+        "ダニエラ",
+        "ステファニー"
+      ],
+      "extraProfession": [
+        "生化学者",
+        "小児科医",
+        "ファイナンシャルスペシャリスト",
+        "プロダクションマネージャー"
+      ]
+    },
+    {
+      "imageA": "face_97a",
+      "imageB": "face_97b",
+      "isFistShownA": false,
+      "correctName": "キャリー",
+      "correctProfession": "ロジスティクス マネージャー",
+      "extraNames": [
+        "マリアナ",
+        "キャリー",
+        "エミリー",
+        "メアリー"
+      ],
+      "extraProfession": [
+        "生化学者",
+        "物流マネージャー",
+        "ファイナンシャルスペシャリスト",
+        "プロダクションマネージャー"
+      ]
+    },
+    {
+      "imageA": "face_98a",
+      "imageB": "face_98b",
+      "isFistShownA": false,
+      "correctName": "グロリア",
+      "correctProfession": "法医学者",
+      "extraNames": [
+        "グロリア",
+        "マリアナ",
+        "ダニエラ",
+        "ビクトリア"
+      ],
+      "extraProfession": [
+        "美術監督",
+        "小児科医",
+        "ファイナンシャルスペシャリスト",
+        "法医学者"
+      ]
+    },
+    {
+      "imageA": "face_99a",
+      "imageB": "face_99b",
+      "isFistShownA": false,
+      "correctName": "スティーブ",
+      "correctProfession": "トラック運転手",
+      "extraNames": [
+        "スティーブ",
+        "ブライアン",
+        "ブルース",
+        "ジム"
+      ],
+      "extraProfession": [
+        "トラック運転手",
+        "コンプライアンスマネージャー",
+        "ファイナンシャルスペシャリスト",
+        "プロダクションマネージャー"
+      ]
+    },
+    {
+      "imageA": "face_100a",
+      "imageB": "face_100b",
+      "isFistShownA": false,
+      "correctName": "Rakesh",
+      "correctProfession": "株式仲買人",
+      "extraNames": [
+        "ラジャ",
+        "ラメシュ",
+        "ラケシュ",
+        "ラヒム"
+      ],
+      "extraProfession": [
+        "ストックブローカー",
+        "小児科医",
+        "ファイナンシャルスペシャリスト",
+        "プロダクションマネージャー"
+      ]
+    },
+    {
+      "imageA": "face_101a",
+      "imageB": "face_101b",
+      "isFistShownA": false,
+      "correctName": "ジェームズ",
+      "correctProfession": "検眼医",
+      "extraNames": [
+        "ジェームス",
+        "トーマス",
+        "ティム",
+        "マーク"
+      ],
+      "extraProfession": [
+        "生化学者",
+        "小児科医",
+        "検眼医",
+        "病理学者"
+      ]
+    },
+    {
+      "imageA": "face_102a",
+      "imageB": "face_102b",
+      "isFistShownA": false,
+      "correctName": "マンスール",
+      "correctProfession": "保険代理店",
+      "extraNames": [
+        "ワシム",
+        "アドナン",
+        "マンスール",
+        "アーメド"
+      ],
+      "extraProfession": [
+        "生化学者",
+        "保険代理店",
+        "ファイナンシャルスペシャリスト",
+        "プロダクションマネージャー"
+      ]
+    },
+    {
+      "imageA": "face_103a",
+      "imageB": "face_103b",
+      "isFistShownA": false,
+      "correctName": "シンディ",
+      "correctProfession": "企業弁護士",
+      "extraNames": [
+        "シンディ",
+        "レイピン",
+        "イタン",
+        "ヴァネッサ"
+      ],
+      "extraProfession": [
+        "法律家",
+        "保険代理店",
+        "ファイナンシャルスペシャリスト",
+        "セールススペシャリスト"
+      ]
+    },
+    {
+      "imageA": "face_104a",
+      "imageB": "face_104b",
+      "isFistShownA": false,
+      "correctName": "フアン",
+      "correctProfession": "神経外科医",
+      "extraNames": [
+        "アダム",
+        "ファン",
+        "マーク",
+        "ブレント"
+      ],
+      "extraProfession": [
+        "神経外科医",
+        "眼科医",
+        "心臓専門医",
+        "病理学者"
+      ]
+    },
+    {
+      "imageA": "face_105a",
+      "imageB": "face_105b",
+      "isFistShownA": false,
+      "correctName": "ヌール",
+      "correctProfession": "ソフトウェア開発者",
+      "extraNames": [
+        "ヌール",
+        "レヘレ",
+        "ダリア",
+        "ファラ"
+      ],
+      "extraProfession": [
+        "ソーシャルワーカー",
+        "教師",
+        "小児科医",
+        "ソフトウェア開発者"
+      ]
+    },
+    {
+      "imageA": "face_106a",
+      "imageB": "face_106b",
+      "isFistShownA": false,
+      "correctName": "ボリス",
+      "correctProfession": "ロジスティクス マネージャー",
+      "extraNames": [
+        "イアン",
+        "ハワード",
+        "ボリス",
+        "マティアス"
+      ],
+      "extraProfession": [
+        "生化学者",
+        "物流マネージャー",
+        "ファイナンシャルスペシャリスト",
+        "プロダクションマネージャー"
+      ]
+    },
+    {
+      "imageA": "face_107a",
+      "imageB": "face_107b",
+      "isFistShownA": false,
+      "correctName": "ジャック",
+      "correctProfession": "テレコム スペシャリスト",
+      "extraNames": [
+        "ジャック",
+        "ウィリアム",
+        "マイケル",
+        "フレデリック"
+      ],
+      "extraProfession": [
+        "テレコムスペシャリスト",
+        "保険代理店",
+        "ファイナンシャルスペシャリスト",
+        "計算生物学者"
+      ]
+    },
+    {
+      "imageA": "face_108a",
+      "imageB": "face_108b",
+      "isFistShownA": false,
+      "correctName": "カロライナ",
+      "correctProfession": "微生物学者",
+      "extraNames": [
+        "デニス",
+        "カロライナ",
+        "マルティナ",
+        "ジェニファー"
+      ],
+      "extraProfession": [
+        "テレコムスペシャリスト",
+        "石油化学エンジニア",
+        "微生物学者",
+        "法医学者"
+      ]
+    },
+    {
+      "imageA": "face_109a",
+      "imageB": "face_109b",
+      "isFistShownA": false,
+      "correctName": "デニス",
+      "correctProfession": "地質学者",
+      "extraNames": [
+        "デニス",
+        "カロライナ",
+        "マルティナ",
+        "ジェニファー"
+      ],
+      "extraProfession": [
+        "微生物学者",
+        "地質学者",
+        "化学者",
+        "計算生物学者"
+      ]
+    },
+    {
+      "imageA": "face_110a",
+      "imageB": "face_110b",
+      "isFistShownA": false,
+      "correctName": "パトリシア",
+      "correctProfession": "エコノミスト",
+      "extraNames": [
+        "デニス",
+        "カロライナ",
+        "パトリシア",
+        "ジェニファー"
+      ],
+      "extraProfession": [
+        "エコノミスト",
+        "ファイナンシャルスペシャリスト",
+        "病理学者",
+        "計算生物学者"
+      ]
+    },
+    {
+      "imageA": "face_111a",
+      "imageB": "face_111b",
+      "isFistShownA": false,
+      "correctName": "デリック",
+      "correctProfession": "石油化学エンジニア",
+      "extraNames": [
+        "デリック",
+        "フレデリック",
+        "ピーター",
+        "ジェフリー"
+      ],
+      "extraProfession": [
+        "微生物学者",
+        "地質学者",
+        "化学者",
+        "石油化学エンジニア"
+      ]
+    },
+    {
+      "imageA": "face_112a",
+      "imageB": "face_112b",
+      "isFistShownA": false,
+      "correctName": "モニカ",
+      "correctProfession": "社会学者",
+      "extraNames": [
+        "イタン",
+        "ヴァネッサ",
+        "モニカ",
+        "ジンギュ"
+      ],
+      "extraProfession": [
+        "微生物学者",
+        "地質学者",
+        "病理学者",
+        "社会学者"
+      ]
+    },
+    {
+      "imageA": "face_113a",
+      "imageB": "face_113b",
+      "isFistShownA": false,
+      "correctName": "メリル",
+      "correctProfession": "病理学者",
+      "extraNames": [
+        "ドナ",
+        "クリスティーナ",
+        "メリル",
+        "ジェニファー"
+      ],
+      "extraProfession": [
+        "微生物学者",
+        "地質学者",
+        "病理学者",
+        "社会学者"
+      ]
+    },
+    {
+      "imageA": "face_114a",
+      "imageB": "face_114b",
+      "isFistShownA": false,
+      "correctName": "マーティン",
+      "correctProfession": "オーディオ エンジニア",
+      "extraNames": [
+        "マイケル",
+        "マーク",
+        "マーティン",
+        "マックス"
+      ],
+      "extraProfession": [
+        "オーディオエンジニア",
+        "地質学者",
+        "電気技師",
+        "トラック運転手"
+      ]
+    },
+    {
+      "imageA": "face_115a",
+      "imageB": "face_115b",
+      "isFistShownA": false,
+      "correctName": "ミラノ",
+      "correctProfession": "アーバン プランナー",
+      "extraNames": [
+        "ミラノ",
+        "ミロスラフ",
+        "ジョゼフ",
+        "ルーカス"
+      ],
+      "extraProfession": [
+        "放射線技師",
+        "腎臓専門医",
+        "都市計画",
+        "財務顧問"
+      ]
+    },
+    {
+      "imageA": "face_116a",
+      "imageB": "face_116b",
+      "isFistShownA": false,
+      "correctName": "ブランドン",
+      "correctProfession": "腎臓専門医",
+      "extraNames": [
+        "ブラッド",
+        "ブランドン",
+        "ライアン",
+        "ブレント"
+      ],
+      "extraProfession": [
+        "病理学者",
+        "腎臓専門医",
+        "心臓専門医",
+        "放射線医"
+      ]
+    },
+    {
+      "imageA": "face_117a",
+      "imageB": "face_117b",
+      "isFistShownA": false,
+      "correctName": "ケビン",
+      "correctProfession": "エコロジスト",
+      "extraNames": [
+        "ジョン",
+        "ケビン",
+        "ジェイコブ",
+        "マット"
+      ],
+      "extraProfession": [
+        "放射線技師",
+        "エコロジスト",
+        "地質学者",
+        "化学者"
+      ]
+    },
+    {
+      "imageA": "face_118a",
+      "imageB": "face_118b",
+      "isFistShownA": false,
+      "correctName": "まゆりー",
+      "correctProfession": "植物学者",
+      "extraNames": [
+        "ルワン",
+        "ラタナ",
+        "まゆり",
+        "プリヤ"
+      ],
+      "extraProfession": [
+        "植物学者",
+        "エコロジスト",
+        "地質学者",
+        "獣医"
+      ]
+    },
+    {
+      "imageA": "face_119a",
+      "画像B": "face_119b",
+      "isFistShownA": false,
+      "correctName": "ヘレナ",
+      "correctProfession": "データ サイエンティスト",
+      "extraNames": [
+        "アンナ",
+        "ヘレナ",
+        "モニカ",
+        "マリア"
+      ],
+      "extraProfession": [
+        "ウェブ開発者",
+        "データサイエンティスト",
+        "ビジネスアナリスト",
+        "グラフィックデザイナー"
+      ]
+    },
+    {
+      "imageA": "face_120a",
+      "imageB": "face_120b",
+      "isFistShownA": false,
+      "correctName": "ジョアンナ",
+      "correctProfession": "栄養士",
+      "extraNames": [
+        "ジョアンナ",
+        "ジェニファー",
+        "ジェーン",
+        "ジョスリン"
+      ],
+      "extraProfession": [
+        "栄養士",
+        "管理アシスタント",
+        "薬剤師",
+        "小児科医"
+      ]
     }
   ]
 }
-

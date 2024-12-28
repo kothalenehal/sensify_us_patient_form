@@ -18,14 +18,52 @@ import com.sensifyawareapp.fragment.BaseFragment
 import com.sensifyawareapp.ui.glanceaware.GlanceAwareViewModel
 import com.sensifyawareapp.ui.glanceaware.fragments.model.GlanceModel
 import org.json.JSONObject
+import java.util.Locale
 import kotlin.random.Random
 
 class MemorizeFragment : BaseFragment() {
+
+    companion object {
+        private const val TIMER_DURATION = 7000L
+        private const val MAX_GLANCES = 12
+        private const val TOTAL_AVAILABLE_GLANCES = 120
+    }
 
     private lateinit var binding: FragmentMemorizeBinding
     private lateinit var viewModel: GlanceAwareViewModel
 
     private var currentIndex = 0
+
+    private fun getJsonFilePath(): String {
+        val languageCode = Locale.getDefault().language
+        val filePath = "$languageCode/GlanceAware.json"
+        return if (fileExists(filePath)) filePath else "en/GlanceAware.json"
+    }
+
+    private fun fileExists(filePath: String): Boolean {
+        return try {
+            context?.assets?.open(filePath)?.close()
+            true
+        } catch (e: Exception) {
+            false
+        }
+    }
+
+    private fun readJsonFromFile() {
+        try {
+            val jsonPath = getJsonFilePath()
+            context?.assets?.open(jsonPath)?.bufferedReader().use { reader ->
+                reader?.readText()?.let { pickRandom12Glances(it) }
+            }
+        } catch (e: Exception) {
+            Log.e("MemorizeFragment", "Error reading JSON", e)
+            showError(getString(R.string.unknown_error_occurred))
+        }
+    }
+
+
+    // Modified click listener
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -79,9 +117,11 @@ class MemorizeFragment : BaseFragment() {
         }
     }
 
+
     private fun onNext() {
         if (isVisible) {
             if (currentIndex == 11) {
+//                    if (currentIndex == 1) {
                 SensifyAwareApplication.glanceModelList!!.shuffle()
                 findNavController().navigate(MemorizeFragmentDirections.actionMemorizeFragmentToReadyToBeginFragment())
             } else {
@@ -116,21 +156,7 @@ class MemorizeFragment : BaseFragment() {
         viewModel.timerLivedata.value = ""
     }
 
-    private fun readJsonFromFile() {
-        try {
-            /* val glancesJson = context?.assets?.open("GlanceAware.json")?.bufferedReader().use {
-                 it?.readText()
-             }*/
-            val glancesJson = context?.assets?.open("GlanceAware.json")?.bufferedReader().use {
-                it?.readText()
-            }
-            Log.e("TAG", "readJsonFromFile: $glancesJson", )
-            glancesJson?.let { pickRandom12Glances(it) }
-        } catch (e: Exception) {
-            showError(getString(R.string.unknown_error_occurred))
-            e.printStackTrace()
-        }
-    }
+
 
     private fun pickRandom12Glances(allGlances: String) {
         val glancesJson = JSONObject(allGlances)
@@ -139,6 +165,8 @@ class MemorizeFragment : BaseFragment() {
         val random = Random(System.nanoTime())
         while (arrayListTemp.size < 12) {
             val nextInt = (0..119).random(random)
+//            while (arrayListTemp.size < 2) {
+//                val nextInt = (0..4).random(random)
             if (!arrayListTemp.contains(nextInt)) {
                 arrayListTemp.add(nextInt)
 

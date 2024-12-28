@@ -13,7 +13,9 @@
     import com.sensifyawareapp.R
     import com.sensifyawareapp.databinding.ActivityPatientGlanceAwareBinding
     import com.sensifyawareapp.ui.BaseActivity
+    import com.sensifyawareapp.ui.MainActivity
     import com.sensifyawareapp.ui.auth.model.StudyNumber
+    import com.sensifyawareapp.ui.scentaware.HealthsQuestionsActivity
     import com.sensifyawareapp.ui.scentaware.KeyboardObserver
     import com.sensifyawareapp.utils.common.AppConstant
     import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -64,7 +66,7 @@
             lp.height = resources.getDimension(com.intuit.sdp.R.dimen._300sdp).toInt()
 
 
-    keyboardObserver = KeyboardObserver(this, this)
+    // keyboardObserver = KeyboardObserver(this, this)
 
 
 
@@ -73,9 +75,12 @@
                 AppConstant.SharedPreferences.SELECTED_KIT_SIZE
             )
 
-            binding.txBack.setOnClickListener {
+            binding.txBacks.setOnClickListener {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
                 finish()
             }
+
 
             binding.btnNext.setOnClickListener {
 
