@@ -7,6 +7,7 @@ import android.widget.Spinner
 import android.widget.Toast
 import android.app.DatePickerDialog
 import android.content.Context
+import android.content.res.Configuration
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
@@ -71,6 +72,7 @@ class AddPatientActivity : AppCompatActivity() {
         apiService = retrofit.create(ApiInterface::class.java)
 
         apiManager = ApiManager(apiService, apiService) // Assuming patientApiService is also of type ApiInterface
+
 
 
 
@@ -225,7 +227,15 @@ class AddPatientActivity : AppCompatActivity() {
 
             }
         }
+
+
     }
+    override fun attachBaseContext(newBase: Context) {
+        val locale = Locale(getStoredLanguage(newBase))
+        val localeUpdatedContext = updateBaseContextLocale(newBase, locale)
+        super.attachBaseContext(localeUpdatedContext)
+    }
+
 
     private fun clearForm() {
         // Clear all EditText fields
@@ -272,6 +282,18 @@ class AddPatientActivity : AppCompatActivity() {
         val qrCodeImage: ImageView = findViewById(R.id.qr_code_image)
         qrCodeImage.setImageBitmap(null)
 
+    }
+
+
+    private fun getStoredLanguage(context: Context): String {
+        return context.getSharedPreferences("AppSettings", Context.MODE_PRIVATE)
+            .getString("app_language", "en") ?: "en"
+    }
+
+    private fun updateBaseContextLocale(context: Context, locale: Locale): Context {
+        val configuration = context.resources.configuration
+        configuration.setLocale(locale)
+        return context.createConfigurationContext(configuration)
     }
 
     private fun submitPatientData(
@@ -364,6 +386,11 @@ class AddPatientActivity : AppCompatActivity() {
         }
     }
 
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        recreate()
+    }
+
     private fun calculateAge(dateOfBirth: String): Int {
         // Parse the date string (MM/DD/YYYY)
         val parts = dateOfBirth.split("/")
@@ -446,22 +473,38 @@ class AddPatientActivity : AppCompatActivity() {
         professionField: EditText,
         ethnicitySpinner: Spinner
     ) {
-        if (firstNameField.text.isNullOrEmpty()) firstNameField.error = "First name is required"
-        if (lastNameField.text.isNullOrEmpty()) lastNameField.error = "Last name is required"
-        if (dateOfBirthField.text.isNullOrEmpty()) dateOfBirthField.error = "Date of birth is required"
-        if (addressField1.text.isNullOrEmpty()) addressField1.error = "Address line 1 is required"
-        if (addressField2.text.isNullOrEmpty()) addressField2.error = "Address line 2 is required"
-        if (cityField.text.isNullOrEmpty()) cityField.error = "City is required"
-        if (pinCodeField.text.isNullOrEmpty()) pinCodeField.error = "Pin code is required"
-        if (stateField.text.isNullOrEmpty()) stateField.error = "State is required"
-        if (medicationField.text.isNullOrEmpty()) medicationField.error = "Medication is required"
-        if (personalHealthConditionField.text.isNullOrEmpty()) personalHealthConditionField.error = "Known personal health condition is required"
-        if (familyHealthConditionField.text.isNullOrEmpty()) familyHealthConditionField.error = "Known family health condition is required"
-        if (genderSpinner.selectedItemPosition == 0) Toast.makeText(this, "Please select gender", Toast.LENGTH_SHORT).show()
-        if (educationSpinner.selectedItemPosition == 0) Toast.makeText(this, "Please select education level", Toast.LENGTH_SHORT).show()
-        if (smokeSpinner.selectedItemPosition == 0) Toast.makeText(this, "Please select whether you smoke", Toast.LENGTH_SHORT).show()
-        if (professionField.text.isNullOrEmpty()) professionField.error = "Profession is required"
-        if (ethnicitySpinner.selectedItemPosition == 0) Toast.makeText(this, "Please select ethnicity", Toast.LENGTH_SHORT).show()
+        if (firstNameField.text.isNullOrEmpty())
+            firstNameField.error = getString(R.string.error_first_name_required)
+        if (lastNameField.text.isNullOrEmpty())
+            lastNameField.error = getString(R.string.error_last_name_required)
+        if (dateOfBirthField.text.isNullOrEmpty())
+            dateOfBirthField.error = getString(R.string.error_dob_required)
+        if (addressField1.text.isNullOrEmpty())
+            addressField1.error = getString(R.string.error_address1_required)
+        if (addressField2.text.isNullOrEmpty())
+            addressField2.error = getString(R.string.error_address2_required)
+        if (cityField.text.isNullOrEmpty())
+            cityField.error = getString(R.string.error_city_required)
+        if (pinCodeField.text.isNullOrEmpty())
+            pinCodeField.error = getString(R.string.error_pincode_required)
+        if (stateField.text.isNullOrEmpty())
+            stateField.error = getString(R.string.error_state_required)
+        if (medicationField.text.isNullOrEmpty())
+            medicationField.error = getString(R.string.error_medication_required)
+        if (personalHealthConditionField.text.isNullOrEmpty())
+            personalHealthConditionField.error = getString(R.string.error_personal_health_required)
+        if (familyHealthConditionField.text.isNullOrEmpty())
+            familyHealthConditionField.error = getString(R.string.error_family_health_required)
+        if (genderSpinner.selectedItemPosition == 0)
+            Toast.makeText(this, getString(R.string.error_select_gender), Toast.LENGTH_SHORT).show()
+        if (educationSpinner.selectedItemPosition == 0)
+            Toast.makeText(this, getString(R.string.error_select_education), Toast.LENGTH_SHORT).show()
+        if (smokeSpinner.selectedItemPosition == 0)
+            Toast.makeText(this, getString(R.string.error_select_smoke_status), Toast.LENGTH_SHORT).show()
+        if (professionField.text.isNullOrEmpty())
+            professionField.error = getString(R.string.error_profession_required)
+        if (ethnicitySpinner.selectedItemPosition == 0)
+            Toast.makeText(this, getString(R.string.error_select_ethnicity), Toast.LENGTH_SHORT).show()
     }
 
     private fun collectFormData(

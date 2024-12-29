@@ -1,11 +1,15 @@
 package com.sensifyawareapp.ui.settings
 
 import android.content.ActivityNotFoundException
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.content.res.Configuration
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.databinding.DataBindingUtil
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -22,6 +26,7 @@ import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
+import java.util.Locale
 
 class SettingsActivity : BaseActivity() {
     private lateinit var binding: ActivitySettingsBinding
@@ -65,6 +70,12 @@ class SettingsActivity : BaseActivity() {
          }*/
 
 
+        // Language change click handler
+        findViewById<View>(R.id.tv_language_change).setOnClickListener {
+            // Show a dialog to select language
+            showLanguageSelectionDialog()
+        }
+
         binding.tvShare.setOnClickListener {
             val intent = Intent()
             intent.action = "android.intent.action.SEND"
@@ -101,6 +112,24 @@ class SettingsActivity : BaseActivity() {
 
     }
 
+//    object LocaleHelper {
+//
+//        // Change the app locale
+//        fun setLocale(context: Context, language: String) {
+//            val locale = Locale(language)
+//            Locale.setDefault(locale)
+//            val config = Configuration(context.resources.configuration)
+//
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+//                config.setLocale(locale)
+//                context.createConfigurationContext(config)
+//            } else {
+//                config.locale = locale
+//            }
+//
+//            context.resources.updateConfiguration(config, context.resources.displayMetrics)
+//        }
+//    }
     private fun showAlertDialog() {
         val sitesJsonList = prefUtils.getStringData(
             this,
@@ -172,6 +201,48 @@ class SettingsActivity : BaseActivity() {
             .setNegativeButton(R.string.no, null)
             .show()
     }
+
+    private fun showLanguageSelectionDialog() {
+        val languages = arrayOf(
+            "Japanese (JA)", "English (EN)", "French (FR)", "German (DE)",
+            "Italian (IT)", "Spanish (ES)", "Dutch (NL)", "Swahili (SW)", "Arabic (AR)"
+        )
+        val languageCodes = arrayOf("ja", "en", "fr", "de", "it", "es", "nl", "sw", "ar")
+
+        // Get current language to show the current selection
+        val currentLanguage = getSharedPreferences("AppSettings", Context.MODE_PRIVATE)
+            .getString("app_language", "en") ?: "en"
+        val currentIndex = languageCodes.indexOf(currentLanguage)
+
+        AlertDialog.Builder(this)
+            .setTitle(getString(R.string.change_language))
+            .setSingleChoiceItems(languages, currentIndex) { dialog, which ->
+                val selectedLanguage = languageCodes[which]
+                changeLanguage(selectedLanguage)
+                dialog.dismiss()
+            }
+            .setNegativeButton(R.string.cancel, null)
+            .show()
+    }
+
+    private fun changeLanguage(languageCode: String) {
+        // Save the selected language to SharedPreferences
+//        val sharedPreferences = getSharedPreferences("AppSettings", Context.MODE_PRIVATE)
+//        sharedPreferences.edit().putString("SelectedLanguage", languageCode).apply()
+
+        // Change the app's locale
+        //LocaleHelper.setLocale(this, languageCode)
+
+        saveLanguage(languageCode)
+
+        // Restart the activity to apply the language change
+//        val intent = Intent(this, SettingsActivity::class.java)
+//        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+//        startActivity(intent)
+//        finish()
+        restartApp()
+    }
+
 
 
     private fun deleteAccountApiCall() {

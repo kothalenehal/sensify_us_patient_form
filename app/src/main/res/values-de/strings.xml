@@ -610,6 +610,24 @@ Hyposmie/Parosmie."</string>
     <string name="form_qr_code">QR-Code</string>
     <string name="form_generate_qr">QR Erstellen</string>
 
+    <string name="error_first_name_required">Vorname ist erforderlich</string>
+    <string name="error_last_name_required">Nachname ist erforderlich</string>
+    <string name="error_dob_required">Geburtsdatum ist erforderlich</string>
+    <string name="error_address1_required">Adresszeile 1 ist erforderlich</string>
+    <string name="error_address2_required">Adresszeile 2 ist erforderlich</string>
+    <string name="error_city_required">Stadt ist erforderlich</string>
+    <string name="error_pincode_required">Postleitzahl ist erforderlich</string>
+    <string name="error_state_required">Bundesland ist erforderlich</string>
+    <string name="error_medication_required">Medikament ist erforderlich</string>
+    <string name="error_personal_health_required">Bekannte persönliche Gesundheitsbedingung ist erforderlich</string>
+    <string name="error_family_health_required">Bekannte familiäre Gesundheitsbedingung ist erforderlich</string>
+    <string name="error_select_gender">Bitte wählen Sie ein Geschlecht</string>
+    <string name="error_select_education">Bitte wählen Sie den Bildungsstand</string>
+    <string name="error_select_smoke_status">Bitte wählen Sie, ob Sie rauchen</string>
+    <string name="error_profession_required">Beruf ist erforderlich</string>
+    <string name="error_select_ethnicity">Bitte wählen Sie die ethnische Zugehörigkeit</string>
+
+
 
     <string-array name="gender_options">
         <item>Wählen</item>

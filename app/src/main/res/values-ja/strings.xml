@@ -611,6 +611,24 @@ RenAware テストストリップで。"</string>
     <string name="form_qr_code">QRコード</string>
     <string name="form_generate_qr">QR生成</string>
 
+    <string name="error_first_name_required">名前は必須です</string>
+    <string name="error_last_name_required">苗字は必須です</string>
+    <string name="error_dob_required">生年月日は必須です</string>
+    <string name="error_address1_required">住所1行目は必須です</string>
+    <string name="error_address2_required">住所2行目は必須です</string>
+    <string name="error_city_required">市区町村は必須です</string>
+    <string name="error_pincode_required">郵便番号は必須です</string>
+    <string name="error_state_required">都道府県は必須です</string>
+    <string name="error_medication_required">薬は必須です</string>
+    <string name="error_personal_health_required">既知の個人の健康状態が必須です</string>
+    <string name="error_family_health_required">既知の家族の健康状態が必須です</string>
+    <string name="error_select_gender">性別を選択してください</string>
+    <string name="error_select_education">学歴を選択してください</string>
+    <string name="error_select_smoke_status">喫煙状況を選択してください</string>
+    <string name="error_profession_required">職業は必須です</string>
+    <string name="error_select_ethnicity">民族を選択してください</string>
+
+
     <string-array name="gender_options">
         <item>選択してください</item>
         <item>男性</item>
