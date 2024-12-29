@@ -650,6 +650,7 @@ hyposmie/parosmie."</string>
         <item>Wil ik niet aangeven</item>
         <item>Anders</item>
     </string-array>
+    <string name="change_language">Taal wijzigen</string>
 
 
 </resources>

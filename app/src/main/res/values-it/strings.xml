@@ -649,6 +649,7 @@ iposmia/parosmia."</string>
         <item>Preferisco non dichiararlo</item>
         <item>Altro</item>
     </string-array>
+    <string name="change_language">"Cambia lingua "</string>
 
 
 </resources>

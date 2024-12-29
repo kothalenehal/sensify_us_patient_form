@@ -649,6 +649,7 @@ RenAware テストストリップで。"</string>
         <item>開示を希望しない</item>
         <item>その他</item>
     </string-array>
+    <string name="change_language">言語を変更</string>
 
 
 </resources>

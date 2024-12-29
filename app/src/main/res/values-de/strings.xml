@@ -649,6 +649,7 @@ Hyposmie/Parosmie."</string>
         <item>Bevorzuge keine Angabe</item>
         <item>Andere</item>
     </string-array>
+    <string name="change_language">Sprache ändern</string>
 
 
 </resources>

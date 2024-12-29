@@ -648,6 +648,7 @@ https://play.google.com/store/apps/details?id="</string>
         <item>أفضل عدم الكشف</item>
         <item>آخر</item>
     </string-array>
+    <string name="change_language">تغيير اللغة</string>
 
 
 </resources>

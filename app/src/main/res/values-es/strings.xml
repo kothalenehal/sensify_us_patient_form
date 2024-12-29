@@ -648,7 +648,7 @@ hiposmia/parosmia."</string>
         <item>Prefiero no divulgar</item>
         <item>Otro</item>
     </string-array>
-
+    <string name="change_language">Cambiar idioma</string>
 
 
 </resources>
