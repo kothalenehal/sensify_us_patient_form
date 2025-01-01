@@ -334,6 +334,7 @@
     <string name="dismiss">Dismiss</string>
     <string name="rate_the_app">Rate the App</string>
     <string name="share_app">Share App</string>
+    <string name="change_language">Change Language</string>
     <string name="description">SensifyAware is a Mobile wellness app to track your senses and cognition. Look inside your brain with SensifyAware. I like it to install: Phone/Tablet:\nhttps://play.google.com/store/apps/details?id=</string>
 
 
@@ -554,6 +555,23 @@
     <string name="form_discard">Discard</string>
     <string name="form_qr_code">QR Code</string>
     <string name="form_generate_qr">Generate QR</string>
+
+    <string name="error_first_name_required">First name is required</string>
+    <string name="error_last_name_required">Last name is required</string>
+    <string name="error_dob_required">Date of birth is required</string>
+    <string name="error_address1_required">Address line 1 is required</string>
+    <string name="error_address2_required">Address line 2 is required</string>
+    <string name="error_city_required">City is required</string>
+    <string name="error_pincode_required">Pin code is required</string>
+    <string name="error_state_required">State is required</string>
+    <string name="error_medication_required">Medication is required</string>
+    <string name="error_personal_health_required">Known personal health condition is required</string>
+    <string name="error_family_health_required">Known family health condition is required</string>
+    <string name="error_select_gender">Please select gender</string>
+    <string name="error_select_education">Please select education level</string>
+    <string name="error_select_smoke_status">Please select whether you smoke</string>
+    <string name="error_profession_required">Profession is required</string>
+    <string name="error_select_ethnicity">Please select ethnicity</string>
 
 
 

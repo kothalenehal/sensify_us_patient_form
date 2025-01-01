@@ -610,6 +610,24 @@ hiposmia/parosmia."</string>
     <string name="form_qr_code">Código QR</string>
     <string name="form_generate_qr">Generar QR</string>
 
+    <string name="error_first_name_required">El nombre es obligatorio</string>
+    <string name="error_last_name_required">El apellido es obligatorio</string>
+    <string name="error_dob_required">La fecha de nacimiento es obligatoria</string>
+    <string name="error_address1_required">La primera línea de la dirección es obligatoria</string>
+    <string name="error_address2_required">La segunda línea de la dirección es obligatoria</string>
+    <string name="error_city_required">La ciudad es obligatoria</string>
+    <string name="error_pincode_required">El código postal es obligatorio</string>
+    <string name="error_state_required">El estado es obligatorio</string>
+    <string name="error_medication_required">El medicamento es obligatorio</string>
+    <string name="error_personal_health_required">Se requiere condición de salud personal conocida</string>
+    <string name="error_family_health_required">Se requiere condición de salud familiar conocida</string>
+    <string name="error_select_gender">Por favor, seleccione el género</string>
+    <string name="error_select_education">Por favor, seleccione el nivel de educación</string>
+    <string name="error_select_smoke_status">Por favor, seleccione si fuma</string>
+    <string name="error_profession_required">La profesión es obligatoria</string>
+    <string name="error_select_ethnicity">Por favor, seleccione la etnia</string>
+
+
     <string-array name="gender_options">
         <item>Seleccionar</item>
         <item>Hombre</item>
@@ -648,7 +666,7 @@ hiposmia/parosmia."</string>
         <item>Prefiero no divulgar</item>
         <item>Otro</item>
     </string-array>
-
+    <string name="change_language">Cambiar idioma</string>
 
 
 </resources>

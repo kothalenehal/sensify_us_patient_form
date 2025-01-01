@@ -2,7 +2,9 @@ package com.sensifyawareapp.ui
 
 import android.app.Dialog
 import android.app.ProgressDialog
+import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -56,6 +58,15 @@ abstract class BaseActivity : AppCompatActivity() {
     var permissionUtil: PermissionUtil =
         SensifyAwareApplication.getAppComponent().providePermissionUtil()
 
+    companion object {
+        private const val LANGUAGE_KEY = "app_language"
+    }
+
+    override fun attachBaseContext(newBase: Context) {
+        val languageCode = getStoredLanguage(newBase)
+        val context = updateBaseContextLocale(newBase, languageCode)
+        super.attachBaseContext(context)
+    }
 
     open fun handleError(throwable: Throwable) {
         hideLoader()
@@ -120,6 +131,63 @@ abstract class BaseActivity : AppCompatActivity() {
         }
         isClinicalTestVersion =
             prefUtils.getBooleanData(this, AppConstant.SharedPreferences.CLINICAL_TEST_VERSION)
+
+        applyStoredLanguage()
+    }
+
+    private fun getStoredLanguage(context: Context): String {
+        return context.getSharedPreferences("AppSettings", Context.MODE_PRIVATE)
+            .getString(LANGUAGE_KEY, "en") ?: "en"
+    }
+
+    private fun updateBaseContextLocale(context: Context, language: String): Context {
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+
+        return if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            updateResourcesLocale(context, locale)
+        } else {
+            updateResourcesLocaleLegacy(context, locale)
+        }
+    }
+
+    private fun updateResourcesLocale(context: Context, locale: Locale): Context {
+        val configuration = Configuration(context.resources.configuration)
+        configuration.setLocale(locale)
+        return context.createConfigurationContext(configuration)
+    }
+
+    private fun updateResourcesLocaleLegacy(context: Context, locale: Locale): Context {
+        val resources = context.resources
+        val configuration = resources.configuration
+        configuration.locale = locale
+        resources.updateConfiguration(configuration, resources.displayMetrics)
+        return context
+    }
+
+    private fun applyStoredLanguage() {
+        val languageCode = getStoredLanguage(this)
+        val locale = Locale(languageCode)
+        Locale.setDefault(locale)
+
+        val config = resources.configuration
+        config.setLocale(locale)
+        createConfigurationContext(config)
+        resources.updateConfiguration(config, resources.displayMetrics)
+    }
+
+    protected fun saveLanguage(languageCode: String) {
+        getSharedPreferences("AppSettings", Context.MODE_PRIVATE)
+            .edit()
+            .putString(LANGUAGE_KEY, languageCode)
+            .apply()
+    }
+
+    protected fun restartApp() {
+        val intent = Intent(this, MainActivity::class.java)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        startActivity(intent)
+        finish()
     }
 
     private fun isTokenExpired(): Boolean {

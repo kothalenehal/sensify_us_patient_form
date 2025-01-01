@@ -143,6 +143,20 @@
                     android:textSize="@dimen/_12sp"
                     app:drawableStartCompat="@drawable/outline_share_24" />
 
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_language_change"
+                    style="@style/text_view_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/_14dp"
+                    android:fontFamily="@font/ws_regular"
+                    android:paddingHorizontal="@dimen/_20dp"
+                    android:paddingVertical="@dimen/_16dp"
+                    android:text="@string/change_language"
+                    android:textSize="@dimen/_12sp"
+                    app:drawableStartCompat="@drawable/language_24px" />
+
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/tv_privacy_policy"

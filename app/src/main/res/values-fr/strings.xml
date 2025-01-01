@@ -610,6 +610,24 @@ hyposmie/parosmie."</string>
     <string name="form_qr_code">Code QR</string>
     <string name="form_generate_qr">Générer le QR</string>
 
+    <string name="error_first_name_required">Le prénom est requis</string>
+    <string name="error_last_name_required">Le nom de famille est requis</string>
+    <string name="error_dob_required">La date de naissance est requise</string>
+    <string name="error_address1_required">"La première ligne de l'adresse est requise"</string>
+    <string name="error_address2_required">"La deuxième ligne de l'adresse est requise"</string>
+    <string name="error_city_required">La ville est requise</string>
+    <string name="error_pincode_required">Le code postal est requis</string>
+    <string name="error_state_required">La région est requise</string>
+    <string name="error_medication_required">Le médicament est requis</string>
+    <string name="error_personal_health_required">La condition de santé personnelle connue est requise</string>
+    <string name="error_family_health_required">La condition de santé familiale connue est requise</string>
+    <string name="error_select_gender">Veuillez sélectionner le genre</string>
+    <string name="error_select_education">"Veuillez sélectionner le niveau d'éducation"</string>
+    <string name="error_select_smoke_status">Veuillez sélectionner si vous fumez</string>
+    <string name="error_profession_required">La profession est requise</string>
+    <string name="error_select_ethnicity">"Veuillez sélectionner l'ethnicité"</string>
+
+
 
     <string-array name="gender_options">
         <item>Sélectionnez</item>
@@ -649,6 +667,7 @@ hyposmie/parosmie."</string>
         <item>Je préfère ne pas divulguer</item>
         <item>Autre</item>
     </string-array>
+    <string name="change_language">Changer de langue</string>
 
 
 </resources>

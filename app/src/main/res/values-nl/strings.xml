@@ -611,6 +611,24 @@ hyposmie/parosmie."</string>
     <string name="form_qr_code">QR-code</string>
     <string name="form_generate_qr">QR Genereren</string>
 
+    <string name="error_first_name_required">Voornaam is verplicht</string>
+    <string name="error_last_name_required">Achternaam is verplicht</string>
+    <string name="error_dob_required">Geboortedatum is verplicht</string>
+    <string name="error_address1_required">Adresregel 1 is verplicht</string>
+    <string name="error_address2_required">Adresregel 2 is verplicht</string>
+    <string name="error_city_required">Stad is verplicht</string>
+    <string name="error_pincode_required">Postcode is verplicht</string>
+    <string name="error_state_required">Provincie is verplicht</string>
+    <string name="error_medication_required">Medicatie is verplicht</string>
+    <string name="error_personal_health_required">Bekende persoonlijke gezondheidstoestand is verplicht</string>
+    <string name="error_family_health_required">Bekende gezondheidstoestand van de familie is verplicht</string>
+    <string name="error_select_gender">Selecteer alstublieft het geslacht</string>
+    <string name="error_select_education">Selecteer alstublieft het opleidingsniveau</string>
+    <string name="error_select_smoke_status">Selecteer alstublieft of u rookt</string>
+    <string name="error_profession_required">Beroep is verplicht</string>
+    <string name="error_select_ethnicity">Selecteer alstublieft de etniciteit</string>
+
+
 
     <string-array name="gender_options">
         <item>Selecteer</item>
@@ -650,6 +668,7 @@ hyposmie/parosmie."</string>
         <item>Wil ik niet aangeven</item>
         <item>Anders</item>
     </string-array>
+    <string name="change_language">Taal wijzigen</string>
 
 
 </resources>

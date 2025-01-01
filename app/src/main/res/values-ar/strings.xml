@@ -609,6 +609,24 @@ https://play.google.com/store/apps/details?id="</string>
     <string name="form_qr_code">رمز الاستجابة السريعة</string>
     <string name="form_generate_qr">إنشاء رمز الاستجابة السريعة</string>
 
+    <string name="error_first_name_required">الاسم الأول مطلوب</string>
+    <string name="error_last_name_required">اسم العائلة مطلوب</string>
+    <string name="error_dob_required">تاريخ الميلاد مطلوب</string>
+    <string name="error_address1_required">السطر الأول من العنوان مطلوب</string>
+    <string name="error_address2_required">السطر الثاني من العنوان مطلوب</string>
+    <string name="error_city_required">اسم المدينة مطلوب</string>
+    <string name="error_pincode_required">الرمز البريدي مطلوب</string>
+    <string name="error_state_required">اسم الولاية مطلوب</string>
+    <string name="error_medication_required">الدواء مطلوب</string>
+    <string name="error_personal_health_required">الحالة الصحية الشخصية المعروفة مطلوبة</string>
+    <string name="error_family_health_required">الحالة الصحية العائلية المعروفة مطلوبة</string>
+    <string name="error_select_gender">يرجى اختيار الجنس</string>
+    <string name="error_select_education">يرجى اختيار مستوى التعليم</string>
+    <string name="error_select_smoke_status">يرجى اختيار حالة التدخين</string>
+    <string name="error_profession_required">المهنة مطلوبة</string>
+    <string name="error_select_ethnicity">يرجى اختيار العرق</string>
+
+
 
     <string-array name="gender_options">
         <item>اختر</item>
@@ -648,6 +666,7 @@ https://play.google.com/store/apps/details?id="</string>
         <item>أفضل عدم الكشف</item>
         <item>آخر</item>
     </string-array>
+    <string name="change_language">تغيير اللغة</string>
 
 
 </resources>

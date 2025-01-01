@@ -611,6 +611,24 @@ iposmia/parosmia."</string>
     <string name="form_qr_code">Codice QR</string>
     <string name="form_generate_qr">Genera QR</string>
 
+    <string name="error_first_name_required">Il nome è obbligatorio</string>
+    <string name="error_last_name_required">Il cognome è obbligatorio</string>
+    <string name="error_dob_required">La data di nascita è obbligatoria</string>
+    <string name="error_address1_required">"La prima riga dell'indirizzo è obbligatoria"</string>
+    <string name="error_address2_required">"La seconda riga dell'indirizzo è obbligatoria"</string>
+    <string name="error_city_required">La città è obbligatoria</string>
+    <string name="error_pincode_required">Il codice postale è obbligatorio</string>
+    <string name="error_state_required">La regione è obbligatoria</string>
+    <string name="error_medication_required">Il farmaco è obbligatorio</string>
+    <string name="error_personal_health_required">È richiesta una condizione di salute personale nota</string>
+    <string name="error_family_health_required">È richiesta una condizione di salute familiare nota</string>
+    <string name="error_select_gender">Si prega di selezionare il genere</string>
+    <string name="error_select_education">Si prega di selezionare il livello di istruzione</string>
+    <string name="error_select_smoke_status">Si prega di selezionare se si fuma</string>
+    <string name="error_profession_required">La professione è obbligatoria</string>
+    <string name="error_select_ethnicity">"Si prega di selezionare l'etnia"</string>
+
+
     <string-array name="gender_options">
         <item>Seleziona</item>
         <item>Maschio</item>
@@ -649,6 +667,7 @@ iposmia/parosmia."</string>
         <item>Preferisco non dichiararlo</item>
         <item>Altro</item>
     </string-array>
+    <string name="change_language">"Cambia lingua "</string>
 
 
 </resources>
